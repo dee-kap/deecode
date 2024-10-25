@@ -74,9 +74,9 @@ export default async function(eleventyConfig) {
 		},
 		metadata: {
 			language: "en",
-			title: "Antipodean",
+			title: "Amorphous Ponder",
 			subtitle: "Personal websie of Deepak.",
-			base: "https://antipodean.blog/",
+			base: "https://amorphousponder.com/",
 			author: {
 				name: "Deepak"
 			}

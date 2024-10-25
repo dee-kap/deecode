@@ -40,7 +40,7 @@ jobs:
       - run: npm run build-ghpages
 
       - name: Add CNAME file
-        run: echo 'antipodean.blog' > ./dist/CNAME
+        run: echo 'amorphousponder.com' > ./dist/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

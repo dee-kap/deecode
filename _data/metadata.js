@@ -1,11 +1,11 @@
 export default {
-	title: "Antipodean",
-	url: "https://antipodean.blog/",
+	title: "Amorphous Ponder",
+	url: "https://amorphousponder.com/",
 	language: "en",
 	description: "Personal website of Deepak.",
 	author: {
 		name: "Deepak",
 		email: "",
-		url: "https://antipodean.com/about/"
+		url: "https://amorphousponder.com/about/"
 	}
 }
