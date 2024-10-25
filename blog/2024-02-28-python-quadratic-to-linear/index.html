@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>From Quadratic to Linear</title>
+		<meta name="description" content="Personal website of Deepak.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Antipodean">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+	--syntax-tab-size: 2;
+	--background-color: #eff1f5;
+	--text-color: #4c4f69;
+	--color-border-header: #dc8a78;
+	--color-green: #94e2d5;
+	--color-blue: #1e66f5;
+	--color-mauve: #8839ef;
+	--color-yellow: #df8e1d;
+	--color-lavender: #7287fd;
+}
+
+#theme-toggle {
+	background-color: var(--background-color);
+	color: #000000;
+	border: none;
+	font-size: 2em;
+}
+
+[data-theme='dark'] {
+	--background-color: #1e1e2e;
+	--text-color: #cdd6f4;
+	--color-border-header: #f5e0dc;
+	--color-green: #a6e3a1;
+	--color-blue: #89b4fa;
+	--color-mauve: #cba6f7;
+	--color-yellow: #f9e2af;
+	--color-lavender: #b4befe;
+
+	#theme-toggle {
+		background-color: var(--background-color);
+		color: #ffffff;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 720px;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	background-color: var(--background-color);
+	color: var(--text-color)
+}
+
+
+a {
+	color: var(--color-blue)
+}
+
+a:visited {
+	color: var(--color-blue)
+}
+
+a:hover,
+a:focus {
+	color: var(--color-blue)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-mauve)
+}
+
+.home-link {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	padding: 1.1em;
+	border-bottom: 1px dashed var(--color-border-header);
+}
+
+header a {
+	color: var(--color-mauve)
+}
+
+header a:visited {
+	color: var(--color-mauve)
+}
+
+header a:hover,
+header a:focus {
+	color: var(--color-mauve)
+}
+
+nav {
+	display: flex;
+	flex-grow: 1;
+}
+
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+.home-intro {
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+mark {
+	background: var(--color-green);
+	padding: 4px;
+	border-radius: 3px;
+}
+
+main {
+	padding: 10px;
+}
+
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p {
+	line-height: 1.6;
+}
+
+li {
+	line-height: 2;
+}
+
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em;
+	color: var(--color-gray-90);
+}
+
+.postlist-date {
+	word-spacing: -0.5px;
+}
+
+.postlist-link {
+	font-size: 1.1875em;
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+
+.postlist-item>.post-tag {
+	align-self: center;
+}
+
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.post-metadata time {
+	margin-right: 1em;
+}
+
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-border-header);
+	padding: 1em 0;
+	margin-top: 3em;
+}
+
+.links-nextprev>* {
+	flex-grow: 1;
+}
+
+.links-nextprev-next {
+	text-align: right;
+}
+
+
+.books-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 8px;
+	padding-top: 24px;
+}
+
+.books-list .book {
+	position: relative;
+	width: 100px;
+	height: 150px;
+	margin-bottom: 8px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 3px;
+	border: 3px solid var(--color-lavender);
+}
+
+.books-list .book:hover {
+	border-color: var(--color-yellow);
+	box-shadow: 0 0 10px 5px var(--color-yellow);
+}
+
+.book-title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 45%;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.books-list .book:hover .book-title {
+	color: var(--color-blue);
+}
+
+.book-rating {
+	font-size: 14px;
+}
+
+.star {
+	color: #ccc;
+	opacity: 0.6;
+	text-shadow: 0 0 1px #666;
+}
+
+.star.filled {
+	color: #ffd700;
+	opacity: 1;
+	text-shadow: none;
+}
+
+.star.filled.six {
+	color: #dc143c;
+	font-size: 1.25em;
+}</style>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+			const toggleButton = document.getElementById('theme-toggle');
+			const currentTheme = localStorage.getItem('theme') || 'dark';
+
+			if (currentTheme) {
+				document.documentElement.setAttribute('data-theme', currentTheme);
+			}
+
+			toggleButton.addEventListener('click', () => {
+				const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+				document.documentElement.setAttribute('data-theme', newTheme);
+				localStorage.setItem('theme', newTheme);
+			});
+			});
+		</script>
+	</head>
+	    <link href="//prismjs.catppuccin.com/mocha.css" rel="stylesheet">
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">Antipodean</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/about/"></a></li>
+					<li class="nav-item"><a href="/colophon/"></a></li>
+					<li class="nav-item"><a href="/"></a></li>
+					<li class="nav-item"><a href="/setup/"></a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
+					<li class="nav-item"><a href="/pages/">Pages</a></li>
+				</ul>
+			</nav>
+			<button id="theme-toggle" aria-label="Toggle theme">
+				●
+			</button>
+
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="from-quadratic-to-linear">From Quadratic to Linear</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2024-02-28">28 February 2024</time></li>
+</ul>
+
+<p>Lately, I've been immersing myself in basic coding exercises to refresh concepts that I learned years ago but haven't utilized much recently.</p>
+<p>While going through my private repositories, I came across code from a tech test I completed for a job I applied for.</p>
+<p>The task was a simple one. <strong>Given an array of numbers, find two elements whose sum equals a target value, then return the indices of these two elements.</strong></p>
+<p>Motivated by nostalgia, I decided to tackle this task again, this time using Python.</p>
+<p>This is my data</p>
+<pre class="language-python" tabindex="0"><code class="language-python">nums <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token number">50</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">21</span><span class="token punctuation">,</span> <span class="token number">32</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">349</span><span class="token punctuation">,</span> <span class="token number">701</span><span class="token punctuation">,</span> <span class="token number">430</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">313</span><span class="token punctuation">,</span> <span class="token number">832</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">947</span><span class="token punctuation">,</span> <span class="token number">560</span><span class="token punctuation">,</span>
+    <span class="token number">324</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">456</span><span class="token punctuation">,</span> <span class="token number">982</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">123</span><span class="token punctuation">,</span> <span class="token number">567</span><span class="token punctuation">,</span> <span class="token number">234</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">987</span><span class="token punctuation">,</span> <span class="token number">654</span><span class="token punctuation">,</span> <span class="token number">321</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">432</span><span class="token punctuation">,</span>
+    <span class="token number">543</span><span class="token punctuation">,</span> <span class="token number">890</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">101</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">202</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">303</span><span class="token punctuation">,</span> <span class="token number">404</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">505</span><span class="token punctuation">,</span> <span class="token number">606</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">707</span><span class="token punctuation">,</span> <span class="token number">808</span><span class="token punctuation">,</span>
+    <span class="token operator">-</span><span class="token number">909</span><span class="token punctuation">,</span> <span class="token number">101</span><span class="token punctuation">,</span> <span class="token number">212</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">313</span><span class="token punctuation">,</span> <span class="token number">414</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">515</span><span class="token punctuation">,</span> <span class="token number">616</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">717</span><span class="token punctuation">,</span> <span class="token number">818</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">919</span><span class="token punctuation">,</span>
+    <span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">31</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">42</span><span class="token punctuation">,</span> <span class="token number">53</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">64</span><span class="token punctuation">,</span> <span class="token number">75</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">86</span><span class="token punctuation">,</span> <span class="token number">97</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">108</span><span class="token punctuation">,</span> <span class="token number">119</span><span class="token punctuation">,</span>
+    <span class="token number">130</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">141</span><span class="token punctuation">,</span> <span class="token number">152</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">163</span><span class="token punctuation">,</span> <span class="token number">174</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">185</span><span class="token punctuation">,</span> <span class="token number">196</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">207</span><span class="token punctuation">,</span> <span class="token number">218</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">229</span><span class="token punctuation">,</span>
+    <span class="token number">240</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">251</span><span class="token punctuation">,</span> <span class="token number">262</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">273</span><span class="token punctuation">,</span> <span class="token number">284</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">295</span><span class="token punctuation">,</span> <span class="token number">306</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">317</span><span class="token punctuation">,</span> <span class="token number">328</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">339</span><span class="token punctuation">,</span>
+    <span class="token number">350</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">361</span><span class="token punctuation">,</span> <span class="token number">372</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">383</span><span class="token punctuation">,</span> <span class="token number">394</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">405</span><span class="token punctuation">,</span> <span class="token number">416</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">427</span><span class="token punctuation">,</span> <span class="token number">438</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">449</span><span class="token punctuation">,</span>
+    <span class="token number">460</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">471</span><span class="token punctuation">,</span> <span class="token number">482</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">493</span><span class="token punctuation">,</span> <span class="token number">504</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">515</span><span class="token punctuation">,</span> <span class="token number">526</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">537</span><span class="token punctuation">,</span> <span class="token number">548</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">559</span><span class="token punctuation">,</span>
+    <span class="token number">570</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">581</span><span class="token punctuation">,</span> <span class="token number">592</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">603</span><span class="token punctuation">,</span> <span class="token number">614</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">625</span><span class="token punctuation">,</span> <span class="token number">636</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">647</span><span class="token punctuation">,</span> <span class="token number">658</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">669</span><span class="token punctuation">,</span>
+    <span class="token number">680</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">691</span><span class="token punctuation">,</span> <span class="token number">702</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">713</span><span class="token punctuation">,</span> <span class="token number">724</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">735</span><span class="token punctuation">,</span> <span class="token number">746</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">757</span><span class="token punctuation">,</span> <span class="token number">768</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">779</span><span class="token punctuation">,</span>
+    <span class="token number">790</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">801</span><span class="token punctuation">,</span> <span class="token number">812</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">823</span><span class="token punctuation">,</span> <span class="token number">834</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">845</span><span class="token punctuation">,</span> <span class="token number">856</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">867</span><span class="token punctuation">,</span> <span class="token number">878</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">889</span><span class="token punctuation">,</span>
+    <span class="token number">900</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">911</span><span class="token punctuation">,</span> <span class="token number">922</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">933</span><span class="token punctuation">,</span> <span class="token number">944</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">955</span><span class="token punctuation">,</span> <span class="token number">966</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">977</span><span class="token punctuation">,</span> <span class="token number">988</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">999</span><span class="token punctuation">,</span>
+    <span class="token number">111</span><span class="token punctuation">,</span> <span class="token number">222</span><span class="token punctuation">,</span> <span class="token number">333</span><span class="token punctuation">,</span> <span class="token number">444</span><span class="token punctuation">,</span> <span class="token number">555</span><span class="token punctuation">,</span> <span class="token number">666</span><span class="token punctuation">,</span> <span class="token number">777</span><span class="token punctuation">,</span> <span class="token number">888</span><span class="token punctuation">,</span> <span class="token number">999</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">111</span><span class="token punctuation">,</span>
+    <span class="token operator">-</span><span class="token number">222</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">333</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">444</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">555</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">666</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">777</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">888</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">999</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">123</span>
+<span class="token punctuation">]</span>
+target <span class="token operator">=</span> <span class="token number">222</span></code></pre>
+<p>With this data where I have a large array of numbers and with a target of 222, I expect my result to be <strong>[17, 19]</strong></p>
+<p>Value at <strong>nums[17]</strong> is <strong>654</strong> and the value at <strong>nums[19]</strong> is <strong>-432</strong></p>
+<p>So <strong>nums[17] + nums[19] = 222</strong></p>
+<p>Here's the initial Python code, which I converted from my original JavaScript:</p>
+<pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">findIndexes</span><span class="token punctuation">(</span>nums<span class="token punctuation">,</span> target<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> index_1<span class="token punctuation">,</span> num_1 <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">for</span> index_2<span class="token punctuation">,</span> num_2 <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> index_1 <span class="token operator">!=</span> index_2 <span class="token keyword">and</span> num_1 <span class="token operator">+</span> num_2 <span class="token operator">==</span> target<span class="token punctuation">:</span>
+                <span class="token keyword">return</span> <span class="token punctuation">[</span>index_1<span class="token punctuation">,</span> index_2<span class="token punctuation">]</span></code></pre>
+<p>This code works and produces the correct result.</p>
+<p>I timed it using <strong>timeit</strong> and for 100,000 executions it takes approximately 8 seconds.</p>
+<p>8 seconds is fast in human time but an eternity in computer time.</p>
+<p>Is there a more efficient solution? Absolutely.</p>
+<p>Can we do better?</p>
+<p>Yes we can.</p>
+<pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">def</span> <span class="token function">findIndexes</span><span class="token punctuation">(</span>num<span class="token punctuation">,</span> target<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    indices <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+    <span class="token keyword">for</span> i<span class="token punctuation">,</span> num <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        difference <span class="token operator">=</span> target <span class="token operator">-</span> num
+
+        <span class="token keyword">if</span> difference <span class="token keyword">in</span> indices<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token punctuation">[</span>indices<span class="token punctuation">[</span>difference<span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">]</span>
+
+        indices<span class="token punctuation">[</span>num<span class="token punctuation">]</span> <span class="token operator">=</span> i</code></pre>
+<p>This revised method drastically reduces the execution time to <strong>0.14 seconds</strong> for the same number of runs. It operates in linear time, making just one pass through the array, and utilizes a dictionary—a hash map, which is an extremely efficient data structure for lookup operations.</p>
+<p>While the original method has a time complexity of <strong>O(n²)</strong>, the optimized function operates at <strong>O(n)</strong>, a significant improvement for large datasets.</p>
+<p>Happy Coding!</p>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/2024-02-22-gbww-first-step/">Step One of a Thousand Miles Journey</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/2024-03-20-clear-timeout-javascript/">Cancel setTimeout in JavaScript</a></li>
+</ul>
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+		</footer>
+
+		<!-- This page `/blog/2024-02-28-python-quadratic-to-linear/` was built on 2024-10-25T23:58:25.756Z -->
+		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
+	</body>
+</html>

@@ -1,0 +1,1185 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Antipodean</title>
+		<meta name="description" content="Personal website of Deepak.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Antipodean">
+		
+		<style>/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+	--syntax-tab-size: 2;
+	--background-color: #eff1f5;
+	--text-color: #4c4f69;
+	--color-border-header: #dc8a78;
+	--color-green: #94e2d5;
+	--color-blue: #1e66f5;
+	--color-mauve: #8839ef;
+	--color-yellow: #df8e1d;
+	--color-lavender: #7287fd;
+}
+
+#theme-toggle {
+	background-color: var(--background-color);
+	color: #000000;
+	border: none;
+	font-size: 2em;
+}
+
+[data-theme='dark'] {
+	--background-color: #1e1e2e;
+	--text-color: #cdd6f4;
+	--color-border-header: #f5e0dc;
+	--color-green: #a6e3a1;
+	--color-blue: #89b4fa;
+	--color-mauve: #cba6f7;
+	--color-yellow: #f9e2af;
+	--color-lavender: #b4befe;
+
+	#theme-toggle {
+		background-color: var(--background-color);
+		color: #ffffff;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 720px;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	background-color: var(--background-color);
+	color: var(--text-color)
+}
+
+
+a {
+	color: var(--color-blue)
+}
+
+a:visited {
+	color: var(--color-blue)
+}
+
+a:hover,
+a:focus {
+	color: var(--color-blue)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-mauve)
+}
+
+.home-link {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	padding: 1.1em;
+	border-bottom: 1px dashed var(--color-border-header);
+}
+
+header a {
+	color: var(--color-mauve)
+}
+
+header a:visited {
+	color: var(--color-mauve)
+}
+
+header a:hover,
+header a:focus {
+	color: var(--color-mauve)
+}
+
+nav {
+	display: flex;
+	flex-grow: 1;
+}
+
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+.home-intro {
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+mark {
+	background: var(--color-green);
+	padding: 4px;
+	border-radius: 3px;
+}
+
+main {
+	padding: 10px;
+}
+
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p {
+	line-height: 1.6;
+}
+
+li {
+	line-height: 2;
+}
+
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em;
+	color: var(--color-gray-90);
+}
+
+.postlist-date {
+	word-spacing: -0.5px;
+}
+
+.postlist-link {
+	font-size: 1.1875em;
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+
+.postlist-item>.post-tag {
+	align-self: center;
+}
+
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.post-metadata time {
+	margin-right: 1em;
+}
+
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-border-header);
+	padding: 1em 0;
+	margin-top: 3em;
+}
+
+.links-nextprev>* {
+	flex-grow: 1;
+}
+
+.links-nextprev-next {
+	text-align: right;
+}
+
+
+.books-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 8px;
+	padding-top: 24px;
+}
+
+.books-list .book {
+	position: relative;
+	width: 100px;
+	height: 150px;
+	margin-bottom: 8px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 3px;
+	border: 3px solid var(--color-lavender);
+}
+
+.books-list .book:hover {
+	border-color: var(--color-yellow);
+	box-shadow: 0 0 10px 5px var(--color-yellow);
+}
+
+.book-title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 45%;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.books-list .book:hover .book-title {
+	color: var(--color-blue);
+}
+
+.book-rating {
+	font-size: 14px;
+}
+
+.star {
+	color: #ccc;
+	opacity: 0.6;
+	text-shadow: 0 0 1px #666;
+}
+
+.star.filled {
+	color: #ffd700;
+	opacity: 1;
+	text-shadow: none;
+}
+
+.star.filled.six {
+	color: #dc143c;
+	font-size: 1.25em;
+}</style>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+			const toggleButton = document.getElementById('theme-toggle');
+			const currentTheme = localStorage.getItem('theme') || 'dark';
+
+			if (currentTheme) {
+				document.documentElement.setAttribute('data-theme', currentTheme);
+			}
+
+			toggleButton.addEventListener('click', () => {
+				const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+				document.documentElement.setAttribute('data-theme', newTheme);
+				localStorage.setItem('theme', newTheme);
+			});
+			});
+		</script>
+	</head>
+	    <link href="//prismjs.catppuccin.com/mocha.css" rel="stylesheet">
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">Antipodean</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/about/"></a></li>
+					<li class="nav-item"><a href="/colophon/"></a></li>
+					<li class="nav-item"><a href="/"></a></li>
+					<li class="nav-item"><a href="/setup/"></a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
+					<li class="nav-item"><a href="/pages/">Pages</a></li>
+				</ul>
+			</nav>
+			<button id="theme-toggle" aria-label="Toggle theme">
+				●
+			</button>
+
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				<h1 id="books">Books</h1>
+<p>Reading books is one of my favourite pass times. I like to read all kinds of books including Non-Fiction, History, Science, Biographies, Finance, Classics.</p>
+<p>First book I ever read was Dracula by Bram Stoker and that got me hooked on reading.</p>
+<p>These are some of the books I have in my library. I have given a star rating to the books I have read, the others either I have not read or would like to read again.</p>
+<h2 id="my-rating-system">My rating system</h2>
+<p>I follow a 6 star rating system.</p>
+<ol>
+<li><span class="star filled">★</span> Shouldn't have bothered.</li>
+<li><span class="star filled">★★</span> It was not so bad that it deserved 1 star but not good either</li>
+<li><span class="star filled">★★★</span> Neither good nor bad</li>
+<li><span class="star filled">★★★★</span> It got me interested enough to read it all the way through</li>
+<li><span class="star filled">★★★★★</span> I learned plenty from this book and loved reading it, maybe I will read it again</li>
+<li><span class="star filled">★★★★★</span><span class="star filled six">★</span> <mark>Beyond awesome.</mark> This book had a huge impact on me and made a dent in my universe</li>
+</ol>
+<div class="books-list"><div class="book" style="background-image: url('/images/covers/the-lucky-country.jpg')">
+      <div class="book-title">
+        The Lucky Country
+        <div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/ultralearning.jpg')">
+<div class="book-title">
+Ultralearning
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/emperor-of-all-maladies.jpg')">
+<div class="book-title">
+Emperor of All Maladies
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-victorian-internet.jpg')">
+<div class="book-title">
+The Victorian Internet
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/one-life.jpg')">
+<div class="book-title">
+One Life
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/investing-the-last-liberal-art.jpg')">
+<div class="book-title">
+Investing: The Last Liberal Art
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/of-permanent-value.jpg')">
+<div class="book-title">
+Of Permanent Value
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/flash-crash.jpg')">
+<div class="book-title">
+Flash Crash
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/elon-musk.jpg')">
+<div class="book-title">
+Elon Musk by Ashlee Vance
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/einstein-his-life-and-universe.jpg')">
+<div class="book-title">
+Einstein His Life and Universe
+<div class="book-rating"><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled  six">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-polymath.jpg')">
+<div class="book-title">
+The Polymath
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/breath.jpg')">
+<div class="book-title">
+Breath
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/titan.jpg')">
+<div class="book-title">
+TITAN
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/viral.jpg')">
+<div class="book-title">
+Viral
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/deep-survival.jpg')">
+<div class="book-title">
+Deep Survival
+<div class="book-rating"><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled  six">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-rebel-allocator.jpg')">
+<div class="book-title">
+The Rebel Allocator
+<div class="book-rating"><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/richer-wiser-happier.jpg')">
+<div class="book-title">
+Richer, Wiser, Happier
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/how-to-take-smart-notes.jpg')">
+<div class="book-title">
+How to Take Smart Notes
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/wolf-of-the-plains.jpg')">
+<div class="book-title">
+Wolf of the Plains
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/dark-emu.jpg')">
+<div class="book-title">
+Dark Emu
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/joys-of-compounding.jpg')">
+<div class="book-title">
+The Joys of Compounding
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/exodus.jpg')">
+<div class="book-title">
+Exodus by Leon Uris
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/simpsons-mathematical-secret.jpg')">
+<div class="book-title">
+The Simpsons and Their...
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/first-raj-of-the-sikhs.jpg')">
+<div class="book-title">
+First Raj of the Sikhs
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-secret-of-the-nagas.jpg')">
+<div class="book-title">
+The Secret of the Nagas
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/immortals-of-meluha.jpg')">
+<div class="book-title">
+The Immortals of Meluha
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/billionaires-apprentice.jpg')">
+<div class="book-title">
+The Billionaire's Apprentice
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/religion-and-science.jpg')">
+<div class="book-title">
+Religion and Science
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/big-bang.jpg')">
+<div class="book-title">
+Big Bang: The Origin of...
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/wings-of-fire.jpg')">
+<div class="book-title">
+Wings of Fire
+<div class="book-rating"><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled  six">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/indian-summer.jpg')">
+<div class="book-title">
+Indian Summer
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/icon-steve-jobs.jpg')">
+<div class="book-title">
+iCon: Steve Jobs
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/chaos.jpg')">
+<div class="book-title">
+Chaos: Making a New Science
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/mastery.jpg')">
+<div class="book-title">
+Mastery
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-art-of-war.jpg')">
+<div class="book-title">
+The Art of War
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/dont-go-where-you-came-from.jpg')">
+<div class="book-title">
+Don't Go Back to Where You...
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/bhagat-singh.jpg')">
+<div class="book-title">
+Bhagat Singh: Select Speeches...
+<div class="book-rating"><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled  six">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-snowball.jpg')">
+<div class="book-title">
+The Snowball
+<div class="book-rating"><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled  six">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-sixteenth-round.jpg')">
+<div class="book-title">
+The Sixteenth Round
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-rise-and-rise.jpg')">
+<div class="book-title">
+The Rise and Rise of Kerry Packer
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/dongri-to-dubai.jpg')">
+<div class="book-title">
+Dongri To Dubai
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/kingpin.jpg')">
+<div class="book-title">
+Kingpin
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-fugitive-game.jpg')">
+<div class="book-title">
+The Fugitive Game
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/beyond-the-giant.jpg')">
+<div class="book-title">
+Beyond the Giant
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-third-chimpanzee.jpg')">
+<div class="book-title">
+The Third Chimpanzee
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-code-book.jpg')">
+<div class="book-title">
+The Code Book
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/just-for-fun.jpg')">
+<div class="book-title">
+Just for Fun
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/books-i-have-loved.jpg')">
+<div class="book-title">
+Books I Have Loved
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/autobiography-of-martin-luther-king.jpg')">
+<div class="book-title">
+The Autobiography of Martin...
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-guide.jpg')">
+<div class="book-title">
+The Guide
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/life-beyond-lobby.jpg')">
+<div class="book-title">
+Life Behind the Lobby
+<div class="book-rating"><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/life-of-pi.jpg')">
+<div class="book-title">
+Life of Pi
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/thinking-fast-and-slow.jpg')">
+<div class="book-title">
+Thinking, Fast and Slow
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/boomerang.jpg')">
+<div class="book-title">
+Boomerang
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/liars-poker.jpg')">
+<div class="book-title">
+Liar's Poker
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/breaking-the-spell.jpg')">
+<div class="book-title">
+Breaking the Spell
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-big-short.jpg')">
+<div class="book-title">
+The Big Short
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/business-at-the-speed-of-thought.jpg')">
+<div class="book-title">
+Business @ the Speed of Thought
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-richest-man-in-babylon.jpg')">
+<div class="book-title">
+The Richest Man in Babylon
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/code-complete.jpg')">
+<div class="book-title">
+Code Complete
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-art-of-deception.jpg')">
+<div class="book-title">
+The Art of Deception
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/fermats-enigma.jpg')">
+<div class="book-title">
+Fermat's Enigma
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/digital-fortress.jpg')">
+<div class="book-title">
+Digital Fortress
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/gates.jpg')">
+<div class="book-title">
+Gates
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-varities-of-scientific-experiments.jpg')">
+<div class="book-title">
+The Varieties of Scientific Experience
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/peopleware.jpg')">
+<div class="book-title">
+Peopleware
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/autobiography-osho.jpg')">
+<div class="book-title">
+Autobiography of a Spiritually Incorrect Mystic
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-blue-bed-spread.jpg')">
+<div class="book-title">
+The Blue Bedspread
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/five-point-someone.jpg')">
+<div class="book-title">
+Five Point Someone
+<div class="book-rating"><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/delhi.jpg')">
+<div class="book-title">
+Delhi
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-company-of-women.jpg')">
+<div class="book-title">
+The Company of Women
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/train-to-pakistan.jpg')">
+<div class="book-title">
+Train to Pakistan
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/1984.jpg')">
+<div class="book-title">
+1984
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/zen-and-the-art.jpg')">
+<div class="book-title">
+Zen and the Art of Motorcycle Maintenance
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/lajja.jpg')">
+<div class="book-title">
+Lajja
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/The-polyester-prince.jpg')">
+<div class="book-title">
+The Polyester Prince
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-godfather.jpg')">
+<div class="book-title">
+The Godfather
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/for-the-term-of-his-natural-life.jpg')">
+<div class="book-title">
+For the Term of His Natural Life
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-dhando-investor.jpg')">
+<div class="book-title">
+The Dhandho Investor
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/imaginary-homelands.jpg')">
+<div class="book-title">
+Imaginary Homelands
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/banglore-tiger.jpg')">
+<div class="book-title">
+Bangalore Tiger
+<div class="book-rating"><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/ignited-minds.jpg')">
+<div class="book-title">
+Ignited Minds
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-world-is-flat.jpg')">
+<div class="book-title">
+The World Is Flat
+<div class="book-rating"><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-god-of-small-things.jpg')">
+<div class="book-title">
+The God of Small Things
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/a-fine-balance.jpg')">
+<div class="book-title">
+A Fine Balance
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/catch-me-if-you-can.jpg')">
+<div class="book-title">
+Catch Me If You Can
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/barbarians-at-the-gate.jpg')">
+<div class="book-title">
+Barbarians at the Gate
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/midnights-children.jpg')">
+<div class="book-title">
+Midnight's Children
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/extraordinary-popular-delusions.jpg')">
+<div class="book-title">
+Extraordinary Popular Delusions
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/life-not-all-haha.jpg')">
+<div class="book-title">
+Life Isn't All Ha Ha Hee Hee
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/anita-and-me.jpg')">
+<div class="book-title">
+Anita and Me
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/blink.jpg')">
+<div class="book-title">
+Blink
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/fathers-and-sons.jpg')">
+<div class="book-title">
+Fathers and Sons
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/business-maharajas.jpg')">
+<div class="book-title">
+Business Maharajas
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/buddha-of-suburbia.jpg')">
+<div class="book-title">
+The Buddha of Suburbia
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-road-ahead.jpg')">
+<div class="book-title">
+The Road Ahead
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-tao-of-physics.jpg')">
+<div class="book-title">
+The Tao of Physics
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-romantics.jpg')">
+<div class="book-title">
+The Romantics
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/beyond-the-last-blue-mountain.jpg')">
+<div class="book-title">
+Beyond The Last Blue Mountain
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-white-tiger.jpg')">
+<div class="book-title">
+The White Tiger
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/bombay-duck.jpg')">
+<div class="book-title">
+Bombay Duck
+<div class="book-rating"><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-mythical-man-month.jpg')">
+<div class="book-title">
+The Mythical Man-Month
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/autobiography-of-a-yogi.jpg')">
+<div class="book-title">
+Autobiography of a Yogi
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-sikhs.jpg')">
+<div class="book-title">
+The Sikhs
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-tipping-point.jpg')">
+<div class="book-title">
+The Tipping Point
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/commonwealth-of-thieves.jpg')">
+<div class="book-title">
+A Commonwealth of Thieves
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/guns-germs-and-steel.jpg')">
+<div class="book-title">
+Guns, Germs, and Steel
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/a-brief-history-of-time.jpg')">
+<div class="book-title">
+A Brief History of Time
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/animal-farm.jpg')">
+<div class="book-title">
+Animal Farm
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/short-history-of-time.jpg')">
+<div class="book-title">
+A Short History of Nearly Everything
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/how-to-win-friends.jpg')">
+<div class="book-title">
+How to Win Friends and Influence People
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/all-i-really-need-to-know.jpg')">
+<div class="book-title">
+All I Really Need to Know I Learned...
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/wikinomics.jpg')">
+<div class="book-title">
+Wikinomics
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/sister-of-my-heart.jpg')">
+<div class="book-title">
+Sister of My Heart
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-google-story.jpg')">
+<div class="book-title">
+The Google Story
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-davinci-code.jpg')">
+<div class="book-title">
+The Da Vinci Code
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-god-delusion.jpg')">
+<div class="book-title">
+The God Delusion
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/deception-point.jpg')">
+<div class="book-title">
+Deception
+<div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/shantaram.jpg')">
+<div class="book-title">
+Shantaram
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/edward-britton.jpg')">
+<div class="book-title">
+Edward Britton
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/angles-and-demons.jpg')">
+<div class="book-title">
+Angels &amp; Demons
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/outliers.jpg')">
+<div class="book-title">
+Outliers
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/crime-and-punishment.jpg')">
+<div class="book-title">
+Crime and Punishment
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/field-notes-on-democracy.jpg')">
+<div class="book-title">
+Field Notes on Democracy
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-difficulty-of-being-good.jpg')">
+<div class="book-title">
+The Difficulty of Being Good
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/john-ilhan.jpg')">
+<div class="book-title">
+John Ilhan
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/mahabharata-in-polyester.jpg')">
+<div class="book-title">
+Mahabharata in Polyester
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/steve-jobs.jpg')">
+<div class="book-title">
+Steve Jobs
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/behind-the-beautiful-forevers.jpg')">
+<div class="book-title">
+Behind the Beautiful Forevers
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-oath-of-vayuputras.jpg')">
+<div class="book-title">
+The Oath of the Vayuputras
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/the-art-of-thinking-clearly.jpg')">
+<div class="book-title">
+The Art of Thinking Clearly
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><p></p>
+<p></p></div>
+</div>
+</div><div class="book" style="background-image: url('/images/covers/tap-dancing-to-work.jpg')">
+<div class="book-title">
+Tap Dancing to Work
+<div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><p></p>
+<p></p></div>
+</div>
+</div><p></p>
+</div>
+			</heading-anchors>
+		</main>
+
+		<footer>
+		</footer>
+
+		<!-- This page `/books/` was built on 2024-10-25T23:58:25.746Z -->
+		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
+	</body>
+</html>
