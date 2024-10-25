@@ -1,0 +1,6 @@
+{
+    "eleventyComputed": {
+      "permalink": "blog/{{ date | date('yyyy/MM/dd') }}/{{ page.fileSlug }}/"
+    }
+  }
+  

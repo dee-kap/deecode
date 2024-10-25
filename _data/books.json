@@ -1,0 +1,784 @@
+[
+	{
+		"title": "The Lucky Country",
+		"image": "the-lucky-country.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Ultralearning",
+		"image": "ultralearning.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Emperor of All Maladies",
+		"image": "emperor-of-all-maladies.jpg",
+		"rating": ""
+	},
+	{
+		"title": "The Victorian Internet",
+		"image": "the-victorian-internet.jpg",
+		"rating": ""
+	},
+	{
+		"title": "One Life",
+		"image": "one-life.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Investing: The Last Liberal Art",
+		"image": "investing-the-last-liberal-art.jpg",
+		"rating": "3"
+	},
+	{
+		"title": "Of Permanent Value: The Story of Warren Buffett",
+		"displayTitle": "Of Permanent Value",
+		"image": "of-permanent-value.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "Flash Crash",
+		"image": "flash-crash.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Elon Musk by Ashlee Vance",
+		"image": "elon-musk.jpg",
+		"rating": "3"
+	},
+	{
+		"title": "Einstein His Life and Universe",
+		"image": "einstein-his-life-and-universe.jpg",
+		"rating": "6"
+	},
+	{
+		"title": "The Polymath: Unlocking the Power of Human Versatility",
+		"displayTitle": "The Polymath",
+		"image": "the-polymath.jpg",
+		"rating": "3"
+	},
+	{
+		"title": "Breath: The New Science of a Lost Art",
+		"displayTitle": "Breath",
+		"image": "breath.jpg",
+		"rating": "3"
+	},
+	{
+		"title": "TITAN: Inside India’s Most Successful Consumer Brand by Vinay Kamath",
+		"displayTitle": "TITAN",
+		"image": "titan.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "Viral: The Search for the Origin of Covid19 by Alina Chan & Matt Ridley",
+		"displayTitle": "Viral",
+		"image": "viral.jpg",
+		"rating": "3"
+	},
+	{
+		"title": "Deep Survival: Who Lives, Who Dies and Why by Laurence Gonzales",
+		"displayTitle": "Deep Survival",
+		"image": "deep-survival.jpg",
+		"rating": "6"
+	},
+	{
+		"title": "The Rebel Allocator by Jacob Taylor",
+		"displayTitle": "The Rebel Allocator",
+		"image": "the-rebel-allocator.jpg",
+		"rating": "1"
+	},
+	{
+		"title": "Richer, Wiser, Happier: How the World’s Greatest Investors Win in Markets and Life by William Green",
+		"displayTitle": "Richer, Wiser, Happier",
+		"image": "richer-wiser-happier.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "How to Take Smart Notes by Sönke Ahrens",
+		"displayTitle": "How to Take Smart Notes",
+		"image": "how-to-take-smart-notes.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Wolf of the Plains by Conn Iggulden",
+		"displayTitle": "Wolf of the Plains",
+		"image": "wolf-of-the-plains.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Dark Emu by Bruce Pascoe",
+		"displayTitle": "Dark Emu",
+		"image": "dark-emu.jpg",
+		"rating": "3"
+	},
+	{
+		"title": "The Joys of Compounding: The Passionate Pursuit of Lifelong Learning by Gautam Baid",
+		"displayTitle": "The Joys of Compounding",
+		"image": "joys-of-compounding.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "Exodus by Leon Uris",
+		"image": "exodus.jpg",
+		"rating": "3"
+	},
+	{
+		"title": "The Simpsons and Their Mathematical Secrets by Simon Singh",
+		"displayTitle": "The Simpsons and Their...",
+		"image": "simpsons-mathematical-secret.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "First Raj of the Sikhs: The Life and Times of Banda Singh Bahadur by Harish Dhillon",
+		"displayTitle": "First Raj of the Sikhs",
+		"image": "first-raj-of-the-sikhs.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "The Secret of the Nagas (The Shiva Trilogy, #2) by Amish Tripathi",
+		"displayTitle": "The Secret of the Nagas",
+		"image": "the-secret-of-the-nagas.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "The Immortals of Meluha (Shiva Trilogy, #1) by Amish Tripathi",
+		"displayTitle": "The Immortals of Meluha",
+		"image": "immortals-of-meluha.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "The Billionaire's Apprentice: The Rise of The Indian-American Elite and The Fall of The Galleon Hedge Fund by Anita Raghavan",
+		"displayTitle": "The Billionaire's Apprentice",
+		"image": "billionaires-apprentice.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Religion and Science by Bertrand Russell",
+		"displayTitle": "Religion and Science",
+		"image": "religion-and-science.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "Big Bang: The Origin of the Universe by Simon Singh",
+		"displayTitle": "Big Bang: The Origin of...",
+		"image": "big-bang.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "Wings of Fire: An Autobiography by A.P.J. Abdul Kalam",
+		"displayTitle": "Wings of Fire",
+		"image": "wings-of-fire.jpg",
+		"rating": "6"
+	},
+	{
+		"title": "Indian Summer: The Secret History of the End of an Empire by Alex von Tunzelmann",
+		"displayTitle": "Indian Summer",
+		"image": "indian-summer.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "iCon: Steve Jobs, the Greatest Second Act in the History of Business by Jeffrey S. Young",
+		"displayTitle": "iCon: Steve Jobs",
+		"image": "icon-steve-jobs.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Chaos: Making a New Science by James Gleick",
+		"displayTitle": "Chaos: Making a New Science",
+		"image": "chaos.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Mastery by Robert Greene",
+		"displayTitle": "Mastery",
+		"image": "mastery.jpg",
+		"rating": ""
+	},
+	{
+		"title": "The Art of War by Sun Tzu",
+		"displayTitle": "The Art of War",
+		"image": "the-art-of-war.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Don't Go Back to Where You Came From by Tim Soutphommasane",
+		"displayTitle": "Don't Go Back to Where You...",
+		"image": "dont-go-where-you-came-from.jpg",
+		"rating": "3"
+	},
+	{
+		"title": "Bhagat Singh: Select Speeches and Writings",
+		"displayTitle": "Bhagat Singh: Select Speeches...",
+		"image": "bhagat-singh.jpg",
+		"rating": "6"
+	},
+	{
+		"title": "The Snowball: Warren Buffett and the Business of Life by Alice Schroeder",
+		"displayTitle": "The Snowball",
+		"image": "the-snowball.jpg",
+		"rating": "6"
+	},
+	{
+		"title": "The Sixteenth Round: From Number 1 Contender to Number 45472 by Rubin Carter",
+		"displayTitle": "The Sixteenth Round",
+		"image": "the-sixteenth-round.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "The Rise and Rise of Kerry Packer Uncut by Paul Barry",
+		"displayTitle": "The Rise and Rise of Kerry Packer",
+		"image": "the-rise-and-rise.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Dongri To Dubai : Six Decades of The Mumbai Mafia by S. Hussain Zaidi",
+		"displayTitle": "Dongri To Dubai",
+		"image": "dongri-to-dubai.jpg",
+		"rating": "3"
+	},
+	{
+		"title": "Kingpin: How One Hacker Took Over the Billion-Dollar Cybercrime Underground by Kevin Poulsen",
+		"displayTitle": "Kingpin",
+		"image": "kingpin.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "The Fugitive Game: Online with Kevin Mitnick by Jonathan Littman",
+		"displayTitle": "The Fugitive Game",
+		"image": "the-fugitive-game.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Beyond the Giant Personal Insight into the life of JRD Tata by D.R. Pendse",
+		"displayTitle": "Beyond the Giant",
+		"image": "beyond-the-giant.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "The Third Chimpanzee: The Evolution and Future of the Human Animal by Jared Diamond",
+		"displayTitle": "The Third Chimpanzee",
+		"image": "the-third-chimpanzee.jpg",
+		"rating": ""
+	},
+	{
+		"title": "The Code Book: The Science of Secrecy from Ancient Egypt to Quantum Cryptography by Simon Singh",
+		"displayTitle": "The Code Book",
+		"image": "the-code-book.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Just for Fun: The Story of an Accidental Revolutionary by Linus Torvalds",
+		"displayTitle": "Just for Fun",
+		"image": "just-for-fun.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Books I Have Loved by Osho",
+		"displayTitle": "Books I Have Loved",
+		"image": "books-i-have-loved.jpg",
+		"rating": ""
+	},
+	{
+		"title": "The Autobiography of Martin Luther King, Jr. by Martin Luther King Jr.",
+		"displayTitle": "The Autobiography of Martin...",
+		"image": "autobiography-of-martin-luther-king.jpg",
+		"rating": ""
+	},
+	{
+		"title": "The Guide by R.K. Narayan",
+		"displayTitle": "The Guide",
+		"image": "the-guide.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Life Behind the Lobby: Indian American Motel Owners and the American Dream by Pawan Dhingra",
+		"displayTitle": "Life Behind the Lobby",
+		"image": "life-beyond-lobby.jpg",
+		"rating": "1"
+	},
+	{
+		"title": "Life of Pi by Yann Martel",
+		"displayTitle": "Life of Pi",
+		"image": "life-of-pi.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Thinking, Fast and Slow by Daniel Kahneman",
+		"displayTitle": "Thinking, Fast and Slow",
+		"image": "thinking-fast-and-slow.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Boomerang: Travels in the New Third World by Michael Lewis",
+		"displayTitle": "Boomerang",
+		"image": "boomerang.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Liar's Poker by Michael Lewis",
+		"displayTitle": "Liar's Poker",
+		"image": "liars-poker.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Breaking the Spell by Jane Stork",
+		"displayTitle": "Breaking the Spell",
+		"image": "breaking-the-spell.jpg",
+		"rating": ""
+	},
+	{
+		"title": "The Big Short: Inside the Doomsday Machine by Michael Lewis",
+		"displayTitle": "The Big Short",
+		"image": "the-big-short.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Business @ the Speed of Thought: Succeeding in the Digital Economy by Bill Gates",
+		"displayTitle": "Business @ the Speed of Thought",
+		"image": "business-at-the-speed-of-thought.jpg",
+		"rating": ""
+	},
+	{
+		"title": "The Richest Man in Babylon by George S. Clason",
+		"displayTitle": "The Richest Man in Babylon",
+		"image": "the-richest-man-in-babylon.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Code Complete by Steve McConnell",
+		"displayTitle": "Code Complete",
+		"image": "code-complete.jpg",
+		"rating": ""
+	},
+	{
+		"title": "The Art of Deception: Controlling the Human Element of Security by Kevin D. Mitnick",
+		"displayTitle": "The Art of Deception",
+		"image": "the-art-of-deception.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Fermat's Enigma by Simon Singh",
+		"displayTitle": "Fermat's Enigma",
+		"image": "fermats-enigma.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Digital Fortress by Dan Brown",
+		"displayTitle": "Digital Fortress",
+		"image": "digital-fortress.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Gates: How Microsoft's Mogul Reinvented an Industry--and Made Himself the Richest Man in America by Stephen Manes",
+		"displayTitle": "Gates",
+		"image": "gates.jpg",
+		"rating": ""
+	},
+	{
+		"title": "The Varieties of Scientific Experience: A Personal View of the Search for God by Carl Sagan",
+		"displayTitle": "The Varieties of Scientific Experience",
+		"image": "the-varities-of-scientific-experiments.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Peopleware: Productive Projects and Teams by Tom DeMarco",
+		"displayTitle": "Peopleware",
+		"image": "peopleware.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Autobiography of a Spiritually Incorrect Mystic by Osho",
+		"displayTitle": "Autobiography of a Spiritually Incorrect Mystic",
+		"image": "autobiography-osho.jpg",
+		"rating": ""
+	},
+	{
+		"title": "The Blue Bedspread by Raj Kamal Jha",
+		"displayTitle": "The Blue Bedspread",
+		"image": "the-blue-bed-spread.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Five Point Someone: What Not to Do at IIT by Chetan Bhagat",
+		"displayTitle": "Five Point Someone",
+		"image": "five-point-someone.jpg",
+		"rating": "1"
+	},
+	{
+		"title": "Delhi by Khushwant Singh",
+		"displayTitle": "Delhi",
+		"image": "delhi.jpg",
+		"rating": "3"
+	},
+	{
+		"title": "The Company of Women by Khushwant Singh",
+		"displayTitle": "The Company of Women",
+		"image": "the-company-of-women.jpg",
+		"rating": "2"
+	},
+	{
+		"title": "Train to Pakistan by Khushwant Singh",
+		"displayTitle": "Train to Pakistan",
+		"image": "train-to-pakistan.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "1984 by George Orwell",
+		"displayTitle": "1984",
+		"image": "1984.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values (Phaedrus, #1) by Robert M. Pirsig",
+		"displayTitle": "Zen and the Art of Motorcycle Maintenance",
+		"image": "zen-and-the-art.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Lajja: Shame by Taslima Nasrin",
+		"displayTitle": "Lajja",
+		"image": "lajja.jpg",
+		"rating": ""
+	},
+	{
+		"title": "The Polyester Prince: The Rise of Dhirubhai Ambani by Hamish McDonald",
+		"displayTitle": "The Polyester Prince",
+		"image": "The-polyester-prince.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "The Godfather by Mario Puzo",
+		"displayTitle": "The Godfather",
+		"image": "the-godfather.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "For the Term of His Natural Life by Marcus Clarke",
+		"displayTitle": "For the Term of His Natural Life",
+		"image": "for-the-term-of-his-natural-life.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "The Dhandho Investor: The Low-Risk Value Method to High Returns by Mohnish Pabrai",
+		"displayTitle": "The Dhandho Investor",
+		"image": "the-dhando-investor.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Imaginary Homelands: Essays and Criticism 1981-1991 by Salman Rushdie",
+		"displayTitle": "Imaginary Homelands",
+		"image": "imaginary-homelands.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Bangalore Tiger: How Indian Tech Upstart Wipro Is Rewriting the Rules of Global Competition by Steve Hamm",
+		"displayTitle": "Bangalore Tiger",
+		"image": "banglore-tiger.jpg",
+		"rating": "1"
+	},
+	{
+		"title": "Ignited Minds: Unleashing the Power Within India by A.P.J. Abdul Kalam",
+		"displayTitle": "Ignited Minds",
+		"image": "ignited-minds.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "The World Is Flat: A Brief History of the Twenty-first Century by Thomas L. Friedman",
+		"displayTitle": "The World Is Flat",
+		"image": "the-world-is-flat.jpg",
+		"rating": "1"
+	},
+	{
+		"title": "The God of Small Things by Arundhati Roy",
+		"displayTitle": "The God of Small Things",
+		"image": "the-god-of-small-things.jpg",
+		"rating": "2"
+	},
+	{
+		"title": "A Fine Balance by Rohinton Mistry",
+		"displayTitle": "A Fine Balance",
+		"image": "a-fine-balance.jpg",
+		"rating": "3"
+	},
+	{
+		"title": "Catch Me If You Can: The True Story of a Real Fake by Frank W. Abagnale",
+		"displayTitle": "Catch Me If You Can",
+		"image": "catch-me-if-you-can.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Barbarians at the Gate: The Fall of RJR Nabisco by Bryan Burrough",
+		"displayTitle": "Barbarians at the Gate",
+		"image": "barbarians-at-the-gate.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Midnight's Children by Salman Rushdie",
+		"displayTitle": "Midnight's Children",
+		"image": "midnights-children.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Extraordinary Popular Delusions and the Madness of Crowds by Charles Mackay",
+		"displayTitle": "Extraordinary Popular Delusions",
+		"image": "extraordinary-popular-delusions.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Life Isn't All Ha Ha Hee Hee by Meera Syal",
+		"displayTitle": "Life Isn't All Ha Ha Hee Hee",
+		"image": "life-not-all-haha.jpg",
+		"rating": "3"
+	},
+	{
+		"title": "Anita and Me by Meera Syal",
+		"displayTitle": "Anita and Me",
+		"image": "anita-and-me.jpg",
+		"rating": "3"
+	},
+	{
+		"title": "Blink: The Power of Thinking Without Thinking by Malcolm Gladwell",
+		"displayTitle": "Blink",
+		"image": "blink.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Fathers and Sons by Ivan Turgenev",
+		"displayTitle": "Fathers and Sons",
+		"image": "fathers-and-sons.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "Business Maharajas by Gita Piramal",
+		"displayTitle": "Business Maharajas",
+		"image": "business-maharajas.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "The Buddha of Suburbia by Hanif Kureishi",
+		"displayTitle": "The Buddha of Suburbia",
+		"image": "buddha-of-suburbia.jpg",
+		"rating": "3"
+	},
+	{
+		"title": "The Road Ahead by Bill Gates",
+		"displayTitle": "The Road Ahead",
+		"image": "the-road-ahead.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "The Tao of Physics: An Exploration of the Parallels between Modern Physics and Eastern Mysticism by Fritjof Capra",
+		"displayTitle": "The Tao of Physics",
+		"image": "the-tao-of-physics.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "The Romantics by Pankaj Mishra",
+		"displayTitle": "The Romantics",
+		"image": "the-romantics.jpg",
+		"rating": "3"
+	},
+	{
+		"title": "Beyond The Last Blue Mountain: A Life Of J. R. D. Tata by R.M. Lala",
+		"displayTitle": "Beyond The Last Blue Mountain",
+		"image": "beyond-the-last-blue-mountain.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "The White Tiger by Aravind Adiga",
+		"displayTitle": "The White Tiger",
+		"image": "the-white-tiger.jpg",
+		"rating": "2"
+	},
+	{
+		"title": "Bombay Duck by Farrukh Dhondy",
+		"displayTitle": "Bombay Duck",
+		"image": "bombay-duck.jpg",
+		"rating": "1"
+	},
+	{
+		"title": "The Mythical Man-Month: Essays on Software Engineering by Frederick P. Brooks Jr.",
+		"displayTitle": "The Mythical Man-Month",
+		"image": "the-mythical-man-month.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Autobiography of a Yogi by Paramahansa Yogananda",
+		"displayTitle": "Autobiography of a Yogi",
+		"image": "autobiography-of-a-yogi.jpg",
+		"rating": "2"
+	},
+	{
+		"title": "The Sikhs by Patwant Singh",
+		"displayTitle": "The Sikhs",
+		"image": "the-sikhs.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "The Tipping Point: How Little Things Can Make a Big Difference by Malcolm Gladwell",
+		"displayTitle": "The Tipping Point",
+		"image": "the-tipping-point.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "A Commonwealth of Thieves: The Improbable Birth of Australia by Thomas Keneally",
+		"displayTitle": "A Commonwealth of Thieves",
+		"image": "commonwealth-of-thieves.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "Guns, Germs, and Steel: The Fates of Human Societies by Jared Diamond",
+		"displayTitle": "Guns, Germs, and Steel",
+		"image": "guns-germs-and-steel.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "A Brief History of Time by Stephen Hawking",
+		"displayTitle": "A Brief History of Time",
+		"image": "a-brief-history-of-time.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "Animal Farm by George Orwell",
+		"displayTitle": "Animal Farm",
+		"image": "animal-farm.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "A Short History of Nearly Everything by Bill Bryson",
+		"displayTitle": "A Short History of Nearly Everything",
+		"image": "short-history-of-time.jpg",
+		"rating": ""
+	},
+	{
+		"title": "How to Win Friends and Influence People by Dale Carnegie",
+		"displayTitle": "How to Win Friends and Influence People",
+		"image": "how-to-win-friends.jpg",
+		"rating": ""
+	},
+	{
+		"title": "All I Really Need to Know I Learned in Kindergarten by Robert Fulghum",
+		"displayTitle": "All I Really Need to Know I Learned...",
+		"image": "all-i-really-need-to-know.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Wikinomics: How Mass Collaboration Changes Everything by Don Tapscott",
+		"displayTitle": "Wikinomics",
+		"image": "wikinomics.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Sister of My Heart (Anju and Sudha #1) by Chitra Banerjee Divakaruni",
+		"displayTitle": "Sister of My Heart",
+		"image": "sister-of-my-heart.jpg",
+		"rating": "3"
+	},
+	{
+		"title": "The Google Story: Inside the Hottest Business, Media and Technology Success of Our Time by David A. Vise",
+		"displayTitle": "The Google Story",
+		"image": "the-google-story.jpg",
+		"rating": ""
+	},
+	{
+		"title": "The Da Vinci Code (Robert Langdon, #2) by Dan Brown",
+		"displayTitle": "The Da Vinci Code",
+		"image": "the-davinci-code.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "The God Delusion by Richard Dawkins",
+		"displayTitle": "The God Delusion",
+		"image": "the-god-delusion.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "Deception Point by Dan Brown",
+		"displayTitle": "Deception",
+		"image": "deception-point.jpg",
+		"rating": ""
+	},
+	{
+		"title": "Shantaram by Gregory David Roberts",
+		"displayTitle": "Shantaram",
+		"image": "shantaram.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Edward Britton by Gary Crew",
+		"displayTitle": "Edward Britton",
+		"image": "edward-britton.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Angels & Demons (Robert Langdon, #1) by Dan Brown",
+		"displayTitle": "Angels & Demons",
+		"image": "angles-and-demons.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Outliers: The Story of Success by Malcolm Gladwell",
+		"displayTitle": "Outliers",
+		"image": "outliers.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Crime and Punishment by Fyodor Dostoevsky",
+		"displayTitle": "Crime and Punishment",
+		"image": "crime-and-punishment.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "Field Notes on Democracy: Listening to Grasshoppers by Arundhati Roy",
+		"displayTitle": "Field Notes on Democracy",
+		"image": "field-notes-on-democracy.jpg",
+		"rating": "2"
+	},
+	{
+		"title": "The Difficulty of Being Good: On the Subtle Art of Dharma by Gurcharan Das",
+		"displayTitle": "The Difficulty of Being Good",
+		"image": "the-difficulty-of-being-good.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "John Ilhan: A Crazy Life by Stephen Dabkowski",
+		"displayTitle": "John Ilhan",
+		"image": "john-ilhan.jpg",
+		"rating": "3"
+	},
+	{
+		"title": "Mahabharata in Polyester: The Making of the World's Richest Brothers and Their Feud by Hamish McDonald",
+		"displayTitle": "Mahabharata in Polyester",
+		"image": "mahabharata-in-polyester.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "Steve Jobs by Walter Isaacson",
+		"displayTitle": "Steve Jobs",
+		"image": "steve-jobs.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Behind the Beautiful Forevers: Life, Death, and Hope in a Mumbai Undercity by Katherine Boo",
+		"displayTitle": "Behind the Beautiful Forevers",
+		"image": "behind-the-beautiful-forevers.jpg",
+		"rating": "5"
+	},
+	{
+		"title": "The Oath of the Vayuputras (Shiva Trilogy, #3) by Amish Tripathi",
+		"displayTitle": "The Oath of the Vayuputras",
+		"image": "the-oath-of-vayuputras.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "The Art of Thinking Clearly by Rolf Dobelli",
+		"displayTitle": "The Art of Thinking Clearly",
+		"image": "the-art-of-thinking-clearly.jpg",
+		"rating": "4"
+	},
+	{
+		"title": "Tap Dancing to Work: Warren Buffett on Practically Everything, 1966-2012 by Carol J. Loomis",
+		"displayTitle": "Tap Dancing to Work",
+		"image": "tap-dancing-to-work.jpg",
+		"rating": "5"
+	}
+]
