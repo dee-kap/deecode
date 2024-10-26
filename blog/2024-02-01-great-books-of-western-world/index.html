@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Connect to AWS RDS instance using boto3 and Secret Manager</title>
+		<title>The Great Books of Western World</title>
 		<meta name="description" content="Personal website of Deepak.">
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Amorphous Ponder">
 		
@@ -537,55 +537,38 @@ li {
 		<main id="skip">
 			<heading-anchors>
 				
-<h1 id="connect-to-aws-rds-instance-using-boto3-and-secret-manager">Connect to AWS RDS instance using boto3 and Secret Manager</h1>
+<h1 id="the-great-books-of-western-world">The Great Books of Western World</h1>
 
 <ul class="post-metadata">
-	<li><time datetime="2023-03-02">02 March 2023</time></li>
-	<li><a href="/tags/aws/" class="post-tag">AWS</a>, </li>
-	<li><a href="/tags/python/" class="post-tag">Python</a></li>
+	<li><time datetime="2024-02-01">01 February 2024</time></li>
+	<li><a href="/tags/gbww/" class="post-tag">GBWW</a></li>
 </ul>
 
-<p>Code to connect to an AWS RDS instance with <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html">boto3</a> and Secret Manager</p>
-<pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">import</span> boto3
-<span class="token keyword">import</span> json
-<span class="token keyword">import</span> psycopg2
+<p>Few days ago I ordered Great Books of the Western World and the books arrived two days ago. It is set of 54 volumes by Encyclopedia Britannica first printed in 1952. The set I ordered is the 1952 edition. Only volume 50 is from a later edition.</p>
+<p>I will refer tag posts related The Great Books of Western World as GBWW in this post and on this website.</p>
+<p>I received the books two days ago and unpacked them yesterday with the enthusiasm of a kid in a candy store. Here is the set on my bookshelf.</p>
+<p><picture><source type="image/avif" srcset="/blog/2024-02-01-great-books-of-western-world/9oXuZP6E40-1022.avif 1022w"><img loading="lazy" decoding="async" src="/blog/2024-02-01-great-books-of-western-world/9oXuZP6E40-1022.webp" alt="The Great Books of Western World" width="1022" height="459"></picture></p>
+<p><picture><source type="image/avif" srcset="/blog/2024-02-01-great-books-of-western-world/Z5BlvUahcW-1022.avif 1022w"><img loading="lazy" decoding="async" src="/blog/2024-02-01-great-books-of-western-world/Z5BlvUahcW-1022.webp" alt="The Great Books of Western World" width="1022" height="459"></picture></p>
+<p>I also ordered another set of books called The Great Ideas Program Series which according to a post on Reddit is this:</p>
+<p>The Great Ideas Program is a series of syntopical reading plans and guides intended to assist the solitary reader in approaching the Great Books of the Western World Series without the benefit of a teacher or discussion group leaderReddit User
+Reddit User</p>
+<p>I expect The Great Ideas Program Series to arrive towards the end of February 2024.</p>
+<p>Getting a liberals arts education has been a dream of mine and after doing extensive research, I figured that reading these books will give me the necessary foundation. It is a huge task and I’m giving myself approximately 10 years to accomplish it.</p>
+<p>I want to read for maximum understanding. I’ll take my time with each book and not rush through it.</p>
+<h2 id="my-reading-plan">My Reading Plan</h2>
+<p>Before I start reading the great works, I want to sharpen my reading skills. For this, I will start with How to Read a Book by Mortimer Adler. This, I believe will help me pick up the essential reading skills which I will need to make my way through GBWW.</p>
+<p>I will start reading them in the order they are i.e. start with volume 1 and make my way to volume 54. However, it is not certain and I may change this.</p>
+<p>The Great Ideas Program may also influence how I read The Great Books and I will change accordingly.</p>
+<h2 id="why-am-i-posting-this-online">Why am I posting this online?</h2>
+<ol>
+<li>For my notes to remain online and accessible to me or anyone else</li>
+<li>In the hope of getting feedback from other readers and admirers of good books</li>
+<li>To improve my writing skills</li>
+<li>To establish connections</li>
+</ol>
+<p>Another distant goal is that maybe someone else will also get inspired to pursue the path of life-long learning. From experience I can tell you that, it is a lot of fun.</p>
 
-REGION <span class="token operator">=</span> <span class="token string">'&lt;region>'</span>
-PROFILE <span class="token operator">=</span> <span class="token string">'&lt;profile-name>'</span>
-SECRET_ARN <span class="token operator">=</span> <span class="token string">'&lt;Secret-ARN-From-Secret-Manager>'</span>
-
-<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    session <span class="token operator">=</span> boto3<span class="token punctuation">.</span>Session<span class="token punctuation">(</span>profile_name<span class="token operator">=</span>PROFILE<span class="token punctuation">)</span>
-    client <span class="token operator">=</span> session<span class="token punctuation">.</span>client<span class="token punctuation">(</span><span class="token string">'secretsmanager'</span><span class="token punctuation">,</span> region_name<span class="token operator">=</span>REGION<span class="token punctuation">)</span>
-
-    <span class="token comment"># Get secret from Secret Manager</span>
-    secret <span class="token operator">=</span> client<span class="token punctuation">.</span>get_secret_value<span class="token punctuation">(</span>SecretId<span class="token operator">=</span>SECRET_ARN<span class="token punctuation">)</span>
-
-    <span class="token comment"># Load secrets into a dictionary</span>
-    secret_dict <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>secret<span class="token punctuation">[</span><span class="token string">'SecretString'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-    username <span class="token operator">=</span> secret_dict<span class="token punctuation">[</span><span class="token string">'username'</span><span class="token punctuation">]</span>
-    password <span class="token operator">=</span> secret_dict<span class="token punctuation">[</span><span class="token string">'password'</span><span class="token punctuation">]</span>
-    host <span class="token operator">=</span> secret_dict<span class="token punctuation">[</span><span class="token string">'host'</span><span class="token punctuation">]</span>
-    port <span class="token operator">=</span> secret_dict<span class="token punctuation">[</span><span class="token string">'port'</span><span class="token punctuation">]</span>
-    database <span class="token operator">=</span> secret_dict<span class="token punctuation">[</span><span class="token string">'dbname'</span><span class="token punctuation">]</span>
-
-    <span class="token comment"># Make a connection</span>
-    conn<span class="token operator">=</span> psycopg2<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>
-            user<span class="token operator">=</span>username<span class="token punctuation">,</span>
-            password<span class="token operator">=</span>password<span class="token punctuation">,</span>
-            host<span class="token operator">=</span>host<span class="token punctuation">,</span>
-            port<span class="token operator">=</span>port<span class="token punctuation">,</span>
-            database<span class="token operator">=</span>database<span class="token punctuation">,</span>
-            connect_timeout<span class="token operator">=</span><span class="token number">10</span>
-    <span class="token punctuation">)</span>
-
-    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Connection created"</span><span class="token punctuation">)</span>
-
-
-<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
-    main<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
-
-<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/2022-05-01-few-thoughts-on-blogging/">Few thoughts on Blogging</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/2023-08-21-working-with-env-files-in-python/">Working with env files in Python</a></li>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/2024-01-23-ruby-symbols/">Understanding Symbols in Ruby Programming Language</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/2024-02-05-rails-ensure-only-one-record/">Handling Single Record Queries in Rails with Grace</a></li>
 </ul>
 
 			</heading-anchors>
@@ -594,7 +577,7 @@ SECRET_ARN <span class="token operator">=</span> <span class="token string">'&lt
 		<footer>
 		</footer>
 
-		<!-- This page `/blog/2023-03-02-connect-rds-secret-manager/` was built on 2024-10-26T01:29:24.403Z -->
+		<!-- This page `/blog/2024-02-01-great-books-of-western-world/` was built on 2024-10-26T01:29:24.404Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>
