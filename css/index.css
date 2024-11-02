@@ -261,7 +261,7 @@ li {
 .books-list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 8px;
+	gap: 16px;
 	padding-top: 24px;
 	justify-content: center;
 }
