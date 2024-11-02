@@ -1,14 +1,5 @@
----
-layout: layouts/base.njk
----
 
-# Books
 
-Reading books is one of my favourite pass times. I like to read all kinds of books including Non-Fiction, History, Science, Biographies, Finance, Classics.
-
-First book I ever read was Dracula by Bram Stoker and that got me hooked on reading.
-
-These are some of the books I have in my library. I have given a star rating to the books I have read, the others either I have not read or would like to read again.
 
 {%- set oneStarBooks = [] -%}
 {%- set twoStarBooks = [] -%}
@@ -33,7 +24,8 @@ These are some of the books I have in my library. I have given a star rating to 
   {%- endif -%}
 {%- endfor -%}
 
-## My rating system
+
+## Books I have rated 1 star
 I follow a 6 star rating system. 
 
 1. <span class="star filled">★</span> Shouldn't have bothered (<a href="/books/1-star">{{ oneStarBooks | length }} books</a>)
@@ -43,10 +35,10 @@ I follow a 6 star rating system.
 5. <span class="star filled">★★★★★</span> Learned plenty from this book, maybe I will read it again ({{ fiveStarBooks | length }} books)
 6. <span class="star filled">★★★★★</span><span class="star filled six">★</span> <mark>Beyond awesome.</mark> This book had a huge impact on me and made a dent in my universe ({{ sixStarBooks | length }} books)
 
-There are {{ books | length }} books in the list below.
+There are {{ oneStarBooks | length }} books in the list below.
 
 <div class="books-list">
-  {%- for book in books -%}
+  {%- for book in oneStarBooks -%}
     {%- set rating = book.rating | int -%}
     {% if rating == 6%}
     <div class="book six-star-book" style="background-image: url('/images/covers/{{ book.image }}')">
