@@ -252,13 +252,18 @@ li {
 	text-align: right;
 }
 
+.books-list-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3em;
+}
 
 .books-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 	gap: 8px;
 	padding-top: 24px;
+	justify-content: center;
 }
 
 .books-list .book {
