@@ -1,5 +1,7 @@
 ---
 layout: layouts/base.njk
+eleventyImport:
+  collections: ["post"]
 ---
 {# Only include the syntax highlighter CSS on blog posts, included with the CSS per-page bundle #}
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
@@ -26,3 +28,16 @@ layout: layouts/base.njk
 </ul>
 {%- endif %}
 {%- endif %}
+
+{# {% set related = collections.relatedPosts | filter(function(post) { return post.data.tags | intersect(page.tags).length > 0 }) | slice(0, 3) %} #}
+
+{# {% set related = collections.posts | filter(function(post) { return post.data.tags == page.tags })  %}
+
+<h3>Related Posts</h3>
+<ul>
+  {% for post in related %}
+    {% if post.url != page.url %}
+      <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul> #}

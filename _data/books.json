@@ -1,5 +1,10 @@
 [
 	{
+		"title": "The Chairman's Lounge",
+		"image": "the-chairmans-lounge.jpg",
+		"rating": ""
+	},
+	{
 		"title": "The Lucky Country",
 		"image": "the-lucky-country.jpg",
 		"rating": ""
@@ -46,7 +51,7 @@
 		"rating": "3"
 	},
 	{
-		"title": "Einstein His Life and Universe",
+		"title": "Einstein His Life and...",
 		"image": "einstein-his-life-and-universe.jpg",
 		"rating": "6"
 	},
@@ -737,7 +742,7 @@
 		"title": "The Difficulty of Being Good: On the Subtle Art of Dharma by Gurcharan Das",
 		"displayTitle": "The Difficulty of Being Good",
 		"image": "the-difficulty-of-being-good.jpg",
-		"rating": "5"
+		"rating": "6"
 	},
 	{
 		"title": "John Ilhan: A Crazy Life by Stephen Dabkowski",

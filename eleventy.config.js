@@ -26,6 +26,11 @@ export default async function(eleventyConfig) {
 		});
 	  });
 
+	  eleventyConfig.addCollection("relatedPosts", function (collectionApi) {
+		console.log(collectionApi.page)
+		return collectionApi.getFilteredByTags("GBWW");
+	  });
+
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig
