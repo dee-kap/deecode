@@ -177,8 +177,8 @@ li {
 }
 
 .postlist-item {
-	display: flex;
-	flex-wrap: wrap;
+	/* display: flex; */
+	/* flex-wrap: wrap; */
 	align-items: baseline;
 	counter-increment: start-from -1;
 	margin-bottom: 1em;
@@ -204,9 +204,9 @@ li {
 }
 
 .postlist-link {
+	display: inline;
 	font-size: 1.1875em;
 	font-weight: 700;
-	flex-basis: calc(100% - 1.5rem);
 	padding-left: .25em;
 	padding-right: .5em;
 	text-underline-position: from-font;
@@ -225,6 +225,7 @@ li {
 	text-transform: capitalize;
 	font-style: italic;
 }
+
 
 .postlist-item>.post-tag {
 	align-self: center;
@@ -282,6 +283,10 @@ li {
 	border: 3px solid var(--color-lavender);
 }
 
+.six-star-book {
+	border: 3px solid var(--color-green) !important;
+}
+
 .books-list .book:hover {
 	border-color: var(--color-yellow);
 	box-shadow: 0 0 10px 5px var(--color-yellow);
@@ -293,7 +298,8 @@ li {
 	left: 0;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-end;
+	padding-bottom: 5px;
 	width: 100%;
 	height: 45%;
 	background: rgba(0, 0, 0, 0.5);
@@ -309,6 +315,7 @@ li {
 
 .book-rating {
 	font-size: 14px;
+	margin-top: 5px;
 }
 
 .star {
@@ -326,6 +333,7 @@ li {
 .star.filled.six {
 	color: #dc143c;
 	font-size: 1.25em;
+	-webkit-text-stroke: 1px #ffd700;
 }</style>
 		<script>
 			document.addEventListener('DOMContentLoaded', function () {
@@ -378,7 +386,9 @@ li {
 
 	<li class="postlist-item">
 		<a href="/blog/2023-03-02-connect-rds-secret-manager/" class="postlist-link">Connect to AWS RDS instance using boto3 and Secret Manager</a>
+		<div>
 		<time class="postlist-date" datetime="2023-03-02">March 2023</time>
+		</div>
 	</li>
 
 </ol>
@@ -393,7 +403,7 @@ li {
 		<footer>
 		</footer>
 
-		<!-- This page `/tags/aws/` was built on 2024-10-26T01:29:24.595Z -->
+		<!-- This page `/tags/aws/` was built on 2024-11-02T03:03:12.399Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>
