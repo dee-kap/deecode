@@ -7,7 +7,7 @@ layout: layouts/base.njk
 {%- set filteredBooks = [] -%}
 
 {%- for book in books -%}
-  {%- if book.rating == "1" -%}
+  {%- if book.rating == "5" -%}
     {%- set filteredBooks = filteredBooks.concat([book]) -%}
   {%- endif -%}
 {%- endfor -%}
@@ -17,4 +17,3 @@ layout: layouts/base.njk
 {{ booksMacros.renderBooksList(filteredBooks) }}
 
 All <a href="/books">{{ books | length }} books</a>
-
