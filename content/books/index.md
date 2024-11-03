@@ -13,6 +13,4 @@ These are some of the books I have in my library. I have given a star rating to 
 
 {%- include "./includes/rating-system.njk" -%}
 
-There are {{ books | length }} books in the list below.
-
 {{ booksMacros.renderBooksList(books) }}

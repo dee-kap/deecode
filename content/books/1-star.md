@@ -14,7 +14,7 @@ layout: layouts/base.njk
 
 {%- include "./includes/rating-system.njk" -%}
 
-{{ booksMacros.renderBooksList(filteredBooks) }}
+{{ booksMacros.renderBooksList(filteredBooks, "rated 1 star", 1 ) }}
 
 All <a href="/books">{{ books | length }} books</a>
 
