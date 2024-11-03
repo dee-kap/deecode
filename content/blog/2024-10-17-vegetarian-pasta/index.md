@@ -1,10 +1,11 @@
 ---
 title: "Vegetarian Pasta: My Recipe"
-date: 2024-10-17
+date: 2024-10-07
 category: 
 tags: 
 featured_image: 
 summary: 
+permalink: "/blog/2024/10/7/vegetarian-pasta/"
 draft: true
 ---
 

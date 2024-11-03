@@ -5,6 +5,7 @@ category:
 tags: 
 featured_image: 
 summary: 
+permalink: "/blog/2024/1/23/ruby-symbols/"
 ---
 
 ## What is a Symbol in Ruby?

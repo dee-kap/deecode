@@ -5,6 +5,7 @@ category:
 tags: 
 featured_image: 
 summary: 
+permalink: "blog/2024/10/15/python-langtons-ant/"
 draft: true
 ---
 

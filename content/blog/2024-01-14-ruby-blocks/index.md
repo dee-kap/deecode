@@ -5,6 +5,7 @@ category:
 tags: 
 featured_image: 
 summary: 
+permalink: "/blog/2024/1/15/ruby-blocks/"
 ---
 
 ## Introduction

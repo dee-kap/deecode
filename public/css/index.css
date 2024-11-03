@@ -264,6 +264,7 @@ li {
 
 .books-list-heading {
 	display: flex;
+	flex-direction: column;
 	align-items: baseline;
 	background-color: var(--color-surface0);
 	padding: 1em;

@@ -5,6 +5,7 @@ category:
 tags: 
 featured_image: 
 summary: 
+permalink: "/blog/2024/1/11/react-form-trick/"
 ---
 Title: Simplifying Your React Forms with the Magic of useState
 Date: 2024-01-11

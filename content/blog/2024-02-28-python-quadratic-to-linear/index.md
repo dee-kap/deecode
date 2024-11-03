@@ -5,6 +5,7 @@ category:
 tags: 
 featured_image: 
 summary: 
+permalink: "/blog/2024/2/28/python-quadratic-to-linear/"
 ---
 
 Lately, I've been immersing myself in basic coding exercises to refresh concepts that I learned years ago but haven't utilized much recently.

@@ -5,6 +5,7 @@ category: 'Tech'
 tags: ['Python']
 featured_image: 
 summary: 
+permalink: "/blog/2023/8/21/working-with-env-files-in-python/"
 ---
 
 I use env files in most of my projects to store values which should not be committed to code. Env files are also an excellent way to manage multiple settings related to different environments.

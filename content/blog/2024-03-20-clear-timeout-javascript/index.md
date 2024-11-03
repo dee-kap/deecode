@@ -5,6 +5,7 @@ category:
 tags: 
 featured_image: 
 summary: 
+permalink: "/blog/2024/3/20/clear-timeout-javascript/"
 ---
 
 One of the things I always have to look up is how to cancel a setTimeout in JavaScript.

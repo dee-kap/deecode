@@ -1,17 +1,22 @@
-{% macro renderBooksList(filteredBooks, headingText, displayStars) %}
+{% macro renderBooksList(filteredBooks, headingText, displayStars, subText) %}
 <div class="books-list-heading">
+  <div style="display:flex;width:100%;margin-bottom:1em;">
   {%- if(displayStars !== NaN)-%}
-    <span style="flex-grow:1;">
+    <div style="flex-grow:1;">
     <strong>{{ filteredBooks | length }}</strong> books {{ headingText }} 
-    </span>
-    <span>
+    </div>
+    <div>
      {%- for i in range(0, displayStars) -%}
-        <span class="star filled {% if i == 5 %} six{% endif %}">★</span>
+          <span class="star filled {% if i == 5 %} six{% endif %}">★</span>
     {%- endfor %} 
-    </span>
+    </div>
   {%- else -%}
     {{ filteredBooks | length }} books {{ headingText }}
   {%- endif -%}
+  </div>
+  <div>
+    {{ subText }}
+  </div>
 </div>
   <div class="books-list">
     {%- for book in filteredBooks -%}

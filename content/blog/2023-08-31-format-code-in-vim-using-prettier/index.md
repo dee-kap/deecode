@@ -5,6 +5,7 @@ category: 'Tech'
 tags: ['VIM']
 featured_image: 
 summary: 
+permalink: "/blog/2023/8/30/format-code-in-vim-using-prettier/"
 ---
 
 To format code before saving a buffer in Vim/Neovim, we can use some excellent plugins out there. But I prefer to do things without plugins wherever possible.

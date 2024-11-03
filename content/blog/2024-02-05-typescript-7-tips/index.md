@@ -5,6 +5,7 @@ category:
 tags: 
 featured_image: 
 summary: 
+permalink: "/blog/2024/2/5/typescript-7-tips/"
 ---
 
 TypeScript is my preferred langauge for writing front-end code or anything node.js. I have been saved by the Type System numerous time. It has helped me track down potential errors which would have only surfaced during runtime. I think there is value in learning TypeScript and I strongly recommend to anyone who writes front-end code.

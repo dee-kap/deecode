@@ -6,6 +6,7 @@ tags:
   - Blogging
 featured_image: bob.png
 summary: 
+permalink: "/blog/2022/5/1/few-thoughts-on-blogging/"
 ---
 
 

@@ -1,8 +1,9 @@
 ---
 title: Beyond Code
 description: This is a post on My Blog about touchpoints and circling wagons.
-date: 2024-10-22
+date: "2024-10-22"
 tags: Meta
+permalink: "/blog/2024/10/22/beyond-code/"
 ---
 
 One of the reasons I started this blog back in 2003 was to use it as a marketing tool for myself. Personal branding had started to become a thing and blogging scene was about to take off big time. I was fortunate enough to grab on to it and  it worked out well for me.

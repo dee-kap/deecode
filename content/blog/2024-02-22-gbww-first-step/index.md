@@ -5,6 +5,7 @@ category:
 tags:  GBWW
 featured_image: 
 summary: 
+permalink: "/blog/2024/2/22/gbww-first-step/"
 ---
 
 About two days ago, The Great Ideas Program which is a set of ten volumes arrived. Yesterday I took the first step on my thousand miles journey of reading The Great Books of Western World.

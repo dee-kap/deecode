@@ -5,6 +5,7 @@ category:
 tags: 
 featured_image: 
 summary: 
+permalink: "/blog/2024/2/16/working-from-home/"
 ---
 
 In the profession of software development, the transition to remote work has been a significant shift for many, including myself. My journey into the world of working from home began well before COVID-19.

@@ -5,6 +5,7 @@ category:
 tags: ['AWS', 'Python']
 featured_image: 
 summary: 
+permalink: "/blog/2023/3/2/connect-rds-secret-manager/"
 ---
 
 Code to connect to an AWS RDS instance with [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) and Secret Manager

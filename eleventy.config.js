@@ -17,15 +17,30 @@ export default async function(eleventyConfig) {
 		}
 	});
 
-	  eleventyConfig.addCollection("blog", function(collectionApi) {
-		return collectionApi.getFilteredByGlob("content/blog/*.md").map((post) => {
+	//   eleventyConfig.addCollection("blog", function(collectionApi) {
+	// 	return collectionApi.getFilteredByGlob("content/blog/*.md").map((post) => {
+	// 	  const date = new Date(post.date);
+	// 	  const year = date.getFullYear();
+	// 	  const month = String(date.getMonth() + 1).padStart(2, "0");
+	// 	  post.data.permalink = `/${year}/${month}/${post.fileSlug}/`;
+	// 	  return post;
+	// 	});
+	//   });
+
+	  eleventyConfig.addCollection("blog", function (collectionApi) {
+		return collectionApi.getFilteredByGlob("content/blog/**/*.md").map((post) => {
 		  const date = new Date(post.date);
 		  const year = date.getFullYear();
-		  const month = String(date.getMonth() + 1).padStart(2, "0");
-		  post.data.permalink = `/${year}/${month}/${post.fileSlug}/`;
+		  const month = String(date.getMonth() + 1)
+		  const day = String(date.getDate())
+		  post.data.permalink = `/blog/${year}/${month}/${day}/${post.fileSlug}/`;
+		  post.url = post.data.permalink
+		  console.log(post.data.permalink)
 		  return post;
+
 		});
 	  });
+
 
 	  eleventyConfig.addCollection("relatedPosts", function (collectionApi) {
 		console.log(collectionApi.page)

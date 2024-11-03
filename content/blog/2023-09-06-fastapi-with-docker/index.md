@@ -5,6 +5,7 @@ category:
 tags: 
 featured_image: 
 summary: 
+permalink: "/blog/2023/9/6/fastapi-with-docker/"
 ---
 
 As someone who uses Docker for every project, I wanted to setup a dev environment for FastAPI. These are the steps I followed to dockerize my FastAPI Hello World.
