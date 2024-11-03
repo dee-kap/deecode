@@ -21,6 +21,7 @@
 	--color-mauve: #8839ef;
 	--color-yellow: #df8e1d;
 	--color-lavender: #7287fd;
+	--color-surface0: #ccd0da;
 }
 
 #theme-toggle {
@@ -39,6 +40,7 @@
 	--color-mauve: #cba6f7;
 	--color-yellow: #f9e2af;
 	--color-lavender: #b4befe;
+	--color-surface0: #313244;
 
 	#theme-toggle {
 		background-color: var(--background-color);
@@ -262,18 +264,20 @@ li {
 	text-align: right;
 }
 
-.books-list-container {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 3em;
-}
-
 .books-list {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 16px;
 	padding-top: 24px;
 	justify-content: center;
+}
+
+.books-list-heading {
+	display: flex;
+	align-items: baseline;
+	background-color: var(--color-surface0);
+	padding: 1em;
+	border-radius: 3px;
 }
 
 .books-list .book {
@@ -393,7 +397,11 @@ I follow a 6 star rating system.
     <li><span class="star filled">★★★★★</span> Learned plenty from this book, maybe I will read it again (<a href="/books/5-star">29 books)</a></li>
     <li><span class="star filled">★★★★★</span><span class="star filled six">★</span> <mark>Beyond awesome.</mark> This book had a huge impact on me and made a dent in my universe (<a href="/books/6-star">6 books)</a></li>
 </ol>
-<div class="books-list-container">
+<div class="books-list-heading"><span style="flex-grow:1;">
+    <strong>6</strong> books rated 6 stars 
+    </span>
+    <span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled  six">★</span> 
+    </span></div>
   <div class="books-list">
         <div class="book six-star-book" style="background-image: url('/images/covers/einstein-his-life-and-universe.jpg')">
 <p></p><div class="book-title">
@@ -432,7 +440,6 @@ The Difficulty of Being Good
 </div>
 </div><p></p>
   </div>
-</div>
 <p>All <a href="/books">133 books</a></p>
 
 			</heading-anchors>
@@ -441,7 +448,7 @@ The Difficulty of Being Good
 		<footer>
 		</footer>
 
-		<!-- This page `/books/6-star/` was built on 2024-11-02T06:15:27.390Z -->
+		<!-- This page `/books/6-star/` was built on 2024-11-03T03:58:27.737Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

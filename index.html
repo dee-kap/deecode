@@ -22,6 +22,7 @@
 	--color-mauve: #8839ef;
 	--color-yellow: #df8e1d;
 	--color-lavender: #7287fd;
+	--color-surface0: #ccd0da;
 }
 
 #theme-toggle {
@@ -40,6 +41,7 @@
 	--color-mauve: #cba6f7;
 	--color-yellow: #f9e2af;
 	--color-lavender: #b4befe;
+	--color-surface0: #313244;
 
 	#theme-toggle {
 		background-color: var(--background-color);
@@ -263,18 +265,20 @@ li {
 	text-align: right;
 }
 
-.books-list-container {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 3em;
-}
-
 .books-list {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 16px;
 	padding-top: 24px;
 	justify-content: center;
+}
+
+.books-list-heading {
+	display: flex;
+	align-items: baseline;
+	background-color: var(--color-surface0);
+	padding: 1em;
+	border-radius: 3px;
 }
 
 .books-list .book {
@@ -447,28 +451,30 @@ li {
 </div>
 
 <h2 id="currently-reading">Currently Reading</h2>
+  <div class="books-list" style="justify-content: start!important;gap:20px;"><div class="book" style="background-image: url('/images/covers/the-chairmans-lounge.jpg')">
+        <div class="book-title">
+          The Chairman&#39;s Lounge
+          <div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span>
+          </div>
+        </div>
+      </div><div class="book" style="background-image: url('/images/covers/the-lucky-country.jpg')">
+        <div class="book-title">
+          The Lucky Country
+          <div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span>
+          </div>
+        </div>
+      </div><div class="book" style="background-image: url('/images/covers/ultralearning.jpg')">
+        <div class="book-title">
+          Ultralearning
+          <div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span>
+          </div>
+        </div>
+      </div>
+  </div>
 
-<div class="books-list" style="justify-content: start!important;gap:20px;"><div class="book" style="background-image: url('/images/covers/the-chairmans-lounge.jpg')">
-      <div class="book-title">
-        The Chairman&#39;s Lounge
-        <div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span>
-        </div>
-      </div>
-    </div><div class="book" style="background-image: url('/images/covers/the-lucky-country.jpg')">
-      <div class="book-title">
-        The Lucky Country
-        <div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span>
-        </div>
-      </div>
-    </div><div class="book" style="background-image: url('/images/covers/ultralearning.jpg')">
-      <div class="book-title">
-        Ultralearning
-        <div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span>
-        </div>
-      </div>
-    </div>
-</div>
+<p>
 My complete <a href="/books/">bookshelf</a>
+</p>
 
 <hr>
 
@@ -482,7 +488,7 @@ My complete <a href="/books/">bookshelf</a>
 		<footer>
 		</footer>
 
-		<!-- This page `/` was built on 2024-11-02T06:15:27.398Z -->
+		<!-- This page `/` was built on 2024-11-03T03:58:27.744Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>
