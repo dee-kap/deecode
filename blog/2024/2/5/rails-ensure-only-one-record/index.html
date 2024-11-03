@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Handling Single Record Queries in Rails with Grace</title>
+		<meta name="description" content="Personal website of Deepak.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Amorphous Ponder">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+	--syntax-tab-size: 2;
+	--background-color: #eff1f5;
+	--text-color: #4c4f69;
+	--color-border-header: #dc8a78;
+	--color-green: #94e2d5;
+	--color-blue: #1e66f5;
+	--color-mauve: #8839ef;
+	--color-yellow: #df8e1d;
+	--color-lavender: #7287fd;
+	--color-surface0: #ccd0da;
+}
+
+#theme-toggle {
+	background-color: var(--background-color);
+	color: #000000;
+	border: none;
+	font-size: 2em;
+}
+
+[data-theme='dark'] {
+	--background-color: #1e1e2e;
+	--text-color: #cdd6f4;
+	--color-border-header: #f5e0dc;
+	--color-green: #a6e3a1;
+	--color-blue: #89b4fa;
+	--color-mauve: #cba6f7;
+	--color-yellow: #f9e2af;
+	--color-lavender: #b4befe;
+	--color-surface0: #313244;
+
+	#theme-toggle {
+		background-color: var(--background-color);
+		color: #ffffff;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 720px;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	background-color: var(--background-color);
+	color: var(--text-color)
+}
+
+
+a {
+	color: var(--color-blue)
+}
+
+a:visited {
+	color: var(--color-blue)
+}
+
+a:hover,
+a:focus {
+	color: var(--color-blue)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-mauve)
+}
+
+.home-link {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	border-bottom: 1px dashed var(--color-border-header);
+}
+
+header a {
+	color: var(--color-mauve)
+}
+
+header a:visited {
+	color: var(--color-mauve)
+}
+
+header a:hover,
+header a:focus {
+	color: var(--color-mauve)
+}
+
+nav {
+	display: flex;
+	flex-grow: 1;
+}
+
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+.home-intro {
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+mark {
+	background: var(--color-green);
+	padding: 4px;
+	border-radius: 3px;
+}
+
+main {
+	padding: 10px;
+}
+
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p {
+	line-height: 1.6;
+}
+
+li {
+	line-height: 2;
+}
+
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+
+.postlist-item {
+	/* display: flex; */
+	/* flex-wrap: wrap; */
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em;
+	color: var(--color-gray-90);
+}
+
+.postlist-date {
+	word-spacing: -0.5px;
+}
+
+.postlist-link {
+	display: inline;
+	font-size: 1.1875em;
+	font-weight: 700;
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+
+
+.postlist-item>.post-tag {
+	align-self: center;
+}
+
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.post-metadata time {
+	margin-right: 1em;
+}
+
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-border-header);
+	padding: 1em 0;
+	margin-top: 3em;
+}
+
+.links-nextprev>* {
+	flex-grow: 1;
+}
+
+.links-nextprev-next {
+	text-align: right;
+}
+
+.books-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	padding-top: 24px;
+	justify-content: center;
+}
+
+.books-list-heading {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	background-color: var(--color-surface0);
+	padding: 1em;
+	border-radius: 3px;
+}
+
+.books-list .book {
+	position: relative;
+	width: 100px;
+	height: 150px;
+	margin-bottom: 8px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 3px;
+	border: 3px solid var(--color-lavender);
+}
+
+.six-star-book {
+	border: 3px solid var(--color-green) !important;
+}
+
+.books-list .book:hover {
+	border-color: var(--color-yellow);
+	box-shadow: 0 0 10px 5px var(--color-yellow);
+}
+
+.book-title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 5px;
+	width: 100%;
+	height: 45%;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.books-list .book:hover .book-title {
+	color: var(--color-blue);
+}
+
+.book-rating {
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.star {
+	color: #ccc;
+	opacity: 0.6;
+	text-shadow: 0 0 1px #666;
+}
+
+.star.filled {
+	color: #ffd700;
+	opacity: 1;
+	text-shadow: none;
+}
+
+.star.filled.six {
+	color: #dc143c;
+	font-size: 1.25em;
+	-webkit-text-stroke: 1px #ffd700;
+}</style>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+			const toggleButton = document.getElementById('theme-toggle');
+			const currentTheme = localStorage.getItem('theme') || 'dark';
+
+			if (currentTheme) {
+				document.documentElement.setAttribute('data-theme', currentTheme);
+			}
+
+			toggleButton.addEventListener('click', () => {
+				const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+				document.documentElement.setAttribute('data-theme', newTheme);
+				localStorage.setItem('theme', newTheme);
+			});
+			});
+		</script>
+	</head>
+	    <link href="//prismjs.catppuccin.com/mocha.css" rel="stylesheet">
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">Amorphous Ponder</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/about/"></a></li>
+					<li class="nav-item"><a href="/colophon/"></a></li>
+					<li class="nav-item"><a href="/"></a></li>
+					<li class="nav-item"><a href="/setup/"></a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
+					<li class="nav-item"><a href="/pages/">Pages</a></li>
+				</ul>
+			</nav>
+			<button id="theme-toggle" aria-label="Toggle theme">
+				●
+			</button>
+
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="handling-single-record-queries-in-rails-with-grace">Handling Single Record Queries in Rails with Grace</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2024-02-05">05 February 2024</time></li>
+</ul>
+
+<p>In Ruby on Rails, when dealing with database queries, there are instances where we anticipate a query to return a single record. This expectation arises in scenarios where the uniqueness of a record is integral to the application's logic. However, databases can sometimes contain duplicates or multiple records that meet the query criteria, leading to potential conflicts or unexpected behavior in our application. To ensure robust and error-free application behavior, it's essential to handle these cases effectively.</p>
+<p>Consider a scenario where we query the Book model for all its records:</p>
+<pre class="language-ruby" tabindex="0"><code class="language-ruby">irb<span class="token punctuation">(</span>main<span class="token punctuation">)</span><span class="token operator">:</span><span class="token number">018</span><span class="token operator">></span> Book<span class="token punctuation">.</span>all
+  Book Load <span class="token punctuation">(</span><span class="token number">0.1</span>ms<span class="token punctuation">)</span>  <span class="token constant">SELECT</span> <span class="token string-literal"><span class="token string">"books"</span></span><span class="token punctuation">.</span><span class="token operator">*</span> <span class="token constant">FROM</span> <span class="token string-literal"><span class="token string">"books"</span></span> <span class="token operator">/</span><span class="token operator">*</span> loading <span class="token keyword">for</span> pp <span class="token operator">*</span><span class="token operator">/</span> <span class="token constant">LIMIT</span> <span class="token operator">?</span>  <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string-literal"><span class="token string">"LIMIT"</span></span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+<span class="token operator">=></span>
+<span class="token punctuation">[</span><span class="token comment">#&lt;Book:0x000000010e29cbd8</span>
+  <span class="token symbol">id</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token symbol">title</span><span class="token operator">:</span> <span class="token string-literal"><span class="token string">"Catcher in The Rye"</span></span><span class="token punctuation">,</span>
+  <span class="token symbol">price</span><span class="token operator">:</span> <span class="token number">0.1599e2</span><span class="token punctuation">,</span>
+  <span class="token symbol">created_at</span><span class="token operator">:</span> Wed<span class="token punctuation">,</span> <span class="token number">17</span> Jan <span class="token number">2024</span> <span class="token number">09</span><span class="token operator">:</span><span class="token number">55</span><span class="token operator">:</span><span class="token number">46.668892000</span> <span class="token constant">UTC</span> <span class="token operator">+</span><span class="token number">00</span><span class="token operator">:</span><span class="token number">00</span><span class="token punctuation">,</span>
+  <span class="token symbol">updated_at</span><span class="token operator">:</span> Wed<span class="token punctuation">,</span> <span class="token number">17</span> Jan <span class="token number">2024</span> <span class="token number">10</span><span class="token operator">:</span><span class="token number">09</span><span class="token operator">:</span><span class="token number">26.612252000</span> <span class="token constant">UTC</span> <span class="token operator">+</span><span class="token number">00</span><span class="token operator">:</span><span class="token number">00</span><span class="token punctuation">,</span>
+  <span class="token symbol">published_date</span><span class="token operator">:</span> <span class="token keyword">nil</span><span class="token operator">></span><span class="token punctuation">,</span>
+ <span class="token comment">#&lt;Book:0x000000010e29ca98</span>
+  <span class="token symbol">id</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+  <span class="token symbol">title</span><span class="token operator">:</span> <span class="token string-literal"><span class="token string">"Dracula"</span></span><span class="token punctuation">,</span>
+  <span class="token symbol">price</span><span class="token operator">:</span> <span class="token number">0.2299e2</span><span class="token punctuation">,</span>
+  <span class="token symbol">created_at</span><span class="token operator">:</span> Wed<span class="token punctuation">,</span> <span class="token number">17</span> Jan <span class="token number">2024</span> <span class="token number">10</span><span class="token operator">:</span><span class="token number">30</span><span class="token operator">:</span><span class="token number">08.507102000</span> <span class="token constant">UTC</span> <span class="token operator">+</span><span class="token number">00</span><span class="token operator">:</span><span class="token number">00</span><span class="token punctuation">,</span>
+  <span class="token symbol">updated_at</span><span class="token operator">:</span> Wed<span class="token punctuation">,</span> <span class="token number">17</span> Jan <span class="token number">2024</span> <span class="token number">10</span><span class="token operator">:</span><span class="token number">30</span><span class="token operator">:</span><span class="token number">08.507102000</span> <span class="token constant">UTC</span> <span class="token operator">+</span><span class="token number">00</span><span class="token operator">:</span><span class="token number">00</span><span class="token punctuation">,</span>
+  <span class="token symbol">published_date</span><span class="token operator">:</span> <span class="token keyword">nil</span><span class="token operator">></span><span class="token punctuation">,</span>
+ <span class="token comment">#&lt;Book:0x000000010e29c958</span>
+  <span class="token symbol">id</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+  <span class="token symbol">title</span><span class="token operator">:</span> <span class="token string-literal"><span class="token string">"Catcher in The Rye"</span></span><span class="token punctuation">,</span>
+  <span class="token symbol">price</span><span class="token operator">:</span> <span class="token number">0.2299e2</span><span class="token punctuation">,</span>
+  <span class="token symbol">created_at</span><span class="token operator">:</span> Mon<span class="token punctuation">,</span> <span class="token number">05</span> Feb <span class="token number">2024</span> <span class="token number">07</span><span class="token operator">:</span><span class="token number">27</span><span class="token operator">:</span><span class="token number">12.511819000</span> <span class="token constant">UTC</span> <span class="token operator">+</span><span class="token number">00</span><span class="token operator">:</span><span class="token number">00</span><span class="token punctuation">,</span>
+  <span class="token symbol">updated_at</span><span class="token operator">:</span> Mon<span class="token punctuation">,</span> <span class="token number">05</span> Feb <span class="token number">2024</span> <span class="token number">07</span><span class="token operator">:</span><span class="token number">27</span><span class="token operator">:</span><span class="token number">12.511819000</span> <span class="token constant">UTC</span> <span class="token operator">+</span><span class="token number">00</span><span class="token operator">:</span><span class="token number">00</span><span class="token punctuation">,</span>
+  <span class="token symbol">published_date</span><span class="token operator">:</span> <span class="token keyword">nil</span><span class="token operator">></span><span class="token punctuation">]</span>
+irb<span class="token punctuation">(</span>main<span class="token punctuation">)</span><span class="token operator">:</span><span class="token number">019</span><span class="token operator">></span></code></pre>
+<p>In this example, we retrieve multiple Book records. While this direct fetch is straightforward for multiple records, complications arise when our logic expects only a single record in return.</p>
+<h3 id="the-challenge-of-ensuring-uniqueness">The Challenge of Ensuring Uniqueness</h3>
+<p>Suppose we want to fetch a book by its title, expecting that title to be unique. However, if our database has multiple entries for the same title, this assumption breaks, and our application might behave unpredictably.</p>
+<p>To tackle this, we could write a method like get_book:</p>
+<pre class="language-ruby" tabindex="0"><code class="language-ruby"><span class="token keyword">def</span> <span class="token method-definition"><span class="token function">get_book</span></span><span class="token punctuation">(</span>title<span class="token punctuation">)</span>
+    books <span class="token operator">=</span> Book<span class="token punctuation">.</span>where<span class="token punctuation">(</span><span class="token symbol">title</span><span class="token operator">:</span> title<span class="token punctuation">)</span>
+    <span class="token keyword">raise</span> ActiveRecord<span class="token double-colon punctuation">::</span>RecordNotUnique <span class="token keyword">if</span> books<span class="token punctuation">.</span>many<span class="token operator">?</span>
+
+    <span class="token keyword">return</span> books<span class="token punctuation">.</span>first
+<span class="token keyword">end</span></code></pre>
+<p>This method fetches all books matching the given title and raises an exception if more than one record is found, effectively enforcing our uniqueness constraint. Here's how it behaves:</p>
+<pre class="language-ruby" tabindex="0"><code class="language-ruby">irb<span class="token punctuation">(</span>main<span class="token punctuation">)</span><span class="token operator">:</span><span class="token number">040</span><span class="token operator">></span> get_book<span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Catcher in The Rye"</span></span><span class="token punctuation">)</span>
+  Book Count <span class="token punctuation">(</span><span class="token number">0.4</span>ms<span class="token punctuation">)</span>  <span class="token constant">SELECT</span> <span class="token constant">COUNT</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token constant">FROM</span> <span class="token punctuation">(</span><span class="token constant">SELECT</span> <span class="token number">1</span> <span class="token constant">AS</span> one <span class="token constant">FROM</span> <span class="token string-literal"><span class="token string">"books"</span></span> <span class="token constant">WHERE</span> <span class="token string-literal"><span class="token string">"books"</span></span><span class="token punctuation">.</span><span class="token string-literal"><span class="token string">"title"</span></span> <span class="token operator">=</span> <span class="token operator">?</span> <span class="token constant">LIMIT</span> <span class="token operator">?</span><span class="token punctuation">)</span> subquery_for_count  <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string-literal"><span class="token string">"title"</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">"Catcher in The Rye"</span></span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string-literal"><span class="token string">"LIMIT"</span></span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+<span class="token punctuation">(</span>irb<span class="token punctuation">)</span><span class="token operator">:</span><span class="token number">35</span><span class="token symbol">:in</span> `get_book'<span class="token operator">:</span> ActiveRecord<span class="token double-colon punctuation">::</span>RecordNotUnique <span class="token punctuation">(</span>ActiveRecord<span class="token double-colon punctuation">::</span>RecordNotUnique<span class="token punctuation">)</span>
+irb<span class="token punctuation">(</span>main<span class="token punctuation">)</span><span class="token operator">:</span><span class="token number">041</span><span class="token operator">></span></code></pre>
+<h3 id="a-more-elegant-solution-with-sole">A More Elegant Solution with .sole</h3>
+<p>While the above method works, Rails offers a cleaner, more idiomatic way to achieve the same result with the .sole method. This method is designed to return a single record and automatically raises an ActiveRecord::SoleRecordExceeded exception if more than one record matches the query, simplifying our approach:</p>
+<p>The get_book method can be shortened to this</p>
+<pre class="language-ruby" tabindex="0"><code class="language-ruby"><span class="token keyword">def</span> <span class="token method-definition"><span class="token function">get_book</span></span><span class="token punctuation">(</span>title<span class="token punctuation">)</span>
+    Book<span class="token punctuation">.</span>where<span class="token punctuation">(</span><span class="token symbol">title</span><span class="token operator">:</span> title<span class="token punctuation">)</span><span class="token punctuation">.</span>sole
+<span class="token keyword">end</span></code></pre>
+<pre class="language-ruby" tabindex="0"><code class="language-ruby">irb<span class="token punctuation">(</span>main<span class="token punctuation">)</span><span class="token operator">:</span><span class="token number">045</span><span class="token operator">></span> get_book<span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Catcher in The Rye"</span></span><span class="token punctuation">)</span>
+  Book Load <span class="token punctuation">(</span><span class="token number">0.4</span>ms<span class="token punctuation">)</span>  <span class="token constant">SELECT</span> <span class="token string-literal"><span class="token string">"books"</span></span><span class="token punctuation">.</span><span class="token operator">*</span> <span class="token constant">FROM</span> <span class="token string-literal"><span class="token string">"books"</span></span> <span class="token constant">WHERE</span> <span class="token string-literal"><span class="token string">"books"</span></span><span class="token punctuation">.</span><span class="token string-literal"><span class="token string">"title"</span></span> <span class="token operator">=</span> <span class="token operator">?</span> <span class="token constant">ORDER</span> <span class="token constant">BY</span> <span class="token string-literal"><span class="token string">"books"</span></span><span class="token punctuation">.</span><span class="token string-literal"><span class="token string">"id"</span></span> <span class="token constant">ASC</span> <span class="token constant">LIMIT</span> <span class="token operator">?</span>  <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string-literal"><span class="token string">"title"</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">"Catcher in The Rye"</span></span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string-literal"><span class="token string">"LIMIT"</span></span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+<span class="token operator">/</span>Users<span class="token regex-literal"><span class="token regex">/deepak/</span></span><span class="token punctuation">.</span>rbenv<span class="token operator">/</span>versions<span class="token operator">/</span><span class="token number">3.2</span><span class="token number">.2</span><span class="token operator">/</span>lib<span class="token operator">/</span>ruby<span class="token operator">/</span>gems<span class="token operator">/</span><span class="token number">3.2</span><span class="token number">.0</span><span class="token operator">/</span>gems<span class="token operator">/</span>activerecord<span class="token operator">-</span><span class="token number">7.1</span><span class="token number">.3</span><span class="token operator">/</span>lib<span class="token operator">/</span>active_record<span class="token operator">/</span>relation<span class="token operator">/</span>finder_methods<span class="token punctuation">.</span>rb<span class="token operator">:</span><span class="token number">141</span><span class="token symbol">:in</span> `sole'<span class="token operator">:</span> Wanted only one Book <span class="token punctuation">(</span>ActiveRecord<span class="token double-colon punctuation">::</span>SoleRecordExceeded<span class="token punctuation">)</span></code></pre>
+<p>This approach is not only cleaner but also more efficient, as it communicates our intent more clearly and leverages Rails' built-in mechanisms for enforcing record uniqueness.</p>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/2024/2/1/great-books-of-western-world/">The Great Books of Western World</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/2024/2/5/typescript-7-tips/">7 Essentials for Learning TypeScript</a></li>
+</ul>
+
+
+
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+		</footer>
+
+		<!-- This page `/blog/2024/2/5/rails-ensure-only-one-record/` was built on 2024-11-03T11:20:52.897Z -->
+		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
+	</body>
+</html>

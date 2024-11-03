@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Desk Cleanup 2024</title>
+		<meta name="description" content="Personal website of Deepak.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Amorphous Ponder">
+		
+		<style>/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+	--syntax-tab-size: 2;
+	--background-color: #eff1f5;
+	--text-color: #4c4f69;
+	--color-border-header: #dc8a78;
+	--color-green: #94e2d5;
+	--color-blue: #1e66f5;
+	--color-mauve: #8839ef;
+	--color-yellow: #df8e1d;
+	--color-lavender: #7287fd;
+	--color-surface0: #ccd0da;
+}
+
+#theme-toggle {
+	background-color: var(--background-color);
+	color: #000000;
+	border: none;
+	font-size: 2em;
+}
+
+[data-theme='dark'] {
+	--background-color: #1e1e2e;
+	--text-color: #cdd6f4;
+	--color-border-header: #f5e0dc;
+	--color-green: #a6e3a1;
+	--color-blue: #89b4fa;
+	--color-mauve: #cba6f7;
+	--color-yellow: #f9e2af;
+	--color-lavender: #b4befe;
+	--color-surface0: #313244;
+
+	#theme-toggle {
+		background-color: var(--background-color);
+		color: #ffffff;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 720px;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	background-color: var(--background-color);
+	color: var(--text-color)
+}
+
+
+a {
+	color: var(--color-blue)
+}
+
+a:visited {
+	color: var(--color-blue)
+}
+
+a:hover,
+a:focus {
+	color: var(--color-blue)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-mauve)
+}
+
+.home-link {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	border-bottom: 1px dashed var(--color-border-header);
+}
+
+header a {
+	color: var(--color-mauve)
+}
+
+header a:visited {
+	color: var(--color-mauve)
+}
+
+header a:hover,
+header a:focus {
+	color: var(--color-mauve)
+}
+
+nav {
+	display: flex;
+	flex-grow: 1;
+}
+
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+.home-intro {
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+mark {
+	background: var(--color-green);
+	padding: 4px;
+	border-radius: 3px;
+}
+
+main {
+	padding: 10px;
+}
+
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p {
+	line-height: 1.6;
+}
+
+li {
+	line-height: 2;
+}
+
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+
+.postlist-item {
+	/* display: flex; */
+	/* flex-wrap: wrap; */
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em;
+	color: var(--color-gray-90);
+}
+
+.postlist-date {
+	word-spacing: -0.5px;
+}
+
+.postlist-link {
+	display: inline;
+	font-size: 1.1875em;
+	font-weight: 700;
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+
+
+.postlist-item>.post-tag {
+	align-self: center;
+}
+
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.post-metadata time {
+	margin-right: 1em;
+}
+
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-border-header);
+	padding: 1em 0;
+	margin-top: 3em;
+}
+
+.links-nextprev>* {
+	flex-grow: 1;
+}
+
+.links-nextprev-next {
+	text-align: right;
+}
+
+.books-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	padding-top: 24px;
+	justify-content: center;
+}
+
+.books-list-heading {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	background-color: var(--color-surface0);
+	padding: 1em;
+	border-radius: 3px;
+}
+
+.books-list .book {
+	position: relative;
+	width: 100px;
+	height: 150px;
+	margin-bottom: 8px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 3px;
+	border: 3px solid var(--color-lavender);
+}
+
+.six-star-book {
+	border: 3px solid var(--color-green) !important;
+}
+
+.books-list .book:hover {
+	border-color: var(--color-yellow);
+	box-shadow: 0 0 10px 5px var(--color-yellow);
+}
+
+.book-title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 5px;
+	width: 100%;
+	height: 45%;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.books-list .book:hover .book-title {
+	color: var(--color-blue);
+}
+
+.book-rating {
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.star {
+	color: #ccc;
+	opacity: 0.6;
+	text-shadow: 0 0 1px #666;
+}
+
+.star.filled {
+	color: #ffd700;
+	opacity: 1;
+	text-shadow: none;
+}
+
+.star.filled.six {
+	color: #dc143c;
+	font-size: 1.25em;
+	-webkit-text-stroke: 1px #ffd700;
+}</style>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+			const toggleButton = document.getElementById('theme-toggle');
+			const currentTheme = localStorage.getItem('theme') || 'dark';
+
+			if (currentTheme) {
+				document.documentElement.setAttribute('data-theme', currentTheme);
+			}
+
+			toggleButton.addEventListener('click', () => {
+				const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+				document.documentElement.setAttribute('data-theme', newTheme);
+				localStorage.setItem('theme', newTheme);
+			});
+			});
+		</script>
+	</head>
+	    <link href="//prismjs.catppuccin.com/mocha.css" rel="stylesheet">
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">Amorphous Ponder</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/about/"></a></li>
+					<li class="nav-item"><a href="/colophon/"></a></li>
+					<li class="nav-item"><a href="/"></a></li>
+					<li class="nav-item"><a href="/setup/"></a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
+					<li class="nav-item"><a href="/pages/">Pages</a></li>
+				</ul>
+			</nav>
+			<button id="theme-toggle" aria-label="Toggle theme">
+				●
+			</button>
+
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				<p>Few days ago I bought a monitor stand which came in today. It is a Meatanty Dual Monitor Stand Riser with 2 Drawers, 4 Usb Ports and Charging Pad. Recently I made some ergonomic changes to my working environment like changing to a vertical mouse. Although I do not have RSI yet, but sometimes I feel a little bit of pain in my wrist. Before it gets any worse, I have started making some changes to my environment.</p>
+<p>Getting a monitor stand is part of these ergonomic changes. I noticed that I bend my neck slightly to look at the screen. This may not be the best in long term and with the stand, I see the monitor at my natural eye level.</p>
+<p>As I was setting up the stand, I decided to embark on the quest of cleaning my desk which was slowly turning into a museum of all sorts of useless things. Nothing too revolutionary, just removing the clutter which unnecessarily occupied space and added zero value. At the end I'm proud of my achievement. Here is the obligatory photo of what it looks like as I'm writing this post.</p>
+<p><picture><source type="image/avif" srcset="/blog/2024/10/2/desk-cleanup/I6UCUSvtsj-4000.avif 4000w"><source type="image/webp" srcset="/blog/2024/10/2/desk-cleanup/I6UCUSvtsj-4000.webp 4000w"><img loading="lazy" decoding="async" src="/blog/2024/10/2/desk-cleanup/I6UCUSvtsj-4000.jpeg" alt="Clean Desk" width="4000" height="1800"></picture></p>
+<p>Now let's get real. Soon I will have a bunch of other things (clutter) which will occupy most of the zen like space I have now. But, I will try to keep it like this or at least get into a routine of cleaning it up once a week. Until then, I'll enjoy the serenity in my room.</p>
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+		</footer>
+
+		<!-- This page `/blog/2024/10/2/desk-cleanup/` was built on 2024-11-03T11:20:52.888Z -->
+		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
+	</body>
+</html>
