@@ -254,10 +254,18 @@ li {
 	text-align: right;
 }
 
+.book-in-post {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	width: 100px;
+	height: 150px;
+}
+
 .books-list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 16px;
+	gap: 20px;
 	padding-top: 24px;
 	justify-content: center;
 }
