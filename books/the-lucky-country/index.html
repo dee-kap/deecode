@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Amorphous Ponder</title>
+		<meta name="description" content="Personal website of Deepak.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Amorphous Ponder">
+		
+		<style>/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+	--syntax-tab-size: 2;
+	--background-color: #eff1f5;
+	--text-color: #4c4f69;
+	--color-border-header: #dc8a78;
+	--color-green: #94e2d5;
+	--color-blue: #1e66f5;
+	--color-mauve: #8839ef;
+	--color-yellow: #df8e1d;
+	--color-lavender: #7287fd;
+	--color-surface0: #ccd0da;
+	--color-surface1: #bcc0cc;
+	--color-peach: #fe640b;
+
+}
+
+#theme-toggle {
+	background-color: var(--background-color);
+	color: #000000;
+	border: none;
+	font-size: 2em;
+}
+
+[data-theme='dark'] {
+	--background-color: #1e1e2e;
+	--text-color: #cdd6f4;
+	--color-border-header: #f5e0dc;
+	--color-green: #a6e3a1;
+	--color-blue: #89b4fa;
+	--color-mauve: #cba6f7;
+	--color-yellow: #f9e2af;
+	--color-lavender: #b4befe;
+	--color-surface0: #313244;
+	--color-surface1: #45475a;
+	--color-peach: #fab387;
+
+	#theme-toggle {
+		background-color: var(--background-color);
+		color: #ffffff;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 720px;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	background-color: var(--background-color);
+	color: var(--text-color)
+}
+
+
+a {
+	color: var(--color-blue)
+}
+
+a:visited {
+	color: var(--color-blue)
+}
+
+a:hover,
+a:focus {
+	color: var(--color-blue)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-mauve)
+}
+
+blockquote {
+	background-color: var(--color-surface0);
+	border-left: 3px solid var(--color-peach);
+	padding-left: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-style: italic;
+}
+
+.home-link {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	border-bottom: 1px dashed var(--color-border-header);
+}
+
+header a {
+	color: var(--color-mauve)
+}
+
+header a:visited {
+	color: var(--color-mauve)
+}
+
+header a:hover,
+header a:focus {
+	color: var(--color-mauve)
+}
+
+nav {
+	display: flex;
+	flex-grow: 1;
+}
+
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+.home-intro {
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+mark {
+	background: var(--color-green);
+	padding: 4px;
+	border-radius: 3px;
+}
+
+main {
+	padding: 10px;
+}
+
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+p {
+	line-height: 1.6;
+}
+
+li {
+	line-height: 2;
+}
+
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+
+.postlist-item {
+	/* display: flex; */
+	/* flex-wrap: wrap; */
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em;
+	color: var(--color-gray-90);
+}
+
+.postlist-date {
+	word-spacing: -0.5px;
+}
+
+.postlist-link {
+	display: inline;
+	font-size: 1.1875em;
+	font-weight: 700;
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+
+
+.postlist-item>.post-tag {
+	align-self: center;
+}
+
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.post-metadata time {
+	margin-right: 1em;
+}
+
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-border-header);
+	padding: 1em 0;
+	margin-top: 3em;
+}
+
+.links-nextprev>* {
+	flex-grow: 1;
+}
+
+.links-nextprev-next {
+	text-align: right;
+}
+
+.book-in-post {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	width: 100px;
+	height: 150px;
+}
+
+.books-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding-top: 24px;
+	justify-content: center;
+}
+
+.books-list-heading {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	background-color: var(--color-surface0);
+	padding: 1em;
+	border-radius: 3px;
+}
+
+.books-list .book {
+	position: relative;
+	width: 100px;
+	height: 150px;
+	margin-bottom: 8px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 3px;
+	border: 3px solid var(--color-lavender);
+}
+
+.six-star-book {
+	border: 3px solid var(--color-green) !important;
+}
+
+.books-list .book:hover {
+	border-color: var(--color-yellow);
+	box-shadow: 0 0 10px 5px var(--color-yellow);
+}
+
+.book-title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 5px;
+	width: 100%;
+	height: 45%;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.books-list .book:hover .book-title {
+	color: var(--color-blue);
+}
+
+.book-rating {
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.star {
+	color: #ccc;
+	opacity: 0.6;
+	text-shadow: 0 0 1px #666;
+}
+
+.star.filled {
+	color: #ffd700;
+	opacity: 1;
+	text-shadow: none;
+}
+
+.star.filled.six {
+	color: #dc143c;
+	font-size: 1.25em;
+	-webkit-text-stroke: 1px #ffd700;
+}</style>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+			const toggleButton = document.getElementById('theme-toggle');
+			const currentTheme = localStorage.getItem('theme') || 'dark';
+
+			if (currentTheme) {
+				document.documentElement.setAttribute('data-theme', currentTheme);
+			}
+
+			toggleButton.addEventListener('click', () => {
+				const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+				document.documentElement.setAttribute('data-theme', newTheme);
+				localStorage.setItem('theme', newTheme);
+			});
+			});
+		</script>
+	</head>
+	    <link href="//prismjs.catppuccin.com/mocha.css" rel="stylesheet">
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">Amorphous Ponder</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/about/"></a></li>
+					<li class="nav-item"><a href="/colophon/"></a></li>
+					<li class="nav-item"><a href="/"></a></li>
+					<li class="nav-item"><a href="/setup/"></a></li>
+					<li class="nav-item"><a href="/blog/">Blog</a></li>
+					<li class="nav-item"><a href="/pages/">Pages</a></li>
+				</ul>
+			</nav>
+			<button id="theme-toggle" aria-label="Toggle theme">
+				●
+			</button>
+
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="the-lucky-country-australia-in-the-sixties-by-donald-horne">The Lucky Country: Australia in the sixties by Donald Horne</h1>
+<picture><source type="image/avif" srcset="/books/the-lucky-country/ZCpUttBcvN-1479.avif 1479w"><source type="image/webp" srcset="/books/the-lucky-country/ZCpUttBcvN-1479.webp 1479w"><img loading="lazy" decoding="async" src="/books/the-lucky-country/ZCpUttBcvN-1479.jpeg" class="book-in-post" alt="The Lucky Country" width="1479" height="2244"></picture>
+<h2 id="summary">Summary</h2>
+<p>When it comes to success of a book, The Lucky Country is amongst the top. The title of the book became a nickname for the country. I don't think there is another such example anywhere in the world. Published in 1964, The Lucky Country covers many different aspects of Australia. Without going into details of the range of topics covered in the book, the author touches the surface enough to make it interesting. At the end of every chapter, I wanted to know more.</p>
+<h2 id="notes-spoilers-ahead">Notes (spoilers ahead)</h2>
+<p>These notes are not a substitue for the actual book. To get the most out of this book or any book, you need to put in the time and effort to read and maybe re-read if you like it enough.</p>
+<p>I had to remind myself many times that the book is about Australia in sixties. This did not stop me from making comparison with the current state of affairs.</p>
+<blockquote>
+<p>Ordinary people are not concerned with the ways of the rich or the highly educated. What they want they can usually get - a house, a car, oysters, suntans...</p>
+</blockquote>
+<blockquote>
+<p>There is the largest rate of home ownership in the world.</p>
+</blockquote>
+<p>At the time of writing these notes are are going through a housing crisis. Also, over the years, the houses have become bigger but the land size has become smaller.</p>
+<blockquote>
+<p>There are less than a dozen countries like Autralia that, throughout the century have been ruled efficiently by stable democratic governments.</p>
+</blockquote>
+<p>The author has a lot more to say about politics in Australia later in the book. Also, my first thought was (due to a bias of which I don't know the name yet) that surely India has been a stable democracy but then it occurred to me that in 1975 there was an emergency was declared under which many fundamental rights were suspended.</p>
+<blockquote>
+<p>Australian are too easy-going to become fanatics and they do not crave great men.</p>
+</blockquote>
+<p>I have yet to meet an Australian fanatic. Don't think they exist and this is a good thing.</p>
+<p>On conforming to rituals:</p>
+<blockquote>
+<p>Australians are self-conscious if they have to take part in ritual.</p>
+</blockquote>
+<blockquote>
+<p>For many Australians, playing or watching sport gives life one of the principal meanings.</p>
+</blockquote>
+<p>I have never been a sports fan myself but I admire the devotion I see around me for sports. Given that it is mostly a positive thing, I too have started watching the finals of AFL and I enjoy it.</p>
+<p>On Austraila as a happy country:</p>
+<blockquote>
+<p>...whether Australia will be able to maintain its happiness, have the conditions that led to so much success also weakened adaptability and slowed down the reflexes of survival?</p>
+</blockquote>
+<p>I don't think it has. Surely things have changed, there is more competiveness generally but comparing it to other developed nations, the happiness is still high.</p>
+<blockquote>
+<p>There is no longer in Australia a generally accepted public sense of a future.</p>
+</blockquote>
+<p>If that was the view in sixties, then what is it now? This sentiment relates more to the human nature which is more pessimistic than it should be.</p>
+<blockquote>
+<p>Australia is probably the most urbanized nation in the world.</p>
+</blockquote>
+<p>Most of Australia is unlivable and this geographic characteristic is the reason for high levels of urbanization.</p>
+<p>xxxxx upto page 16</p>
+<h2 id="in-conclusion">In Conclusion</h2>
+<p>I would highly recommend this book if you want to understand Australia of sixties, not in entirety but a part of it.</p>
+
+
+			</heading-anchors>
+		</main>
+
+		<footer>
+		</footer>
+
+		<!-- This page `/books/the-lucky-country/` was built on 2024-11-04T22:33:24.445Z -->
+		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
+	</body>
+</html>

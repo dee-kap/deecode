@@ -23,6 +23,9 @@
 	--color-yellow: #df8e1d;
 	--color-lavender: #7287fd;
 	--color-surface0: #ccd0da;
+	--color-surface1: #bcc0cc;
+	--color-peach: #fe640b;
+
 }
 
 #theme-toggle {
@@ -42,6 +45,8 @@
 	--color-yellow: #f9e2af;
 	--color-lavender: #b4befe;
 	--color-surface0: #313244;
+	--color-surface1: #45475a;
+	--color-peach: #fab387;
 
 	#theme-toggle {
 		background-color: var(--background-color);
@@ -82,6 +87,15 @@ h4,
 h5,
 h6 {
 	color: var(--color-mauve)
+}
+
+blockquote {
+	background-color: var(--color-surface0);
+	border-left: 3px solid var(--color-peach);
+	padding-left: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-style: italic;
 }
 
 .home-link {
@@ -265,10 +279,18 @@ li {
 	text-align: right;
 }
 
+.book-in-post {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	width: 100px;
+	height: 150px;
+}
+
 .books-list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 16px;
+	gap: 20px;
 	padding-top: 24px;
 	justify-content: center;
 }
@@ -391,7 +413,7 @@ li {
 
 <div class="h-card home-intro">
     <p>👋 Hi! I’m <span class="p-name">Deepak</span>.</p>
-    <mark>I'm an software developer based in <span class="p-locality">Sydney, Australia</span>.</mark> 
+    <mark>I'm am an aspiring generalist based in <span class="p-locality">Sydney, Australia</span>.</mark> 
     <p>🙏 Welcome to my online home.</p>
     <p>You can find more about me in the <a href="/about">about page</a></p>
 </div>
@@ -400,7 +422,7 @@ li {
     
     
     
-    <h2 id="latest-posts">Latest Posts</h2>
+    <h2 id="blog">Blog</h2>
 
     
     
@@ -451,24 +473,90 @@ li {
     
 </div>
 
-<h2 id="currently-reading">Currently Reading</h2>
-  <div class="books-list" style="justify-content: start!important;gap:20px;"><div class="book" style="background-image: url('/images/covers/the-chairmans-lounge.jpg')">
+<h2 id="books">Books</h2>
+  <div class="books-list" style="justify-content: start!important;gap:20px;">
+        <div class="book" style="background-image: url('/images/covers/the-chairmans-lounge.jpg')">
+      
         <div class="book-title">
           The Chairman&#39;s Lounge
-          <div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span>
-          </div>
+          <div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span></div>
         </div>
-      </div><div class="book" style="background-image: url('/images/covers/the-lucky-country.jpg')">
+      </div><a href="books/the-lucky-country">
+        <div class="book" style="background-image: url('/images/covers/the-lucky-country.jpg')">
+      
         <div class="book-title">
           The Lucky Country
-          <div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span>
-          </div>
+          <div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span></div>
         </div>
-      </div><div class="book" style="background-image: url('/images/covers/ultralearning.jpg')">
+      </div></a>
+        <div class="book" style="background-image: url('/images/covers/ultralearning.jpg')">
+      
         <div class="book-title">
           Ultralearning
-          <div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span>
-          </div>
+          <div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span></div>
+        </div>
+      </div>
+        <div class="book" style="background-image: url('/images/covers/emperor-of-all-maladies.jpg')">
+      
+        <div class="book-title">
+          Emperor of All Maladies
+          <div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span></div>
+        </div>
+      </div>
+        <div class="book" style="background-image: url('/images/covers/the-victorian-internet.jpg')">
+      
+        <div class="book-title">
+          The Victorian Internet
+          <div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span></div>
+        </div>
+      </div>
+        <div class="book" style="background-image: url('/images/covers/one-life.jpg')">
+      
+        <div class="book-title">
+          One Life
+          <div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></div>
+        </div>
+      </div>
+        <div class="book" style="background-image: url('/images/covers/investing-the-last-liberal-art.jpg')">
+      
+        <div class="book-title">
+          Investing: The Last Liberal Art
+          <div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span></div>
+        </div>
+      </div>
+        <div class="book" style="background-image: url('/images/covers/of-permanent-value.jpg')">
+      
+        <div class="book-title">
+          Of Permanent Value
+          <div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></div>
+        </div>
+      </div>
+        <div class="book" style="background-image: url('/images/covers/flash-crash.jpg')">
+      
+        <div class="book-title">
+          Flash Crash
+          <div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></div>
+        </div>
+      </div>
+        <div class="book" style="background-image: url('/images/covers/elon-musk.jpg')">
+      
+        <div class="book-title">
+          Elon Musk by Ashlee Vance
+          <div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span></div>
+        </div>
+      </div>
+        <div class="book six-star-book" style="background-image: url('/images/covers/einstein-his-life-and-universe.jpg')">
+      
+        <div class="book-title">
+          Einstein His Life and...
+          <div class="book-rating"><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled  six">★</span></div>
+        </div>
+      </div>
+        <div class="book" style="background-image: url('/images/covers/the-polymath.jpg')">
+      
+        <div class="book-title">
+          The Polymath
+          <div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span></div>
         </div>
       </div>
   </div>
@@ -489,7 +577,7 @@ My complete <a href="/books/">bookshelf</a>
 		<footer>
 		</footer>
 
-		<!-- This page `/` was built on 2024-11-03T11:20:52.895Z -->
+		<!-- This page `/` was built on 2024-11-04T22:33:24.445Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>
