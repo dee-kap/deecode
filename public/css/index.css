@@ -12,6 +12,9 @@
 	--color-yellow: #df8e1d;
 	--color-lavender: #7287fd;
 	--color-surface0: #ccd0da;
+	--color-surface1: #bcc0cc;
+	--color-peach: #fe640b;
+
 }
 
 #theme-toggle {
@@ -31,6 +34,8 @@
 	--color-yellow: #f9e2af;
 	--color-lavender: #b4befe;
 	--color-surface0: #313244;
+	--color-surface1: #45475a;
+	--color-peach: #fab387;
 
 	#theme-toggle {
 		background-color: var(--background-color);
@@ -71,6 +76,15 @@ h4,
 h5,
 h6 {
 	color: var(--color-mauve)
+}
+
+blockquote {
+	background-color: var(--color-surface0);
+	border-left: 3px solid var(--color-peach);
+	padding-left: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-style: italic;
 }
 
 .home-link {
