@@ -20,7 +20,7 @@ At the time of writing these notes are are going through a housing crisis. Also,
 
 > There are less than a dozen countries like Autralia that, throughout the century have been ruled efficiently by stable democratic governments.
 
-The author has a lot more to say about politics in Australia later in the book. Also, my first thought was (due to a bias of which I don't know the name yet) that surely India has been a stable democracy but then it occurred to me that in 1975 there was an emergency was declared under which many fundamental rights were suspended.
+The author has a lot more to say about politics in Australia later in the book. Also, my first thought was (due to a bias of which I don't know the name yet) that surely India has been a stable democracy but then it occurred to me that in 1975 there a declaration of a constitutional emergency under which many fundamental rights were suspended.
 
 > Australian are too easy-going to become fanatics and they do not crave great men.
 
