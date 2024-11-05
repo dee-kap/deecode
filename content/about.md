@@ -1,7 +1,3 @@
----js
-const eleventyNavigation = {
-};
----
 ## About Me
 
 I have been writing software for both fun and profit for over twenty years, and it’s been a deeply rewarding journey. Coding is more than just a profession for me—it's a passion that has shaped much of my life.

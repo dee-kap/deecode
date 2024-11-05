@@ -1,8 +1,3 @@
----js
-const eleventyNavigation = {
-};
----
-
 This site is built with [Eleventy](https://www.11ty.dev/) and hosted on Github.
 
 The background color in dark mode is from [Catppuccin](https://github.com/catppuccin/catppuccin) Palette.

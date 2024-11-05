@@ -1,8 +1,3 @@
----js
-const eleventyNavigation = {
-};
----
-
 These are some of the tools I use daily for my work and recreational computing.
 
 ## Operating System and hardware
