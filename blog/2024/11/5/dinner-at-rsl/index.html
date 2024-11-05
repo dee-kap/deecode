@@ -233,6 +233,7 @@ pre[class*="language-diff-"] {
 body {
 	max-width: 720px;
 	margin: 0 auto;
+	padding: 5px;
 	font-family: var(--font-family);
 	background-color: var(--background-color);
 	color: var(--text-color);
@@ -280,8 +281,8 @@ blockquote {
 header {
 	display: flex;
 	align-items: center;
-	padding-left: 10px;
-	padding-right: 10px;
+	/* padding-left: 10px; */
+	/* padding-right: 10px; */
 	padding-top: 10px;
 	padding-bottom: 15px;
 	border-bottom: 1px dashed var(--color-border-header);
@@ -303,18 +304,19 @@ header a:focus {
 nav {
 	display: flex;
 	flex-grow: 1;
+	justify-content: end;
 }
 
 .nav {
 	display: flex;
-	padding: 0;
-	margin: 0;
+	/* padding: 0; */
+	/* margin: 0; */
 	list-style: none;
 }
 
 .nav-item {
 	display: inline-block;
-	margin-right: 1em;
+	margin-right: .5rem;
 }
 
 .nav a[href][aria-current="page"] {
@@ -339,17 +341,6 @@ mark {
 
 main {
 	padding: 10px;
-}
-
-
-.visually-hidden {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
 }
 
 p {
@@ -465,7 +456,7 @@ li {
 .books-list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 20px;
+	gap: 15px;
 	padding-top: 24px;
 	justify-content: center;
 }
@@ -561,17 +552,10 @@ li {
 	</head>
 	    <link href="//prismjs.catppuccin.com/mocha.css" rel="stylesheet">
 	<body>
-		<a href="#skip" class="visually-hidden">Skip to main content</a>
-
 		<header>
 			<a href="/" class="home-link">Amorphous Ponder</a>
 			<nav>
-				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/about/"></a></li>
-					<li class="nav-item"><a href="/colophon/"></a></li>
-					<li class="nav-item"><a href="/"></a></li>
-					<li class="nav-item"><a href="/setup/"></a></li>
 					<li class="nav-item"><a href="/blog/">Blog</a></li>
 					<li class="nav-item"><a href="/pages/">Pages</a></li>
 				</ul>
@@ -624,7 +608,7 @@ Lest we forget</p>
 			</div>
 		</footer>
 
-		<!-- This page `/blog/2024/11/5/dinner-at-rsl/` was built on 2024-11-05T10:50:40.625Z -->
+		<!-- This page `/blog/2024/11/5/dinner-at-rsl/` was built on 2024-11-05T11:09:19.104Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>
