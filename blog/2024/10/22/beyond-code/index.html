@@ -6,6 +6,10 @@
 		<title>Beyond Code</title>
 		<meta name="description" content="This is a post on My Blog about touchpoints and circling wagons.">
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Amorphous Ponder">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
 		
 		<style>/**
  * okaidia theme for JavaScript, CSS and HTML
@@ -178,7 +182,8 @@ pre[class*="language-diff-"] {
 /* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
 :root {
-	--font-family: -apple-system, system-ui, sans-serif;
+	/* --font-family: -apple-system, system-ui, sans-serif; */
+	--font-family: "Literata", "Cambria", "Roboto Slab", "Georgia", "Times New Roman", serif, ".PhoneFallback", "Arial Unicode MS";
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 	--syntax-tab-size: 2;
 	--background-color: #eff1f5;
@@ -230,7 +235,8 @@ body {
 	margin: 0 auto;
 	font-family: var(--font-family);
 	background-color: var(--background-color);
-	color: var(--text-color)
+	color: var(--text-color);
+	font-size: 115%;
 }
 
 
@@ -346,7 +352,7 @@ main {
 }
 
 p {
-	line-height: 1.6;
+	line-height: 2;
 }
 
 li {
@@ -581,7 +587,9 @@ li {
 
 <ul class="post-metadata">
 	<li><time datetime="2024-10-22">22 October 2024</time></li>
-	<li><a href="/tags/meta/" class="post-tag">Meta</a></li>
+	<li><a href="/tags/personal/" class="post-tag">Personal</a>, </li>
+	<li><a href="/tags/career/" class="post-tag">Career</a>, </li>
+	<li><a href="/tags/work/" class="post-tag">Work</a></li>
 </ul>
 
 <p>One of the reasons I started this blog back in 2003 was to use it as a marketing tool for myself. Personal branding had started to become a thing and blogging scene was about to take off big time. I was fortunate enough to grab on to it and  it worked out well for me.</p>
@@ -593,7 +601,7 @@ li {
 <p>Also, tinkering with this website gives me the joy similar to working in the garage with tools.</p>
 <p>So here it is to a more authentic place which is both about and beyond code. Cheers!</p>
 
-<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/2024/10/2/desk-cleanup/">Desk Cleanup 2024</a></li>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/2024/10/2/desk-cleanup/">Desk Cleanup 2024</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/2024/11/5/dinner-at-rsl/">Dinner at RSL</a></li>
 </ul>
 
 
@@ -602,10 +610,14 @@ li {
 			</heading-anchors>
 		</main>
 
-		<footer>
+		<footer style="margin-bottom:4rem; font-size: 80%;">
+			<hr style="margin-bottom:.5rem;">
+			<div style="display:flex;gap:.5rem;">
+				<a href="/about">About</a> | <a href="/books">Books</a> | <a href="/colophon">Colophon</a>
+			</div>
 		</footer>
 
-		<!-- This page `/blog/2024/10/22/beyond-code/` was built on 2024-11-04T22:33:24.450Z -->
+		<!-- This page `/blog/2024/10/22/beyond-code/` was built on 2024-11-05T10:41:04.818Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

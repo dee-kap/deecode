@@ -1,6 +1,7 @@
 /* Defaults */
 :root {
-	--font-family: -apple-system, system-ui, sans-serif;
+	/* --font-family: -apple-system, system-ui, sans-serif; */
+	--font-family: "Literata", "Cambria", "Roboto Slab", "Georgia", "Times New Roman", serif, ".PhoneFallback", "Arial Unicode MS";
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 	--syntax-tab-size: 2;
 	--background-color: #eff1f5;
@@ -52,7 +53,8 @@ body {
 	margin: 0 auto;
 	font-family: var(--font-family);
 	background-color: var(--background-color);
-	color: var(--text-color)
+	color: var(--text-color);
+	font-size: 115%;
 }
 
 
@@ -168,7 +170,7 @@ main {
 }
 
 p {
-	line-height: 1.6;
+	line-height: 2;
 }
 
 li {
