@@ -2,7 +2,10 @@
 title: Beyond Code
 description: This is a post on My Blog about touchpoints and circling wagons.
 date: "2024-10-22"
-tags: Meta
+tags: 
+    - Personal
+    - Career
+    - Work
 permalink: "/blog/2024/10/22/beyond-code/"
 ---
 
