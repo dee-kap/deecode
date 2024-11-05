@@ -1,3 +1,9 @@
+---
+title: The Lucky Country (Summary & Notes)
+category: Books
+tags: 
+    - Books
+---
  # The Lucky Country: Australia in the sixties by Donald Horne
 
 <img src="../../public/images/covers/the-lucky-country.jpg" class="book-in-post" alt="The Lucky Country">

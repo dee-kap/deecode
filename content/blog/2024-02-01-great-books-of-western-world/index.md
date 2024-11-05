@@ -2,7 +2,9 @@
 title: The Great Books of Western World
 date: 2024-02-01
 category: Books
-tags: GBWW
+tags: 
+    - GBWW
+    - Books
 featured_image: 
 summary: 
 permalink: "/blog/2024/2/1/great-books-of-western-world/"
