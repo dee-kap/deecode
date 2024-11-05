@@ -87,6 +87,7 @@ blockquote {
 	padding-top: 4px;
 	padding-bottom: 4px;
 	font-style: italic;
+	text-align: left;
 }
 
 .home-link {
@@ -171,6 +172,7 @@ main {
 
 p {
 	line-height: 2;
+	text-align: justify;
 }
 
 li {
