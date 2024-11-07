@@ -1,0 +1,17 @@
+[
+    {
+        "key": "blog",
+        "title": "Blog",
+        "url": "/blog"
+    },
+    {
+        "key": "books",
+        "title": "Books",
+        "url": "/books"
+    },
+    {
+        "key": "about",
+        "title": "About",
+        "url": "/about"
+    }
+]
