@@ -69,7 +69,7 @@ body {
 	font-family: var(--font-family);
 	background-color: var(--background-color);
 	color: var(--text-color);
-	font-size: 115%;
+	font-size: 107%;
 }
 
 
@@ -173,16 +173,16 @@ mark {
 }
 
 main {
-	padding: 10px;
+	padding: 5px;
 }
 
 p {
-	line-height: 2;
+	line-height: 1.9;
 	text-align: justify;
 }
 
 li {
-	line-height: 2;
+	line-height: 1.9;
 }
 
 .postlist {
@@ -365,7 +365,27 @@ li {
 	color: #dc143c;
 	font-size: 1.25em;
 	-webkit-text-stroke: 1px #ffd700;
-}</style>
+}
+
+nav[aria-label=breadcrumb] {
+	display: flex;
+	justify-content: left !important;
+}
+
+nav[aria-label=breadcrumb] ol {
+	display: flex;
+	justify-content: left !important;
+	margin: 0;
+	padding: 0;
+}
+
+nav[aria-label=breadcrumb] li {
+	display: inline;
+}
+
+/* nav[aria-label=breadcrumb] li:not(:last-child)::after {
+	content: " ˃ "
+} */</style>
 		<script>
 			document.addEventListener('DOMContentLoaded', function () {
 			const toggleButton = document.getElementById('theme-toggle');
@@ -389,8 +409,8 @@ li {
 			<a href="/" class="home-link">Amorphous Ponder</a>
 			<nav>
 				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/blog/">Blog</a></li>
-					<li class="nav-item"><a href="/pages/">Pages</a></li>
 				</ul>
 			</nav>
 			<button id="theme-toggle" aria-label="Toggle theme">
@@ -401,6 +421,8 @@ li {
 
 		<main id="skip">
 			<heading-anchors>
+				
+				
 				
 <h2 id="my-rating-system">My rating system</h2>
 
@@ -428,7 +450,7 @@ I follow a 6 star rating system.
 			</div>
 		</footer>
 
-		<!-- This page `/books/includes/rating-system/` was built on 2024-11-05T11:31:17.024Z -->
+		<!-- This page `/books/includes/rating-system/` was built on 2024-11-07T06:36:59.776Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

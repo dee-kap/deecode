@@ -11,7 +11,175 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
 		
-		<style>/* This is an arbitrary CSS string added to the bundle */
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
 :root {
 	/* --font-family: -apple-system, system-ui, sans-serif; */
@@ -69,7 +237,7 @@ body {
 	font-family: var(--font-family);
 	background-color: var(--background-color);
 	color: var(--text-color);
-	font-size: 115%;
+	font-size: 107%;
 }
 
 
@@ -173,16 +341,16 @@ mark {
 }
 
 main {
-	padding: 10px;
+	padding: 5px;
 }
 
 p {
-	line-height: 2;
+	line-height: 1.9;
 	text-align: justify;
 }
 
 li {
-	line-height: 2;
+	line-height: 1.9;
 }
 
 .postlist {
@@ -365,7 +533,27 @@ li {
 	color: #dc143c;
 	font-size: 1.25em;
 	-webkit-text-stroke: 1px #ffd700;
-}</style>
+}
+
+nav[aria-label=breadcrumb] {
+	display: flex;
+	justify-content: left !important;
+}
+
+nav[aria-label=breadcrumb] ol {
+	display: flex;
+	justify-content: left !important;
+	margin: 0;
+	padding: 0;
+}
+
+nav[aria-label=breadcrumb] li {
+	display: inline;
+}
+
+/* nav[aria-label=breadcrumb] li:not(:last-child)::after {
+	content: " ˃ "
+} */</style>
 		<script>
 			document.addEventListener('DOMContentLoaded', function () {
 			const toggleButton = document.getElementById('theme-toggle');
@@ -389,8 +577,8 @@ li {
 			<a href="/" class="home-link">Amorphous Ponder</a>
 			<nav>
 				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/blog/">Blog</a></li>
-					<li class="nav-item"><a href="/pages/">Pages</a></li>
 				</ul>
 			</nav>
 			<button id="theme-toggle" aria-label="Toggle theme">
@@ -401,11 +589,29 @@ li {
 
 		<main id="skip">
 			<heading-anchors>
-				<p>Few days ago I bought a monitor stand which came in today. It is a Meatanty Dual Monitor Stand Riser with 2 Drawers, 4 Usb Ports and Charging Pad. Recently I made some ergonomic changes to my working environment like changing to a vertical mouse. Although I do not have RSI yet, but sometimes I feel a little bit of pain in my wrist. Before it gets any worse, I have started making some changes to my environment.</p>
+				
+				
+				
+
+
+<ul class="post-metadata">
+	
+		<li><time datetime="2024-10-02">02 October 2024</time></li>
+	
+	<li><a href="/tags/productivity/" class="post-tag">productivity</a></li>
+</ul>
+
+<p>Few days ago I bought a monitor stand which came in today. It is a Meatanty Dual Monitor Stand Riser with 2 Drawers, 4 Usb Ports and Charging Pad. Recently I made some ergonomic changes to my working environment like changing to a vertical mouse. Although I do not have RSI yet, but sometimes I feel a little bit of pain in my wrist. Before it gets any worse, I have started making some changes to my environment.</p>
 <p>Getting a monitor stand is part of these ergonomic changes. I noticed that I bend my neck slightly to look at the screen. This may not be the best in long term and with the stand, I see the monitor at my natural eye level.</p>
 <p>As I was setting up the stand, I decided to embark on the quest of cleaning my desk which was slowly turning into a museum of all sorts of useless things. Nothing too revolutionary, just removing the clutter which unnecessarily occupied space and added zero value. At the end I'm proud of my achievement. Here is the obligatory photo of what it looks like as I'm writing this post.</p>
 <p><picture><source type="image/avif" srcset="/blog/2024/10/2/desk-cleanup/I6UCUSvtsj-4000.avif 4000w"><source type="image/webp" srcset="/blog/2024/10/2/desk-cleanup/I6UCUSvtsj-4000.webp 4000w"><img loading="lazy" decoding="async" src="/blog/2024/10/2/desk-cleanup/I6UCUSvtsj-4000.jpeg" alt="Clean Desk" width="4000" height="1800"></picture></p>
 <p>Now let's get real. Soon I will have a bunch of other things (clutter) which will occupy most of the zen like space I have now. But, I will try to keep it like this or at least get into a routine of cleaning it up once a week. Until then, I'll enjoy the serenity in my room.</p>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/2024/3/27/javascript-memoize/">Write Your Own Memoize in JavaScript</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/2024/10/22/beyond-code/">Beyond Code</a></li>
+</ul>
+
+
+
 
 			</heading-anchors>
 		</main>
@@ -417,7 +623,7 @@ li {
 			</div>
 		</footer>
 
-		<!-- This page `/blog/2024/10/2/desk-cleanup/` was built on 2024-11-05T11:31:17.014Z -->
+		<!-- This page `/blog/2024/10/2/desk-cleanup/` was built on 2024-11-07T06:36:59.780Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>
