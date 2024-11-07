@@ -1,5 +1,4 @@
 ---
-layout: layouts/base.njk
 title: Desk Cleanup 2024
 description: 
 date: "2024-10-02"

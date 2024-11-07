@@ -55,7 +55,7 @@ body {
 	font-family: var(--font-family);
 	background-color: var(--background-color);
 	color: var(--text-color);
-	font-size: 115%;
+	font-size: 107%;
 }
 
 
@@ -159,16 +159,16 @@ mark {
 }
 
 main {
-	padding: 10px;
+	padding: 5px;
 }
 
 p {
-	line-height: 2;
+	line-height: 1.9;
 	text-align: justify;
 }
 
 li {
-	line-height: 2;
+	line-height: 1.9;
 }
 
 .postlist {
@@ -352,3 +352,23 @@ li {
 	font-size: 1.25em;
 	-webkit-text-stroke: 1px #ffd700;
 }
+
+nav[aria-label=breadcrumb] {
+	display: flex;
+	justify-content: left !important;
+}
+
+nav[aria-label=breadcrumb] ol {
+	display: flex;
+	justify-content: left !important;
+	margin: 0;
+	padding: 0;
+}
+
+nav[aria-label=breadcrumb] li {
+	display: inline;
+}
+
+/* nav[aria-label=breadcrumb] li:not(:last-child)::after {
+	content: " ˃ "
+} */

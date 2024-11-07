@@ -77,6 +77,22 @@
 
 		<main id="skip">
 			<heading-anchors>
+				{% set currentKey = eleventyNavigation.key %}
+				{% if currentKey %}
+					{% set navPages = collections.all | eleventyNavigationBreadcrumb(currentKey) %}
+					{% for crumb in navPages %}
+						{% if loop.first %}<nav aria-label="breadcrumb"><ol>{% endif %}
+						<li>
+						&nbsp;&nbsp;/	
+						<a href="{{ crumb.url }}"
+						{% if page.url == crumb.url %}aria-current="page"{% endif %}
+						>
+							{{ crumb.title }}
+						</a>
+						</li>
+						{% if loop.last %}</ol></nav>{% endif %}
+					{% endfor %}
+				{% endif %}
 				{{ content | safe }}
 			</heading-anchors>
 		</main>

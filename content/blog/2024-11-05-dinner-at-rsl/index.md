@@ -3,8 +3,10 @@ title: Dinner at RSL
 description: 
 date: "2024-11-05"
 tags: Personal
-permalink: "/blog/2024/11/5/dinner-at-rsl/"
 status: draft
+eleventyNavigation:
+    key: "dinner-at-rsl"    
+    parent: "Blog"
 ---
 
 It was more than 20 years ago when I went to RSL for the first time. It was for dinner and I vividly remember when at 6pm everything stopped for silence which is a way of paying respect to the soldiers who fought for the country in many wars. It was a moving experience the first time and it remains profound every time I visit RSL.

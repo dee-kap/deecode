@@ -1,3 +1,9 @@
+---
+eleventyNavigation:
+    key: About
+    parent: Home
+---
+
 ## About Me
 
 I have been writing software for both fun and profit for over twenty years, and it’s been a deeply rewarding journey. Coding is more than just a profession for me—it's a passion that has shaped much of my life.
@@ -9,6 +15,7 @@ According to the 16Personalities test, I’m a [Logician INTP-A](https://www.16p
 I’m on a <mark>lifelong mission</mark> to refine my thinking, aiming to be a little <mark>less wrong</mark> each day.
 
 ## About This Website
+
 
 This website has been around in various forms (on different domains) since 2003. Initially, it was primarily a technical blog focused on programming. In 2022, I decided to wipe the slate clean, removing old content that no longer reflected my interests or value to others.
 

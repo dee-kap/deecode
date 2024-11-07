@@ -1,5 +1,8 @@
 ---
 layout: layouts/base.njk
+eleventyNavigation:
+    key: Books
+    parent: Home
 ---
 {%- import "macros/books-list.njk" as booksMacros -%}
 

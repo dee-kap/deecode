@@ -42,7 +42,6 @@ export default async function(eleventyConfig) {
 		});
 	  });
 
-
 	  eleventyConfig.addCollection("relatedPosts", function (collectionApi) {
 		console.log(collectionApi.page)
 		return collectionApi.getFilteredByTags("GBWW");
