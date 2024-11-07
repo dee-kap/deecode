@@ -3,6 +3,7 @@ title: Dinner at RSL
 description: 
 date: "2024-11-05"
 tags: Personal
+permalink: "/blog/2024/11/5/dinner-at-rsl/"
 status: draft
 eleventyNavigation:
     key: "dinner-at-rsl"    
