@@ -1,17 +1,17 @@
 [
     {
         "key": "blog",
-        "title": "Blog",
+        "title": "Blg",
         "url": "/blog"
     },
     {
         "key": "books",
-        "title": "Books",
+        "title": "Bks",
         "url": "/books"
     },
     {
         "key": "projects",
-        "title": "Projects",
+        "title": "Prj",
         "url": "/projects"
     }
 ]
