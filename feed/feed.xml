@@ -64,7 +64,8 @@ Lest we forget&lt;/p&gt;
     <link href="https://amorphousponder.com/blog/2024/3/27/javascript-memoize/" />
     <updated>2024-03-27T00:00:00Z</updated>
     <id>https://amorphousponder.com/blog/2024/3/27/javascript-memoize/</id>
-    <content type="html">&lt;p&gt;We often default to using NPM modules for minor utility functions that could be straightforwardly implemented ourselves. While I have no issues with popular libraries like Lodash or Ramda, I believe they are often overutilized for tasks that can be accomplished with basic code.&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;write-your-own-memoize-in-javascript&quot;&gt;Write Your Own Memoize in JavaScript&lt;/h1&gt;
+&lt;p&gt;We often default to using NPM modules for minor utility functions that could be straightforwardly implemented ourselves. While I have no issues with popular libraries like Lodash or Ramda, I believe they are often overutilized for tasks that can be accomplished with basic code.&lt;/p&gt;
 &lt;p&gt;I&#39;ll guide you through crafting your own memoize function. Memoization is an optimization technique that stores the results of expensive function calls and returns the cached result when the same inputs occur again. Here&#39;s how it works:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Execute your function with some or no arguments.&lt;/li&gt;
