@@ -2,7 +2,9 @@
 title: Dinner at RSL
 description: 
 date: "2024-11-05"
-tags: Personal
+tags: 
+    - Personal
+    - Australia
 permalink: "/blog/2024/11/5/dinner-at-rsl/"
 status: draft
 eleventyNavigation:

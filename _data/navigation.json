@@ -10,8 +10,8 @@
         "url": "/books"
     },
     {
-        "key": "about",
-        "title": "About",
-        "url": "/about"
+        "key": "projects",
+        "title": "Projects",
+        "url": "/projects"
     }
 ]

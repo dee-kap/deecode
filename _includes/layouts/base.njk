@@ -81,7 +81,7 @@
 		<main id="skip">
 			<heading-anchors>
 				{% set currentKey = eleventyNavigation.key %}
-				{% if currentKey %}
+				{% if currentKey and not hideBreadcrumb %}
 					{% set navPages = collections.all | eleventyNavigationBreadcrumb(currentKey) %}
 					{% for crumb in navPages %}
 						{% if loop.first %}<nav aria-label="breadcrumb"><ol>{% endif %}
@@ -103,7 +103,7 @@
 		<footer style="margin-bottom:4rem; font-size: 80%;">
 			<hr/ style="margin-bottom:.5rem;">
 			<div style="display:flex;gap:.5rem;">
-				<a href="/blog">Blog</a> |<a href="/books">Books</a> | <a href="/about">About</a>
+				<a href="/blog">Blog</a> |<a href="/books">Books</a> | <a href="/projects">Projects</a>
 			</div>
 		</footer>
 

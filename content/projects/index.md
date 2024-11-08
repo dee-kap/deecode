@@ -12,5 +12,4 @@ const eleventyNavigation = {
 --- -->
 # Projects
 
-1. [Mental Models](mental-models.md)
-2. [The Great Books of Western World](great-books-of-western-world.md)
+1. [The Great Books of Western World](great-books-of-western-world)
