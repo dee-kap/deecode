@@ -32,3 +32,8 @@ MacOS on Macbook air with M2 chip.
 - [Catppuccin](https://github.com/catppuccin/catppuccin) everywhere (mostly)
 - [Nord](https://www.nordtheme.com/) when I fantasize about travelling to Norway
 
+## CLI tools
+
+- [fzf](https://github.com/junegunn/fzf)
+- [git-delta](https://github.com/dandavison/delta)
+- [bat](https://github.com/sharkdp/bat)

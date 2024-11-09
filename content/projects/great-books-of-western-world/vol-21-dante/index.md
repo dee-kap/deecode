@@ -1,1 +1,5 @@
+---
+showDate: false
+---
+
 # Dante
