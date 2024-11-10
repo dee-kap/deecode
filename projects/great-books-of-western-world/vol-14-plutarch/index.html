@@ -242,7 +242,10 @@ body {
 
 
 a {
-	color: var(--color-blue)
+	position: relative;
+	color: var(--color-blue);
+	/* text-decoration: none; */
+	overflow: hidden;
 }
 
 a:visited {
@@ -252,6 +255,24 @@ a:visited {
 a:hover,
 a:focus {
 	color: var(--color-blue)
+}
+
+a::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(120deg, transparent, rgba(137, 180, 250, 0.4), transparent);
+	transition: transform 0.2s ease;
+	visibility: hidden;
+}
+
+a:hover::before {
+	visibility: visible;
+	transform: translate(-50%, -50%) scale(1);
 }
 
 h1,
@@ -610,7 +631,7 @@ nav[aria-label=breadcrumb] li {
 
 <ul class="post-metadata">
 	
-		<li><time datetime="2024-11-09">09 November 2024</time></li>
+		<li><time datetime="2024-11-10">10 November 2024</time></li>
 	
 </ul>
 
@@ -630,7 +651,7 @@ nav[aria-label=breadcrumb] li {
 			</div>
 		</footer>
 
-		<!-- This page `/projects/great-books-of-western-world/vol-14-plutarch/` was built on 2024-11-09T11:23:16.890Z -->
+		<!-- This page `/projects/great-books-of-western-world/vol-14-plutarch/` was built on 2024-11-10T03:30:09.242Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>
