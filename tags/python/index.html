@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
 		
-		<style>.postlist { counter-reset: start-from 3 }
+		<style>.postlist { counter-reset: start-from 5 }
 /* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
 :root {
@@ -87,25 +87,7 @@ a:visited {
 
 a:hover,
 a:focus {
-	color: var(--color-blue)
-}
-
-a::before {
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) scale(0);
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(120deg, transparent, rgba(137, 180, 250, 0.4), transparent);
-	transition: transform 0.2s ease;
-	visibility: hidden;
-}
-
-a:hover::before {
-	visibility: visible;
-	transform: translate(-50%, -50%) scale(1);
+	color: var(--color-peach)
 }
 
 h1,
@@ -126,6 +108,10 @@ blockquote {
 	padding-bottom: 4px;
 	font-style: italic;
 	text-align: left;
+}
+
+code {
+	font-size: 90% !important;
 }
 
 .home-link {
@@ -467,6 +453,20 @@ nav[aria-label=breadcrumb] li {
 <ol reversed="" class="postlist">
 
 	<li class="postlist-item">
+		<a href="/blog/2024/2/28/python-quadratic-to-linear/" class="postlist-link">From Quadratic to Linear</a>
+		<div>
+		<time class="postlist-date" datetime="2024-02-28">February 2024</time>
+		</div>
+	</li>
+
+	<li class="postlist-item">
+		<a href="/blog/2023/9/6/fastapi-with-docker/" class="postlist-link">Run FastAPI inside a docker container</a>
+		<div>
+		<time class="postlist-date" datetime="2023-09-06">September 2023</time>
+		</div>
+	</li>
+
+	<li class="postlist-item">
 		<a href="/blog/2023/8/21/working-with-env-files-in-python/" class="postlist-link">Working with env files in Python</a>
 		<div>
 		<time class="postlist-date" datetime="2023-08-21">August 2023</time>
@@ -496,7 +496,7 @@ nav[aria-label=breadcrumb] li {
 			</div>
 		</footer>
 
-		<!-- This page `/tags/python/` was built on 2024-11-10T03:30:09.549Z -->
+		<!-- This page `/tags/python/` was built on 2024-11-11T09:57:06.811Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>
