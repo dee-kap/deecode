@@ -2,7 +2,7 @@
 title: From Quadratic to Linear
 date: 2024-02-28
 category: 
-tags: 
+tags: ["Python"]
 featured_image: 
 summary: 
 permalink: "/blog/2024/2/28/python-quadratic-to-linear/"

@@ -17,10 +17,10 @@ Lately I have been pondering the question of merging my tech and non-tech writin
 
 A question comes to mind: Why bother writing about them at all? Why not just enjoy non-tech adventures in obscurity? Does the world need to know about them?
 
-First of all, I'm confident that this blog is read only by 2 people. One of them is me and the other I have yet to know about. Secondly, and more importantly <mark>this website exists only to serve me</mark> If anyone else finds anything useful here then it it incidental and not intentional. It is after all a log of my life which will be of no interest to anyone.
+First of all, I'm confident that this blog is read only by 2 people. One of them is me and the other I have yet to know about. Secondly, and more importantly <mark>this website exists only to serve me</mark>. If anyone else finds anything useful here then it it incidental and not intentional. It is after all a log of my life which will be of no interest to anyone.
 
 With that thought, I decided to make it more complete by writing about the books I have read, the journeys I have been on (there are not too many), photos I have clicked and a lot more.
 
 Also, tinkering with this website gives me the joy similar to working in the garage with tools.
 
-So here it is to a more authentic place which is both about and beyond code. Cheers!
+So here it is to a more authentic place. Cheers!

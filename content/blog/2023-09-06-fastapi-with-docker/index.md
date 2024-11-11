@@ -2,7 +2,7 @@
 title: Run FastAPI inside a docker container
 date: 2023-09-06
 category: 
-tags: 
+tags: ["Python", "FastAPI"]
 featured_image: 
 summary: 
 permalink: "/blog/2023/9/6/fastapi-with-docker/"
