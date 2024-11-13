@@ -8,17 +8,17 @@ eleventyImport:
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
 {# <h1>{{ title }}</h1> #}
 
+{{ content | safe }}
+
 <ul class="post-metadata">
-	{% if showDate != false %}
+	{# {% if showDate != false %}
 		<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
-	{% endif %}
+	{% endif %} #}
 	{%- for tag in tags | filterTagList %}
 	{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
 	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
 	{%- endfor %}
 </ul>
-
-{{ content | safe }}
 
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}

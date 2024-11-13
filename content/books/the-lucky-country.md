@@ -1,13 +1,20 @@
 ---
-title: The Lucky Country (Summary & Notes)
+layout: layouts/post.njk
+title: The Lucky Country
 category: Books
-tags: 
-    - Books
+tags: ["Australia"]
 ---
  # The Lucky Country: Australia in the sixties by Donald Horne
 
 
 <img src="../../public/images/covers/the-lucky-country.jpg" class="book-in-post-left" alt="The Lucky Country">
+<div class="book-rating-in-post">
+    <span class="star filled">★</span>
+    <span class="star filled">★</span>
+    <span class="star filled">★</span>
+    <span class="star filled">★</span>
+    <span class="star ">★</span>
+</div>
 
 When it comes to success of a book, The Lucky Country is amongst the top . The title of the book became a nickname for Australia. I don't think there is another such example anywhere in the world. Published in 1964, The Lucky Country covers many different aspects of Australia. Without going into details of the range of topics covered in the book, the author touches the surface enough to make it interesting. At the end of every chapter, I wanted to know more.
 
