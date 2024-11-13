@@ -455,7 +455,7 @@ li {
 
 .book-in-post-left {
 	float: left;
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-right: 15px;
 	margin-bottom: 15px;
 	width: 100px;
@@ -523,6 +523,10 @@ li {
 .book-rating {
 	font-size: 14px;
 	margin-top: 5px;
+}
+
+.book-rating-in-post {
+	font-size: 20px;
 }
 
 .star {
@@ -616,13 +620,6 @@ nav[aria-label=breadcrumb] li {
 				
 
 
-<ul class="post-metadata">
-	
-		<li><time datetime="2023-08-30">30 August 2023</time></li>
-	
-	<li><a href="/tags/vim/" class="post-tag">VIM</a></li>
-</ul>
-
 <p>To format code before saving a buffer in Vim/Neovim, we can use some excellent plugins out there. But I prefer to do things without plugins wherever possible.</p>
 <p>Adding the code below to config will automatically format files of type <code>*.ts,*.js,*.jsx,*.tsx,*.css</code> before saving.</p>
 <p>Here I am using <a href="https://prettier.io/">Prettier</a>, so Prettier has to be installed for this to work.</p>
@@ -644,6 +641,11 @@ nav[aria-label=breadcrumb] li {
 <span class="token function">setup_external_formatter_autocmd</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
 
+
+<ul class="post-metadata">
+	
+	<li><a href="/tags/vim/" class="post-tag">VIM</a></li>
+</ul>
 <ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/2023/8/21/working-with-env-files-in-python/">Working with env files in Python</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/2023/9/6/fastapi-with-docker/">Run FastAPI inside a docker container</a></li>
 </ul>
 
@@ -660,7 +662,7 @@ nav[aria-label=breadcrumb] li {
 			</div>
 		</footer>
 
-		<!-- This page `/blog/2023/8/30/format-code-in-vim-using-prettier/` was built on 2024-11-13T10:01:53.585Z -->
+		<!-- This page `/blog/2023/8/30/format-code-in-vim-using-prettier/` was built on 2024-11-13T10:45:15.373Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

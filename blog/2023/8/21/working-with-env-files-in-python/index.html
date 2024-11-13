@@ -455,7 +455,7 @@ li {
 
 .book-in-post-left {
 	float: left;
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-right: 15px;
 	margin-bottom: 15px;
 	width: 100px;
@@ -523,6 +523,10 @@ li {
 .book-rating {
 	font-size: 14px;
 	margin-top: 5px;
+}
+
+.book-rating-in-post {
+	font-size: 20px;
 }
 
 .star {
@@ -616,13 +620,6 @@ nav[aria-label=breadcrumb] li {
 				
 
 
-<ul class="post-metadata">
-	
-		<li><time datetime="2023-08-21">21 August 2023</time></li>
-	
-	<li><a href="/tags/python/" class="post-tag">Python</a></li>
-</ul>
-
 <p>I use env files in most of my projects to store values which should not be committed to code. Env files are also an excellent way to manage multiple settings related to different environments.</p>
 <p>python-dotenv library makes working with .env files a breeze.</p>
 <pre class="language-bash" tabindex="0"><code class="language-bash">pip <span class="token function">install</span> python-dotenv</code></pre>
@@ -640,6 +637,11 @@ REGION <span class="token operator">=</span> os<span class="token punctuation">.
 PROFILE <span class="token operator">=</span> os<span class="token punctuation">.</span>getenv<span class="token punctuation">(</span><span class="token string">'PROFILE'</span><span class="token punctuation">)</span>
 SECRET_ARN <span class="token operator">=</span> os<span class="token punctuation">.</span>getenv<span class="token punctuation">(</span><span class="token string">'SECRET_ARN'</span><span class="token punctuation">)</span></code></pre>
 
+
+<ul class="post-metadata">
+	
+	<li><a href="/tags/python/" class="post-tag">Python</a></li>
+</ul>
 <ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/2023/3/2/connect-rds-secret-manager/">Connect to AWS RDS instance using boto3 and Secret Manager</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/2023/8/30/format-code-in-vim-using-prettier/">Format code before saving in vim with Prettier</a></li>
 </ul>
 
@@ -656,7 +658,7 @@ SECRET_ARN <span class="token operator">=</span> os<span class="token punctuatio
 			</div>
 		</footer>
 
-		<!-- This page `/blog/2023/8/21/working-with-env-files-in-python/` was built on 2024-11-13T10:01:53.584Z -->
+		<!-- This page `/blog/2023/8/21/working-with-env-files-in-python/` was built on 2024-11-13T10:45:15.373Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

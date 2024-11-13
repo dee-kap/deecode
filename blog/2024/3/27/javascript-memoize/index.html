@@ -455,7 +455,7 @@ li {
 
 .book-in-post-left {
 	float: left;
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-right: 15px;
 	margin-bottom: 15px;
 	width: 100px;
@@ -523,6 +523,10 @@ li {
 .book-rating {
 	font-size: 14px;
 	margin-top: 5px;
+}
+
+.book-rating-in-post {
+	font-size: 20px;
 }
 
 .star {
@@ -616,13 +620,6 @@ nav[aria-label=breadcrumb] li {
 				
 
 
-<ul class="post-metadata">
-	
-		<li><time datetime="2024-03-27">27 March 2024</time></li>
-	
-	<li><a href="/tags/javascript/" class="post-tag">JavaScript</a></li>
-</ul>
-
 <h1 id="write-your-own-memoize-in-javascript">Write Your Own Memoize in JavaScript</h1>
 <p>We often default to using NPM modules for minor utility functions that could be straightforwardly implemented ourselves. While I have no issues with popular libraries like Lodash or Ramda, I believe they are often overutilized for tasks that can be accomplished with basic code.</p>
 <p>I'll guide you through crafting your own memoize function. Memoization is an optimization technique that stores the results of expensive function calls and returns the cached result when the same inputs occur again. Here's how it works:</p>
@@ -684,6 +681,11 @@ console<span class="token punctuation">.</span><span class="token function">log<
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">memoizedIReturnNothing</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// iReturnNothing</span></code></pre>
 <p>This issue reveals that the function was called twice, contrary to our expectations for memoization. Hence, it's preferable to embrace simplicity and clarity over brevity.</p>
 
+
+<ul class="post-metadata">
+	
+	<li><a href="/tags/javascript/" class="post-tag">JavaScript</a></li>
+</ul>
 <ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/2024/3/20/clear-timeout-javascript/">Cancel setTimeout in JavaScript</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/2024/10/2/desk-cleanup/">Desk Cleanup 2024</a></li>
 </ul>
 
@@ -700,7 +702,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 			</div>
 		</footer>
 
-		<!-- This page `/blog/2024/3/27/javascript-memoize/` was built on 2024-11-13T10:01:53.587Z -->
+		<!-- This page `/blog/2024/3/27/javascript-memoize/` was built on 2024-11-13T10:45:15.375Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

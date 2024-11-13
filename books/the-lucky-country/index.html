@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>The Lucky Country (Summary &amp; Notes)</title>
+		<title>The Lucky Country</title>
 		<meta name="description" content="Personal website of Deepak.">
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Amorphous Ponder">
 
@@ -11,7 +11,175 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
 		
-		<style>/* This is an arbitrary CSS string added to the bundle */
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
 :root {
 	/* --font-family: -apple-system, system-ui, sans-serif; */
@@ -287,7 +455,7 @@ li {
 
 .book-in-post-left {
 	float: left;
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-right: 15px;
 	margin-bottom: 15px;
 	width: 100px;
@@ -355,6 +523,10 @@ li {
 .book-rating {
 	font-size: 14px;
 	margin-top: 5px;
+}
+
+.book-rating-in-post {
+	font-size: 20px;
 }
 
 .star {
@@ -446,14 +618,31 @@ nav[aria-label=breadcrumb] li {
 				
 				
 				
+
+
 <h1 id="the-lucky-country-australia-in-the-sixties-by-donald-horne">The Lucky Country: Australia in the sixties by Donald Horne</h1>
 <picture><source type="image/avif" srcset="/books/the-lucky-country/ZCpUttBcvN-1479.avif 1479w"><source type="image/webp" srcset="/books/the-lucky-country/ZCpUttBcvN-1479.webp 1479w"><img loading="lazy" decoding="async" src="/books/the-lucky-country/ZCpUttBcvN-1479.jpeg" class="book-in-post-left" alt="The Lucky Country" width="1479" height="2244"></picture>
+<div class="book-rating-in-post">
+    <span class="star filled">★</span>
+    <span class="star filled">★</span>
+    <span class="star filled">★</span>
+    <span class="star filled">★</span>
+    <span class="star ">★</span>
+</div>
 <p>When it comes to success of a book, The Lucky Country is amongst the top . The title of the book became a nickname for Australia. I don't think there is another such example anywhere in the world. Published in 1964, The Lucky Country covers many different aspects of Australia. Without going into details of the range of topics covered in the book, the author touches the surface enough to make it interesting. At the end of every chapter, I wanted to know more.</p>
 <p>There are many quotable sentences in the book, but this just stands out.</p>
 <blockquote>
 <p>Australia is a lucky country, run mainly by second-rate people who share its luck.</p>
 </blockquote>
 <p>I would highly recommend this book if you want to understand Australia of sixties, not in entirety but small parts of it.</p>
+
+
+<ul class="post-metadata">
+	
+	<li><a href="/tags/australia/" class="post-tag">Australia</a></li>
+</ul>
+
+
 
 
 			</heading-anchors>
@@ -466,7 +655,7 @@ nav[aria-label=breadcrumb] li {
 			</div>
 		</footer>
 
-		<!-- This page `/books/the-lucky-country/` was built on 2024-11-13T10:01:53.584Z -->
+		<!-- This page `/books/the-lucky-country/` was built on 2024-11-13T10:45:15.376Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>
