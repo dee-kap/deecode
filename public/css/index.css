@@ -271,8 +271,9 @@ li {
 	text-align: right;
 }
 
-.book-in-post {
+.book-in-post-left {
 	float: left;
+	margin-top: 10px;
 	margin-right: 15px;
 	margin-bottom: 15px;
 	width: 100px;
@@ -325,7 +326,7 @@ li {
 	justify-content: flex-end;
 	padding-bottom: 5px;
 	width: 100%;
-	height: 45%;
+	height: 25%;
 	background: rgba(0, 0, 0, 0.5);
 	color: #fff;
 	text-align: center;
