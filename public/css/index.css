@@ -275,7 +275,7 @@ li {
 	float: left;
 	margin-top: 5px;
 	margin-right: 15px;
-	margin-bottom: 15px;
+	/* margin-bottom: 15px; */
 	width: 100px;
 	height: 150px;
 }
