@@ -59,7 +59,7 @@ const handleInputChange = (event) => {
 
 This function uses the name attribute of each input field to update the formData state.
 
-## Implementing Our Magic Trick
+## Implementing Coolness
 
 Let's see how this all comes together in a simple form component:
 
