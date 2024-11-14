@@ -183,8 +183,12 @@ pre[class*="language-diff-"] {
 /* Defaults */
 :root {
 	/* --font-family: -apple-system, system-ui, sans-serif; */
-	--font-family: "Literata", "Cambria", "Roboto Slab", "Georgia", "Times New Roman", serif, ".PhoneFallback", "Arial Unicode MS";
-	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+	--font-family: "Literata", "Cambria", "Roboto Slab", "Georgia",
+		"Times New Roman", serif, ".PhoneFallback", "Arial Unicode MS";
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono,
+		Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono,
+		Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New,
+		Courier, monospace;
 	--syntax-tab-size: 2;
 	--background-color: #eff1f5;
 	--text-color: #4c4f69;
@@ -197,7 +201,6 @@ pre[class*="language-diff-"] {
 	--color-surface0: #ccd0da;
 	--color-surface1: #bcc0cc;
 	--color-peach: #fe640b;
-
 }
 
 #theme-toggle {
@@ -207,7 +210,7 @@ pre[class*="language-diff-"] {
 	font-size: 2em;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
 	--background-color: #1e1e2e;
 	--text-color: #cdd6f4;
 	--color-border-header: #f5e0dc;
@@ -240,7 +243,6 @@ body {
 	font-size: 107%;
 }
 
-
 a {
 	position: relative;
 	color: var(--color-blue);
@@ -249,12 +251,12 @@ a {
 }
 
 a:visited {
-	color: var(--color-blue)
+	color: var(--color-blue);
 }
 
 a:hover,
 a:focus {
-	color: var(--color-peach)
+	color: var(--color-peach);
 }
 
 h1,
@@ -263,7 +265,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: var(--color-mauve)
+	color: var(--color-mauve);
 }
 
 blockquote {
@@ -297,16 +299,16 @@ header {
 }
 
 header a {
-	color: var(--color-mauve)
+	color: var(--color-mauve);
 }
 
 header a:visited {
-	color: var(--color-mauve)
+	color: var(--color-mauve);
 }
 
 header a:hover,
 header a:focus {
-	color: var(--color-mauve)
+	color: var(--color-mauve);
 }
 
 nav {
@@ -324,7 +326,7 @@ nav {
 
 .nav-item {
 	display: inline-block;
-	margin-right: .5rem;
+	margin-right: 0.5rem;
 }
 
 .nav a[href][aria-current="page"] {
@@ -397,8 +399,8 @@ li {
 	display: inline;
 	font-size: 1.1875em;
 	font-weight: 700;
-	padding-left: .25em;
-	padding-right: .5em;
+	padding-left: 0.25em;
+	padding-right: 0.5em;
 	text-underline-position: from-font;
 	text-underline-offset: 0;
 	text-decoration-thickness: 1px;
@@ -416,15 +418,14 @@ li {
 	font-style: italic;
 }
 
-
-.postlist-item>.post-tag {
+.postlist-item > .post-tag {
 	align-self: center;
 }
 
 .post-metadata {
 	display: inline-flex;
 	flex-wrap: wrap;
-	gap: .5em;
+	gap: 0.5em;
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -434,18 +435,17 @@ li {
 	margin-right: 1em;
 }
 
-
 .links-nextprev {
 	display: flex;
 	justify-content: space-between;
-	gap: .5em 1em;
+	gap: 0.5em 1em;
 	list-style: "";
 	border-top: 1px dashed var(--color-border-header);
 	padding: 1em 0;
 	margin-top: 3em;
 }
 
-.links-nextprev>* {
+.links-nextprev > * {
 	flex-grow: 1;
 }
 
@@ -562,25 +562,40 @@ li {
 	font-size: bold;
 }
 
-nav[aria-label=breadcrumb] {
+nav[aria-label="breadcrumb"] {
 	display: flex;
 	justify-content: left !important;
 }
 
-nav[aria-label=breadcrumb] ol {
+nav[aria-label="breadcrumb"] ol {
 	display: flex;
 	justify-content: left !important;
 	margin: 0;
 	padding: 0;
 }
 
-nav[aria-label=breadcrumb] li {
+nav[aria-label="breadcrumb"] li {
 	display: inline;
 }
 
 /* nav[aria-label=breadcrumb] li:not(:last-child)::after {
 	content: " ˃ "
-} */</style>
+} */
+.tag-cloud {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.tag-cloud .tag {
+	text-decoration: none;
+	font-weight: bold;
+	/*transition: color 0.3s ease;*/
+}
+
+.tag-cloud .tag:hover {
+	/*color: #0073e6;*/
+}</style>
 		<script>
 			document.addEventListener('DOMContentLoaded', function () {
 			const toggleButton = document.getElementById('theme-toggle');
@@ -633,6 +648,79 @@ nav[aria-label=breadcrumb] li {
 			</heading-anchors>
 		</main>
 
+
+		<hr>
+		<h2 id="tags">Tags</h2>
+
+		<div class="tag-cloud">
+			
+				<a href="/tags/blogging" class="tag" style="font-size: 0.9em;">
+					Blogging
+				</a>
+			
+				<a href="/tags/aws" class="tag" style="font-size: 0.9em;">
+					AWS
+				</a>
+			
+				<a href="/tags/python" class="tag" style="font-size: 1.2000000000000002em;">
+					Python
+				</a>
+			
+				<a href="/tags/vim" class="tag" style="font-size: 0.9em;">
+					VIM
+				</a>
+			
+				<a href="/tags/fastapi" class="tag" style="font-size: 0.9em;">
+					FastAPI
+				</a>
+			
+				<a href="/tags/mac" class="tag" style="font-size: 0.9em;">
+					Mac
+				</a>
+			
+				<a href="/tags/hardware" class="tag" style="font-size: 0.9em;">
+					Hardware
+				</a>
+			
+				<a href="/tags/react" class="tag" style="font-size: 0.9em;">
+					React
+				</a>
+			
+				<a href="/tags/javascript" class="tag" style="font-size: 1em;">
+					JavaScript
+				</a>
+			
+				<a href="/tags/gbww" class="tag" style="font-size: 1em;">
+					GBWW
+				</a>
+			
+				<a href="/tags/books" class="tag" style="font-size: 0.9em;">
+					Books
+				</a>
+			
+				<a href="/tags/work" class="tag" style="font-size: 1em;">
+					Work
+				</a>
+			
+				<a href="/tags/career" class="tag" style="font-size: 1em;">
+					Career
+				</a>
+			
+				<a href="/tags/productivity" class="tag" style="font-size: 0.9em;">
+					productivity
+				</a>
+			
+				<a href="/tags/personal" class="tag" style="font-size: 1em;">
+					Personal
+				</a>
+			
+				<a href="/tags/australia" class="tag" style="font-size: 1em;">
+					Australia
+				</a>
+			
+		</div>
+
+
 		<footer style="margin-bottom:4rem; font-size: 80%;">
 			<hr style="margin-bottom:.5rem;">
 			<div style="display:flex;gap:.5rem;">
@@ -640,7 +728,7 @@ nav[aria-label=breadcrumb] li {
 			</div>
 		</footer>
 
-		<!-- This page `/projects/great-books-of-western-world/vol-33-pascal/` was built on 2024-11-13T11:01:50.275Z -->
+		<!-- This page `/projects/great-books-of-western-world/vol-33-pascal/` was built on 2024-11-14T10:20:18.649Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>
