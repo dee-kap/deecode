@@ -1,21 +1,44 @@
-import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from "@11ty/eleventy";
+import {
+	IdAttributePlugin,
+	InputPathToUrlTransformPlugin,
+	HtmlBasePlugin,
+} from "@11ty/eleventy";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 import pluginFilters from "./_config/filters.js";
-import {DateTime } from 'luxon'
+import { DateTime } from "luxon";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
-export default async function(eleventyConfig) {
+export default async function (eleventyConfig) {
 	eleventyConfig.addWatchTarget("./macros/");
 	eleventyConfig.addPassthroughCopy("public");
 	// Drafts, see also _data/eleventyDataSchema.js
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
-		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
+		if (data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
 			return false;
 		}
+	});
+
+	eleventyConfig.addCollection("tagCloud", function (collectionApi) {
+		const tagSet = new Map();
+
+		collectionApi.getAll().forEach((item) => {
+			if ("tags" in item.data) {
+				let tags = item.data.tags;
+				tags = tags.filter(
+					(tag) => !["all", "nav", "post", "posts"].includes(tag),
+				); // Exclude common tags if needed
+
+				tags.forEach((tag) => {
+					tagSet.set(tag, (tagSet.get(tag) || 0) + 1); // Count each tag occurrence
+				});
+			}
+		});
+
+		return Array.from(tagSet, ([tag, count]) => ({ tag, count }));
 	});
 
 	//   eleventyConfig.addCollection("blog", function(collectionApi) {
@@ -28,30 +51,31 @@ export default async function(eleventyConfig) {
 	// 	});
 	//   });
 
-	  eleventyConfig.addCollection("blog", function (collectionApi) {
-		return collectionApi.getFilteredByGlob("content/blog/**/*.md").map((post) => {
-		  const date = new Date(post.date);
-		  const year = date.getFullYear();
-		  const month = String(date.getMonth() + 1)
-		  const day = String(date.getDate())
-		  post.data.permalink = `/blog/${year}/${month}/${day}/${post.fileSlug}/`;
-		  post.url = post.data.permalink
-		  console.log(post.data.permalink)
-		  return post;
+	eleventyConfig.addCollection("blog", function (collectionApi) {
+		return collectionApi
+			.getFilteredByGlob("content/blog/**/*.md")
+			.map((post) => {
+				const date = new Date(post.date);
+				const year = date.getFullYear();
+				const month = String(date.getMonth() + 1);
+				const day = String(date.getDate());
+				post.data.permalink = `/blog/${year}/${month}/${day}/${post.fileSlug}/`;
+				post.url = post.data.permalink;
+				console.log(post.data.permalink);
+				return post;
+			});
+	});
 
-		});
-	  });
-
-	  eleventyConfig.addCollection("relatedPosts", function (collectionApi) {
-		console.log(collectionApi.page)
+	eleventyConfig.addCollection("relatedPosts", function (collectionApi) {
+		console.log(collectionApi.page);
 		return collectionApi.getFilteredByTags("GBWW");
-	  });
+	});
 
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig
 		.addPassthroughCopy({
-			"./public/": "/"
+			"./public/": "/",
 		})
 		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
 
@@ -73,7 +97,7 @@ export default async function(eleventyConfig) {
 
 	// Official plugins
 	eleventyConfig.addPlugin(pluginSyntaxHighlight, {
-		preAttributes: { tabindex: 0 }
+		preAttributes: { tabindex: 0 },
 	});
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(HtmlBasePlugin);
@@ -99,9 +123,9 @@ export default async function(eleventyConfig) {
 			subtitle: "Personal websie of Deepak.",
 			base: "https://amorphousponder.com/",
 			author: {
-				name: "Deepak"
-			}
-		}
+				name: "Deepak",
+			},
+		},
 	});
 
 	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
@@ -118,7 +142,7 @@ export default async function(eleventyConfig) {
 			// e.g. <img loading decoding> assigned on the HTML tag will override these values.
 			loading: "lazy",
 			decoding: "async",
-		}
+		},
 	});
 
 	// Filters
@@ -131,7 +155,7 @@ export default async function(eleventyConfig) {
 	});
 
 	eleventyConfig.addShortcode("currentBuildDate", () => {
-		return (new Date()).toISOString();
+		return new Date().toISOString();
 	});
 
 	// Features to make your build faster (when you need them)
@@ -145,19 +169,13 @@ export default async function(eleventyConfig) {
 	// filters
 	eleventyConfig.addFilter("date", (dateObj, format = "yyyy/MM/dd") => {
 		return DateTime.fromJSDate(dateObj).toFormat(format);
-	  });
-};
+	});
+}
 
 export const config = {
 	// Control which files Eleventy will process
 	// e.g.: *.md, *.njk, *.html, *.liquid
-	templateFormats: [
-		"md",
-		"njk",
-		"html",
-		"liquid",
-		"11ty.js",
-	],
+	templateFormats: ["md", "njk", "html", "liquid", "11ty.js"],
 
 	// Pre-process *.md files with: (default: `liquid`)
 	markdownTemplateEngine: "njk",
@@ -167,10 +185,10 @@ export const config = {
 
 	// These are all optional:
 	dir: {
-		input: "content",          // default: "."
-		includes: "../_includes",  // default: "_includes" (`input` relative)
-		data: "../_data",          // default: "_data" (`input` relative)
-		output: "dist"
+		input: "content", // default: "."
+		includes: "../_includes", // default: "_includes" (`input` relative)
+		data: "../_data", // default: "_data" (`input` relative)
+		output: "dist",
 	},
 
 	// -----------------------------------------------------------------

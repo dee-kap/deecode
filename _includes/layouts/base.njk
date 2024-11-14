@@ -86,7 +86,7 @@
 					{% for crumb in navPages %}
 						{% if loop.first %}<nav aria-label="breadcrumb"><ol>{% endif %}
 						<li>
-						&nbsp;&nbsp;/	
+						&nbsp;&nbsp;/
 						<a href="{{ crumb.url }}"
 						{% if page.url == crumb.url %}aria-current="page"{% endif %}
 						>
@@ -99,6 +99,19 @@
 				{{ content | safe }}
 			</heading-anchors>
 		</main>
+
+
+		<hr/>
+		<h2>Tags</h2>
+
+		<div class="tag-cloud">
+			{% for tag in collections.tagCloud %}
+				<a href="/tags/{{ tag.tag | slug }}" class="tag" style="font-size: {{ 0.8 + tag.count / 10 }}em;">
+					{{ tag.tag }}
+				</a>
+			{% endfor %}
+		</div>
+
 
 		<footer style="margin-bottom:4rem; font-size: 80%;">
 			<hr/ style="margin-bottom:.5rem;">

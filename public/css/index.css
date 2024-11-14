@@ -1,8 +1,12 @@
 /* Defaults */
 :root {
 	/* --font-family: -apple-system, system-ui, sans-serif; */
-	--font-family: "Literata", "Cambria", "Roboto Slab", "Georgia", "Times New Roman", serif, ".PhoneFallback", "Arial Unicode MS";
-	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+	--font-family: "Literata", "Cambria", "Roboto Slab", "Georgia",
+		"Times New Roman", serif, ".PhoneFallback", "Arial Unicode MS";
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono,
+		Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono,
+		Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New,
+		Courier, monospace;
 	--syntax-tab-size: 2;
 	--background-color: #eff1f5;
 	--text-color: #4c4f69;
@@ -15,7 +19,6 @@
 	--color-surface0: #ccd0da;
 	--color-surface1: #bcc0cc;
 	--color-peach: #fe640b;
-
 }
 
 #theme-toggle {
@@ -25,7 +28,7 @@
 	font-size: 2em;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
 	--background-color: #1e1e2e;
 	--text-color: #cdd6f4;
 	--color-border-header: #f5e0dc;
@@ -58,7 +61,6 @@ body {
 	font-size: 107%;
 }
 
-
 a {
 	position: relative;
 	color: var(--color-blue);
@@ -67,12 +69,12 @@ a {
 }
 
 a:visited {
-	color: var(--color-blue)
+	color: var(--color-blue);
 }
 
 a:hover,
 a:focus {
-	color: var(--color-peach)
+	color: var(--color-peach);
 }
 
 h1,
@@ -81,7 +83,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: var(--color-mauve)
+	color: var(--color-mauve);
 }
 
 blockquote {
@@ -115,16 +117,16 @@ header {
 }
 
 header a {
-	color: var(--color-mauve)
+	color: var(--color-mauve);
 }
 
 header a:visited {
-	color: var(--color-mauve)
+	color: var(--color-mauve);
 }
 
 header a:hover,
 header a:focus {
-	color: var(--color-mauve)
+	color: var(--color-mauve);
 }
 
 nav {
@@ -142,7 +144,7 @@ nav {
 
 .nav-item {
 	display: inline-block;
-	margin-right: .5rem;
+	margin-right: 0.5rem;
 }
 
 .nav a[href][aria-current="page"] {
@@ -215,8 +217,8 @@ li {
 	display: inline;
 	font-size: 1.1875em;
 	font-weight: 700;
-	padding-left: .25em;
-	padding-right: .5em;
+	padding-left: 0.25em;
+	padding-right: 0.5em;
 	text-underline-position: from-font;
 	text-underline-offset: 0;
 	text-decoration-thickness: 1px;
@@ -234,15 +236,14 @@ li {
 	font-style: italic;
 }
 
-
-.postlist-item>.post-tag {
+.postlist-item > .post-tag {
 	align-self: center;
 }
 
 .post-metadata {
 	display: inline-flex;
 	flex-wrap: wrap;
-	gap: .5em;
+	gap: 0.5em;
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -252,18 +253,17 @@ li {
 	margin-right: 1em;
 }
 
-
 .links-nextprev {
 	display: flex;
 	justify-content: space-between;
-	gap: .5em 1em;
+	gap: 0.5em 1em;
 	list-style: "";
 	border-top: 1px dashed var(--color-border-header);
 	padding: 1em 0;
 	margin-top: 3em;
 }
 
-.links-nextprev>* {
+.links-nextprev > * {
 	flex-grow: 1;
 }
 
@@ -380,22 +380,37 @@ li {
 	font-size: bold;
 }
 
-nav[aria-label=breadcrumb] {
+nav[aria-label="breadcrumb"] {
 	display: flex;
 	justify-content: left !important;
 }
 
-nav[aria-label=breadcrumb] ol {
+nav[aria-label="breadcrumb"] ol {
 	display: flex;
 	justify-content: left !important;
 	margin: 0;
 	padding: 0;
 }
 
-nav[aria-label=breadcrumb] li {
+nav[aria-label="breadcrumb"] li {
 	display: inline;
 }
 
 /* nav[aria-label=breadcrumb] li:not(:last-child)::after {
 	content: " ˃ "
 } */
+.tag-cloud {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.tag-cloud .tag {
+	text-decoration: none;
+	font-weight: bold;
+	/*transition: color 0.3s ease;*/
+}
+
+.tag-cloud .tag:hover {
+	/*color: #0073e6;*/
+}
