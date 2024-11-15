@@ -10,9 +10,6 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 import pluginFilters from "./_config/filters.js";
 import { DateTime } from "luxon";
-import fs from 'fs'
-import CleanCSS from "clean-css";
-import { minify } from "html-minifier-terser";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
@@ -69,25 +66,7 @@ export default async function (eleventyConfig) {
 		}
 		return shuffledArray;
 	  });
-	  eleventyConfig.addFilter("minifyCSS", (cssPath) => {
-		const rawCSS = fs.readFileSync(cssPath, "utf-8");
-		return new CleanCSS({}).minify(rawCSS).styles;
-	  });
 
-	  eleventyConfig.addTransform("htmlmin", async (content, outputPath) => {
-		if (outputPath && outputPath.endsWith(".html")) {
-		  return await minify(content, {
-			removeComments: true,
-			collapseWhitespace: true,
-			removeAttributeQuotes: true,
-			useShortDoctype: true,
-			minifyCSS: true,
-			minifyJS: true,
-		  });
-		}
-		return content;
-	  });
-	 
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig
