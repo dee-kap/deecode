@@ -65,7 +65,6 @@ a {
 	position: relative;
 	color: var(--color-blue);
 	/* text-decoration: none; */
-	overflow: hidden;
 }
 
 a:visited {
