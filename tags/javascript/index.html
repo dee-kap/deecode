@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
 		
-		<style>.postlist { counter-reset: start-from 3 }
+		<style>.postlist { counter-reset: start-from 4 }
 /* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
 :root {
@@ -451,7 +451,7 @@ nav[aria-label="breadcrumb"] li {
 		<header>
 			<a href="/" class="home-link">Amorphous Ponder</a>
 			<nav>
-				<ul class="nav"><li class="nav-item"><a href="/blog">Blg</a></li><li class="nav-item"><a href="/books">Bks</a></li><li class="nav-item"><a href="/projects">Prj</a></li>
+				<ul class="nav"><li class="nav-item"><a href="/blog">Blg</a></li><li class="nav-item"><a href="/books">Bks</a></li><li class="nav-item"><a href="/projects">Prj</a></li><li class="nav-item"><a href="/pages">Pjs</a></li>
 				
 				</ul>
 			</nav>
@@ -480,6 +480,13 @@ nav[aria-label="breadcrumb"] li {
 	</li>
 
 	<li class="postlist-item">
+		<a href="/blog/2024/3/20/clear-timeout-javascript/" class="postlist-link">Cancel setTimeout in JavaScript</a>
+		<div>
+		<time class="postlist-date" datetime="2024-03-20">March 2024</time>
+		</div>
+	</li>
+
+	<li class="postlist-item">
 		<a href="/blog/2024/1/11/react-form-trick/" class="postlist-link">Simplifying Your React Forms with the Magic of useState</a>
 		<div>
 		<time class="postlist-date" datetime="2024-01-11">January 2024</time>
@@ -501,64 +508,84 @@ nav[aria-label="breadcrumb"] li {
 
 		<div class="tag-cloud">
 			
-				<a href="/tags/blogging" class="tag" style="font-size: 0.9em;">
+				<a href="/tags/tech" class="tag" style="font-size: 1.75em;">
+					Tech
+				</a>
+			
+				<a href="/tags/blogging" class="tag" style="font-size: 1em;">
 					Blogging
 				</a>
 			
-				<a href="/tags/aws" class="tag" style="font-size: 0.9em;">
+				<a href="/tags/aws" class="tag" style="font-size: 0.9500000000000001em;">
 					AWS
 				</a>
 			
-				<a href="/tags/python" class="tag" style="font-size: 1.2000000000000002em;">
+				<a href="/tags/python" class="tag" style="font-size: 1.15em;">
 					Python
 				</a>
 			
-				<a href="/tags/vim" class="tag" style="font-size: 0.9em;">
+				<a href="/tags/vim" class="tag" style="font-size: 0.9500000000000001em;">
 					VIM
 				</a>
 			
-				<a href="/tags/fastapi" class="tag" style="font-size: 0.9em;">
+				<a href="/tags/fastapi" class="tag" style="font-size: 0.9500000000000001em;">
 					FastAPI
 				</a>
 			
-				<a href="/tags/mac" class="tag" style="font-size: 0.9em;">
+				<a href="/tags/mac" class="tag" style="font-size: 0.9500000000000001em;">
 					Mac
 				</a>
 			
-				<a href="/tags/hardware" class="tag" style="font-size: 0.9em;">
+				<a href="/tags/hardware" class="tag" style="font-size: 0.9500000000000001em;">
 					Hardware
 				</a>
 			
-				<a href="/tags/react" class="tag" style="font-size: 0.9em;">
+				<a href="/tags/react" class="tag" style="font-size: 0.9500000000000001em;">
 					React
 				</a>
 			
-				<a href="/tags/javascript" class="tag" style="font-size: 1em;">
+				<a href="/tags/javascript" class="tag" style="font-size: 1.05em;">
 					JavaScript
+				</a>
+			
+				<a href="/tags/ruby" class="tag" style="font-size: 1.05em;">
+					Ruby
+				</a>
+			
+				<a href="/tags/books" class="tag" style="font-size: 1.05em;">
+					Books
 				</a>
 			
 				<a href="/tags/gbww" class="tag" style="font-size: 1em;">
 					GBWW
 				</a>
 			
-				<a href="/tags/books" class="tag" style="font-size: 0.9em;">
-					Books
+				<a href="/tags/ror" class="tag" style="font-size: 0.9500000000000001em;">
+					RoR
 				</a>
 			
-				<a href="/tags/work" class="tag" style="font-size: 1em;">
+				<a href="/tags/typescript" class="tag" style="font-size: 0.9500000000000001em;">
+					TypeScript
+				</a>
+			
+				<a href="/tags/personal" class="tag" style="font-size: 1.1em;">
+					Personal
+				</a>
+			
+				<a href="/tags/work" class="tag" style="font-size: 0.9500000000000001em;">
 					Work
 				</a>
 			
-				<a href="/tags/career" class="tag" style="font-size: 1em;">
+				<a href="/tags/career" class="tag" style="font-size: 0.9500000000000001em;">
 					Career
 				</a>
 			
-				<a href="/tags/productivity" class="tag" style="font-size: 0.9em;">
-					productivity
+				<a href="/tags/algorithms" class="tag" style="font-size: 0.9500000000000001em;">
+					Algorithms
 				</a>
 			
-				<a href="/tags/personal" class="tag" style="font-size: 1em;">
-					Personal
+				<a href="/tags/productivity" class="tag" style="font-size: 0.9500000000000001em;">
+					Productivity
 				</a>
 			
 				<a href="/tags/australia" class="tag" style="font-size: 1em;">
@@ -575,7 +602,7 @@ nav[aria-label="breadcrumb"] li {
 			</div>
 		</footer>
 
-		<!-- This page `/tags/javascript/` was built on 2024-11-14T10:20:19.046Z -->
+		<!-- This page `/tags/javascript/` was built on 2024-11-15T02:39:23.420Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>
