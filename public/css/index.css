@@ -236,7 +236,7 @@ li {
 	font-style: italic;
 }
 
-.postlist-item > .post-tag {
+.postlist-item>.post-tag {
 	align-self: center;
 }
 
@@ -263,7 +263,7 @@ li {
 	margin-top: 3em;
 }
 
-.links-nextprev > * {
+.links-nextprev>* {
 	flex-grow: 1;
 }
 
@@ -402,15 +402,10 @@ nav[aria-label="breadcrumb"] li {
 .tag-cloud {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 0.5rem;
+	gap: 0.2rem;
 }
 
 .tag-cloud .tag {
 	text-decoration: none;
 	font-weight: bold;
-	/*transition: color 0.3s ease;*/
-}
-
-.tag-cloud .tag:hover {
-	/*color: #0073e6;*/
 }
