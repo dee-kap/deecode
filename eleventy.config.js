@@ -58,6 +58,15 @@ export default async function (eleventyConfig) {
 		return collectionApi.getFilteredByTags("GBWW");
 	});
 
+	eleventyConfig.addFilter("shuffle", (array) => {
+		let shuffledArray = array.slice(); // Copy the array
+		for (let i = shuffledArray.length - 1; i > 0; i--) {
+		  const j = Math.floor(Math.random() * (i + 1));
+		  [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+		}
+		return shuffledArray;
+	  });
+
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig
