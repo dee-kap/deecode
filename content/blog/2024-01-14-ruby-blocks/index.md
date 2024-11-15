@@ -2,7 +2,7 @@
 title: "Mastering Ruby Blocks: A Comprehensive Guide"
 date: 2024-01-15
 category: 
-tags: 
+tags: ["Tech", "Ruby"]
 featured_image: 
 summary: 
 permalink: "/blog/2024/1/15/ruby-blocks/"

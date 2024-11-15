@@ -2,9 +2,7 @@
 title: Handling Single Record Queries in Rails with Grace
 date: 2024-02-05
 category: 
-tags: 
-featured_image: 
-summary: 
+tags: ["Tech", "Ruby", "RoR"]
 permalink: "/blog/2024/2/5/rails-ensure-only-one-record/"
 ---
 

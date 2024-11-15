@@ -2,7 +2,7 @@
 title: Desk Cleanup 2024
 description: 
 date: "2024-10-02"
-tags: productivity
+tags: ["Tech", "Personal",  "Productivity"]
 permalink: "/blog/2024/10/2/desk-cleanup/"
 ---
 

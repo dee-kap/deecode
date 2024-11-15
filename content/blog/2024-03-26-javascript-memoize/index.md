@@ -1,8 +1,7 @@
 ---
 title: Write Your Own Memoize in JavaScript
 date: 2024-03-27
-category: 
-tags: ["JavaScript"]
+tags: ["Tech", "JavaScript"]
 permalink: "/blog/2024/3/27/javascript-memoize/"
 ---
 # Write Your Own Memoize in JavaScript

@@ -2,7 +2,7 @@
 title: "Codecamp OZ: A Nostalgic Dive Into The Archives of the Web"
 date: 2024-01-14
 category: 
-tags: 
+tags: ["Tech" ]
 featured_image: 
 summary: 
 permalink: "/blog/2024/1/14/nostalgic-turn/"

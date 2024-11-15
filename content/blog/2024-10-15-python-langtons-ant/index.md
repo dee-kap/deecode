@@ -1,10 +1,7 @@
 ---
 title: Writing Langton's Ant in Python
 date: 2024-10-15
-category: 
-tags: 
-featured_image: 
-summary: 
+tags: ["Tech", "Python"]
 permalink: "blog/2024/10/15/python-langtons-ant/"
 draft: true
 ---

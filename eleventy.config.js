@@ -24,32 +24,19 @@ export default async function (eleventyConfig) {
 
 	eleventyConfig.addCollection("tagCloud", function (collectionApi) {
 		const tagSet = new Map();
-
 		collectionApi.getAll().forEach((item) => {
 			if ("tags" in item.data) {
 				let tags = item.data.tags;
 				tags = tags.filter(
 					(tag) => !["all", "nav", "post", "posts"].includes(tag),
 				); // Exclude common tags if needed
-
 				tags.forEach((tag) => {
 					tagSet.set(tag, (tagSet.get(tag) || 0) + 1); // Count each tag occurrence
 				});
 			}
 		});
-
 		return Array.from(tagSet, ([tag, count]) => ({ tag, count }));
 	});
-
-	//   eleventyConfig.addCollection("blog", function(collectionApi) {
-	// 	return collectionApi.getFilteredByGlob("content/blog/*.md").map((post) => {
-	// 	  const date = new Date(post.date);
-	// 	  const year = date.getFullYear();
-	// 	  const month = String(date.getMonth() + 1).padStart(2, "0");
-	// 	  post.data.permalink = `/${year}/${month}/${post.fileSlug}/`;
-	// 	  return post;
-	// 	});
-	//   });
 
 	eleventyConfig.addCollection("blog", function (collectionApi) {
 		return collectionApi

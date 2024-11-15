@@ -2,9 +2,7 @@
 title: My New Mac M2
 date: 2023-09-19
 category: 
-tags: 
-    - Mac
-    - Hardware
+tags: ["Tech", "Mac", "Hardware"]
 featured_image: 
 summary: 
 permalink: "/blog/2023/9/19/new-mac-m2/"

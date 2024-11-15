@@ -2,7 +2,7 @@
 title: Cancel setTimeout in JavaScript
 date: 2024-03-20
 category: 
-tags: 
+tags: ["Tech", "JavaScript"]
 featured_image: 
 summary: 
 permalink: "/blog/2024/3/20/clear-timeout-javascript/"

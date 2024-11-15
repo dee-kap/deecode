@@ -1,8 +1,7 @@
 ---
 layout: layouts/post.njk
 title: The Lucky Country
-category: Books
-tags: ["Australia"]
+tags: ["Books", "Australia"]
 ---
  # The Lucky Country: Australia in the sixties by Donald Horne
 

@@ -2,7 +2,7 @@
 title: Understanding Symbols in Ruby Programming Language
 date: 2024-01-23
 category: 
-tags: 
+tags: ["Tech", "Ruby"]
 featured_image: 
 summary: 
 permalink: "/blog/2024/1/23/ruby-symbols/"

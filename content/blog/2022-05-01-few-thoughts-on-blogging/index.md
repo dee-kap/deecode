@@ -1,10 +1,7 @@
 ---
 title: Few thoughts on Blogging
 date: 2022-05-01
-category: Personal
-tags:
-  - Blogging
-featured_image: bob.png
+tags: ["Tech", "Blogging"]
 summary: 
 permalink: "/blog/2022/5/1/few-thoughts-on-blogging/"
 ---

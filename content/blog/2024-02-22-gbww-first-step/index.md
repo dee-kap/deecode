@@ -2,7 +2,7 @@
 title: Step One of a Thousand Miles Journey
 date: 2024-02-22
 category: 
-tags:  GBWW
+tags: ["Books", "GBWW"]
 featured_image: 
 summary: 
 permalink: "/blog/2024/2/22/gbww-first-step/"

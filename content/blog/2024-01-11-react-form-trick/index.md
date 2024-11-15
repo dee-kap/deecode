@@ -2,7 +2,7 @@
 title: Simplifying Your React Forms with the Magic of useState
 date: 2024-01-11
 category: 
-tags: ["React", "JavaScript"]
+tags: ["Tech", "React", "JavaScript"]
 featured_image: 
 summary: 
 permalink: "/blog/2024/1/11/react-form-trick/"

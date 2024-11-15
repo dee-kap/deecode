@@ -2,7 +2,7 @@
 title: 7 Essentials for Learning TypeScript
 date: 2024-02-05
 category: 
-tags: 
+tags: ["Tech", "TypeScript"]
 featured_image: 
 summary: 
 permalink: "/blog/2024/2/5/typescript-7-tips/"

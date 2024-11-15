@@ -2,7 +2,7 @@
 title: "Vegetarian Pasta: My Recipe"
 date: 2024-10-07
 category: 
-tags: 
+tags: ["Personal", "Cooking", "Vegetarian", "Pasta"]
 featured_image: 
 summary: 
 permalink: "/blog/2024/10/7/vegetarian-pasta/"

@@ -1,9 +1,7 @@
 ---
 title: Get Indexes of Negative Numbers from a List in Python
 date: 2024-02-07
-category: 
-tags: 
-featured_image: 
+tags: ["Tech", "Python"]
 summary: 
 permalink: "/blog/2024/2/7/python-indexes-of-negative-numbers/"
 ---

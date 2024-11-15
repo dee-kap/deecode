@@ -13,5 +13,10 @@
         "key": "projects",
         "title": "Prj",
         "url": "/projects"
+    },
+    {
+        "key": "pages",
+        "title": "Pjs",
+        "url": "/pages"
     }
 ]

@@ -2,7 +2,7 @@
 title: Working with env files in Python
 date: 2023-08-21
 category: 'Tech'
-tags: ['Python']
+tags: ["Tech", 'Python']
 featured_image: 
 summary: 
 permalink: "/blog/2023/8/21/working-with-env-files-in-python/"

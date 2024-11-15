@@ -106,7 +106,7 @@
 
 		<div class="tag-cloud">
 			{% for tag in collections.tagCloud %}
-				<a href="/tags/{{ tag.tag | slug }}" class="tag" style="font-size: {{ 0.8 + tag.count / 10 }}em;">
+				<a href="/tags/{{ tag.tag | slug }}" class="tag" style="font-size: {{ 0.9 + tag.count / 20 }}em;">
 					{{ tag.tag }}
 				</a>
 			{% endfor %}

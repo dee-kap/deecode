@@ -2,11 +2,7 @@
 title: The Great Books of Western World
 date: 2024-02-01
 category: Books
-tags: 
-    - GBWW
-    - Books
-featured_image: 
-summary: 
+tags: ["Books", "GBWW"]
 permalink: "/blog/2024/2/1/great-books-of-western-world/"
 ---
 Few days ago I ordered Great Books of the Western World and the books arrived two days ago. It is set of 54 volumes by Encyclopedia Britannica first printed in 1952. The set I ordered is the 1952 edition. Only volume 50 is from a later edition.

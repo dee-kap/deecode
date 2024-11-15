@@ -2,7 +2,7 @@
 title: How Working From Home Changed My Life
 date: 2024-02-16
 category: 
-tags: ["Work", "Career"]
+tags: ["Personal", "Work", "Career"]
 featured_image: 
 summary: 
 permalink: "/blog/2024/2/16/working-from-home/"

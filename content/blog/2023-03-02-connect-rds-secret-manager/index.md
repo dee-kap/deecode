@@ -1,8 +1,7 @@
 ---
 title: Connect to AWS RDS instance using boto3 and Secret Manager
 date: 2023-03-02
-category: 
-tags: ['AWS', 'Python']
+tags: ['Tech', 'AWS', 'Python']
 featured_image: 
 summary: 
 permalink: "/blog/2023/3/2/connect-rds-secret-manager/"
