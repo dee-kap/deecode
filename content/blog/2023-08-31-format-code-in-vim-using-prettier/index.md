@@ -2,9 +2,7 @@
 title: Format code before saving in vim with Prettier
 date: 2023-08-30
 category: 'Tech'
-tags: ['Tech', 'VIM']
-featured_image: 
-summary: 
+tags: ['Tech', 'VIM', 'Tools']
 permalink: "/blog/2023/8/30/format-code-in-vim-using-prettier/"
 ---
 

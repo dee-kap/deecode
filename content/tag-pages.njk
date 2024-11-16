@@ -33,7 +33,7 @@ const eleventyComputed = {
       {%- if loop.index <= 12 -%}
       {%- set rating = book.rating | int -%}
       {%- if book.link -%}
-      <a href="books/{{ book.link }}">
+      <a href="/books/{{ book.link }}">
       {%- endif -%}
       {% if rating == 6 %}
         <div class="book six-star-book" style="background-image: url('/images/covers/{{ book.image }}')">

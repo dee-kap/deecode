@@ -2,7 +2,8 @@
 	{
 		"title": "The Golden Road",
 		"image": "the-golden-road.jpg",
-		"rating": ""
+		"rating": "",
+		"link": "the-golden-road"
 	},
 	{
 		"title": "The Chairman's Lounge",
@@ -59,7 +60,8 @@
 	{
 		"title": "Einstein His Life and...",
 		"image": "einstein-his-life-and-universe.jpg",
-		"rating": "6"
+		"rating": "6",
+		"link": "einstein-his-life-and-universe"
 	},
 	{
 		"title": "The Polymath: Unlocking the Power of Human Versatility",
