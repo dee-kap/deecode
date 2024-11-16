@@ -1,5 +1,6 @@
 ---
 layout: layouts/post.njk
+date: 2024-10-01
 title: "Eienstein: His Life and Universe"
 tags: ["Books", "Biography", "Einstein", "Science", "Physics"]
 ---
