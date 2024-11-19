@@ -17,7 +17,7 @@ tags: ["Books", "Biography", "Einstein", "Science", "Physics"]
     <span class="star filled six">★</span>
 </div>
 
-During my primary school years, I knew that Albert Einstein was a famous scientist. During high school I discovered more about Einstien's scientific work most around Relativity. I was familiar with the words but had no idea what they meant. I'm not sure that I still understand Relativity but I do understand more than I did. 
+During my primary school years, I knew that Albert Einstein was a famous scientist. In high school I discovered more about Einstien's scientific work and heard the term Relativity and a few others. I was familiar with the words but had no idea what they meant. I'm not sure that I still understand Relativity but I do understand more than I did. 
 
 Eienstein was a multifaceted person who was one of the smartest people to ever live. His discoveries changed the way we understand our world, the world beyond us and the entire universe. I only wish that I knew enough Physics to understand his works. Maybe some day I will get into studying it and enjoy the joy of understanding  Special Theory of Relativity, General Theory of Relativity,  The Photoelectric Effect, Wave-Particle Duality, Brownian movement, Quantum Theory of Light, Avogadro's Number, the relationship between mass and energy, Bose-Einstein Condensate etc.
 
