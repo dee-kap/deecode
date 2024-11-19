@@ -1,4 +1,6 @@
 {% macro renderBooksList(filteredBooks, headingText, displayStars, subText) %}
+{%- set sortedBooks = filteredBooks | sortBooksByDateReadDesc -%}
+
 <div class="books-list-heading">
   <div style="display:flex;width:100%;margin-bottom:1em;">
   {%- if(displayStars !== NaN)-%}
@@ -30,7 +32,7 @@
         <div class="book" style="background-image: url('/images/covers/{{ book.image }}')">
       {% endif %}
         <div class="book-title">
-          {# {{ book.displayTitle or book.title }} #}
+          {{ book.displayTitle or book.title }}
           <div class="book-rating">
             {%- if rating == 6 -%}
               {%- for i in range(1, 7) -%}

@@ -1,20 +1,83 @@
 [
 	{
-		"title": "The Golden Road",
-		"image": "the-golden-road.jpg",
-		"rating": "",
-		"link": "the-golden-road"
-	},
-	{
 		"title": "The Chairman's Lounge",
 		"image": "the-chairmans-lounge.jpg",
-		"rating": ""
+		"rating": "",
+		"link": "",
+		"date_read": "2024-01-01",
+		"isbn": ""
+	},
+	{
+		"title": "Richer Wiser Happier",
+		"image": "richer-wiser-happier.jpg",
+		"rating": "",
+		"link": "",
+		"date_read": "2023-01-01",
+		"isbn": ""
+	},
+	{
+		"title": "Flash Crash",
+		"image": "flash-crash.jpg",
+		"rating": "",
+		"link": "",
+		"date_read": "2023-01-01",
+		"isbn": ""
+	},
+	{
+		"title": "The Secret of The Nagas ",
+		"image": "the-secret-of-the-nagas.jpg",
+		"rating": "4",
+		"link": "",
+		"date_read": "2023-01-01",
+		"isbn": ""
+	},
+	{
+		"title": "Immortals of Meluha",
+		"image": "immortals-of-meluha.jpg",
+		"rating": "4",
+		"link": "",
+		"date_read": "2023-01-01",
+		"isbn": ""
+	},
+	{
+		"title": "Exodus",
+		"image": "exodus.jpg",
+		"rating": "",
+		"link": "",
+		"date_read": "2019-01-01",
+		"isbn": ""
+	},
+	{
+		"title": "How to Take Smart Notes",
+		"image": "how-to-take-smart-notes.jpg",
+		"rating": "",
+		"link": "",
+		"date_read": "2023-01-01",
+		"isbn": ""
+	},
+	{
+		"title": "Einstein His Life and Universe",
+		"image": "einstein-his-life-and-universe.jpg",
+		"rating": "6",
+		"link": "",
+		"date_read": "2023-01-01",
+		"isbn": ""
+	},
+	{
+		"title": "Investing The Last Liberal art",
+		"image": "investing-the-last-liberal-art.jpg",
+		"rating": "3",
+		"link": "",
+		"date_read": "2023-01-01",
+		"isbn": ""
 	},
 	{
 		"title": "The Lucky Country",
 		"image": "the-lucky-country.jpg",
 		"rating": "4",
-		"link": "the-lucky-country"
+		"link": "",
+		"date_read": "2024-01-01",
+		"isbn": ""
 	},
 	{
 		"title": "Ultralearning",
@@ -42,31 +105,8 @@
 		"rating": "3"
 	},
 	{
-		"title": "Of Permanent Value: The Story of Warren Buffett",
-		"displayTitle": "Of Permanent Value",
-		"image": "of-permanent-value.jpg",
-		"rating": "5"
-	},
-	{
-		"title": "Flash Crash",
-		"image": "flash-crash.jpg",
-		"rating": "4"
-	},
-	{
 		"title": "Elon Musk by Ashlee Vance",
 		"image": "elon-musk.jpg",
-		"rating": "3"
-	},
-	{
-		"title": "Einstein His Life and...",
-		"image": "einstein-his-life-and-universe.jpg",
-		"rating": "6",
-		"link": "einstein-his-life-and-universe"
-	},
-	{
-		"title": "The Polymath: Unlocking the Power of Human Versatility",
-		"displayTitle": "The Polymath",
-		"image": "the-polymath.jpg",
 		"rating": "3"
 	},
 	{
@@ -106,57 +146,16 @@
 		"rating": "5"
 	},
 	{
-		"title": "How to Take Smart Notes by Sönke Ahrens",
-		"displayTitle": "How to Take Smart Notes",
-		"image": "how-to-take-smart-notes.jpg",
-		"rating": "4"
-	},
-	{
-		"title": "Wolf of the Plains by Conn Iggulden",
-		"displayTitle": "Wolf of the Plains",
-		"image": "wolf-of-the-plains.jpg",
-		"rating": "4"
-	},
-	{
-		"title": "Dark Emu by Bruce Pascoe",
-		"displayTitle": "Dark Emu",
-		"image": "dark-emu.jpg",
-		"rating": "3"
-	},
-	{
 		"title": "The Joys of Compounding: The Passionate Pursuit of Lifelong Learning by Gautam Baid",
 		"displayTitle": "The Joys of Compounding",
 		"image": "joys-of-compounding.jpg",
 		"rating": "5"
 	},
 	{
-		"title": "Exodus by Leon Uris",
-		"image": "exodus.jpg",
-		"rating": "3"
-	},
-	{
 		"title": "The Simpsons and Their Mathematical Secrets by Simon Singh",
 		"displayTitle": "The Simpsons and Their...",
 		"image": "simpsons-mathematical-secret.jpg",
 		"rating": "5"
-	},
-	{
-		"title": "First Raj of the Sikhs: The Life and Times of Banda Singh Bahadur by Harish Dhillon",
-		"displayTitle": "First Raj of the Sikhs",
-		"image": "first-raj-of-the-sikhs.jpg",
-		"rating": "5"
-	},
-	{
-		"title": "The Secret of the Nagas (The Shiva Trilogy, #2) by Amish Tripathi",
-		"displayTitle": "The Secret of the Nagas",
-		"image": "the-secret-of-the-nagas.jpg",
-		"rating": "4"
-	},
-	{
-		"title": "The Immortals of Meluha (Shiva Trilogy, #1) by Amish Tripathi",
-		"displayTitle": "The Immortals of Meluha",
-		"image": "immortals-of-meluha.jpg",
-		"rating": "4"
 	},
 	{
 		"title": "The Billionaire's Apprentice: The Rise of The Indian-American Elite and The Fall of The Galleon Hedge Fund by Anita Raghavan",
@@ -793,5 +792,4229 @@
 		"displayTitle": "Tap Dancing to Work",
 		"image": "tap-dancing-to-work.jpg",
 		"rating": "5"
+	},
+	{
+		"title": "All I Want to Know is where I'm Going to Die So I'll Never Go There",
+		"image": "all-i-want-to-know-is-where-i-m-going-to-die-so-i-ll-never-go-there.jpg",
+		"rating": "",
+		"link": "all-i-want-to-know-is-where-i-m-going-to-die-so-i-ll-never-go-there",
+		"date_read": "1970-01-01",
+		"isbn": "9781681840482"
+	},
+	{
+		"title": "(Nirmala) (Hindi Edition)",
+		"image": "nirmala-hindi-edition.jpg",
+		"rating": "",
+		"link": "nirmala-hindi-edition",
+		"date_read": "1970-01-01",
+		"isbn": "9788122204957"
+	},
+	{
+		"title": "1,000 Dollars and an Idea: Entrepreneur to Billionaire",
+		"image": "1000-dollars-and-an-idea.jpg",
+		"rating": "",
+		"link": "1000-dollars-and-an-idea",
+		"date_read": "1970-01-01",
+		"isbn": "9781557048646"
+	},
+	{
+		"title": "100 to 1 in the Stock Market",
+		"image": "100-to-1-in-the-stock-market.jpg",
+		"rating": "",
+		"link": "100-to-1-in-the-stock-market",
+		"date_read": "1970-01-01",
+		"isbn": "9781626540293"
+	},
+	{
+		"title": "1788: The Brutal Truth of the First Fleet",
+		"image": "1788.jpg",
+		"rating": "",
+		"link": "1788",
+		"date_read": "1970-01-01",
+		"isbn": "9781741668001"
+	},
+	{
+		"title": "730 Easy Science Experiments with Everyday Materials",
+		"image": "730-easy-science-experiments-with-everyday-materials.jpg",
+		"rating": "",
+		"link": "730-easy-science-experiments-with-everyday-materials",
+		"date_read": "1970-01-01",
+		"isbn": "9781579123871"
+	},
+	{
+		"title": "A Bazaar Life: The Autobiography of David Alliance",
+		"image": "a-bazaar-life.jpg",
+		"rating": "",
+		"link": "a-bazaar-life",
+		"date_read": "1970-01-01",
+		"isbn": "9781849541923"
+	},
+	{
+		"title": "A COUNTRY CALLED CHILDHOOD : A Memoir",
+		"image": "a-country-called-childhood.jpg",
+		"rating": "",
+		"link": "a-country-called-childhood",
+		"date_read": "1970-01-01",
+		"isbn": "9789390652624"
+	},
+	{
+		"title": "A Few Lessons for Investors and Managers",
+		"image": "a-few-lessons-for-investors-and-managers.jpg",
+		"rating": "",
+		"link": "a-few-lessons-for-investors-and-managers",
+		"date_read": "1970-01-01",
+		"isbn": "9781578647453"
+	},
+	{
+		"title": "A Fool and His Money",
+		"image": "a-fool-and-his-money.jpg",
+		"rating": "",
+		"link": "a-fool-and-his-money",
+		"date_read": "1970-01-01",
+		"isbn": "9780471251385"
+	},
+	{
+		"title": "A General Selection from the Works of Sigmund Freud",
+		"image": "a-general-selection-from-the-works-of-sigmund-freud.jpg",
+		"rating": "",
+		"link": "a-general-selection-from-the-works-of-sigmund-freud",
+		"date_read": "1970-01-01",
+		"isbn": "9780385093255"
+	},
+	{
+		"title": "A History of the English Speaking Peoples, Volume 1: The Birth of Britain",
+		"image": "a-history-of-the-english-speaking-peoples-volume-1.jpg",
+		"rating": "",
+		"link": "a-history-of-the-english-speaking-peoples-volume-1",
+		"date_read": "1970-01-01",
+		"isbn": "9780304916467"
+	},
+	{
+		"title": "A History of the English Speaking Peoples, Volume 4: The Great Democracies",
+		"image": "a-history-of-the-english-speaking-peoples-volume-4.jpg",
+		"rating": "",
+		"link": "a-history-of-the-english-speaking-peoples-volume-4",
+		"date_read": "1970-01-01",
+		"isbn": "9780304921188"
+	},
+	{
+		"title": "A Man on the Moon: The Voyages of the Apollo Astronauts",
+		"image": "a-man-on-the-moon.jpg",
+		"rating": "",
+		"link": "a-man-on-the-moon",
+		"date_read": "1970-01-01",
+		"isbn": "9780241363157"
+	},
+	{
+		"title": "A Mathematician Reads The Newspaper",
+		"image": "a-mathematician-reads-the-newspaper.jpg",
+		"rating": "",
+		"link": "a-mathematician-reads-the-newspaper",
+		"date_read": "1970-01-01",
+		"isbn": "9780465089994"
+	},
+	{
+		"title": "A Matter of Degrees: What Temperature Reveals about the Past and Future of Our Species, Planet, and Universe",
+		"image": "a-matter-of-degrees.jpg",
+		"rating": "",
+		"link": "a-matter-of-degrees",
+		"date_read": "1970-01-01",
+		"isbn": "9780142002780"
+	},
+	{
+		"title": "A Mind at Play: How Claude Shannon Invented the Information Age",
+		"image": "a-mind-at-play.jpg",
+		"rating": "",
+		"link": "a-mind-at-play",
+		"date_read": "1970-01-01",
+		"isbn": "9781476766690"
+	},
+	{
+		"title": "A Song Flung Up to Heaven",
+		"image": "a-song-flung-up-to-heaven.jpg",
+		"rating": "",
+		"link": "a-song-flung-up-to-heaven",
+		"date_read": "1970-01-01",
+		"isbn": "9781844085064"
+	},
+	{
+		"title": "A Suitable Boy",
+		"image": "a-suitable-boy.jpg",
+		"rating": "",
+		"link": "a-suitable-boy",
+		"date_read": "1970-01-01",
+		"isbn": "9780140230338"
+	},
+	{
+		"title": "A Tale of Two Cities (Bantam Classic)",
+		"image": "a-tale-of-two-cities-bantam-classic.jpg",
+		"rating": "",
+		"link": "a-tale-of-two-cities-bantam-classic",
+		"date_read": "1970-01-01",
+		"isbn": "0553211765"
+	},
+	{
+		"title": "A \u200bClash of Kings",
+		"image": "a-clash-of-kings.jpg",
+		"rating": "",
+		"link": "a-clash-of-kings",
+		"date_read": "1970-01-01",
+		"isbn": "9780007447831"
+	},
+	{
+		"title": "A \u200bDance With Dragons: After the Feast",
+		"image": "a-dance-with-dragons.jpg",
+		"rating": "",
+		"link": "a-dance-with-dragons",
+		"date_read": "1970-01-01",
+		"isbn": "9780007466078"
+	},
+	{
+		"title": "A \u200bDance With Dragons: Dreams and Dust",
+		"image": "a-dance-with-dragons.jpg",
+		"rating": "",
+		"link": "a-dance-with-dragons",
+		"date_read": "1970-01-01",
+		"isbn": "9780007466061"
+	},
+	{
+		"title": "A \u200bFeast for Crows",
+		"image": "a-feast-for-crows.jpg",
+		"rating": "",
+		"link": "a-feast-for-crows",
+		"date_read": "1970-01-01",
+		"isbn": "9780007447862"
+	},
+	{
+		"title": "A \u200bGame of Thrones",
+		"image": "a-game-of-thrones.jpg",
+		"rating": "",
+		"link": "a-game-of-thrones",
+		"date_read": "1970-01-01",
+		"isbn": "9780007448036"
+	},
+	{
+		"title": "A \u200bPeople's History of the United States: 1492 to Present",
+		"image": "a-people-s-history-of-the-united-states.jpg",
+		"rating": "",
+		"link": "a-people-s-history-of-the-united-states",
+		"date_read": "1970-01-01",
+		"isbn": "9780062397348"
+	},
+	{
+		"title": "A \u200bStorm of Swords: Blood and Gold",
+		"image": "a-storm-of-swords.jpg",
+		"rating": "",
+		"link": "a-storm-of-swords",
+		"date_read": "1970-01-01",
+		"isbn": "9780007447855"
+	},
+	{
+		"title": "A \u200bStorm of Swords: Steel and Snow",
+		"image": "a-storm-of-swords.jpg",
+		"rating": "",
+		"link": "a-storm-of-swords",
+		"date_read": "1970-01-01",
+		"isbn": "9780007447848"
+	},
+	{
+		"title": "Accounting For Dummies",
+		"image": "accounting-for-dummies.jpg",
+		"rating": "",
+		"link": "accounting-for-dummies",
+		"date_read": "1970-01-01",
+		"isbn": "9780764578366"
+	},
+	{
+		"title": "Accounting for Managers",
+		"image": "accounting-for-managers.jpg",
+		"rating": "",
+		"link": "accounting-for-managers",
+		"date_read": "1970-01-01",
+		"isbn": "9781861522610"
+	},
+	{
+		"title": "Aftermath",
+		"image": "aftermath.jpg",
+		"rating": "",
+		"link": "aftermath",
+		"date_read": "1970-01-01",
+		"isbn": "9781844290642"
+	},
+	{
+		"title": "Alan Turing: The Enigma",
+		"image": "alan-turing.jpg",
+		"rating": "",
+		"link": "alan-turing",
+		"date_read": "1970-01-01",
+		"isbn": "9781784700089"
+	},
+	{
+		"title": "Algorithms \u200bto Live By",
+		"image": "algorithms-to-live-by.jpg",
+		"rating": "",
+		"link": "algorithms-to-live-by",
+		"date_read": "1970-01-01",
+		"isbn": "9780007547999"
+	},
+	{
+		"title": "All Quiet on the Western Front",
+		"image": "all-quiet-on-the-western-front.jpg",
+		"rating": "",
+		"link": "all-quiet-on-the-western-front",
+		"date_read": "1970-01-01",
+		"isbn": "0449213943"
+	},
+	{
+		"title": "All \u200bGod's Children Need Travelling Shoes",
+		"image": "all-god-s-children-need-travelling-shoes.jpg",
+		"rating": "",
+		"link": "all-god-s-children-need-travelling-shoes",
+		"date_read": "1970-01-01",
+		"isbn": "9781844085057"
+	},
+	{
+		"title": "American Prometheus",
+		"image": "american-prometheus.jpg",
+		"rating": "",
+		"link": "american-prometheus",
+		"date_read": "1970-01-01",
+		"isbn": "9780375726262"
+	},
+	{
+		"title": "Americana",
+		"image": "americana.jpg",
+		"rating": "",
+		"link": "americana",
+		"date_read": "1970-01-01",
+		"isbn": "9780399563812"
+	},
+	{
+		"title": "Amerika",
+		"image": "amerika.jpg",
+		"rating": "",
+		"link": "amerika",
+		"date_read": "1970-01-01",
+		"isbn": "9780805209440"
+	},
+	{
+		"title": "AMIR KHUSRO (PB)",
+		"image": "amir-khusro-pb.jpg",
+		"rating": "",
+		"link": "amir-khusro-pb",
+		"date_read": "1970-01-01",
+		"isbn": "9789353227708"
+	},
+	{
+		"title": "An Ordinary Life: A Memoir",
+		"image": "an-ordinary-life.jpg",
+		"rating": "",
+		"link": "an-ordinary-life",
+		"date_read": "1970-01-01",
+		"isbn": "9780670089017"
+	},
+	{
+		"title": "Anatomy of the Bear: Lessons from Wall Street's Four Great Bottoms",
+		"image": "anatomy-of-the-bear.jpg",
+		"rating": "",
+		"link": "anatomy-of-the-bear",
+		"date_read": "1970-01-01",
+		"isbn": "9781905641574"
+	},
+	{
+		"title": "And Then One Day: A Memoir",
+		"image": "and-then-one-day.jpg",
+		"rating": "",
+		"link": "and-then-one-day",
+		"date_read": "1970-01-01",
+		"isbn": "9780670087648"
+	},
+	{
+		"title": "Anna Karenina",
+		"image": "anna-karenina.jpg",
+		"rating": "",
+		"link": "anna-karenina",
+		"date_read": "1970-01-01",
+		"isbn": "9781853262715"
+	},
+	{
+		"title": "Anthro-Vision: How Anthropology Can Explain Business and Life",
+		"image": "anthro-vision.jpg",
+		"rating": "",
+		"link": "anthro-vision",
+		"date_read": "1970-01-01",
+		"isbn": "9781847942883"
+	},
+	{
+		"title": "Antifragile",
+		"image": "antifragile.jpg",
+		"rating": "",
+		"link": "antifragile",
+		"date_read": "1970-01-01",
+		"isbn": "9780812979688"
+	},
+	{
+		"title": "Arthashastra: The Science of Wealth",
+		"image": "arthashastra.jpg",
+		"rating": "",
+		"link": "arthashastra",
+		"date_read": "1970-01-01",
+		"isbn": "9780143426189"
+	},
+	{
+		"title": "BABA KHARAK SINGH",
+		"image": "baba-kharak-singh.jpg",
+		"rating": "",
+		"link": "baba-kharak-singh",
+		"date_read": "1970-01-01",
+		"isbn": "9788123745985"
+	},
+	{
+		"title": "Baruch My Own Story",
+		"image": "baruch-my-own-story.jpg",
+		"rating": "",
+		"link": "baruch-my-own-story",
+		"date_read": "1970-01-01",
+		"isbn": "9781607969136"
+	},
+	{
+		"title": "Battle for Investment Survival",
+		"image": "battle-for-investment-survival.jpg",
+		"rating": "",
+		"link": "battle-for-investment-survival",
+		"date_read": "1970-01-01",
+		"isbn": "9780470110034"
+	},
+	{
+		"title": "Becoming",
+		"image": "becoming.jpg",
+		"rating": "",
+		"link": "becoming",
+		"date_read": "1970-01-01",
+		"isbn": "9780241334140"
+	},
+	{
+		"title": "Becoming a Technical Leader: An Organic Problem-Solving Approach PB",
+		"image": "becoming-a-technical-leader.jpg",
+		"rating": "",
+		"link": "becoming-a-technical-leader",
+		"date_read": "1970-01-01",
+		"isbn": "9780932633026"
+	},
+	{
+		"title": "Becoming Steve Jobs: The evolution of a reckless upstart into a visionary leader",
+		"image": "becoming-steve-jobs.jpg",
+		"rating": "",
+		"link": "becoming-steve-jobs",
+		"date_read": "1970-01-01",
+		"isbn": "9781444761986"
+	},
+	{
+		"title": "Becoming Trader Joe: How I Did Business My Way and Still Beat the Big Guys",
+		"image": "becoming-trader-joe.jpg",
+		"rating": "",
+		"link": "becoming-trader-joe",
+		"date_read": "1970-01-01",
+		"isbn": "9781400225439"
+	},
+	{
+		"title": "Beloved",
+		"image": "beloved.jpg",
+		"rating": "",
+		"link": "beloved",
+		"date_read": "1970-01-01",
+		"isbn": "0452280621"
+	},
+	{
+		"title": "Ben & Jerry's: The Inside Scoop: How Two Real Guys Built a Business with a Social Conscience and a Sense of Humor",
+		"image": "ben-jerry-s.jpg",
+		"rating": "",
+		"link": "ben-jerry-s",
+		"date_read": "1970-01-01",
+		"isbn": "9780517597163"
+	},
+	{
+		"title": "Benjamin Franklin",
+		"image": "benjamin-franklin.jpg",
+		"rating": "",
+		"link": "benjamin-franklin",
+		"date_read": "1970-01-01",
+		"isbn": "9780743258074"
+	},
+	{
+		"title": "BENJAMIN FRANKLIN: AN AUTOBIOGRAPHY",
+		"image": "benjamin-franklin.jpg",
+		"rating": "",
+		"link": "benjamin-franklin",
+		"date_read": "1970-01-01",
+		"isbn": "9788129129598"
+	},
+	{
+		"title": "Benjamin Graham on Value Investing: Lessons from the Dean of Wall Street",
+		"image": "benjamin-graham-on-value-investing.jpg",
+		"rating": "",
+		"link": "benjamin-graham-on-value-investing",
+		"date_read": "1970-01-01",
+		"isbn": "9780793107025"
+	},
+	{
+		"title": "BENJAMIN GRAHAM: THE MEMOIRS OF THE DEAN OF WALL STREET",
+		"image": "benjamin-graham.jpg",
+		"rating": "",
+		"link": "benjamin-graham",
+		"date_read": "1970-01-01",
+		"isbn": "9780070242692"
+	},
+	{
+		"title": "Beyond Belief",
+		"image": "beyond-belief.jpg",
+		"rating": "",
+		"link": "beyond-belief",
+		"date_read": "1970-01-01",
+		"isbn": "9781787385894"
+	},
+	{
+		"title": "Beyond Sanity and Madness. The Way of Zen Master Dogen",
+		"image": "beyond-sanity-and-madness-the-way-of-zen-master-dogen.jpg",
+		"rating": "",
+		"link": "beyond-sanity-and-madness-the-way-of-zen-master-dogen",
+		"date_read": "1970-01-01",
+		"isbn": "9780804830355"
+	},
+	{
+		"title": "Bhagavadgita Dr Radhakrishnan",
+		"image": "bhagavadgita-dr-radhakrishnan.jpg",
+		"rating": "",
+		"link": "bhagavadgita-dr-radhakrishnan",
+		"date_read": "1970-01-01",
+		"isbn": "9788121603812"
+	},
+	{
+		"title": "Big Data: A Revolution That Will Transform How We Live, Work and Think",
+		"image": "big-data.jpg",
+		"rating": "",
+		"link": "big-data",
+		"date_read": "1970-01-01",
+		"isbn": "9781848547926"
+	},
+	{
+		"title": "Black Beauty",
+		"image": "black-beauty.jpg",
+		"rating": "",
+		"link": "black-beauty",
+		"date_read": "1970-01-01",
+		"isbn": "0451525965"
+	},
+	{
+		"title": "Black War, The: Fear, Sex And Resistance In Tasmania",
+		"image": "black-war-the.jpg",
+		"rating": "",
+		"link": "black-war-the",
+		"date_read": "1970-01-01",
+		"isbn": "9780702250064"
+	},
+	{
+		"title": "Bones of the Hills: 03 (Conqueror)",
+		"image": "bones-of-the-hills.jpg",
+		"rating": "",
+		"link": "bones-of-the-hills",
+		"date_read": "1970-01-01",
+		"isbn": "9780007946709"
+	},
+	{
+		"title": "Brave \u200bNew World",
+		"image": "brave-new-world.jpg",
+		"rating": "",
+		"link": "brave-new-world",
+		"date_read": "1970-01-01",
+		"isbn": "9781784870140"
+	},
+	{
+		"title": "Breath: The New Science of a Lost Art",
+		"image": "breath.jpg",
+		"rating": "4",
+		"link": "breath",
+		"date_read": "2023-01-01",
+		"isbn": "9780241289129"
+	},
+	{
+		"title": "Brief \u200bAnswers to the Big Questions",
+		"image": "brief-answers-to-the-big-questions.jpg",
+		"rating": "",
+		"link": "brief-answers-to-the-big-questions",
+		"date_read": "1970-01-01",
+		"isbn": "9781473695986"
+	},
+	{
+		"title": "Buffett",
+		"image": "buffett.jpg",
+		"rating": "",
+		"link": "buffett",
+		"date_read": "1970-01-01",
+		"isbn": "9780385484916"
+	},
+	{
+		"title": "Built to Last",
+		"image": "built-to-last.jpg",
+		"rating": "",
+		"link": "built-to-last",
+		"date_read": "1970-01-01",
+		"isbn": "9780060516406"
+	},
+	{
+		"title": "Business Adventures: Twelve Classic Tales from the World of Wall Street",
+		"image": "business-adventures.jpg",
+		"rating": "",
+		"link": "business-adventures",
+		"date_read": "1970-01-01",
+		"isbn": "9781473610385"
+	},
+	{
+		"title": "Buylle Shah (Hindi)",
+		"image": "buylle-shah-hindi.jpg",
+		"rating": "",
+		"link": "buylle-shah-hindi",
+		"date_read": "1970-01-01",
+		"isbn": "8121610958"
+	},
+	{
+		"title": "Capital Allocation: The Financials of a New England Textile Mill 1955 - 1985",
+		"image": "capital-allocation.jpg",
+		"rating": "",
+		"link": "capital-allocation",
+		"date_read": "1970-01-01",
+		"isbn": "9798631760202"
+	},
+	{
+		"title": "Capital in the Twenty First Century",
+		"image": "capital-in-the-twenty-first-century.jpg",
+		"rating": "",
+		"link": "capital-in-the-twenty-first-century",
+		"date_read": "1970-01-01",
+		"isbn": "9780674430006"
+	},
+	{
+		"title": "Carnegie",
+		"image": "carnegie.jpg",
+		"rating": "",
+		"link": "carnegie",
+		"date_read": "1970-01-01",
+		"isbn": "9780471468837"
+	},
+	{
+		"title": "Caste",
+		"image": "caste.jpg",
+		"rating": "",
+		"link": "caste",
+		"date_read": "1970-01-01",
+		"isbn": "9780241501207"
+	},
+	{
+		"title": "Charag",
+		"image": "charag.jpg",
+		"rating": "",
+		"link": "charag",
+		"date_read": "1970-01-01",
+		"isbn": "9789387383241"
+	},
+	{
+		"title": "Charlie Munger: The Complete Investor (Columbia Business School Publishing)",
+		"image": "charlie-munger.jpg",
+		"rating": "",
+		"link": "charlie-munger",
+		"date_read": "1970-01-01",
+		"isbn": "9780231170994"
+	},
+	{
+		"title": "Chip War: The Fight for the World's Most Critical Technology",
+		"image": "chip-war.jpg",
+		"rating": "",
+		"link": "chip-war",
+		"date_read": "1970-01-01",
+		"isbn": "9781398504127"
+	},
+	{
+		"title": "Churchill: A History of The English Speaking Peoples Book 3",
+		"image": "churchill.jpg",
+		"rating": "",
+		"link": "churchill",
+		"date_read": "1970-01-01",
+		"isbn": "9780304915132"
+	},
+	{
+		"title": "Code",
+		"image": "code.jpg",
+		"rating": "",
+		"link": "code",
+		"date_read": "1970-01-01",
+		"isbn": "9780735611313"
+	},
+	{
+		"title": "Common Stocks and Uncommon Profits and Other Writings",
+		"image": "common-stocks-and-uncommon-profits-and-other-writings.jpg",
+		"rating": "",
+		"link": "common-stocks-and-uncommon-profits-and-other-writings",
+		"date_read": "1970-01-01",
+		"isbn": "9780471445500"
+	},
+	{
+		"title": "Complete Works of Swami Vivekananda, Vol. 4",
+		"image": "complete-works-of-swami-vivekananda-vol-4.jpg",
+		"rating": "",
+		"link": "complete-works-of-swami-vivekananda-vol-4",
+		"date_read": "1970-01-01",
+		"isbn": "8185301794"
+	},
+	{
+		"title": "Complete Works of Swami Vivekananda, Volume 1",
+		"image": "complete-works-of-swami-vivekananda-volume-1.jpg",
+		"rating": "",
+		"link": "complete-works-of-swami-vivekananda-volume-1",
+		"date_read": "1970-01-01",
+		"isbn": "818530176X"
+	},
+	{
+		"title": "Complete Works of Swami Vivekananda, Volume 2",
+		"image": "complete-works-of-swami-vivekananda-volume-2.jpg",
+		"rating": "",
+		"link": "complete-works-of-swami-vivekananda-volume-2",
+		"date_read": "1970-01-01",
+		"isbn": "8185301778"
+	},
+	{
+		"title": "Complete Works of Swami Vivekananda, Volume 5",
+		"image": "complete-works-of-swami-vivekananda-volume-5.jpg",
+		"rating": "",
+		"link": "complete-works-of-swami-vivekananda-volume-5",
+		"date_read": "1970-01-01",
+		"isbn": "8185301808"
+	},
+	{
+		"title": "Complete Works of Swami Vivekananda, Volume 6",
+		"image": "complete-works-of-swami-vivekananda-volume-6.jpg",
+		"rating": "",
+		"link": "complete-works-of-swami-vivekananda-volume-6",
+		"date_read": "1970-01-01",
+		"isbn": "8185301816"
+	},
+	{
+		"title": "Complete Works of Swami Vivekananda, Volume 7",
+		"image": "complete-works-of-swami-vivekananda-volume-7.jpg",
+		"rating": "",
+		"link": "complete-works-of-swami-vivekananda-volume-7",
+		"date_read": "1970-01-01",
+		"isbn": "8185301824"
+	},
+	{
+		"title": "Complete Works of Swami Vivekananda, Volume 8",
+		"image": "complete-works-of-swami-vivekananda-volume-8.jpg",
+		"rating": "",
+		"link": "complete-works-of-swami-vivekananda-volume-8",
+		"date_read": "1970-01-01",
+		"isbn": "8185301832"
+	},
+	{
+		"title": "Complete Works of Swami Vivekananda, Volume 9",
+		"image": "complete-works-of-swami-vivekananda-volume-9.jpg",
+		"rating": "",
+		"link": "complete-works-of-swami-vivekananda-volume-9",
+		"date_read": "1970-01-01",
+		"isbn": "8175051868"
+	},
+	{
+		"title": "Complete Works of Vivekananda [HB] Vol 3",
+		"image": "complete-works-of-vivekananda-hb-vol-3.jpg",
+		"rating": "",
+		"link": "complete-works-of-vivekananda-hb-vol-3",
+		"date_read": "1970-01-01",
+		"isbn": "8185301786"
+	},
+	{
+		"title": "Crime & Punishment (Konemann Classics)",
+		"image": "crime-punishment-konemann-classics.jpg",
+		"rating": "",
+		"link": "crime-punishment-konemann-classics",
+		"date_read": "1970-01-01",
+		"isbn": "9783829009041"
+	},
+	{
+		"title": "Critical Thinkers",
+		"image": "critical-thinkers.jpg",
+		"rating": "",
+		"link": "critical-thinkers",
+		"date_read": "1970-01-01",
+		"isbn": "9781792674181"
+	},
+	{
+		"title": "Damn Right: Behind the Scenes with Berkshire Hathaway Billionaire Charlie Munger",
+		"image": "damn-right.jpg",
+		"rating": "",
+		"link": "damn-right",
+		"date_read": "1970-01-01",
+		"isbn": "9780471446910"
+	},
+	{
+		"title": "DAMODARAN ON VALUATION, 2ND ED",
+		"image": "damodaran-on-valuation-2nd-ed.jpg",
+		"rating": "",
+		"link": "damodaran-on-valuation-2nd-ed",
+		"date_read": "1970-01-01",
+		"isbn": "9788126518852"
+	},
+	{
+		"title": "Dark Emu",
+		"image": "dark-emu.jpg",
+		"rating": "3",
+		"link": "dark-emu",
+		"date_read": "2023-01-01",
+		"isbn": "9781921248016"
+	},
+	{
+		"title": "Daughters of Arabia",
+		"image": "daughters-of-arabia.jpg",
+		"rating": "",
+		"link": "daughters-of-arabia",
+		"date_read": "1970-01-01",
+		"isbn": "9780553816938"
+	},
+	{
+		"title": "David Copperfield (Vintage Classics Dickens Series)",
+		"image": "david-copperfield-vintage-classics-dickens-series.jpg",
+		"rating": "",
+		"link": "david-copperfield-vintage-classics-dickens-series",
+		"date_read": "1970-01-01",
+		"isbn": "9781784873424"
+	},
+	{
+		"title": "Death'S End: The Three-Body Problem, Book 3",
+		"image": "death-s-end.jpg",
+		"rating": "",
+		"link": "death-s-end",
+		"date_read": "1970-01-01",
+		"isbn": "9781784971656"
+	},
+	{
+		"title": "Deep Survival: Who Lives, Who Dies, and Why",
+		"image": "deep-survival.jpg",
+		"rating": "6",
+		"link": "deep-survival",
+		"date_read": "2023-01-01",
+		"isbn": "9780393353716"
+	},
+	{
+		"title": "Diana \u200b- Her True Story In Her Own Words",
+		"image": "diana-her-true-story-in-her-own-words.jpg",
+		"rating": "",
+		"link": "diana-her-true-story-in-her-own-words",
+		"date_read": "1970-01-01",
+		"isbn": "9781789290448"
+	},
+	{
+		"title": "Diwan-I-Mir",
+		"image": "diwan-i-mir.jpg",
+		"rating": "",
+		"link": "diwan-i-mir",
+		"date_read": "1970-01-01",
+		"isbn": "9788187482611"
+	},
+	{
+		"title": "Doctor Jekyll and Mr Hyde and other stories",
+		"image": "doctor-jekyll-and-mr-hyde-and-other-stories.jpg",
+		"rating": "",
+		"link": "doctor-jekyll-and-mr-hyde-and-other-stories",
+		"date_read": "1970-01-01",
+		"isbn": "9780140431179"
+	},
+	{
+		"title": "Don Quixote",
+		"image": "don-quixote.jpg",
+		"rating": "",
+		"link": "don-quixote",
+		"date_read": "1970-01-01",
+		"isbn": "9780099469698"
+	},
+	{
+		"title": "Down \u200bUnder",
+		"image": "down-under.jpg",
+		"rating": "",
+		"link": "down-under",
+		"date_read": "1970-01-01",
+		"isbn": "9780552997034"
+	},
+	{
+		"title": "Dracula (Penguin Classics S.)",
+		"image": "dracula-penguin-classics-s.jpg",
+		"rating": "",
+		"link": "dracula-penguin-classics-s",
+		"date_read": "1970-01-01",
+		"isbn": "9780140433814"
+	},
+	{
+		"title": "Dreams From My Father",
+		"image": "dreams-from-my-father.jpg",
+		"rating": "",
+		"link": "dreams-from-my-father",
+		"date_read": "1970-01-01",
+		"isbn": "9781921351433"
+	},
+	{
+		"title": "Edison",
+		"image": "edison.jpg",
+		"rating": "",
+		"link": "edison",
+		"date_read": "1970-01-01",
+		"isbn": "9780812993110"
+	},
+	{
+		"title": "Education and the Significance of Life",
+		"image": "education-and-the-significance-of-life.jpg",
+		"rating": "",
+		"link": "education-and-the-significance-of-life",
+		"date_read": "1970-01-01",
+		"isbn": "0575001046"
+	},
+	{
+		"title": "Education of a Wandering Man",
+		"image": "education-of-a-wandering-man.jpg",
+		"rating": "",
+		"link": "education-of-a-wandering-man",
+		"date_read": "1970-01-01",
+		"isbn": "9780553286526"
+	},
+	{
+		"title": "Einstein's \u200bDreams",
+		"image": "einstein-s-dreams.jpg",
+		"rating": "",
+		"link": "einstein-s-dreams",
+		"date_read": "1970-01-01",
+		"isbn": "9780446670111"
+	},
+	{
+		"title": "Einstein: His Life and Univers",
+		"image": "einstein.jpg",
+		"rating": "",
+		"link": "einstein",
+		"date_read": "1970-01-01",
+		"isbn": "9781471179389"
+	},
+	{
+		"title": "Elon Musk",
+		"image": "elon-musk.jpg",
+		"rating": "3",
+		"link": "elon-musk",
+		"date_read": "1970-01-01",
+		"isbn": "9780753555644"
+	},
+	{
+		"title": "Emerson's Essays",
+		"image": "emerson-s-essays.jpg",
+		"rating": "",
+		"link": "emerson-s-essays",
+		"date_read": "1970-01-01",
+		"isbn": "9798699069439"
+	},
+	{
+		"title": "Empire of Pain: The Secret History of the Sackler Dynasty",
+		"image": "empire-of-pain.jpg",
+		"rating": "",
+		"link": "empire-of-pain",
+		"date_read": "1970-01-01",
+		"isbn": "9781529063073"
+	},
+	{
+		"title": "Empire State of Mind: How Jay Z Went from Street Corner to Corner Office, Revised Edition",
+		"image": "empire-state-of-mind.jpg",
+		"rating": "",
+		"link": "empire-state-of-mind",
+		"date_read": "1970-01-01",
+		"isbn": "9781591848349"
+	},
+	{
+		"title": "Encore Conqueror: 05",
+		"image": "encore-conqueror.jpg",
+		"rating": "",
+		"link": "encore-conqueror",
+		"date_read": "1970-01-01",
+		"isbn": "9780007946723"
+	},
+	{
+		"title": "Encore Empire of Silver: 04 (Conqueror)",
+		"image": "encore-empire-of-silver.jpg",
+		"rating": "",
+		"link": "encore-empire-of-silver",
+		"date_read": "1970-01-01",
+		"isbn": "9780007946716"
+	},
+	{
+		"title": "Endurance",
+		"image": "endurance.jpg",
+		"rating": "",
+		"link": "endurance",
+		"date_read": "1970-01-01",
+		"isbn": "9780753809877"
+	},
+	{
+		"title": "Energy",
+		"image": "energy.jpg",
+		"rating": "",
+		"link": "energy",
+		"date_read": "1970-01-01",
+		"isbn": "9781786071330"
+	},
+	{
+		"title": "Enough",
+		"image": "enough.jpg",
+		"rating": "",
+		"link": "enough",
+		"date_read": "1970-01-01",
+		"isbn": "9780470524237"
+	},
+	{
+		"title": "EPISODES IN THE LIFE OF AKBAR",
+		"image": "episodes-in-the-life-of-akbar.jpg",
+		"rating": "",
+		"link": "episodes-in-the-life-of-akbar",
+		"date_read": "1970-01-01",
+		"isbn": "9788123709376"
+	},
+	{
+		"title": "Essays In Persuasion",
+		"image": "essays-in-persuasion.jpg",
+		"rating": "",
+		"link": "essays-in-persuasion",
+		"date_read": "1970-01-01",
+		"isbn": "9781441492265"
+	},
+	{
+		"title": "Everything You Need to Ace Pre-Algebra and Algebra I in One Big Fat Notebook",
+		"image": "everything-you-need-to-ace-pre-algebra-and-algebra-i-in-one-big-fat-notebook.jpg",
+		"rating": "",
+		"link": "everything-you-need-to-ace-pre-algebra-and-algebra-i-in-one-big-fat-notebook",
+		"date_read": "1970-01-01",
+		"isbn": "9781523504381"
+	},
+	{
+		"title": "Factfulness",
+		"image": "factfulness.jpg",
+		"rating": "",
+		"link": "factfulness",
+		"date_read": "1970-01-01",
+		"isbn": "9781473637467"
+	},
+	{
+		"title": "Fahrenheit \u200b451 (angol)",
+		"image": "fahrenheit-451-angol.jpg",
+		"rating": "",
+		"link": "fahrenheit-451-angol",
+		"date_read": "1970-01-01",
+		"isbn": "9780006546061"
+	},
+	{
+		"title": "Failed States. The abuse of power and the assault on democracy",
+		"image": "failed-states-the-abuse-of-power-and-the-assault-on-democracy.jpg",
+		"rating": "",
+		"link": "failed-states-the-abuse-of-power-and-the-assault-on-democracy",
+		"date_read": "1970-01-01",
+		"isbn": "9781741149142"
+	},
+	{
+		"title": "Family Matters",
+		"image": "family-matters.jpg",
+		"rating": "",
+		"link": "family-matters",
+		"date_read": "1970-01-01",
+		"isbn": "9780571230556"
+	},
+	{
+		"title": "Financial Shenanigans, Fourth Edition: How to Detect Accounting Gimmicks and Fraud in Financial Reports",
+		"image": "financial-shenanigans-fourth-edition.jpg",
+		"rating": "",
+		"link": "financial-shenanigans-fourth-edition",
+		"date_read": "1970-01-01",
+		"isbn": "9781260117264"
+	},
+	{
+		"title": "Financial Statements",
+		"image": "financial-statements.jpg",
+		"rating": "",
+		"link": "financial-statements",
+		"date_read": "1970-01-01",
+		"isbn": "9781601630230"
+	},
+	{
+		"title": "Finding My Virginity: The New Autobiography",
+		"image": "finding-my-virginity.jpg",
+		"rating": "",
+		"link": "finding-my-virginity",
+		"date_read": "1970-01-01",
+		"isbn": "9780735219427"
+	},
+	{
+		"title": "Fire in the Valley",
+		"image": "fire-in-the-valley.jpg",
+		"rating": "",
+		"link": "fire-in-the-valley",
+		"date_read": "1970-01-01",
+		"isbn": "9780071358958"
+	},
+	{
+		"title": "First Man: The Life of Neil Armstrong",
+		"image": "first-man.jpg",
+		"rating": "",
+		"link": "first-man",
+		"date_read": "1970-01-01",
+		"isbn": "9781471126031"
+	},
+	{
+		"title": "First Raj of the Sikhs The Life & Times of Banda Singh Bahadur",
+		"image": "first-raj-of-the-sikhs.jpg",
+		"rating": "5",
+		"link": "first-raj-of-the-sikhs-the-life-times-of-banda-singh-bahadur",
+		"date_read": "2014-01-01",
+		"isbn": "9789381431894"
+	},
+	{
+		"title": "Flights of Fancy: Defying Gravity by Design and Evolution",
+		"image": "flights-of-fancy.jpg",
+		"rating": "",
+		"link": "flights-of-fancy",
+		"date_read": "1970-01-01",
+		"isbn": "9781838937867"
+	},
+	{
+		"title": "Florence Nightingale: 1820-1910",
+		"image": "florence-nightingale.jpg",
+		"rating": "",
+		"link": "florence-nightingale",
+		"date_read": "1970-01-01",
+		"isbn": "9780353249899"
+	},
+	{
+		"title": "Fooled \u200bby Randomness - The Hidden Role of Chance in Life and in the Markets",
+		"image": "fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.jpg",
+		"rating": "",
+		"link": "fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets",
+		"date_read": "1970-01-01",
+		"isbn": "9780141031484"
+	},
+	{
+		"title": "For God, Country, and Coca-Cola",
+		"image": "for-god-country-and-coca-cola.jpg",
+		"rating": "",
+		"link": "for-god-country-and-coca-cola",
+		"date_read": "1970-01-01",
+		"isbn": "9780465029174"
+	},
+	{
+		"title": "Fortune's Children: The Fall of the House of Vanderbilt",
+		"image": "fortune-s-children.jpg",
+		"rating": "",
+		"link": "fortune-s-children",
+		"date_read": "1970-01-01",
+		"isbn": "9780062224064"
+	},
+	{
+		"title": "Frankenstein",
+		"image": "frankenstein.jpg",
+		"rating": "",
+		"link": "frankenstein",
+		"date_read": "1970-01-01",
+		"isbn": "9780140433623"
+	},
+	{
+		"title": "From Third World to First: Singapore and the Asian Economic Boom",
+		"image": "from-third-world-to-first.jpg",
+		"rating": "",
+		"link": "from-third-world-to-first",
+		"date_read": "1970-01-01",
+		"isbn": "9780060957513"
+	},
+	{
+		"title": "Fundamentals of Physics I",
+		"image": "fundamentals-of-physics-i.jpg",
+		"rating": "",
+		"link": "fundamentals-of-physics-i",
+		"date_read": "1970-01-01",
+		"isbn": "9780300243772"
+	},
+	{
+		"title": "Fundamentals of Physics II",
+		"image": "fundamentals-of-physics-ii.jpg",
+		"rating": "",
+		"link": "fundamentals-of-physics-ii",
+		"date_read": "1970-01-01",
+		"isbn": "9780300243789"
+	},
+	{
+		"title": "Future frontiers: education for an AI world",
+		"image": "future-frontiers.jpg",
+		"rating": "",
+		"link": "future-frontiers",
+		"date_read": "1970-01-01",
+		"isbn": "9780522873115"
+	},
+	{
+		"title": "GADAR PARTY NAYAK : KARTAR SINGH SAR",
+		"image": "gadar-party-nayak.jpg",
+		"rating": "",
+		"link": "gadar-party-nayak",
+		"date_read": "1970-01-01",
+		"isbn": "9788123761718"
+	},
+	{
+		"title": "Gallipoli",
+		"image": "gallipoli.jpg",
+		"rating": "",
+		"link": "gallipoli",
+		"date_read": "1970-01-01",
+		"isbn": "9780143786351"
+	},
+	{
+		"title": "Gandhi Before India",
+		"image": "gandhi-before-india.jpg",
+		"rating": "",
+		"link": "gandhi-before-india",
+		"date_read": "1970-01-01",
+		"isbn": "9780307474780"
+	},
+	{
+		"title": "Gather \u200bTogether in My Name",
+		"image": "gather-together-in-my-name.jpg",
+		"rating": "",
+		"link": "gather-together-in-my-name",
+		"date_read": "1970-01-01",
+		"isbn": "9781844085026"
+	},
+	{
+		"title": "Geek Sublime: The Beauty of Code, the Code of Beauty",
+		"image": "geek-sublime.jpg",
+		"rating": "",
+		"link": "geek-sublime",
+		"date_read": "1970-01-01",
+		"isbn": "9781555976859"
+	},
+	{
+		"title": "Genius : Richard Feynman and Modern Physics",
+		"image": "genius.jpg",
+		"rating": "",
+		"link": "genius",
+		"date_read": "1970-01-01",
+		"isbn": "9780349105321"
+	},
+	{
+		"title": "Genome: The Autobiography of a Species in 23 Chapters",
+		"image": "genome.jpg",
+		"rating": "",
+		"link": "genome",
+		"date_read": "1970-01-01",
+		"isbn": "9780060894085"
+	},
+	{
+		"title": "Getting Started in Value Investing",
+		"image": "getting-started-in-value-investing.jpg",
+		"rating": "",
+		"link": "getting-started-in-value-investing",
+		"date_read": "1970-01-01",
+		"isbn": "9780470139080"
+	},
+	{
+		"title": "GHADAR MOVEMENT : A SHORT HISTORY",
+		"image": "ghadar-movement.jpg",
+		"rating": "",
+		"link": "ghadar-movement",
+		"date_read": "1970-01-01",
+		"isbn": "9788123762821"
+	},
+	{
+		"title": "Ghalib",
+		"image": "ghalib.jpg",
+		"rating": "",
+		"link": "ghalib",
+		"date_read": "1970-01-01",
+		"isbn": "9780143064817"
+	},
+	{
+		"title": "Ghalib : Sangeet Ke Saanche Mein Dhali Gazalen",
+		"image": "ghalib.jpg",
+		"rating": "",
+		"link": "ghalib",
+		"date_read": "1970-01-01",
+		"isbn": "8170167531"
+	},
+	{
+		"title": "Give and Take",
+		"image": "give-and-take.jpg",
+		"rating": "",
+		"link": "give-and-take",
+		"date_read": "1970-01-01",
+		"isbn": "9781780224725"
+	},
+	{
+		"title": "Globalization Before Its Time: The Gujarati Merchants from Kachchh",
+		"image": "globalization-before-its-time.jpg",
+		"rating": "",
+		"link": "globalization-before-its-time",
+		"date_read": "1970-01-01",
+		"isbn": "9780143425120"
+	},
+	{
+		"title": "Godan Sakshi, Hindi",
+		"image": "godan-sakshi-hindi.jpg",
+		"rating": "",
+		"link": "godan-sakshi-hindi",
+		"date_read": "1970-01-01",
+		"isbn": "9788186265796"
+	},
+	{
+		"title": "G\u00f6del, \u200bEscher, Bach: An Eternal Golden Braid",
+		"image": "godel-escher-bach.jpg",
+		"rating": "",
+		"link": "godel-escher-bach",
+		"date_read": "1970-01-01",
+		"isbn": "9780465026562"
+	},
+	{
+		"title": "Godman to Tycoon",
+		"image": "godman-to-tycoon.jpg",
+		"rating": "",
+		"link": "godman-to-tycoon",
+		"date_read": "1970-01-01",
+		"isbn": "9789386228383"
+	},
+	{
+		"title": "Gone \u200bwith the Wind",
+		"image": "gone-with-the-wind.jpg",
+		"rating": "",
+		"link": "gone-with-the-wind",
+		"date_read": "1970-01-01",
+		"isbn": "9780330323499"
+	},
+	{
+		"title": "Goras and Desis: Managing Agencies and the Making of Corporate India",
+		"image": "goras-and-desis.jpg",
+		"rating": "",
+		"link": "goras-and-desis",
+		"date_read": "1970-01-01",
+		"isbn": "9780143425359"
+	},
+	{
+		"title": "Great Fortune: The Epic of Rockefeller Center",
+		"image": "great-fortune.jpg",
+		"rating": "",
+		"link": "great-fortune",
+		"date_read": "1970-01-01",
+		"isbn": "9780142001776"
+	},
+	{
+		"title": "Grinding It Out",
+		"image": "grinding-it-out.jpg",
+		"rating": "",
+		"link": "grinding-it-out",
+		"date_read": "1970-01-01",
+		"isbn": "9781250127501"
+	},
+	{
+		"title": "Growth: From Microorganisms to Megacities (Mit Press)",
+		"image": "growth.jpg",
+		"rating": "",
+		"link": "growth",
+		"date_read": "1970-01-01",
+		"isbn": "9780262539685"
+	},
+	{
+		"title": "Harry \u200bPotter and the Chamber of Secrets",
+		"image": "harry-potter-and-the-chamber-of-secrets.jpg",
+		"rating": "",
+		"link": "harry-potter-and-the-chamber-of-secrets",
+		"date_read": "1970-01-01",
+		"isbn": "9780747562184"
+	},
+	{
+		"title": "Harry \u200bPotter and the Goblet of Fire",
+		"image": "harry-potter-and-the-goblet-of-fire.jpg",
+		"rating": "",
+		"link": "harry-potter-and-the-goblet-of-fire",
+		"date_read": "1970-01-01",
+		"isbn": "9780747582380"
+	},
+	{
+		"title": "Harry \u200bPotter and the Half-Blood Prince",
+		"image": "harry-potter-and-the-half-blood-prince.jpg",
+		"rating": "",
+		"link": "harry-potter-and-the-half-blood-prince",
+		"date_read": "1970-01-01",
+		"isbn": "9780747581086"
+	},
+	{
+		"title": "Harry \u200bPotter and the Order of the Phoenix",
+		"image": "harry-potter-and-the-order-of-the-phoenix.jpg",
+		"rating": "",
+		"link": "harry-potter-and-the-order-of-the-phoenix",
+		"date_read": "1970-01-01",
+		"isbn": "9780747561071"
+	},
+	{
+		"title": "Harry \u200bPotter and the Philosopher's Stone",
+		"image": "harry-potter-and-the-philosopher-s-stone.jpg",
+		"rating": "",
+		"link": "harry-potter-and-the-philosopher-s-stone",
+		"date_read": "1970-01-01",
+		"isbn": "9780747558194"
+	},
+	{
+		"title": "Harry \u200bPotter and the Prisoner of Azkaban",
+		"image": "harry-potter-and-the-prisoner-of-azkaban.jpg",
+		"rating": "",
+		"link": "harry-potter-and-the-prisoner-of-azkaban",
+		"date_read": "1970-01-01",
+		"isbn": "9780747546290"
+	},
+	{
+		"title": "Hedgehogging",
+		"image": "hedgehogging.jpg",
+		"rating": "",
+		"link": "hedgehogging",
+		"date_read": "1970-01-01",
+		"isbn": "9780470067734"
+	},
+	{
+		"title": "Hegemony Or Survival",
+		"image": "hegemony-or-survival.jpg",
+		"rating": "",
+		"link": "hegemony-or-survival",
+		"date_read": "1970-01-01",
+		"isbn": "9781741141627"
+	},
+	{
+		"title": "Here, There And Everywhere",
+		"image": "here-there-and-everywhere.jpg",
+		"rating": "",
+		"link": "here-there-and-everywhere",
+		"date_read": "1970-01-01",
+		"isbn": "9780143444343"
+	},
+	{
+		"title": "Hetty: The Genius and Madness of America's First Female Tycoon",
+		"image": "hetty.jpg",
+		"rating": "",
+		"link": "hetty",
+		"date_read": "1970-01-01",
+		"isbn": "9780060542573"
+	},
+	{
+		"title": "History of the English Speaking Peoples Volume 2",
+		"image": "history-of-the-english-speaking-peoples-volume-2.jpg",
+		"rating": "",
+		"link": "history-of-the-english-speaking-peoples-volume-2",
+		"date_read": "1970-01-01",
+		"isbn": "9780304925032"
+	},
+	{
+		"title": "Hit Refresh: The Quest to Rediscover Microsoft's Soul and Imagine a Better Future for Everyone",
+		"image": "hit-refresh.jpg",
+		"rating": "",
+		"link": "hit-refresh",
+		"date_read": "1970-01-01",
+		"isbn": "9780062652508"
+	},
+	{
+		"title": "Hitch-22 : A Memoir: Confessions & Contradictions",
+		"image": "hitch-22.jpg",
+		"rating": "",
+		"link": "hitch-22",
+		"date_read": "1970-01-01",
+		"isbn": "9781742376042"
+	},
+	{
+		"title": "Holy Blood, Holy Grail",
+		"image": "holy-blood-holy-grail.jpg",
+		"rating": "",
+		"link": "holy-blood-holy-grail",
+		"date_read": "1970-01-01",
+		"isbn": "0440136482"
+	},
+	{
+		"title": "Homo \u200bDeus (angol)",
+		"image": "homo-deus-angol.jpg",
+		"rating": "",
+		"link": "homo-deus-angol",
+		"date_read": "1970-01-01",
+		"isbn": "9781784703936"
+	},
+	{
+		"title": "How I Made $2,000,000 in the Stock Market",
+		"image": "how-i-made-2000000-in-the-stock-market.jpg",
+		"rating": "",
+		"link": "how-i-made-2000000-in-the-stock-market",
+		"date_read": "1970-01-01",
+		"isbn": "9780818403965"
+	},
+	{
+		"title": "How The Mind Works",
+		"image": "how-the-mind-works.jpg",
+		"rating": "",
+		"link": "how-the-mind-works",
+		"date_read": "1970-01-01",
+		"isbn": "9780141980782"
+	},
+	{
+		"title": "How the Scots Invented the Modern World",
+		"image": "how-the-scots-invented-the-modern-world.jpg",
+		"rating": "",
+		"link": "how-the-scots-invented-the-modern-world",
+		"date_read": "1970-01-01",
+		"isbn": "9780609809990"
+	},
+	{
+		"title": "How to Avoid a Climate Disaster: The Solutions We Have and the Breakthroughs We Need",
+		"image": "how-to-avoid-a-climate-disaster.jpg",
+		"rating": "",
+		"link": "how-to-avoid-a-climate-disaster",
+		"date_read": "1970-01-01",
+		"isbn": "9780241448304"
+	},
+	{
+		"title": "How to legally reduce your tax : without losing any money! Discover how the rich use company and trust structures to protect their assets and minimise their tax.",
+		"image": "how-to-legally-reduce-your-tax.jpg",
+		"rating": "",
+		"link": "how-to-legally-reduce-your-tax",
+		"date_read": "1970-01-01",
+		"isbn": "9780646450650"
+	},
+	{
+		"title": "How to Profit From Special Situations in the Stock Market",
+		"image": "how-to-profit-from-special-situations-in-the-stock-market.jpg",
+		"rating": "",
+		"link": "how-to-profit-from-special-situations-in-the-stock-market",
+		"date_read": "1970-01-01",
+		"isbn": "9781614279594"
+	},
+	{
+		"title": "How to Speak Money",
+		"image": "how-to-speak-money.jpg",
+		"rating": "",
+		"link": "how-to-speak-money",
+		"date_read": "1970-01-01",
+		"isbn": "9780571309849"
+	},
+	{
+		"title": "How to Stop Worrying and Start Living",
+		"image": "how-to-stop-worrying-and-start-living.jpg",
+		"rating": "",
+		"link": "how-to-stop-worrying-and-start-living",
+		"date_read": "1970-01-01",
+		"isbn": "9780091906412"
+	},
+	{
+		"title": "How \u200bNot to be Wrong",
+		"image": "how-not-to-be-wrong.jpg",
+		"rating": "",
+		"link": "how-not-to-be-wrong",
+		"date_read": "1970-01-01",
+		"isbn": "9780718196042"
+	},
+	{
+		"title": "I Am Malala: The Girl Who Stood Up for Education and was Shot by the Taliban",
+		"image": "i-am-malala.jpg",
+		"rating": "",
+		"link": "i-am-malala",
+		"date_read": "1970-01-01",
+		"isbn": "9781474602112"
+	},
+	{
+		"title": "I Do What I Do",
+		"image": "i-do-what-i-do.jpg",
+		"rating": "",
+		"link": "i-do-what-i-do",
+		"date_read": "1970-01-01",
+		"isbn": "9789352770144"
+	},
+	{
+		"title": "I TOO HAD A DREAM",
+		"image": "i-too-had-a-dream.jpg",
+		"rating": "",
+		"link": "i-too-had-a-dream",
+		"date_read": "1970-01-01",
+		"isbn": "9788174364074"
+	},
+	{
+		"title": "I \u200bAm a Strange Loop",
+		"image": "i-am-a-strange-loop.jpg",
+		"rating": "",
+		"link": "i-am-a-strange-loop",
+		"date_read": "1970-01-01",
+		"isbn": "9780465030798"
+	},
+	{
+		"title": "I \u200bKnow Why the Caged Bird Sings",
+		"image": "i-know-why-the-caged-bird-sings.jpg",
+		"rating": "",
+		"link": "i-know-why-the-caged-bird-sings",
+		"date_read": "1970-01-01",
+		"isbn": "9780860685111"
+	},
+	{
+		"title": "Iacocca",
+		"image": "iacocca.jpg",
+		"rating": "",
+		"link": "iacocca",
+		"date_read": "1970-01-01",
+		"isbn": "9780553251470"
+	},
+	{
+		"title": "IDEAS AND OPINIONS",
+		"image": "ideas-and-opinions.jpg",
+		"rating": "",
+		"link": "ideas-and-opinions",
+		"date_read": "1970-01-01",
+		"isbn": "9780517003930"
+	},
+	{
+		"title": "Ikigai",
+		"image": "ikigai.jpg",
+		"rating": "",
+		"link": "ikigai",
+		"date_read": "1970-01-01",
+		"isbn": "9781786330895"
+	},
+	{
+		"title": "India After Gandhi",
+		"image": "india-after-gandhi.jpg",
+		"rating": "",
+		"link": "india-after-gandhi",
+		"date_read": "1970-01-01",
+		"isbn": "9789382616979"
+	},
+	{
+		"title": "India An Introduction",
+		"image": "india-an-introduction.jpg",
+		"rating": "",
+		"link": "india-an-introduction",
+		"date_read": "1970-01-01",
+		"isbn": "9788172236595"
+	},
+	{
+		"title": "India As Seen by Amir Khusrau (1318 A.D).",
+		"image": "india-as-seen-by-amir-khusrau-1318-a-d.jpg",
+		"rating": "",
+		"link": "india-as-seen-by-amir-khusrau-1318-a-d",
+		"date_read": "1970-01-01",
+		"isbn": "9798651027231"
+	},
+	{
+		"title": "Indian Railways",
+		"image": "indian-railways.jpg",
+		"rating": "",
+		"link": "indian-railways",
+		"date_read": "1970-01-01",
+		"isbn": "9780143426752"
+	},
+	{
+		"title": "Inferno",
+		"image": "inferno.jpg",
+		"rating": "",
+		"link": "inferno",
+		"date_read": "1970-01-01",
+		"isbn": "9780141393544"
+	},
+	{
+		"title": "Inferno",
+		"image": "inferno.jpg",
+		"rating": "",
+		"link": "inferno",
+		"date_read": "1970-01-01",
+		"isbn": "9780593072493"
+	},
+	{
+		"title": "Influence",
+		"image": "influence.jpg",
+		"rating": "",
+		"link": "influence",
+		"date_read": "1970-01-01",
+		"isbn": "9780061241895"
+	},
+	{
+		"title": "Innumeracy",
+		"image": "innumeracy.jpg",
+		"rating": "",
+		"link": "innumeracy",
+		"date_read": "1970-01-01",
+		"isbn": "9780809058402"
+	},
+	{
+		"title": "Inside Out : MicrosoftIn Our Own Words",
+		"image": "inside-out.jpg",
+		"rating": "",
+		"link": "inside-out",
+		"date_read": "1970-01-01",
+		"isbn": "9780446527392"
+	},
+	{
+		"title": "Inside the Investments of Warren Buffett: Twenty Cases",
+		"image": "inside-the-investments-of-warren-buffett.jpg",
+		"rating": "",
+		"link": "inside-the-investments-of-warren-buffett",
+		"date_read": "1970-01-01",
+		"isbn": "9780231164634"
+	},
+	{
+		"title": "Internal Time: Chronotypes, Social Jet Lag, and Why You're So Tired",
+		"image": "internal-time.jpg",
+		"rating": "",
+		"link": "internal-time",
+		"date_read": "1970-01-01",
+		"isbn": "9780674975392"
+	},
+	{
+		"title": "Invention: A Life of Learning through Failure",
+		"image": "invention.jpg",
+		"rating": "",
+		"link": "invention",
+		"date_read": "1970-01-01",
+		"isbn": "9781471198779"
+	},
+	{
+		"title": "Investing",
+		"image": "investing.jpg",
+		"rating": "",
+		"link": "investing",
+		"date_read": "1970-01-01",
+		"isbn": "9780231160100"
+	},
+	{
+		"title": "Investing for Growth: How to make money by only buying the best companies in the world - An anthology of investment writing, 2010-20:",
+		"image": "investing-for-growth.jpg",
+		"rating": "",
+		"link": "investing-for-growth",
+		"date_read": "1970-01-01",
+		"isbn": "9780857199010"
+	},
+	{
+		"title": "It Ain't As Easy As It Looks: Ted Turner's Amazing Story",
+		"image": "it-ain-t-as-easy-as-it-looks.jpg",
+		"rating": "",
+		"link": "it-ain-t-as-easy-as-it-looks",
+		"date_read": "1970-01-01",
+		"isbn": "9780517593226"
+	},
+	{
+		"title": "It's Not Luck",
+		"image": "it-s-not-luck.jpg",
+		"rating": "",
+		"link": "it-s-not-luck",
+		"date_read": "1970-01-01",
+		"isbn": "9780566076275"
+	},
+	{
+		"title": "IWoz",
+		"image": "iwoz.jpg",
+		"rating": "",
+		"link": "iwoz",
+		"date_read": "1970-01-01",
+		"isbn": "9780755314072"
+	},
+	{
+		"title": "Jadunama: Javed Akhtar Ek Safar",
+		"image": "jadunama.jpg",
+		"rating": "",
+		"link": "jadunama",
+		"date_read": "1970-01-01",
+		"isbn": "9789355432339"
+	},
+	{
+		"title": "James Cook: The Story Behind the Man Who Mapped the World",
+		"image": "james-cook.jpg",
+		"rating": "",
+		"link": "james-cook",
+		"date_read": "1970-01-01",
+		"isbn": "9780733643309"
+	},
+	{
+		"title": "JOURNEY OF A MASTER",
+		"image": "journey-of-a-master.jpg",
+		"rating": "",
+		"link": "journey-of-a-master",
+		"date_read": "1970-01-01",
+		"isbn": "9788175973053"
+	},
+	{
+		"title": "Journey to the Centre of the Earth (Signet classics)",
+		"image": "journey-to-the-centre-of-the-earth-signet-classics.jpg",
+		"rating": "",
+		"link": "journey-to-the-centre-of-the-earth-signet-classics",
+		"date_read": "1970-01-01",
+		"isbn": "0451524500"
+	},
+	{
+		"title": "Junk to Gold: From Salvage to the World\u00e2\u20ac\u2122s Largest Online Auto Auction",
+		"image": "junk-to-gold.jpg",
+		"rating": "",
+		"link": "junk-to-gold",
+		"date_read": "1970-01-01",
+		"isbn": "9781490816579"
+	},
+	{
+		"title": "Khullam Khulla : Rishi Kapoor Uncensored",
+		"image": "khullam-khulla.jpg",
+		"rating": "",
+		"link": "khullam-khulla",
+		"date_read": "1970-01-01",
+		"isbn": "9789352643028"
+	},
+	{
+		"title": "Krishnamurti: The Years of Fulfillment",
+		"image": "krishnamurti.jpg",
+		"rating": "",
+		"link": "krishnamurti",
+		"date_read": "1970-01-01",
+		"isbn": "0380680076"
+	},
+	{
+		"title": "Lazarus Rising (Revised Edition)",
+		"image": "lazarus-rising-revised-edition.jpg",
+		"rating": "",
+		"link": "lazarus-rising-revised-edition",
+		"date_read": "1970-01-01",
+		"isbn": "9780732298876"
+	},
+	{
+		"title": "Leonardo Da Vinci",
+		"image": "leonardo-da-vinci.jpg",
+		"rating": "",
+		"link": "leonardo-da-vinci",
+		"date_read": "1970-01-01",
+		"isbn": "9781501139154"
+	},
+	{
+		"title": "Lincoln",
+		"image": "lincoln.jpg",
+		"rating": "",
+		"link": "lincoln",
+		"date_read": "1970-01-01",
+		"isbn": "9780684825359"
+	},
+	{
+		"title": "Lolita \u200b(angol)",
+		"image": "lolita-angol.jpg",
+		"rating": "",
+		"link": "lolita-angol",
+		"date_read": "1970-01-01",
+		"isbn": "9780141037431"
+	},
+	{
+		"title": "Long Walk to Freedom: The Autobiography of Nelson Mandela",
+		"image": "long-walk-to-freedom.jpg",
+		"rating": "",
+		"link": "long-walk-to-freedom",
+		"date_read": "1970-01-01",
+		"isbn": "9780316548182"
+	},
+	{
+		"title": "Lord \u200bof the Flies",
+		"image": "lord-of-the-flies.jpg",
+		"rating": "",
+		"link": "lord-of-the-flies",
+		"date_read": "1970-01-01",
+		"isbn": "9780399501487"
+	},
+	{
+		"title": "Lords of the Bow",
+		"image": "lords-of-the-bow.jpg",
+		"rating": "",
+		"link": "lords-of-the-bow",
+		"date_read": "1970-01-01",
+		"isbn": "9780007946693"
+	},
+	{
+		"title": "Losing My Virginity: The Autobiography",
+		"image": "losing-my-virginity.jpg",
+		"rating": "",
+		"link": "losing-my-virginity",
+		"date_read": "1970-01-01",
+		"isbn": "9781852276843"
+	},
+	{
+		"title": "MacQuarie",
+		"image": "macquarie.jpg",
+		"rating": "",
+		"link": "macquarie",
+		"date_read": "1970-01-01",
+		"isbn": "9780733335907"
+	},
+	{
+		"title": "Made in the USA",
+		"image": "made-in-the-usa.jpg",
+		"rating": "",
+		"link": "made-in-the-usa",
+		"date_read": "1970-01-01",
+		"isbn": "9780262528351"
+	},
+	{
+		"title": "Major Works: Selected Philosophical Writings (Harper Perennial Modern Thought)",
+		"image": "major-works.jpg",
+		"rating": "",
+		"link": "major-works",
+		"date_read": "1970-01-01",
+		"isbn": "9780061550249"
+	},
+	{
+		"title": "Man's Search for Meaning",
+		"image": "man-s-search-for-meaning.jpg",
+		"rating": "",
+		"link": "man-s-search-for-meaning",
+		"date_read": "1970-01-01",
+		"isbn": "9780807014271"
+	},
+	{
+		"title": "Mao",
+		"image": "mao.jpg",
+		"rating": "",
+		"link": "mao",
+		"date_read": "1970-01-01",
+		"isbn": "9780099507376"
+	},
+	{
+		"title": "Martin Zweig's Winning on Wall Street",
+		"image": "martin-zweig-s-winning-on-wall-street.jpg",
+		"rating": "",
+		"link": "martin-zweig-s-winning-on-wall-street",
+		"date_read": "1970-01-01",
+		"isbn": "0446512346"
+	},
+	{
+		"title": "Masterclass with Super-Investors",
+		"image": "masterclass-with-super-investors.jpg",
+		"rating": "",
+		"link": "masterclass-with-super-investors",
+		"date_read": "1970-01-01",
+		"isbn": "9789388304184"
+	},
+	{
+		"title": "Mathematics From the Birth of Numbers",
+		"image": "mathematics-from-the-birth-of-numbers.jpg",
+		"rating": "",
+		"link": "mathematics-from-the-birth-of-numbers",
+		"date_read": "1970-01-01",
+		"isbn": "9780393040029"
+	},
+	{
+		"title": "Maxims for Thinking Analytically",
+		"image": "maxims-for-thinking-analytically.jpg",
+		"rating": "",
+		"link": "maxims-for-thinking-analytically",
+		"date_read": "1970-01-01",
+		"isbn": "9781735340883"
+	},
+	{
+		"title": "Meditations",
+		"image": "meditations.jpg",
+		"rating": "",
+		"link": "meditations",
+		"date_read": "1970-01-01",
+		"isbn": "9780140449334"
+	},
+	{
+		"title": "Men Who Killed Gandhi",
+		"image": "men-who-killed-gandhi.jpg",
+		"rating": "",
+		"link": "men-who-killed-gandhi",
+		"date_read": "1970-01-01",
+		"isbn": "9788174366177"
+	},
+	{
+		"title": "Mera Kya",
+		"image": "mera-kya.jpg",
+		"rating": "",
+		"link": "mera-kya",
+		"date_read": "1970-01-01",
+		"isbn": "9789352291472"
+	},
+	{
+		"title": "Merchants of Doubt: How a Handful of Scientists Obscured the Truth on Issues from Tobacco Smoke to Climate Change",
+		"image": "merchants-of-doubt.jpg",
+		"rating": "",
+		"link": "merchants-of-doubt",
+		"date_read": "1970-01-01",
+		"isbn": "9781608193943"
+	},
+	{
+		"title": "Michael \u200bJordan: The Life",
+		"image": "michael-jordan.jpg",
+		"rating": "",
+		"link": "michael-jordan",
+		"date_read": "1970-01-01",
+		"isbn": "9780316194761"
+	},
+	{
+		"title": "Millennium: A History of Our Last Thousand Years",
+		"image": "millennium.jpg",
+		"rating": "",
+		"link": "millennium",
+		"date_read": "1970-01-01",
+		"isbn": "9780552994828"
+	},
+	{
+		"title": "Mind is the Master: The Complete James Allen Treasury",
+		"image": "mind-is-the-master.jpg",
+		"rating": "",
+		"link": "mind-is-the-master",
+		"date_read": "1970-01-01",
+		"isbn": "9781585427697"
+	},
+	{
+		"title": "Misbehaving",
+		"image": "misbehaving.jpg",
+		"rating": "",
+		"link": "misbehaving",
+		"date_read": "1970-01-01",
+		"isbn": "9780241951224"
+	},
+	{
+		"title": "Moby-Dick",
+		"image": "moby-dick.jpg",
+		"rating": "",
+		"link": "moby-dick",
+		"date_read": "1970-01-01",
+		"isbn": "9781566193566"
+	},
+	{
+		"title": "Models For Critical Thinking: A Fundamental Guide to Effective Decision Making, Deep Analysis, Intelligent Reasoning, and Independent Thinking: 1 (The critical thinker)",
+		"image": "models-for-critical-thinking.jpg",
+		"rating": "",
+		"link": "models-for-critical-thinking",
+		"date_read": "1970-01-01",
+		"isbn": "9781728892245"
+	},
+	{
+		"title": "Mom \u200b& Me & Mom",
+		"image": "mom-me-mom.jpg",
+		"rating": "",
+		"link": "mom-me-mom",
+		"date_read": "1970-01-01",
+		"isbn": "9781844089154"
+	},
+	{
+		"title": "Money",
+		"image": "money.jpg",
+		"rating": "",
+		"link": "money",
+		"date_read": "1970-01-01",
+		"isbn": "9780099563020"
+	},
+	{
+		"title": "Money and Power: How Goldman Sachs Came to Rule the World",
+		"image": "money-and-power.jpg",
+		"rating": "",
+		"link": "money-and-power",
+		"date_read": "1970-01-01",
+		"isbn": "9780241954065"
+	},
+	{
+		"title": "Money Masters of Our Time",
+		"image": "money-masters-of-our-time.jpg",
+		"rating": "",
+		"link": "money-masters-of-our-time",
+		"date_read": "1970-01-01",
+		"isbn": "9780887309700"
+	},
+	{
+		"title": "Most Important Thing, The: Uncommon Sense for the Thoughtful Investor",
+		"image": "most-important-thing-the.jpg",
+		"rating": "",
+		"link": "most-important-thing-the",
+		"date_read": "1970-01-01",
+		"isbn": "9780231153683"
+	},
+	{
+		"title": "Musafir",
+		"image": "musafir.jpg",
+		"rating": "",
+		"link": "musafir",
+		"date_read": "1970-01-01",
+		"isbn": "9788183225908"
+	},
+	{
+		"title": "My Adventurous Life",
+		"image": "my-adventurous-life.jpg",
+		"rating": "",
+		"link": "my-adventurous-life",
+		"date_read": "1970-01-01",
+		"isbn": "9781760878894"
+	},
+	{
+		"title": "My Inventions: The Autobiography of Nikola Tesla",
+		"image": "my-inventions.jpg",
+		"rating": "",
+		"link": "my-inventions",
+		"date_read": "1970-01-01",
+		"isbn": "9781684222063"
+	},
+	{
+		"title": "Naaraz",
+		"image": "naaraz.jpg",
+		"rating": "",
+		"link": "naaraz",
+		"date_read": "1970-01-01",
+		"isbn": "9788183227025"
+	},
+	{
+		"title": "Naked \u200bStatistics",
+		"image": "naked-statistics.jpg",
+		"rating": "",
+		"link": "naked-statistics",
+		"date_read": "1970-01-01",
+		"isbn": "9780393347777"
+	},
+	{
+		"title": "Never at Rest",
+		"image": "never-at-rest.jpg",
+		"rating": "",
+		"link": "never-at-rest",
+		"date_read": "1970-01-01",
+		"isbn": "9780521274357"
+	},
+	{
+		"title": "Never \u200bSplit the Difference",
+		"image": "never-split-the-difference.jpg",
+		"rating": "",
+		"link": "never-split-the-difference",
+		"date_read": "1970-01-01",
+		"isbn": "9781847941497"
+	},
+	{
+		"title": "New \u200bYork",
+		"image": "new-york.jpg",
+		"rating": "",
+		"link": "new-york",
+		"date_read": "1970-01-01",
+		"isbn": "9780345497420"
+	},
+	{
+		"title": "Ninety Percent of Everything: Inside Shipping, the Invisible Industry That Puts Clothes on Your Back, Gas in Your Car, and Food on Your Plate",
+		"image": "ninety-percent-of-everything.jpg",
+		"rating": "",
+		"link": "ninety-percent-of-everything",
+		"date_read": "1970-01-01",
+		"isbn": "9781250058294"
+	},
+	{
+		"title": "Noise",
+		"image": "noise.jpg",
+		"rating": "",
+		"link": "noise",
+		"date_read": "1970-01-01",
+		"isbn": "9780008309008"
+	},
+	{
+		"title": "Notes \u200bfrom Underground, White Nights, The Dream of a Ridiculous Man and and Selections from The House of the Dead",
+		"image": "notes-from-underground-white-nights-the-dream-of-a-ridiculous-man-and-and-selections-from-the-house-of-the-dead.jpg",
+		"rating": "",
+		"link": "notes-from-underground-white-nights-the-dream-of-a-ridiculous-man-and-and-selections-from-the-house-of-the-dead",
+		"date_read": "1970-01-01",
+		"isbn": "9780451529558"
+	},
+	{
+		"title": "Nudge \u200b(angol)",
+		"image": "nudge-angol.jpg",
+		"rating": "",
+		"link": "nudge-angol",
+		"date_read": "1970-01-01",
+		"isbn": "9780143115267"
+	},
+	{
+		"title": "Numbers \u200bDon't Lie",
+		"image": "numbers-don-t-lie.jpg",
+		"rating": "",
+		"link": "numbers-don-t-lie",
+		"date_read": "1970-01-01",
+		"isbn": "9780241989692"
+	},
+	{
+		"title": "Nyagrodha",
+		"image": "nyagrodha.jpg",
+		"rating": "",
+		"link": "nyagrodha",
+		"date_read": "1970-01-01",
+		"isbn": "9780670049691"
+	},
+	{
+		"title": "O Jerusalem",
+		"image": "o-jerusalem.jpg",
+		"rating": "",
+		"link": "o-jerusalem",
+		"date_read": "1970-01-01",
+		"isbn": "9788125925927"
+	},
+	{
+		"title": "Of Mice and Men",
+		"image": "of-mice-and-men.jpg",
+		"rating": "",
+		"link": "of-mice-and-men",
+		"date_read": "1970-01-01",
+		"isbn": "9780141038421"
+	},
+	{
+		"title": "Of Permanent Value 1998 Edition",
+		"image": "of-permanent-value-1998-edition.jpg",
+		"rating": "5",
+		"link": "of-permanent-value-1998-edition",
+		"date_read": "2023-01-01",
+		"isbn": "9780964190528"
+	},
+	{
+		"title": "Of permanent value 2",
+		"image": "of-permanent-value-2.jpg",
+		"rating": "",
+		"link": "of-permanent-value-2",
+		"date_read": "1970-01-01",
+		"isbn": "9781578644568"
+	},
+	{
+		"title": "On Writing",
+		"image": "on-writing.jpg",
+		"rating": "",
+		"link": "on-writing",
+		"date_read": "1970-01-01",
+		"isbn": "9781982159375"
+	},
+	{
+		"title": "One Life: The True Story of Sir Nicholas Winton",
+		"image": "one-life.jpg",
+		"rating": "4",
+		"link": "one-life",
+		"date_read": "1970-01-01",
+		"isbn": "9781472148667"
+	},
+	{
+		"title": "One Thousand Ways to Make $1000",
+		"image": "one-thousand-ways-to-make-1000.jpg",
+		"rating": "",
+		"link": "one-thousand-ways-to-make-1000",
+		"date_read": "1970-01-01",
+		"isbn": "9781942148012"
+	},
+	{
+		"title": "One Up On Wall Street",
+		"image": "one-up-on-wall-street.jpg",
+		"rating": "",
+		"link": "one-up-on-wall-street",
+		"date_read": "1970-01-01",
+		"isbn": "9780743200400"
+	},
+	{
+		"title": "Ordinary Men: Reserve Police Battalion 11 and the Final Solution in Poland",
+		"image": "ordinary-men.jpg",
+		"rating": "",
+		"link": "ordinary-men",
+		"date_read": "1970-01-01",
+		"isbn": "9780141000428"
+	},
+	{
+		"title": "Other people's money",
+		"image": "other-people-s-money.jpg",
+		"rating": "",
+		"link": "other-people-s-money",
+		"date_read": "1970-01-01",
+		"isbn": "9780732282585"
+	},
+	{
+		"title": "Other \u200bMinds",
+		"image": "other-minds.jpg",
+		"rating": "",
+		"link": "other-minds",
+		"date_read": "1970-01-01",
+		"isbn": "9780008226299"
+	},
+	{
+		"title": "Our Mathematical Universe: My Quest for the Ultimate Nature of Reality",
+		"image": "our-mathematical-universe.jpg",
+		"rating": "",
+		"link": "our-mathematical-universe",
+		"date_read": "1970-01-01",
+		"isbn": "9780241954638"
+	},
+	{
+		"title": "Our Moon Has Blood Clots",
+		"image": "our-moon-has-blood-clots.jpg",
+		"rating": "",
+		"link": "our-moon-has-blood-clots",
+		"date_read": "1970-01-01",
+		"isbn": "9788184005134"
+	},
+	{
+		"title": "Overdrive",
+		"image": "overdrive.jpg",
+		"rating": "",
+		"link": "overdrive",
+		"date_read": "1970-01-01",
+		"isbn": "9780471291060"
+	},
+	{
+		"title": "Passion Driven - Have You Found Your Passion?",
+		"image": "passion-driven-have-you-found-your-passion.jpg",
+		"rating": "",
+		"link": "passion-driven-have-you-found-your-passion",
+		"date_read": "1970-01-01",
+		"isbn": "9780975177006"
+	},
+	{
+		"title": "Paul Keating: The Big-Picture Leader",
+		"image": "paul-keating.jpg",
+		"rating": "",
+		"link": "paul-keating",
+		"date_read": "1970-01-01",
+		"isbn": "9781925322279"
+	},
+	{
+		"title": "Penguin Classics Homer The Iliad",
+		"image": "penguin-classics-homer-the-iliad.jpg",
+		"rating": "",
+		"link": "penguin-classics-homer-the-iliad",
+		"date_read": "1970-01-01",
+		"isbn": "9780140444445"
+	},
+	{
+		"title": "Personal History",
+		"image": "personal-history.jpg",
+		"rating": "",
+		"link": "personal-history",
+		"date_read": "1970-01-01",
+		"isbn": "0394585852"
+	},
+	{
+		"title": "Playing It My Way: My Autobiography",
+		"image": "playing-it-my-way.jpg",
+		"rating": "",
+		"link": "playing-it-my-way",
+		"date_read": "1970-01-01",
+		"isbn": "9781473605176"
+	},
+	{
+		"title": "Poor Charlie's Almanack: The Essential Wit and Wisdom of Charles T. Munger [Hardcover] Munger, Charles T.; Kaufman, Peter D.; Buffett, Warren and Collison, John",
+		"image": "poor-charlie-s-almanack.jpg",
+		"rating": "",
+		"link": "poor-charlie-s-almanack",
+		"date_read": "1970-01-01",
+		"isbn": "9781953953230"
+	},
+	{
+		"title": "Predictably \u200bIrrational",
+		"image": "predictably-irrational.jpg",
+		"rating": "",
+		"link": "predictably-irrational",
+		"date_read": "1970-01-01",
+		"isbn": "9780061353246"
+	},
+	{
+		"title": "Princess",
+		"image": "princess.jpg",
+		"rating": "",
+		"link": "princess",
+		"date_read": "1970-01-01",
+		"isbn": "9780553816952"
+	},
+	{
+		"title": "Principles: Life and Work",
+		"image": "principles.jpg",
+		"rating": "",
+		"link": "principles",
+		"date_read": "1970-01-01",
+		"isbn": "9781501124020"
+	},
+	{
+		"title": "Prisoner's Dilemma",
+		"image": "prisoner-s-dilemma.jpg",
+		"rating": "",
+		"link": "prisoner-s-dilemma",
+		"date_read": "1970-01-01",
+		"isbn": "9780385415804"
+	},
+	{
+		"title": "Programming Windows",
+		"image": "programming-windows.jpg",
+		"rating": "",
+		"link": "programming-windows",
+		"date_read": "1970-01-01",
+		"isbn": "157231995X"
+	},
+	{
+		"title": "Project \u200bHail Mary",
+		"image": "project-hail-mary.jpg",
+		"rating": "",
+		"link": "project-hail-mary",
+		"date_read": "1970-01-01",
+		"isbn": "9781529100624"
+	},
+	{
+		"title": "Puzzling Adventures: Tales of Strategy, Logic, and Mathematical Skill",
+		"image": "puzzling-adventures.jpg",
+		"rating": "",
+		"link": "puzzling-adventures",
+		"date_read": "1970-01-01",
+		"isbn": "9780393326635"
+	},
+	{
+		"title": "Pyjamas are Forgiving",
+		"image": "pyjamas-are-forgiving.jpg",
+		"rating": "",
+		"link": "pyjamas-are-forgiving",
+		"date_read": "1970-01-01",
+		"isbn": "9789386228970"
+	},
+	{
+		"title": "Quality of Earnings",
+		"image": "quality-of-earnings.jpg",
+		"rating": "",
+		"link": "quality-of-earnings",
+		"date_read": "1970-01-01",
+		"isbn": "9780684863757"
+	},
+	{
+		"title": "Queen of Our Times: The Life of Elizabeth II",
+		"image": "queen-of-our-times.jpg",
+		"rating": "",
+		"link": "queen-of-our-times",
+		"date_read": "1970-01-01",
+		"isbn": "9781529063424"
+	},
+	{
+		"title": "RAAT PASHMINE KI",
+		"image": "raat-pashmine-ki.jpg",
+		"rating": "",
+		"link": "raat-pashmine-ki",
+		"date_read": "1970-01-01",
+		"isbn": "9788129102249"
+	},
+	{
+		"title": "RAAVI PAAR",
+		"image": "raavi-paar.jpg",
+		"rating": "",
+		"link": "raavi-paar",
+		"date_read": "1970-01-01",
+		"isbn": "9788171673896"
+	},
+	{
+		"title": "Raise High the Roof Beam, Carpenters and Seymour",
+		"image": "raise-high-the-roof-beam-carpenters-and-seymour.jpg",
+		"rating": "",
+		"link": "raise-high-the-roof-beam-carpenters-and-seymour",
+		"date_read": "1970-01-01",
+		"isbn": "0316769517"
+	},
+	{
+		"title": "Ravindranath Thakur Ki Shreshth Kahaniyan",
+		"image": "ravindranath-thakur-ki-shreshth-kahaniyan.jpg",
+		"rating": "",
+		"link": "ravindranath-thakur-ki-shreshth-kahaniyan",
+		"date_read": "1970-01-01",
+		"isbn": "9788121609340"
+	},
+	{
+		"title": "Red Roulette: An Insider's Story of Wealth, Power, Corruption and Vengeance in Today's China",
+		"image": "red-roulette.jpg",
+		"rating": "",
+		"link": "red-roulette",
+		"date_read": "1970-01-01",
+		"isbn": "9781398510371"
+	},
+	{
+		"title": "Refactoring",
+		"image": "refactoring.jpg",
+		"rating": "",
+		"link": "refactoring",
+		"date_read": "1970-01-01",
+		"isbn": "9780201485677"
+	},
+	{
+		"title": "Reinventing Capitalism in the Age of Big Data",
+		"image": "reinventing-capitalism-in-the-age-of-big-data.jpg",
+		"rating": "",
+		"link": "reinventing-capitalism-in-the-age-of-big-data",
+		"date_read": "1970-01-01",
+		"isbn": "9781473656505"
+	},
+	{
+		"title": "Relativity: The Special and the General Theory - 100th Anniversary Edition",
+		"image": "relativity.jpg",
+		"rating": "",
+		"link": "relativity",
+		"date_read": "1970-01-01",
+		"isbn": "9780691191812"
+	},
+	{
+		"title": "Renton's Understanding the Stock Exchange",
+		"image": "renton-s-understanding-the-stock-exchange.jpg",
+		"rating": "",
+		"link": "renton-s-understanding-the-stock-exchange",
+		"date_read": "1970-01-01",
+		"isbn": "9781863502429"
+	},
+	{
+		"title": "Return of a king : the battle for Afghanistan",
+		"image": "return-of-a-king.jpg",
+		"rating": "",
+		"link": "return-of-a-king",
+		"date_read": "1970-01-01",
+		"isbn": "9781526637574"
+	},
+	{
+		"title": "Revolution 2020: Love . Corruption. Ambition",
+		"image": "revolution-2020.jpg",
+		"rating": "",
+		"link": "revolution-2020",
+		"date_read": "1970-01-01",
+		"isbn": "9788129118806"
+	},
+	{
+		"title": "Rise and Fall of the Third Reich",
+		"image": "rise-and-fall-of-the-third-reich.jpg",
+		"rating": "",
+		"link": "rise-and-fall-of-the-third-reich",
+		"date_read": "1970-01-01",
+		"isbn": "9780099421764"
+	},
+	{
+		"title": "Robin",
+		"image": "robin.jpg",
+		"rating": "",
+		"link": "robin",
+		"date_read": "1970-01-01",
+		"isbn": "9781447293231"
+	},
+	{
+		"title": "Romeo and Juliet",
+		"image": "romeo-and-juliet.jpg",
+		"rating": "",
+		"link": "romeo-and-juliet",
+		"date_read": "1970-01-01",
+		"isbn": "0553213059"
+	},
+	{
+		"title": "Saat Zameenen Ek Sitara",
+		"image": "saat-zameenen-ek-sitara.jpg",
+		"rating": "",
+		"link": "saat-zameenen-ek-sitara",
+		"date_read": "1970-01-01",
+		"isbn": "9788190894302"
+	},
+	{
+		"title": "Sach Kahun Toh: An Autobiography",
+		"image": "sach-kahun-toh.jpg",
+		"rating": "",
+		"link": "sach-kahun-toh",
+		"date_read": "1970-01-01",
+		"isbn": "9780670095278"
+	},
+	{
+		"title": "Sadacarah: Adi sankaracarya",
+		"image": "sadacarah.jpg",
+		"rating": "",
+		"link": "sadacarah",
+		"date_read": "1970-01-01",
+		"isbn": "9788175973305"
+	},
+	{
+		"title": "Same As Ever: Timeless Lessons on Risk, Opportunity and Living a Good Life",
+		"image": "same-as-ever.jpg",
+		"rating": "",
+		"link": "same-as-ever",
+		"date_read": "1970-01-01",
+		"isbn": "9781804090947"
+	},
+	{
+		"title": "Sampurna Chanakya Neeti",
+		"image": "sampurna-chanakya-neeti.jpg",
+		"rating": "",
+		"link": "sampurna-chanakya-neeti",
+		"date_read": "1970-01-01",
+		"isbn": "9788181333476"
+	},
+	{
+		"title": "Sanghi Who Never Went To A Shakha",
+		"image": "sanghi-who-never-went-to-a-shakha.jpg",
+		"rating": "",
+		"link": "sanghi-who-never-went-to-a-shakha",
+		"date_read": "1970-01-01",
+		"isbn": "9789390547661"
+	},
+	{
+		"title": "Satyarth Prakash",
+		"image": "satyarth-prakash.jpg",
+		"rating": "",
+		"link": "satyarth-prakash",
+		"date_read": "1970-01-01",
+		"isbn": "9788189068783"
+	},
+	{
+		"title": "Scion \u200bof Ikshvaku",
+		"image": "scion-of-ikshvaku.jpg",
+		"rating": "",
+		"link": "scion-of-ikshvaku",
+		"date_read": "1970-01-01",
+		"isbn": "9789385152146"
+	},
+	{
+		"title": "SECURITY ANALYSIS, 6TH EDN",
+		"image": "security-analysis-6th-edn.jpg",
+		"rating": "",
+		"link": "security-analysis-6th-edn",
+		"date_read": "1970-01-01",
+		"isbn": "9780070140653"
+	},
+	{
+		"title": "Security Analysis: The Classic 1951 Edition",
+		"image": "security-analysis.jpg",
+		"rating": "",
+		"link": "security-analysis",
+		"date_read": "1970-01-01",
+		"isbn": "9780071448208"
+	},
+	{
+		"title": "Seeing What Others Dont: The Remarkable Ways We Gain Insights",
+		"image": "seeing-what-others-dont.jpg",
+		"rating": "",
+		"link": "seeing-what-others-dont",
+		"date_read": "1970-01-01",
+		"isbn": "9781857886788"
+	},
+	{
+		"title": "Seeking Wisdom: From Darwin to Munger, 3rd Edition",
+		"image": "seeking-wisdom.jpg",
+		"rating": "",
+		"link": "seeking-wisdom",
+		"date_read": "1970-01-01",
+		"isbn": "9781578644285"
+	},
+	{
+		"title": "Seven Secrets Of Successful Parenting: Or How to Achieve the Almost Impossible",
+		"image": "seven-secrets-of-successful-parenting.jpg",
+		"rating": "",
+		"link": "seven-secrets-of-successful-parenting",
+		"date_read": "1970-01-01",
+		"isbn": "9780593059159"
+	},
+	{
+		"title": "Shoe Dog",
+		"image": "shoe-dog.jpg",
+		"rating": "",
+		"link": "shoe-dog",
+		"date_read": "1970-01-01",
+		"isbn": "9781471146725"
+	},
+	{
+		"title": "Siddhartha",
+		"image": "siddhartha.jpg",
+		"rating": "",
+		"link": "siddhartha",
+		"date_read": "1970-01-01",
+		"isbn": "9789380005607"
+	},
+	{
+		"title": "Silent \u200bSpring",
+		"image": "silent-spring.jpg",
+		"rating": "",
+		"link": "silent-spring",
+		"date_read": "1970-01-01",
+		"isbn": "9780141184944"
+	},
+	{
+		"title": "Singin' & Swingin' and Gettin' Merry Like Christmas (Christmas Fiction)",
+		"image": "singin-swingin-and-gettin-merry-like-christmas-christmas-fiction.jpg",
+		"rating": "",
+		"link": "singin-swingin-and-gettin-merry-like-christmas-christmas-fiction",
+		"date_read": "1970-01-01",
+		"isbn": "9781844085033"
+	},
+	{
+		"title": "Sophie's \u200bWorld",
+		"image": "sophie-s-world.jpg",
+		"rating": "",
+		"link": "sophie-s-world",
+		"date_read": "1970-01-01",
+		"isbn": "9781474602280"
+	},
+	{
+		"title": "SPRINGS OF WISDOM",
+		"image": "springs-of-wisdom.jpg",
+		"rating": "",
+		"link": "springs-of-wisdom",
+		"date_read": "1970-01-01",
+		"isbn": "9788171671625"
+	},
+	{
+		"title": "Steve \u200bJobs",
+		"image": "steve-jobs.jpg",
+		"rating": "",
+		"link": "steve-jobs",
+		"date_read": "1970-01-01",
+		"isbn": "9781408703748"
+	},
+	{
+		"title": "Strategic Market Management (STRATEGIC MARKET MANAGMENT)",
+		"image": "strategic-market-management-strategic-market-managment.jpg",
+		"rating": "",
+		"link": "strategic-market-management-strategic-market-managment",
+		"date_read": "1970-01-01",
+		"isbn": "9780471177432"
+	},
+	{
+		"title": "Superintelligence: Paths, Dangers, Strategies",
+		"image": "superintelligence.jpg",
+		"rating": "",
+		"link": "superintelligence",
+		"date_read": "1970-01-01",
+		"isbn": "9780198739838"
+	},
+	{
+		"title": "Supermoney",
+		"image": "supermoney.jpg",
+		"rating": "",
+		"link": "supermoney",
+		"date_read": "1970-01-01",
+		"isbn": "9780471786313"
+	},
+	{
+		"title": "Surely \u200bYou're Joking, Mr. Feynman!",
+		"image": "surely-you-re-joking-mr-feynman.jpg",
+		"rating": "",
+		"link": "surely-you-re-joking-mr-feynman",
+		"date_read": "1970-01-01",
+		"isbn": "9780393316049"
+	},
+	{
+		"title": "Surrounded \u200bby Idiots",
+		"image": "surrounded-by-idiots.jpg",
+		"rating": "",
+		"link": "surrounded-by-idiots",
+		"date_read": "1970-01-01",
+		"isbn": "9781785042188"
+	},
+	{
+		"title": "Suspected Poems",
+		"image": "suspected-poems.jpg",
+		"rating": "",
+		"link": "suspected-poems",
+		"date_read": "1970-01-01",
+		"isbn": "9780670089611"
+	},
+	{
+		"title": "Systems Analysis and Design with UML Version 2. 0 : An Object-Oriented Approach",
+		"image": "systems-analysis-and-design-with-uml-version-2-0.jpg",
+		"rating": "",
+		"link": "systems-analysis-and-design-with-uml-version-2-0",
+		"date_read": "1970-01-01",
+		"isbn": "0471348066"
+	},
+	{
+		"title": "Technical Analysis for Dummies (For Dummies (Lifestyles Paperback))",
+		"image": "technical-analysis-for-dummies-for-dummies-lifestyles-paperback.jpg",
+		"rating": "",
+		"link": "technical-analysis-for-dummies-for-dummies-lifestyles-paperback",
+		"date_read": "1970-01-01",
+		"isbn": "9780764540448"
+	},
+	{
+		"title": "The Accidental Prime Minister: The Making and Unmaking of Manmohan Singh",
+		"image": "the-accidental-prime-minister.jpg",
+		"rating": "",
+		"link": "the-accidental-prime-minister",
+		"date_read": "1970-01-01",
+		"isbn": "9780670086740"
+	},
+	{
+		"title": "The Adventures of Huckleberry Finn",
+		"image": "the-adventures-of-huckleberry-finn.jpg",
+		"rating": "",
+		"link": "the-adventures-of-huckleberry-finn",
+		"date_read": "1970-01-01",
+		"isbn": "9780099511113"
+	},
+	{
+		"title": "The Almanack of Naval Ravikant: A Guide to Wealth and Happiness",
+		"image": "the-almanack-of-naval-ravikant.jpg",
+		"rating": "",
+		"link": "the-almanack-of-naval-ravikant",
+		"date_read": "1970-01-01",
+		"isbn": "9781544514215"
+	},
+	{
+		"title": "The anarchy : the relentless rise of the East India Company",
+		"image": "the-anarchy.jpg",
+		"rating": "",
+		"link": "the-anarchy",
+		"date_read": "1970-01-01",
+		"isbn": "9781526637567"
+	},
+	{
+		"title": "The Annotated Turing",
+		"image": "the-annotated-turing.jpg",
+		"rating": "",
+		"link": "the-annotated-turing",
+		"date_read": "1970-01-01",
+		"isbn": "9780470229057"
+	},
+	{
+		"title": "The Art of Speculation",
+		"image": "the-art-of-speculation.jpg",
+		"rating": "",
+		"link": "the-art-of-speculation",
+		"date_read": "1970-01-01",
+		"isbn": "9781614272380"
+	},
+	{
+		"title": "The Art of Strategy",
+		"image": "the-art-of-strategy.jpg",
+		"rating": "",
+		"link": "the-art-of-strategy",
+		"date_read": "1970-01-01",
+		"isbn": "9780385237840"
+	},
+	{
+		"title": "The Art of Worldly Wisdom (Shambhala Classics)",
+		"image": "the-art-of-worldly-wisdom-shambhala-classics.jpg",
+		"rating": "",
+		"link": "the-art-of-worldly-wisdom-shambhala-classics",
+		"date_read": "1970-01-01",
+		"isbn": "9781570627453"
+	},
+	{
+		"title": "The Autobiography of Malcolm X",
+		"image": "the-autobiography-of-malcolm-x.jpg",
+		"rating": "",
+		"link": "the-autobiography-of-malcolm-x",
+		"date_read": "1970-01-01",
+		"isbn": "9780141185439"
+	},
+	{
+		"title": "The Boys",
+		"image": "the-boys.jpg",
+		"rating": "",
+		"link": "the-boys",
+		"date_read": "1970-01-01",
+		"isbn": "9780063223615"
+	},
+	{
+		"title": "The Brave: Param Vir Chakra Stories",
+		"image": "the-brave.jpg",
+		"rating": "",
+		"link": "the-brave",
+		"date_read": "1970-01-01",
+		"isbn": "9780143422358"
+	},
+	{
+		"title": "The Bridge Across Forever",
+		"image": "the-bridge-across-forever.jpg",
+		"rating": "",
+		"link": "the-bridge-across-forever",
+		"date_read": "1970-01-01",
+		"isbn": "0440108268"
+	},
+	{
+		"title": "The Brothers Karamazov",
+		"image": "the-brothers-karamazov.jpg",
+		"rating": "",
+		"link": "the-brothers-karamazov",
+		"date_read": "1970-01-01",
+		"isbn": "9780374528379"
+	},
+	{
+		"title": "The Child with Special Needs",
+		"image": "the-child-with-special-needs.jpg",
+		"rating": "",
+		"link": "the-child-with-special-needs",
+		"date_read": "1970-01-01",
+		"isbn": "9780201407266"
+	},
+	{
+		"title": "The Code Breaker: Jennifer Doudna, Gene Editing, and the Future of the Human Race",
+		"image": "the-code-breaker.jpg",
+		"rating": "",
+		"link": "the-code-breaker",
+		"date_read": "1970-01-01",
+		"isbn": "9781761105593"
+	},
+	{
+		"title": "The Cold Start Problem",
+		"image": "the-cold-start-problem.jpg",
+		"rating": "",
+		"link": "the-cold-start-problem",
+		"date_read": "1970-01-01",
+		"isbn": "9781847942784"
+	},
+	{
+		"title": "The Communist Manifesto",
+		"image": "the-communist-manifesto.jpg",
+		"rating": "",
+		"link": "the-communist-manifesto",
+		"date_read": "1970-01-01",
+		"isbn": "9781680922110"
+	},
+	{
+		"title": "The Complete Book of Muslim and Parsi Names",
+		"image": "the-complete-book-of-muslim-and-parsi-names.jpg",
+		"rating": "",
+		"link": "the-complete-book-of-muslim-and-parsi-names",
+		"date_read": "1970-01-01",
+		"isbn": "9780143031840"
+	},
+	{
+		"title": "The Complete Novels",
+		"image": "the-complete-novels.jpg",
+		"rating": "",
+		"link": "the-complete-novels",
+		"date_read": "1970-01-01",
+		"isbn": "9780099518440"
+	},
+	{
+		"title": "The Dark Forest (The Three-Body Problem Series 2)",
+		"image": "the-dark-forest-the-three-body-problem-series-2.jpg",
+		"rating": "",
+		"link": "the-dark-forest-the-three-body-problem-series-2",
+		"date_read": "1970-01-01",
+		"isbn": "9781784971618"
+	},
+	{
+		"title": "The Dawn of Everything: A New History of Humanity",
+		"image": "the-dawn-of-everything.jpg",
+		"rating": "",
+		"link": "the-dawn-of-everything",
+		"date_read": "1970-01-01",
+		"isbn": "9780241402429"
+	},
+	{
+		"title": "The Death of the Banker: The Decline and Fall of the Great Financial Dynast ies and the Triumph of the Small Investor",
+		"image": "the-death-of-the-banker.jpg",
+		"rating": "",
+		"link": "the-death-of-the-banker",
+		"date_read": "1970-01-01",
+		"isbn": "9780375700378"
+	},
+	{
+		"title": "The Dick Smith way",
+		"image": "the-dick-smith-way.jpg",
+		"rating": "",
+		"link": "the-dick-smith-way",
+		"date_read": "1970-01-01",
+		"isbn": "9780074711606"
+	},
+	{
+		"title": "The Discovery of India",
+		"image": "the-discovery-of-india.jpg",
+		"rating": "",
+		"link": "the-discovery-of-india",
+		"date_read": "1970-01-01",
+		"isbn": "9780143031031"
+	},
+	{
+		"title": "The Divine Comedy, Part 2: Purgatory (Penguin Classics)",
+		"image": "the-divine-comedy-part-2.jpg",
+		"rating": "",
+		"link": "the-divine-comedy-part-2",
+		"date_read": "1970-01-01",
+		"isbn": "9780140440461"
+	},
+	{
+		"title": "The East India Company: The World's Most Powerful Corporation",
+		"image": "the-east-india-company.jpg",
+		"rating": "",
+		"link": "the-east-india-company",
+		"date_read": "1970-01-01",
+		"isbn": "9780143426172"
+	},
+	{
+		"title": "The Emperor of All Maladies",
+		"image": "the-emperor-of-all-maladies.jpg",
+		"rating": "",
+		"link": "the-emperor-of-all-maladies",
+		"date_read": "1970-01-01",
+		"isbn": "9781439170915"
+	},
+	{
+		"title": "The Essays of Warren Buffett: Lessons for Corporate America",
+		"image": "the-essays-of-warren-buffett.jpg",
+		"rating": "",
+		"link": "the-essays-of-warren-buffett",
+		"date_read": "1970-01-01",
+		"isbn": "9780966446142"
+	},
+	{
+		"title": "The Essays of Warren Buffett: Lessons for Investors and Managers",
+		"image": "the-essays-of-warren-buffett.jpg",
+		"rating": "",
+		"link": "the-essays-of-warren-buffett",
+		"date_read": "1970-01-01",
+		"isbn": "9781118821152"
+	},
+	{
+		"title": "The Everything Store: Jeff Bezos and the Age of Amazon",
+		"image": "the-everything-store.jpg",
+		"rating": "",
+		"link": "the-everything-store",
+		"date_read": "1970-01-01",
+		"isbn": "9780316219280"
+	},
+	{
+		"title": "The Fellowship of the Ring (The Lord of the Rings, Book 1): Fellowship of the Ring Vol 1",
+		"image": "the-fellowship-of-the-ring-the-lord-of-the-rings-book-1.jpg",
+		"rating": "",
+		"link": "the-fellowship-of-the-ring-the-lord-of-the-rings-book-1",
+		"date_read": "1970-01-01",
+		"isbn": "9780261103573"
+	},
+	{
+		"title": "The First and Last Freedom",
+		"image": "the-first-and-last-freedom.jpg",
+		"rating": "",
+		"link": "the-first-and-last-freedom",
+		"date_read": "1970-01-01",
+		"isbn": "0575004169"
+	},
+	{
+		"title": "The First Tycoon: The Epic Life of Cornelius Vanderbilt",
+		"image": "the-first-tycoon.jpg",
+		"rating": "",
+		"link": "the-first-tycoon",
+		"date_read": "1970-01-01",
+		"isbn": "9781400031740"
+	},
+	{
+		"title": "The General Theory of Employment, Interest, and Money",
+		"image": "the-general-theory-of-employment-interest-and-money.jpg",
+		"rating": "",
+		"link": "the-general-theory-of-employment-interest-and-money",
+		"date_read": "1970-01-01",
+		"isbn": "9789650060251"
+	},
+	{
+		"title": "The Genius of Birds",
+		"image": "the-genius-of-birds.jpg",
+		"rating": "",
+		"link": "the-genius-of-birds",
+		"date_read": "1970-01-01",
+		"isbn": "9781925106879"
+	},
+	{
+		"title": "The Goal: A Process of Ongoing Improvement",
+		"image": "the-goal.jpg",
+		"rating": "",
+		"link": "the-goal",
+		"date_read": "1970-01-01",
+		"isbn": "9780566086656"
+	},
+	{
+		"title": "The Golden Road: How Ancient India Transformed the World",
+		"image": "the-golden-road.jpg",
+		"rating": "",
+		"link": "the-golden-road",
+		"date_read": "2024-11-19",
+		"isbn": "9781408864425"
+	},
+	{
+		"title": "The Gospel of Wealth and Other Timely Essays",
+		"image": "the-gospel-of-wealth-and-other-timely-essays.jpg",
+		"rating": "",
+		"link": "the-gospel-of-wealth-and-other-timely-essays",
+		"date_read": "1970-01-01",
+		"isbn": "9781980484714"
+	},
+	{
+		"title": "The Great Crash 1929",
+		"image": "the-great-crash-1929.jpg",
+		"rating": "",
+		"link": "the-great-crash-1929",
+		"date_read": "1970-01-01",
+		"isbn": "9780547248165"
+	},
+	{
+		"title": "The Great Depression: A Diary",
+		"image": "the-great-depression.jpg",
+		"rating": "",
+		"link": "the-great-depression",
+		"date_read": "1970-01-01",
+		"isbn": "9781586489014"
+	},
+	{
+		"title": "The Greatest: My Own Story",
+		"image": "the-greatest.jpg",
+		"rating": "",
+		"link": "the-greatest",
+		"date_read": "1970-01-01",
+		"isbn": "9781631680496"
+	},
+	{
+		"title": "The Handmaid's Tale",
+		"image": "the-handmaid-s-tale.jpg",
+		"rating": "",
+		"link": "the-handmaid-s-tale",
+		"date_read": "1970-01-01",
+		"isbn": "9780099511663"
+	},
+	{
+		"title": "The Happiest Man On Earth",
+		"image": "the-happiest-man-on-earth.jpg",
+		"rating": "",
+		"link": "the-happiest-man-on-earth",
+		"date_read": "1970-01-01",
+		"isbn": "9781760980085"
+	},
+	{
+		"title": "The Heart Of A Woman",
+		"image": "the-heart-of-a-woman.jpg",
+		"rating": "",
+		"link": "the-heart-of-a-woman",
+		"date_read": "1970-01-01",
+		"isbn": "9781844085040"
+	},
+	{
+		"title": "The Hidden Life of Trees: What They Feel, How They Communicate\u20ac\u201dDiscoveries from a Secret World [Hardcover] [Jan 01, 2016] Peter Wohlleben",
+		"image": "the-hidden-life-of-trees.jpg",
+		"rating": "",
+		"link": "the-hidden-life-of-trees",
+		"date_read": "1970-01-01",
+		"isbn": "9780670089345"
+	},
+	{
+		"title": "The Importance of Living",
+		"image": "the-importance-of-living.jpg",
+		"rating": "",
+		"link": "the-importance-of-living",
+		"date_read": "1970-01-01",
+		"isbn": "9788087888124"
+	},
+	{
+		"title": "The Innovator's Dilemma : When New Technologies Cause Great Firms to Fail",
+		"image": "the-innovator-s-dilemma.jpg",
+		"rating": "",
+		"link": "the-innovator-s-dilemma",
+		"date_read": "1970-01-01",
+		"isbn": "9781633691780"
+	},
+	{
+		"title": "The Innovators",
+		"image": "the-innovators.jpg",
+		"rating": "",
+		"link": "the-innovators",
+		"date_read": "1970-01-01",
+		"isbn": "9781471138805"
+	},
+	{
+		"title": "The Intelligent Investor (Revised Edition)",
+		"image": "the-intelligent-investor-revised-edition.jpg",
+		"rating": "",
+		"link": "the-intelligent-investor-revised-edition",
+		"date_read": "1970-01-01",
+		"isbn": "9780062312686"
+	},
+	{
+		"title": "The Interpretation of Financial Statements",
+		"image": "the-interpretation-of-financial-statements.jpg",
+		"rating": "",
+		"link": "the-interpretation-of-financial-statements",
+		"date_read": "1970-01-01",
+		"isbn": "9780887309137"
+	},
+	{
+		"title": "The Jadu House: Intimate Histories of Anglo-India",
+		"image": "the-jadu-house.jpg",
+		"rating": "",
+		"link": "the-jadu-house",
+		"date_read": "1970-01-01",
+		"isbn": "9780385410304"
+	},
+	{
+		"title": "The Jungle Book",
+		"image": "the-jungle-book.jpg",
+		"rating": "",
+		"link": "the-jungle-book",
+		"date_read": "1970-01-01",
+		"isbn": "9780099573029"
+	},
+	{
+		"title": "The Last Days of Socrates: Euthyphro; The Apology; Crito; Phaedo (Penguin Classics)",
+		"image": "the-last-days-of-socrates.jpg",
+		"rating": "",
+		"link": "the-last-days-of-socrates",
+		"date_read": "1970-01-01",
+		"isbn": "9780140445824"
+	},
+	{
+		"title": "The Last Lecture",
+		"image": "the-last-lecture.jpg",
+		"rating": "",
+		"link": "the-last-lecture",
+		"date_read": "1970-01-01",
+		"isbn": "9780733623318"
+	},
+	{
+		"title": "The last Mughal : the fall of Delhi 1857",
+		"image": "the-last-mughal.jpg",
+		"rating": "",
+		"link": "the-last-mughal",
+		"date_read": "1970-01-01",
+		"isbn": "9781526637581"
+	},
+	{
+		"title": "The Last Nizam : An Indian Prince In The Australian Outback",
+		"image": "the-last-nizam.jpg",
+		"rating": "",
+		"link": "the-last-nizam",
+		"date_read": "1970-01-01",
+		"isbn": "9781405037228"
+	},
+	{
+		"title": "The Lessons of History",
+		"image": "the-lessons-of-history.jpg",
+		"rating": "",
+		"link": "the-lessons-of-history",
+		"date_read": "1970-01-01",
+		"isbn": "9781439149959"
+	},
+	{
+		"title": "The Life and Times of G. D. Birla",
+		"image": "the-life-and-times-of-g-d-birla.jpg",
+		"rating": "",
+		"link": "the-life-and-times-of-g-d-birla",
+		"date_read": "1970-01-01",
+		"isbn": "0195645723"
+	},
+	{
+		"title": "The Life of Charles Stewart Mott: Industrialist, Philanthropist, Mr. Flint",
+		"image": "the-life-of-charles-stewart-mott.jpg",
+		"rating": "",
+		"link": "the-life-of-charles-stewart-mott",
+		"date_read": "1970-01-01",
+		"isbn": "9780472131723"
+	},
+	{
+		"title": "The Lost Symbol",
+		"image": "the-lost-symbol.jpg",
+		"rating": "",
+		"link": "the-lost-symbol",
+		"date_read": "1970-01-01",
+		"isbn": "9780593054277"
+	},
+	{
+		"title": "The Making of a Value Investor: What a bear market taught me about investing",
+		"image": "the-making-of-a-value-investor.jpg",
+		"rating": "",
+		"link": "the-making-of-a-value-investor",
+		"date_read": "1970-01-01",
+		"isbn": "9789356994287"
+	},
+	{
+		"title": "The Making of Hero: Four Brothers, Two Wheels and a Revolution that Shaped India",
+		"image": "the-making-of-hero.jpg",
+		"rating": "",
+		"link": "the-making-of-hero",
+		"date_read": "1970-01-01",
+		"isbn": "9789354227370"
+	},
+	{
+		"title": "The Man Who Solved the Market: How Jim Simons Launched the Quant Revolution SHORTLISTED FOR THE FT & MCKINSEY BUSINESS BOOK OF THE YEAR AWARD 2019",
+		"image": "the-man-who-solved-the-market.jpg",
+		"rating": "",
+		"link": "the-man-who-solved-the-market",
+		"date_read": "1970-01-01",
+		"isbn": "9780241422151"
+	},
+	{
+		"title": "The Manual of Ideas",
+		"image": "the-manual-of-ideas.jpg",
+		"rating": "",
+		"link": "the-manual-of-ideas",
+		"date_read": "1970-01-01",
+		"isbn": "9781118083659"
+	},
+	{
+		"title": "The Maruti Story",
+		"image": "the-maruti-story.jpg",
+		"rating": "",
+		"link": "the-maruti-story",
+		"date_read": "1970-01-01",
+		"isbn": "9788172237806"
+	},
+	{
+		"title": "The Marwaris: From Jagat Seth to the Birlas",
+		"image": "the-marwaris.jpg",
+		"rating": "",
+		"link": "the-marwaris",
+		"date_read": "1970-01-01",
+		"isbn": "9780143424055"
+	},
+	{
+		"title": "The Master and His Emissary",
+		"image": "the-master-and-his-emissary.jpg",
+		"rating": "",
+		"link": "the-master-and-his-emissary",
+		"date_read": "1970-01-01",
+		"isbn": "9780300245929"
+	},
+	{
+		"title": "The Midas Touch: The strategies that have made Warren Buffett the world's most successful investor",
+		"image": "the-midas-touch.jpg",
+		"rating": "",
+		"link": "the-midas-touch",
+		"date_read": "1970-01-01",
+		"isbn": "9780857193162"
+	},
+	{
+		"title": "The Mill on the Floss",
+		"image": "the-mill-on-the-floss.jpg",
+		"rating": "",
+		"link": "the-mill-on-the-floss",
+		"date_read": "1970-01-01",
+		"isbn": "9781853260742"
+	},
+	{
+		"title": "The Millionaires' Factory: The inside story of how Macquarie Bank became a global giant",
+		"image": "the-millionaires-factory.jpg",
+		"rating": "",
+		"link": "the-millionaires-factory",
+		"date_read": "1970-01-01",
+		"isbn": "9781761067150"
+	},
+	{
+		"title": "The Model Thinker: What You Need to Know to Make Data Work for You",
+		"image": "the-model-thinker.jpg",
+		"rating": "",
+		"link": "the-model-thinker",
+		"date_read": "1970-01-01",
+		"isbn": "9781541675711"
+	},
+	{
+		"title": "The Money Game",
+		"image": "the-money-game.jpg",
+		"rating": "",
+		"link": "the-money-game",
+		"date_read": "1970-01-01",
+		"isbn": "9780394721033"
+	},
+	{
+		"title": "The Mouse Merchant: Money in Ancient India",
+		"image": "the-mouse-merchant.jpg",
+		"rating": "",
+		"link": "the-mouse-merchant",
+		"date_read": "1970-01-01",
+		"isbn": "9780143424727"
+	},
+	{
+		"title": "The Moves that Matter",
+		"image": "the-moves-that-matter.jpg",
+		"rating": "",
+		"link": "the-moves-that-matter",
+		"date_read": "1970-01-01",
+		"isbn": "9781526621573"
+	},
+	{
+		"title": "The New Money Masters",
+		"image": "the-new-money-masters.jpg",
+		"rating": "",
+		"link": "the-new-money-masters",
+		"date_read": "1970-01-01",
+		"isbn": "9780060920050"
+	},
+	{
+		"title": "The Night Trilogy",
+		"image": "the-night-trilogy.jpg",
+		"rating": "",
+		"link": "the-night-trilogy",
+		"date_read": "1970-01-01",
+		"isbn": "9780809073641"
+	},
+	{
+		"title": "The Omnivore's Dilemma",
+		"image": "the-omnivore-s-dilemma.jpg",
+		"rating": "",
+		"link": "the-omnivore-s-dilemma",
+		"date_read": "1970-01-01",
+		"isbn": "9780143038580"
+	},
+	{
+		"title": "The Opera House",
+		"image": "the-opera-house.jpg",
+		"rating": "",
+		"link": "the-opera-house",
+		"date_read": "1970-01-01",
+		"isbn": "9780733641336"
+	},
+	{
+		"title": "The Origin of Species",
+		"image": "the-origin-of-species.jpg",
+		"rating": "",
+		"link": "the-origin-of-species",
+		"date_read": "1970-01-01",
+		"isbn": "9781853267802"
+	},
+	{
+		"title": "The Originals Franz Kafka Selected Works",
+		"image": "the-originals-franz-kafka-selected-works.jpg",
+		"rating": "",
+		"link": "the-originals-franz-kafka-selected-works",
+		"date_read": "1970-01-01",
+		"isbn": "9789353764593"
+	},
+	{
+		"title": "The Penguin History of New Zealand",
+		"image": "the-penguin-history-of-new-zealand.jpg",
+		"rating": "",
+		"link": "the-penguin-history-of-new-zealand",
+		"date_read": "1970-01-01",
+		"isbn": "9780143567578"
+	},
+	{
+		"title": "The Picture of Dorian Gray and Other Writings",
+		"image": "the-picture-of-dorian-gray-and-other-writings.jpg",
+		"rating": "",
+		"link": "the-picture-of-dorian-gray-and-other-writings",
+		"date_read": "1970-01-01",
+		"isbn": "0553212540"
+	},
+	{
+		"title": "THE PITCH",
+		"image": "the-pitch.jpg",
+		"rating": "",
+		"link": "the-pitch",
+		"date_read": "1970-01-01",
+		"isbn": "9781875574148"
+	},
+	{
+		"title": "The Polymath",
+		"image": "the-polymath.jpg",
+		"rating": "3",
+		"link": "the-polymath",
+		"date_read": "2023-01-01",
+		"isbn": "9781119508489"
+	},
+	{
+		"title": "The Power Broker",
+		"image": "the-power-broker.jpg",
+		"rating": "",
+		"link": "the-power-broker",
+		"date_read": "1970-01-01",
+		"isbn": "9781847923653"
+	},
+	{
+		"title": "The Rational Optimist: How Prosperity Evolves (P.s.)",
+		"image": "the-rational-optimist.jpg",
+		"rating": "",
+		"link": "the-rational-optimist",
+		"date_read": "1970-01-01",
+		"isbn": "9780061452062"
+	},
+	{
+		"title": "The Ride of a Lifetime: Lessons in Creative Leadership from 15 Years as CEO of the Walt Disney Company",
+		"image": "the-ride-of-a-lifetime.jpg",
+		"rating": "",
+		"link": "the-ride-of-a-lifetime",
+		"date_read": "1970-01-01",
+		"isbn": "9781787630475"
+	},
+	{
+		"title": "The Rise and Fall of Alan Bond",
+		"image": "the-rise-and-fall-of-alan-bond.jpg",
+		"rating": "",
+		"link": "the-rise-and-fall-of-alan-bond",
+		"date_read": "1970-01-01",
+		"isbn": "9781863590013"
+	},
+	{
+		"title": "The Scarlet Letter (Tor Classics)",
+		"image": "the-scarlet-letter-tor-classics.jpg",
+		"rating": "",
+		"link": "the-scarlet-letter-tor-classics",
+		"date_read": "1970-01-01",
+		"isbn": "0812504836"
+	},
+	{
+		"title": "The selected works of Mahatma Gandhi Volume 1",
+		"image": "the-selected-works-of-mahatma-gandhi-volume-1.jpg",
+		"rating": "",
+		"link": "the-selected-works-of-mahatma-gandhi-volume-1",
+		"date_read": "1970-01-01",
+		"isbn": "8172290640"
+	},
+	{
+		"title": "The Silence of the Lambs and Red Dragon",
+		"image": "the-silence-of-the-lambs-and-red-dragon.jpg",
+		"rating": "",
+		"link": "the-silence-of-the-lambs-and-red-dragon",
+		"date_read": "1970-01-01",
+		"isbn": "9780091901349"
+	},
+	{
+		"title": "The Slayer of Kamsa Book of Krishna Coriolis",
+		"image": "the-slayer-of-kamsa-book-of-krishna-coriolis.jpg",
+		"rating": "",
+		"link": "the-slayer-of-kamsa-book-of-krishna-coriolis",
+		"date_read": "1970-01-01",
+		"isbn": "9789350290002"
+	},
+	{
+		"title": "The Smartest Guys in the Room: The Amazing Rise and Scandalous Fall of Enron",
+		"image": "the-smartest-guys-in-the-room.jpg",
+		"rating": "",
+		"link": "the-smartest-guys-in-the-room",
+		"date_read": "1970-01-01",
+		"isbn": "9780141011455"
+	},
+	{
+		"title": "The Snowball: Warren Buffett and the Business of Life",
+		"image": "the-snowball.jpg",
+		"rating": "",
+		"link": "the-snowball",
+		"date_read": "1970-01-01",
+		"isbn": "9780747596493"
+	},
+	{
+		"title": "The Social Conquest of Earth",
+		"image": "the-social-conquest-of-earth.jpg",
+		"rating": "",
+		"link": "the-social-conquest-of-earth",
+		"date_read": "1970-01-01",
+		"isbn": "9780871403636"
+	},
+	{
+		"title": "The Song of the Cell",
+		"image": "the-song-of-the-cell.jpg",
+		"rating": "",
+		"link": "the-song-of-the-cell",
+		"date_read": "1970-01-01",
+		"isbn": "9781982117351"
+	},
+	{
+		"title": "The Sun Also Rises and Other Stories",
+		"image": "the-sun-also-rises-and-other-stories.jpg",
+		"rating": "",
+		"link": "the-sun-also-rises-and-other-stories",
+		"date_read": "1970-01-01",
+		"isbn": "9781645177159"
+	},
+	{
+		"title": "The Towers Of Silence",
+		"image": "the-towers-of-silence.jpg",
+		"rating": "",
+		"link": "the-towers-of-silence",
+		"date_read": "1970-01-01",
+		"isbn": "9780749322311"
+	},
+	{
+		"title": "The Trumps : Three Generations That Built an Empire",
+		"image": "the-trumps.jpg",
+		"rating": "",
+		"link": "the-trumps",
+		"date_read": "1970-01-01",
+		"isbn": "9780684808499"
+	},
+	{
+		"title": "The Ultimate Hitchhiker's Guide to the Galaxy",
+		"image": "the-ultimate-hitchhiker-s-guide-to-the-galaxy.jpg",
+		"rating": "",
+		"link": "the-ultimate-hitchhiker-s-guide-to-the-galaxy",
+		"date_read": "1970-01-01",
+		"isbn": "9780345453747"
+	},
+	{
+		"title": "The Universe in Your Hand: A Journey Through Space, Time, and Beyond",
+		"image": "the-universe-in-your-hand.jpg",
+		"rating": "",
+		"link": "the-universe-in-your-hand",
+		"date_read": "1970-01-01",
+		"isbn": "9781250076410"
+	},
+	{
+		"title": "The Upside of Uncertainty: A Guide to Finding Possibility in the Unknown",
+		"image": "the-upside-of-uncertainty.jpg",
+		"rating": "",
+		"link": "the-upside-of-uncertainty",
+		"date_read": "1970-01-01",
+		"isbn": "9781647823016"
+	},
+	{
+		"title": "The Victorian Internet: The Remarkable Story of the Telegraph and the Nineteenth Century's On-line Pioneers",
+		"image": "the-victorian-internet.jpg",
+		"rating": "",
+		"link": "the-victorian-internet",
+		"date_read": "1970-01-01",
+		"isbn": "9781620405925"
+	},
+	{
+		"title": "The Warburgs: The Twentieth-Century Odyssey of a Remarkable Jewish Family",
+		"image": "the-warburgs.jpg",
+		"rating": "",
+		"link": "the-warburgs",
+		"date_read": "1970-01-01",
+		"isbn": "9780525431831"
+	},
+	{
+		"title": "The Warren Buffett Portfolio",
+		"image": "the-warren-buffett-portfolio.jpg",
+		"rating": "",
+		"link": "the-warren-buffett-portfolio",
+		"date_read": "1970-01-01",
+		"isbn": "9780471392644"
+	},
+	{
+		"title": "The Warren Buffett Way by Hagstrom G. Robert",
+		"image": "the-warren-buffett-way-by-hagstrom-g-robert.jpg",
+		"rating": "",
+		"link": "the-warren-buffett-way-by-hagstrom-g-robert",
+		"date_read": "1970-01-01",
+		"isbn": "9781118819234"
+	},
+	{
+		"title": "The Wealth of Nations",
+		"image": "the-wealth-of-nations.jpg",
+		"rating": "",
+		"link": "the-wealth-of-nations",
+		"date_read": "1970-01-01",
+		"isbn": "9780140432084"
+	},
+	{
+		"title": "The Wealth of Nations: IV-V",
+		"image": "the-wealth-of-nations.jpg",
+		"rating": "",
+		"link": "the-wealth-of-nations",
+		"date_read": "1970-01-01",
+		"isbn": "9780140436150"
+	},
+	{
+		"title": "The Wise Men: Six Friends and the World They Made",
+		"image": "the-wise-men.jpg",
+		"rating": "",
+		"link": "the-wise-men",
+		"date_read": "1970-01-01",
+		"isbn": "9781476728827"
+	},
+	{
+		"title": "The World of the Tamil Merchant",
+		"image": "the-world-of-the-tamil-merchant.jpg",
+		"rating": "",
+		"link": "the-world-of-the-tamil-merchant",
+		"date_read": "1970-01-01",
+		"isbn": "9780143424734"
+	},
+	{
+		"title": "The World Until Yesterday: What Can We Learn from Traditional Societies?",
+		"image": "the-world-until-yesterday.jpg",
+		"rating": "",
+		"link": "the-world-until-yesterday",
+		"date_read": "1970-01-01",
+		"isbn": "9781846147586"
+	},
+	{
+		"title": "The World Until Yesterday: What Can We Learn from Traditional Societies?",
+		"image": "the-world-until-yesterday.jpg",
+		"rating": "",
+		"link": "the-world-until-yesterday",
+		"date_read": "1970-01-01",
+		"isbn": "9780141024486"
+	},
+	{
+		"title": "The Wright Brothers: The Dramatic Story-Behind-the-Story: The Dramatic Story Behind the Legend",
+		"image": "the-wright-brothers.jpg",
+		"rating": "",
+		"link": "the-wright-brothers",
+		"date_read": "1970-01-01",
+		"isbn": "9781471150388"
+	},
+	{
+		"title": "The \u200bArt of Computer Programming - Fundamental Algorithms",
+		"image": "the-art-of-computer-programming-fundamental-algorithms.jpg",
+		"rating": "",
+		"link": "the-art-of-computer-programming-fundamental-algorithms",
+		"date_read": "1970-01-01",
+		"isbn": "9780201896831"
+	},
+	{
+		"title": "The \u200bBig U",
+		"image": "the-big-u.jpg",
+		"rating": "",
+		"link": "the-big-u",
+		"date_read": "1970-01-01",
+		"isbn": "9780380816033"
+	},
+	{
+		"title": "The \u200bBlack Swan",
+		"image": "the-black-swan.jpg",
+		"rating": "",
+		"link": "the-black-swan",
+		"date_read": "1970-01-01",
+		"isbn": "9780141034591"
+	},
+	{
+		"title": "The \u200bCatcher in the Rye",
+		"image": "the-catcher-in-the-rye.jpg",
+		"rating": "",
+		"link": "the-catcher-in-the-rye",
+		"date_read": "1970-01-01",
+		"isbn": "9780316769174"
+	},
+	{
+		"title": "The \u200bComplete Fables",
+		"image": "the-complete-fables.jpg",
+		"rating": "",
+		"link": "the-complete-fables",
+		"date_read": "1970-01-01",
+		"isbn": "9780140446494"
+	},
+	{
+		"title": "The \u200bDesign of Everyday Things",
+		"image": "the-design-of-everyday-things.jpg",
+		"rating": "",
+		"link": "the-design-of-everyday-things",
+		"date_read": "1970-01-01",
+		"isbn": "9780465050659"
+	},
+	{
+		"title": "The \u200bDiary of a Young Girl",
+		"image": "the-diary-of-a-young-girl.jpg",
+		"rating": "",
+		"link": "the-diary-of-a-young-girl",
+		"date_read": "1970-01-01",
+		"isbn": "9780141315195"
+	},
+	{
+		"title": "The \u200bEducation of a Value Investor",
+		"image": "the-education-of-a-value-investor.jpg",
+		"rating": "",
+		"link": "the-education-of-a-value-investor",
+		"date_read": "1970-01-01",
+		"isbn": "9781137278814"
+	},
+	{
+		"title": "The \u200bGrapes of Wrath",
+		"image": "the-grapes-of-wrath.jpg",
+		"rating": "",
+		"link": "the-grapes-of-wrath",
+		"date_read": "1970-01-01",
+		"isbn": "9780141185064"
+	},
+	{
+		"title": "The \u200bGuide",
+		"image": "the-guide.jpg",
+		"rating": "",
+		"link": "the-guide",
+		"date_read": "1970-01-01",
+		"isbn": "9788185986074"
+	},
+	{
+		"title": "The \u200bHard Thing About Hard Things",
+		"image": "the-hard-thing-about-hard-things.jpg",
+		"rating": "",
+		"link": "the-hard-thing-about-hard-things",
+		"date_read": "1970-01-01",
+		"isbn": "9780062273208"
+	},
+	{
+		"title": "The \u200bHobbit",
+		"image": "the-hobbit.jpg",
+		"rating": "",
+		"link": "the-hobbit",
+		"date_read": "1970-01-01",
+		"isbn": "9780261103344"
+	},
+	{
+		"title": "The \u200bHouse of Morgan",
+		"image": "the-house-of-morgan.jpg",
+		"rating": "",
+		"link": "the-house-of-morgan",
+		"date_read": "1970-01-01",
+		"isbn": "9780802144652"
+	},
+	{
+		"title": "The \u200bIdea Factory",
+		"image": "the-idea-factory.jpg",
+		"rating": "",
+		"link": "the-idea-factory",
+		"date_read": "1970-01-01",
+		"isbn": "9780143122791"
+	},
+	{
+		"title": "The \u200bIntelligent Investor",
+		"image": "the-intelligent-investor.jpg",
+		"rating": "",
+		"link": "the-intelligent-investor",
+		"date_read": "1970-01-01",
+		"isbn": "9780060555665"
+	},
+	{
+		"title": "The \u200bLittle Book of Common Sense Investing",
+		"image": "the-little-book-of-common-sense-investing.jpg",
+		"rating": "",
+		"link": "the-little-book-of-common-sense-investing",
+		"date_read": "1970-01-01",
+		"isbn": "9780470102107"
+	},
+	{
+		"title": "The \u200bLord of the Rings Book 2",
+		"image": "the-lord-of-the-rings-book-2.jpg",
+		"rating": "",
+		"link": "the-lord-of-the-rings-book-2",
+		"date_read": "1970-01-01",
+		"isbn": "9780261103580"
+	},
+	{
+		"title": "The \u200bLord of the Rings Book 3",
+		"image": "the-lord-of-the-rings-book-3.jpg",
+		"rating": "",
+		"link": "the-lord-of-the-rings-book-3",
+		"date_read": "1970-01-01",
+		"isbn": "9780261103597"
+	},
+	{
+		"title": "The \u200bMan from the Future",
+		"image": "the-man-from-the-future.jpg",
+		"rating": "",
+		"link": "the-man-from-the-future",
+		"date_read": "1970-01-01",
+		"isbn": "9780241398869"
+	},
+	{
+		"title": "The \u200bMonk Who Sold His Ferrari",
+		"image": "the-monk-who-sold-his-ferrari.jpg",
+		"rating": "",
+		"link": "the-monk-who-sold-his-ferrari",
+		"date_read": "1970-01-01",
+		"isbn": "9780007848423"
+	},
+	{
+		"title": "The \u200bPenguin Book of Australian Slang",
+		"image": "the-penguin-book-of-australian-slang.jpg",
+		"rating": "",
+		"link": "the-penguin-book-of-australian-slang",
+		"date_read": "1970-01-01",
+		"isbn": "9780140255737"
+	},
+	{
+		"title": "The Rebel Allocator",
+		"image": "the-rebel-allocator.jpg",
+		"rating": "1",
+		"link": "the-rebel-allocator",
+		"date_read": "1970-01-01",
+		"isbn": "9781732688322"
+	},
+	{
+		"title": "The \u200bSong of Achilles",
+		"image": "the-song-of-achilles.jpg",
+		"rating": "",
+		"link": "the-song-of-achilles",
+		"date_read": "1970-01-01",
+		"isbn": "9781408891384"
+	},
+	{
+		"title": "The \u200bTestaments",
+		"image": "the-testaments.jpg",
+		"rating": "",
+		"link": "the-testaments",
+		"date_read": "1970-01-01",
+		"isbn": "9781784708214"
+	},
+	{
+		"title": "The \u200bThree-Body Problem",
+		"image": "the-three-body-problem.jpg",
+		"rating": "",
+		"link": "the-three-body-problem",
+		"date_read": "1970-01-01",
+		"isbn": "9781784971571"
+	},
+	{
+		"title": "Thinking in Bets",
+		"image": "thinking-in-bets.jpg",
+		"rating": "",
+		"link": "thinking-in-bets",
+		"date_read": "1970-01-01",
+		"isbn": "9780735216372"
+	},
+	{
+		"title": "Thinking \u200bin Systems",
+		"image": "thinking-in-systems.jpg",
+		"rating": "",
+		"link": "thinking-in-systems",
+		"date_read": "1970-01-01",
+		"isbn": "9781603580557"
+	},
+	{
+		"title": "Thirukkural (Tamil - English): Pearls of Wisdom From Classical Tamil Series",
+		"image": "thirukkural-tamil-english.jpg",
+		"rating": "",
+		"link": "thirukkural-tamil-english",
+		"date_read": "1970-01-01",
+		"isbn": "9781638508335"
+	},
+	{
+		"title": "This \u200bIs Your Brain on Music",
+		"image": "this-is-your-brain-on-music.jpg",
+		"rating": "",
+		"link": "this-is-your-brain-on-music",
+		"date_read": "1970-01-01",
+		"isbn": "9780241987353"
+	},
+	{
+		"title": "Three Merchants of Bombay: Business Pioneers of the Nineteenth Century",
+		"image": "three-merchants-of-bombay.jpg",
+		"rating": "",
+		"link": "three-merchants-of-bombay",
+		"date_read": "1970-01-01",
+		"isbn": "9780143426196"
+	},
+	{
+		"title": "Titan",
+		"image": "titan.jpg",
+		"rating": "5",
+		"link": "titan",
+		"date_read": "1970-01-01",
+		"isbn": "9781400077304"
+	},
+	{
+		"title": "Total \u200bRecall",
+		"image": "total-recall.jpg",
+		"rating": "",
+		"link": "total-recall",
+		"date_read": "1970-01-01",
+		"isbn": "9781849839730"
+	},
+	{
+		"title": "Travelling \u200bto Infinity",
+		"image": "travelling-to-infinity.jpg",
+		"rating": "",
+		"link": "travelling-to-infinity",
+		"date_read": "1970-01-01",
+		"isbn": "9781846883668"
+	},
+	{
+		"title": "TrendWatching",
+		"image": "trendwatching.jpg",
+		"rating": "",
+		"link": "trendwatching",
+		"date_read": "1970-01-01",
+		"isbn": "9780060084622"
+	},
+	{
+		"title": "Truganini : Journey Through the Apocalypse",
+		"image": "truganini.jpg",
+		"rating": "",
+		"link": "truganini",
+		"date_read": "1970-01-01",
+		"isbn": "9781760529222"
+	},
+	{
+		"title": "Trump: the Art of the Deal",
+		"image": "trump.jpg",
+		"rating": "",
+		"link": "trump",
+		"date_read": "1970-01-01",
+		"isbn": "9780394555287"
+	},
+	{
+		"title": "Turning Points: A Journey Through Challenges",
+		"image": "turning-points.jpg",
+		"rating": "",
+		"link": "turning-points",
+		"date_read": "1970-01-01",
+		"isbn": "9789350293478"
+	},
+	{
+		"title": "Two Lives",
+		"image": "two-lives.jpg",
+		"rating": "",
+		"link": "two-lives",
+		"date_read": "1970-01-01",
+		"isbn": "9780316727747"
+	},
+	{
+		"title": "Ulysses \u200b(angol)",
+		"image": "ulysses-angol.jpg",
+		"rating": "",
+		"link": "ulysses-angol",
+		"date_read": "1970-01-01",
+		"isbn": "9780586091494"
+	},
+	{
+		"title": "Uncle Tom's Cabin - Young Folks' Edition",
+		"image": "uncle-tom-s-cabin-young-folks-edition.jpg",
+		"rating": "",
+		"link": "uncle-tom-s-cabin-young-folks-edition",
+		"date_read": "1970-01-01",
+		"isbn": "9781617205163"
+	},
+	{
+		"title": "Understanding Investment Property ~ The Essential Reference for Ordinary Savers",
+		"image": "understanding-investment-property-the-essential-reference-for-ordinary-savers.jpg",
+		"rating": "",
+		"link": "understanding-investment-property-the-essential-reference-for-ordinary-savers",
+		"date_read": "1970-01-01",
+		"isbn": "9781920910044"
+	},
+	{
+		"title": "Undo It!: How Simple Lifestyle Changes Can Reverse Most Chronic Diseases",
+		"image": "undo-it.jpg",
+		"rating": "",
+		"link": "undo-it",
+		"date_read": "1970-01-01",
+		"isbn": "9780525480020"
+	},
+	{
+		"title": "Unix",
+		"image": "unix.jpg",
+		"rating": "",
+		"link": "unix",
+		"date_read": "1970-01-01",
+		"isbn": "9781695978553"
+	},
+	{
+		"title": "Unlikely Hero: Om Puri",
+		"image": "unlikely-hero.jpg",
+		"rating": "",
+		"link": "unlikely-hero",
+		"date_read": "1970-01-01",
+		"isbn": "9788174368041"
+	},
+	{
+		"title": "Unto \u200bThis Last and Other Writings",
+		"image": "unto-this-last-and-other-writings.jpg",
+		"rating": "",
+		"link": "unto-this-last-and-other-writings",
+		"date_read": "1970-01-01",
+		"isbn": "9780140432114"
+	},
+	{
+		"title": "Value",
+		"image": "value.jpg",
+		"rating": "",
+		"link": "value",
+		"date_read": "1970-01-01",
+		"isbn": "9780731407644"
+	},
+	{
+		"title": "Valuing Wall Street",
+		"image": "valuing-wall-street.jpg",
+		"rating": "",
+		"link": "valuing-wall-street",
+		"date_read": "1970-01-01",
+		"isbn": "9780071387835"
+	},
+	{
+		"title": "Vanity Fair",
+		"image": "vanity-fair.jpg",
+		"rating": "",
+		"link": "vanity-fair",
+		"date_read": "1970-01-01",
+		"isbn": "9781853260193"
+	},
+	{
+		"title": "VIRAL: The Search for the Origin of Covid-19",
+		"image": "viral.jpg",
+		"rating": "3",
+		"link": "viral",
+		"date_read": "1970-01-01",
+		"isbn": "9780008487508"
+	},
+	{
+		"title": "Virtual Murdoch: Reality Wars on the Information Highway",
+		"image": "virtual-murdoch.jpg",
+		"rating": "",
+		"link": "virtual-murdoch",
+		"date_read": "1970-01-01",
+		"isbn": "9780099286363"
+	},
+	{
+		"title": "Walt Disney",
+		"image": "walt-disney.jpg",
+		"rating": "",
+		"link": "walt-disney",
+		"date_read": "1970-01-01",
+		"isbn": "9780679757474"
+	},
+	{
+		"title": "War and Peace",
+		"image": "war-and-peace.jpg",
+		"rating": "",
+		"link": "war-and-peace",
+		"date_read": "1970-01-01",
+		"isbn": "9781853260629"
+	},
+	{
+		"title": "Warren Buffett",
+		"image": "warren-buffett.jpg",
+		"rating": "",
+		"link": "warren-buffett",
+		"date_read": "1970-01-01",
+		"isbn": "9780789451576"
+	},
+	{
+		"title": "Warren Buffett Accounting Book",
+		"image": "warren-buffett-accounting-book.jpg",
+		"rating": "",
+		"link": "warren-buffett-accounting-book",
+		"date_read": "1970-01-01",
+		"isbn": "9781939370150"
+	},
+	{
+		"title": "Warren Buffett and the Interpretation of Financial Statements",
+		"image": "warren-buffett-and-the-interpretation-of-financial-statements.jpg",
+		"rating": "",
+		"link": "warren-buffett-and-the-interpretation-of-financial-statements",
+		"date_read": "1970-01-01",
+		"isbn": "9781849833196"
+	},
+	{
+		"title": "Warren Buffett on Business",
+		"image": "warren-buffett-on-business.jpg",
+		"rating": "",
+		"link": "warren-buffett-on-business",
+		"date_read": "1970-01-01",
+		"isbn": "9781118879085"
+	},
+	{
+		"title": "Warren Buffett's Ground Rules: Words of Wisdom from the Partnership Letters of the World's Greatest Investor",
+		"image": "warren-buffett-s-ground-rules.jpg",
+		"rating": "",
+		"link": "warren-buffett-s-ground-rules",
+		"date_read": "1970-01-01",
+		"isbn": "9781781255643"
+	},
+	{
+		"title": "Warren Buffett: Inside the Ultimate Money Mind",
+		"image": "warren-buffett.jpg",
+		"rating": "",
+		"link": "warren-buffett",
+		"date_read": "1970-01-01",
+		"isbn": "9781119714590"
+	},
+	{
+		"title": "Washington: \u200bA Life",
+		"image": "washington.jpg",
+		"rating": "",
+		"link": "washington",
+		"date_read": "1970-01-01",
+		"isbn": "9780143119968"
+	},
+	{
+		"title": "Wealth, War and Wisdom",
+		"image": "wealth-war-and-wisdom.jpg",
+		"rating": "",
+		"link": "wealth-war-and-wisdom",
+		"date_read": "1970-01-01",
+		"isbn": "9780470474792"
+	},
+	{
+		"title": "What I Learned About Investing from Darwin",
+		"image": "what-i-learned-about-investing-from-darwin.jpg",
+		"rating": "",
+		"link": "what-i-learned-about-investing-from-darwin",
+		"date_read": "1970-01-01",
+		"isbn": "9780231203487"
+	},
+	{
+		"title": "When Genius Failed",
+		"image": "when-genius-failed.jpg",
+		"rating": "",
+		"link": "when-genius-failed",
+		"date_read": "1970-01-01",
+		"isbn": "9780375758256"
+	},
+	{
+		"title": "Where Are the Customers' Yachts?",
+		"image": "where-are-the-customers-yachts.jpg",
+		"rating": "",
+		"link": "where-are-the-customers-yachts",
+		"date_read": "1970-01-01",
+		"isbn": "9780471770893"
+	},
+	{
+		"title": "Where the Money Is",
+		"image": "where-the-money-is.jpg",
+		"rating": "",
+		"link": "where-the-money-is",
+		"date_read": "1970-01-01",
+		"isbn": "9781982185145"
+	},
+	{
+		"title": "White Mughals : love and betrayal in eighteenth-century India",
+		"image": "white-mughals.jpg",
+		"rating": "",
+		"link": "white-mughals",
+		"date_read": "1970-01-01",
+		"isbn": "9781526640635"
+	},
+	{
+		"title": "Why We Get Sick",
+		"image": "why-we-get-sick.jpg",
+		"rating": "",
+		"link": "why-we-get-sick",
+		"date_read": "1970-01-01",
+		"isbn": "9781953295774"
+	},
+	{
+		"title": "Why \u200bThe West Rules - For Now",
+		"image": "why-the-west-rules-for-now.jpg",
+		"rating": "",
+		"link": "why-the-west-rules-for-now",
+		"date_read": "1970-01-01",
+		"isbn": "9781846682087"
+	},
+	{
+		"title": "Wilmington's Lie",
+		"image": "wilmington-s-lie.jpg",
+		"rating": "",
+		"link": "wilmington-s-lie",
+		"date_read": "1970-01-01",
+		"isbn": "9780802148650"
+	},
+	{
+		"title": "WITH The Money Lenders of Shahpur (Thursday's Child)",
+		"image": "with-the-money-lenders-of-shahpur-thursday-s-child.jpg",
+		"rating": "",
+		"link": "with-the-money-lenders-of-shahpur-thursday-s-child",
+		"date_read": "1970-01-01",
+		"isbn": "9780007712021"
+	},
+	{
+		"title": "Wolf of the Plains: 01 (Conqueror)",
+		"image": "wolf-of-the-plains.jpg",
+		"rating": "",
+		"link": "wolf-of-the-plains",
+		"date_read": "2023-01-01",
+		"isbn": "9780007946686"
+	},
+	{
+		"title": "You Can Be a Stock Market Genius",
+		"image": "you-can-be-a-stock-market-genius.jpg",
+		"rating": "",
+		"link": "you-can-be-a-stock-market-genius",
+		"date_read": "1970-01-01",
+		"isbn": "9780684840079"
+	},
+	{
+		"title": "Your Prime Minister is Dead",
+		"image": "your-prime-minister-is-dead.jpg",
+		"rating": "",
+		"link": "your-prime-minister-is-dead",
+		"date_read": "1970-01-01",
+		"isbn": "9789386473356"
+	},
+	{
+		"title": "Zero to One: Note on Start Ups, or How to Build the Future",
+		"image": "zero-to-one.jpg",
+		"rating": "",
+		"link": "zero-to-one",
+		"date_read": "1970-01-01",
+		"isbn": "9780753555194"
+	},
+	{
+		"title": "\u0927\u0930\u094d\u092e\u094b\u0930\u0915\u094d\u0937\u0924\u093f [Dharmo Rakshati]",
+		"image": "dhrmorkssti-dharmo-rakshati.jpg",
+		"rating": "",
+		"link": "dhrmorkssti-dharmo-rakshati",
+		"date_read": "1970-01-01",
+		"isbn": "9788121608398"
+	},
+	{
+		"title": "\u0938\u092b\u093c\u0930 \u092e\u0947\u0902 \u0927\u0942\u092a \u0924\u094b \u0939\u094b\u0917\u0940  Safar mein dhoop toh hogi",
+		"image": "sphr-men-dhuup-to-hogii-safar-mein-dhoop-toh-hogi.jpg",
+		"rating": "",
+		"link": "sphr-men-dhuup-to-hogii-safar-mein-dhoop-toh-hogi",
+		"date_read": "1970-01-01",
+		"isbn": "9788187482017"
 	}
 ]

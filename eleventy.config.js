@@ -67,6 +67,14 @@ export default async function (eleventyConfig) {
 		return shuffledArray;
 	  });
 
+	  eleventyConfig.addFilter("sortBooksByDateReadDesc", (books) => {
+		return books.sort((a, b) => {
+		  const dateA = DateTime.fromISO(a.date_read || "1970-01-01");
+		  const dateB = DateTime.fromISO(b.date_read || "1970-01-01");
+		  return dateB - dateA; // Descending order
+		});
+	  });
+
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig
