@@ -64,14 +64,6 @@
 		"isbn": ""
 	},
 	{
-		"title": "Investing The Last Liberal art",
-		"image": "investing-the-last-liberal-art.jpg",
-		"rating": "3",
-		"link": "",
-		"date_read": "2023-01-01",
-		"isbn": ""
-	},
-	{
 		"title": "The Lucky Country",
 		"image": "the-lucky-country.jpg",
 		"rating": "4",
@@ -802,8 +794,8 @@
 		"isbn": "9781681840482"
 	},
 	{
-		"title": "(Nirmala) (Hindi Edition)",
-		"image": "nirmala-hindi-edition.jpg",
+		"title": "Nirmala",
+		"image": "nirmala.jpg",
 		"rating": "",
 		"link": "nirmala-hindi-edition",
 		"date_read": "1970-01-01",
@@ -811,7 +803,7 @@
 	},
 	{
 		"title": "1,000 Dollars and an Idea: Entrepreneur to Billionaire",
-		"image": "1000-dollars-and-an-idea.jpg",
+		"image": "1000-dollars.jpg",
 		"rating": "",
 		"link": "1000-dollars-and-an-idea",
 		"date_read": "1970-01-01",
@@ -986,7 +978,7 @@
 		"isbn": "9780007447862"
 	},
 	{
-		"title": "A \u200bGame of Thrones",
+		"title": "A Game of Thrones",
 		"image": "a-game-of-thrones.jpg",
 		"rating": "",
 		"link": "a-game-of-thrones",
@@ -994,7 +986,7 @@
 		"isbn": "9780007448036"
 	},
 	{
-		"title": "A \u200bPeople's History of the United States: 1492 to Present",
+		"title": "A People's History of the United States: 1492 to Present",
 		"image": "a-people-s-history-of-the-united-states.jpg",
 		"rating": "",
 		"link": "a-people-s-history-of-the-united-states",
@@ -1002,7 +994,7 @@
 		"isbn": "9780062397348"
 	},
 	{
-		"title": "A \u200bStorm of Swords: Blood and Gold",
+		"title": "A Storm of Swords: Blood and Gold",
 		"image": "a-storm-of-swords.jpg",
 		"rating": "",
 		"link": "a-storm-of-swords",
@@ -1010,7 +1002,7 @@
 		"isbn": "9780007447855"
 	},
 	{
-		"title": "A \u200bStorm of Swords: Steel and Snow",
+		"title": "A Storm of Swords: Steel and Snow",
 		"image": "a-storm-of-swords.jpg",
 		"rating": "",
 		"link": "a-storm-of-swords",
@@ -1066,7 +1058,7 @@
 		"isbn": "0449213943"
 	},
 	{
-		"title": "All \u200bGod's Children Need Travelling Shoes",
+		"title": "All God's Children Need Travelling Shoes",
 		"image": "all-god-s-children-need-travelling-shoes.jpg",
 		"rating": "",
 		"link": "all-god-s-children-need-travelling-shoes",
@@ -1696,14 +1688,6 @@
 		"link": "einstein",
 		"date_read": "1970-01-01",
 		"isbn": "9781471179389"
-	},
-	{
-		"title": "Elon Musk",
-		"image": "elon-musk.jpg",
-		"rating": "3",
-		"link": "elon-musk",
-		"date_read": "1970-01-01",
-		"isbn": "9780753555644"
 	},
 	{
 		"title": "Emerson's Essays",
@@ -4586,14 +4570,6 @@
 		"isbn": "9780140255737"
 	},
 	{
-		"title": "The Rebel Allocator",
-		"image": "the-rebel-allocator.jpg",
-		"rating": "1",
-		"link": "the-rebel-allocator",
-		"date_read": "1970-01-01",
-		"isbn": "9781732688322"
-	},
-	{
 		"title": "The \u200bSong of Achilles",
 		"image": "the-song-of-achilles.jpg",
 		"rating": "",
@@ -4656,14 +4632,6 @@
 		"link": "three-merchants-of-bombay",
 		"date_read": "1970-01-01",
 		"isbn": "9780143426196"
-	},
-	{
-		"title": "Titan",
-		"image": "titan.jpg",
-		"rating": "5",
-		"link": "titan",
-		"date_read": "1970-01-01",
-		"isbn": "9781400077304"
 	},
 	{
 		"title": "Total \u200bRecall",
@@ -4800,14 +4768,6 @@
 		"link": "vanity-fair",
 		"date_read": "1970-01-01",
 		"isbn": "9781853260193"
-	},
-	{
-		"title": "VIRAL: The Search for the Origin of Covid-19",
-		"image": "viral.jpg",
-		"rating": "3",
-		"link": "viral",
-		"date_read": "1970-01-01",
-		"isbn": "9780008487508"
 	},
 	{
 		"title": "Virtual Murdoch: Reality Wars on the Information Highway",
