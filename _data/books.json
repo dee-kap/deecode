@@ -4370,14 +4370,6 @@
 		"isbn": "9781846147586"
 	},
 	{
-		"title": "The World Until Yesterday: What Can We Learn from Traditional Societies?",
-		"image": "the-world-until-yesterday.jpg",
-		"rating": "",
-		"link": "the-world-until-yesterday",
-		"date_read": "1970-01-01",
-		"isbn": "9780141024486"
-	},
-	{
 		"title": "The Wright Brothers: The Dramatic Story-Behind-the-Story: The Dramatic Story Behind the Legend",
 		"image": "the-wright-brothers.jpg",
 		"rating": "",
@@ -4554,7 +4546,7 @@
 		"isbn": "9780140255737"
 	},
 	{
-		"title": "The \u200bSong of Achilles",
+		"title": "The Song of Achilles",
 		"image": "the-song-of-achilles.jpg",
 		"rating": "",
 		"link": "the-song-of-achilles",
@@ -4562,7 +4554,7 @@
 		"isbn": "9781408891384"
 	},
 	{
-		"title": "The \u200bTestaments",
+		"title": "The Testaments",
 		"image": "the-testaments.jpg",
 		"rating": "",
 		"link": "the-testaments",
@@ -4570,7 +4562,7 @@
 		"isbn": "9781784708214"
 	},
 	{
-		"title": "The \u200bThree-Body Problem",
+		"title": "The Three-Body Problem",
 		"image": "the-three-body-problem.jpg",
 		"rating": "",
 		"link": "the-three-body-problem",
@@ -4690,14 +4682,6 @@
 		"isbn": "9781617205163"
 	},
 	{
-		"title": "Understanding Investment Property ~ The Essential Reference for Ordinary Savers",
-		"image": "understanding-investment-property-the-essential-reference-for-ordinary-savers.jpg",
-		"rating": "",
-		"link": "understanding-investment-property-the-essential-reference-for-ordinary-savers",
-		"date_read": "1970-01-01",
-		"isbn": "9781920910044"
-	},
-	{
 		"title": "Undo It!: How Simple Lifestyle Changes Can Reverse Most Chronic Diseases",
 		"image": "undo-it.jpg",
 		"rating": "",
@@ -4722,7 +4706,7 @@
 		"isbn": "9788174368041"
 	},
 	{
-		"title": "Unto \u200bThis Last and Other Writings",
+		"title": "Unto This Last and Other Writings",
 		"image": "unto-this-last-and-other-writings.jpg",
 		"rating": "",
 		"link": "unto-this-last-and-other-writings",
@@ -4730,10 +4714,10 @@
 		"isbn": "9780140432114"
 	},
 	{
-		"title": "Value",
-		"image": "value.jpg",
+		"title": "Value: The Intelligent Investor's Guide to Finding Hidden Gems on the Sharemarket",
+		"image": "value-sharemarket.jpg",
 		"rating": "",
-		"link": "value",
+		"link": "value-sharemarket",
 		"date_read": "1970-01-01",
 		"isbn": "9780731407644"
 	},
@@ -4955,9 +4939,9 @@
 	},
 	{
 		"title": "\u0938\u092b\u093c\u0930 \u092e\u0947\u0902 \u0927\u0942\u092a \u0924\u094b \u0939\u094b\u0917\u0940  Safar mein dhoop toh hogi",
-		"image": "sphr-men-dhuup-to-hogii-safar-mein-dhoop-toh-hogi.jpg",
+		"image": "saphar-mein-dhuup-to-hogii.jpg",
 		"rating": "",
-		"link": "sphr-men-dhuup-to-hogii-safar-mein-dhoop-toh-hogi",
+		"link": "saphar-mein-dhuup-to-hogii",
 		"date_read": "1970-01-01",
 		"isbn": "9788187482017"
 	}
