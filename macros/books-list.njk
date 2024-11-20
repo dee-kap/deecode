@@ -20,7 +20,15 @@
     {{ subText }}
   </div>
 </div>
-  <div class="books-list">
+<div id="icons-container">
+  <div id="show-book-list-icons">
+    <i class="las la-icons la-3x" ></i>
+  </div>
+  <div id="show-book-list-text">
+    <i class="las la-list-ul la-3x"></i>
+  </div>
+</div>
+  <div id="book-list-icons" class="books-list">
     {%- for book in filteredBooks -%}
       {%- set rating = book.rating | int -%}
       {%- if book.link -%}
@@ -50,5 +58,32 @@
       </a>
       {%- endif -%}
     {%- endfor %}
+  </div>
+
+  <div id="book-list-text">
+    <ol>
+      {%- for book in filteredBooks -%}
+        {%- set rating = book.rating | int -%}
+        <li>
+          {%- if book.link -%}
+          <a href="/books/{{ book.title }}">
+          {%- endif -%}
+          {{ book.title | trim }}
+          {%- if book.link -%}
+          </a> 
+          {%- endif -%}
+          <span>  </span>
+          {%- if rating == 6 -%}
+            {%- for i in range(1, 7) -%}
+              <span class="star {% if i <= rating %}filled{% endif %} {% if i == 6 %} six{% endif %}">★</span>
+            {%- endfor %}
+          {%- else -%}
+            {%- for i in range(1, 6) -%}
+              <span class="star {% if i <= rating %}filled{% endif %}">★</span>
+            {%- endfor %}
+          {%- endif -%}
+        </li>
+      {%- endfor %}
+    </ol>
   </div>
 {% endmacro %}
