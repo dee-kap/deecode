@@ -9,4 +9,4 @@ tags: ["Books", "India", "Buddha", "Alexander", "Ashoka", "Rome"]
  There are certain books that change the way to look at history. This is one of those books. 
 
 
- I have few other books written by William Dalrymple and after reading The Golden Road they have pushed up the stack and I plan to read them soon. 
+ I have few other books written by William Dalrymple and after reading The Golden Road, I'm keen on reading them soon.
