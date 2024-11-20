@@ -1363,7 +1363,7 @@
 	},
 	{
 		"title": "Buylle Shah (Hindi)",
-		"image": "buylle-shah-hindi.jpg",
+		"image": "buylle-shah-hindi.webp",
 		"rating": "",
 		"link": "buylle-shah-hindi",
 		"date_read": "1970-01-01",
@@ -1427,9 +1427,9 @@
 	},
 	{
 		"title": "Churchill: A History of The English Speaking Peoples Book 3",
-		"image": "churchill.jpg",
+		"image": "churchill-history-of-english-speaking-people-3.jpg",
 		"rating": "",
-		"link": "churchill",
+		"link": "churchill-history-of-english-speaking-people-3",
 		"date_read": "1970-01-01",
 		"isbn": "9780304915132"
 	},
@@ -1459,7 +1459,7 @@
 	},
 	{
 		"title": "Complete Works of Swami Vivekananda, Volume 1",
-		"image": "complete-works-of-swami-vivekananda-volume-1.jpg",
+		"image": "complete-works-of-swami-vivekananda-vol-4.jpg",
 		"rating": "",
 		"link": "complete-works-of-swami-vivekananda-volume-1",
 		"date_read": "1970-01-01",
@@ -1594,7 +1594,7 @@
 		"isbn": "9780393353716"
 	},
 	{
-		"title": "Diana \u200b- Her True Story In Her Own Words",
+		"title": "Diana - Her True Story In Her Own Words",
 		"image": "diana-her-true-story-in-her-own-words.jpg",
 		"rating": "",
 		"link": "diana-her-true-story-in-her-own-words",
@@ -1674,7 +1674,7 @@
 		"isbn": "9780553286526"
 	},
 	{
-		"title": "Einstein's \u200bDreams",
+		"title": "Einstein's Dreams",
 		"image": "einstein-s-dreams.jpg",
 		"rating": "",
 		"link": "einstein-s-dreams",
@@ -1683,9 +1683,9 @@
 	},
 	{
 		"title": "Einstein: His Life and Univers",
-		"image": "einstein.jpg",
+		"image": "einstein-his-life-and-universe.jpg",
 		"rating": "",
-		"link": "einstein",
+		"link": "einstein-his-life-and-universe",
 		"date_read": "1970-01-01",
 		"isbn": "9781471179389"
 	},
@@ -1786,10 +1786,10 @@
 		"isbn": "9781473637467"
 	},
 	{
-		"title": "Fahrenheit \u200b451 (angol)",
+		"title": "Fahrenheit 451",
 		"image": "fahrenheit-451-angol.jpg",
 		"rating": "",
-		"link": "fahrenheit-451-angol",
+		"link": "fahrenheit-451",
 		"date_read": "1970-01-01",
 		"isbn": "9780006546061"
 	},
@@ -1818,7 +1818,7 @@
 		"isbn": "9781260117264"
 	},
 	{
-		"title": "Financial Statements",
+		"title": "Financial Statements A Step-by-Step Guide to Understanding and Creating Financial Reports",
 		"image": "financial-statements.jpg",
 		"rating": "",
 		"link": "financial-statements",
@@ -1874,7 +1874,7 @@
 		"isbn": "9780353249899"
 	},
 	{
-		"title": "Fooled \u200bby Randomness - The Hidden Role of Chance in Life and in the Markets",
+		"title": "Fooled by Randomness - The Hidden Role of Chance in Life and in the Markets",
 		"image": "fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets.jpg",
 		"rating": "",
 		"link": "fooled-by-randomness-the-hidden-role-of-chance-in-life-and-in-the-markets",
@@ -1930,14 +1930,6 @@
 		"isbn": "9780300243789"
 	},
 	{
-		"title": "Future frontiers: education for an AI world",
-		"image": "future-frontiers.jpg",
-		"rating": "",
-		"link": "future-frontiers",
-		"date_read": "1970-01-01",
-		"isbn": "9780522873115"
-	},
-	{
 		"title": "GADAR PARTY NAYAK : KARTAR SINGH SAR",
 		"image": "gadar-party-nayak.jpg",
 		"rating": "",
@@ -1962,7 +1954,7 @@
 		"isbn": "9780307474780"
 	},
 	{
-		"title": "Gather \u200bTogether in My Name",
+		"title": "Gather Together in My Name",
 		"image": "gather-together-in-my-name.jpg",
 		"rating": "",
 		"link": "gather-together-in-my-name",
@@ -2019,9 +2011,9 @@
 	},
 	{
 		"title": "Ghalib : Sangeet Ke Saanche Mein Dhali Gazalen",
-		"image": "ghalib.jpg",
+		"image": "ghalib-sangeet-ghazals.jpg",
 		"rating": "",
-		"link": "ghalib",
+		"link": "ghalib-sangeet-ghazals",
 		"date_read": "1970-01-01",
 		"isbn": "8170167531"
 	},
@@ -2258,14 +2250,6 @@
 		"isbn": "9780241448304"
 	},
 	{
-		"title": "How to legally reduce your tax : without losing any money! Discover how the rich use company and trust structures to protect their assets and minimise their tax.",
-		"image": "how-to-legally-reduce-your-tax.jpg",
-		"rating": "",
-		"link": "how-to-legally-reduce-your-tax",
-		"date_read": "1970-01-01",
-		"isbn": "9780646450650"
-	},
-	{
 		"title": "How to Profit From Special Situations in the Stock Market",
 		"image": "how-to-profit-from-special-situations-in-the-stock-market.jpg",
 		"rating": "",
@@ -2290,7 +2274,7 @@
 		"isbn": "9780091906412"
 	},
 	{
-		"title": "How \u200bNot to be Wrong",
+		"title": "How Not to be Wrong",
 		"image": "how-not-to-be-wrong.jpg",
 		"rating": "",
 		"link": "how-not-to-be-wrong",
@@ -2322,7 +2306,7 @@
 		"isbn": "9788174364074"
 	},
 	{
-		"title": "I \u200bAm a Strange Loop",
+		"title": "I Am a Strange Loop",
 		"image": "i-am-a-strange-loop.jpg",
 		"rating": "",
 		"link": "i-am-a-strange-loop",
@@ -2330,7 +2314,7 @@
 		"isbn": "9780465030798"
 	},
 	{
-		"title": "I \u200bKnow Why the Caged Bird Sings",
+		"title": "I Know Why the Caged Bird Sings",
 		"image": "i-know-why-the-caged-bird-sings.jpg",
 		"rating": "",
 		"link": "i-know-why-the-caged-bird-sings",
@@ -2530,7 +2514,7 @@
 		"isbn": "0451524500"
 	},
 	{
-		"title": "Junk to Gold: From Salvage to the World\u00e2\u20ac\u2122s Largest Online Auto Auction",
+		"title": "Junk to Gold: From Salvage to the World's Largest Online Auto Auction",
 		"image": "junk-to-gold.jpg",
 		"rating": "",
 		"link": "junk-to-gold",
@@ -2547,9 +2531,9 @@
 	},
 	{
 		"title": "Krishnamurti: The Years of Fulfillment",
-		"image": "krishnamurti.jpg",
+		"image": "krishnamurti-the-years-of-fulfillment.jpg",
 		"rating": "",
-		"link": "krishnamurti",
+		"link": "krishnamurti-the-years-of-fulfillment",
 		"date_read": "1970-01-01",
 		"isbn": "0380680076"
 	},
@@ -2578,10 +2562,10 @@
 		"isbn": "9780684825359"
 	},
 	{
-		"title": "Lolita \u200b(angol)",
+		"title": "Lolita",
 		"image": "lolita-angol.jpg",
 		"rating": "",
-		"link": "lolita-angol",
+		"link": "lolita",
 		"date_read": "1970-01-01",
 		"isbn": "9780141037431"
 	},
@@ -2594,7 +2578,7 @@
 		"isbn": "9780316548182"
 	},
 	{
-		"title": "Lord \u200bof the Flies",
+		"title": "Lord of the Flies",
 		"image": "lord-of-the-flies.jpg",
 		"rating": "",
 		"link": "lord-of-the-flies",
@@ -2619,7 +2603,7 @@
 	},
 	{
 		"title": "MacQuarie",
-		"image": "macquarie.jpg",
+		"image": "macquarie.webp",
 		"rating": "",
 		"link": "macquarie",
 		"date_read": "1970-01-01",
@@ -2722,7 +2706,7 @@
 		"isbn": "9781608193943"
 	},
 	{
-		"title": "Michael \u200bJordan: The Life",
+		"title": "Michael Jordan: The Life",
 		"image": "michael-jordan.jpg",
 		"rating": "",
 		"link": "michael-jordan",
@@ -2770,7 +2754,7 @@
 		"isbn": "9781728892245"
 	},
 	{
-		"title": "Mom \u200b& Me & Mom",
+		"title": "Mom & Me & Mom",
 		"image": "mom-me-mom.jpg",
 		"rating": "",
 		"link": "mom-me-mom",
@@ -2827,9 +2811,9 @@
 	},
 	{
 		"title": "My Inventions: The Autobiography of Nikola Tesla",
-		"image": "my-inventions.jpg",
+		"image": "my-inventions-nikola-tesla.jpg",
 		"rating": "",
-		"link": "my-inventions",
+		"link": "my-inventions-nikola-tesla",
 		"date_read": "1970-01-01",
 		"isbn": "9781684222063"
 	},
@@ -2842,7 +2826,7 @@
 		"isbn": "9788183227025"
 	},
 	{
-		"title": "Naked \u200bStatistics",
+		"title": "Naked Statistics",
 		"image": "naked-statistics.jpg",
 		"rating": "",
 		"link": "naked-statistics",
@@ -2858,7 +2842,7 @@
 		"isbn": "9780521274357"
 	},
 	{
-		"title": "Never \u200bSplit the Difference",
+		"title": "Never Split the Difference",
 		"image": "never-split-the-difference.jpg",
 		"rating": "",
 		"link": "never-split-the-difference",
@@ -2866,7 +2850,7 @@
 		"isbn": "9781847941497"
 	},
 	{
-		"title": "New \u200bYork",
+		"title": "New York",
 		"image": "new-york.jpg",
 		"rating": "",
 		"link": "new-york",
@@ -2890,7 +2874,7 @@
 		"isbn": "9780008309008"
 	},
 	{
-		"title": "Notes \u200bfrom Underground, White Nights, The Dream of a Ridiculous Man and and Selections from The House of the Dead",
+		"title": "Notes from Underground, White Nights, The Dream of a Ridiculous Man and and Selections from The House of the Dead",
 		"image": "notes-from-underground-white-nights-the-dream-of-a-ridiculous-man-and-and-selections-from-the-house-of-the-dead.jpg",
 		"rating": "",
 		"link": "notes-from-underground-white-nights-the-dream-of-a-ridiculous-man-and-and-selections-from-the-house-of-the-dead",
@@ -2898,15 +2882,15 @@
 		"isbn": "9780451529558"
 	},
 	{
-		"title": "Nudge \u200b(angol)",
-		"image": "nudge-angol.jpg",
+		"title": "Nudge",
+		"image": "nudge.jpg",
 		"rating": "",
-		"link": "nudge-angol",
+		"link": "nudge",
 		"date_read": "1970-01-01",
 		"isbn": "9780143115267"
 	},
 	{
-		"title": "Numbers \u200bDon't Lie",
+		"title": "Numbers Don't Lie",
 		"image": "numbers-don-t-lie.jpg",
 		"rating": "",
 		"link": "numbers-don-t-lie",
@@ -3002,7 +2986,7 @@
 		"isbn": "9780732282585"
 	},
 	{
-		"title": "Other \u200bMinds",
+		"title": "Other Minds",
 		"image": "other-minds.jpg",
 		"rating": "",
 		"link": "other-minds",
@@ -3291,7 +3275,7 @@
 	},
 	{
 		"title": "Sadacarah: Adi sankaracarya",
-		"image": "sadacarah.jpg",
+		"image": "sadacarah.webp",
 		"rating": "",
 		"link": "sadacarah",
 		"date_read": "1970-01-01",
