@@ -408,3 +408,18 @@ nav[aria-label="breadcrumb"] li {
 	text-decoration: none;
 	font-weight: bold;
 }
+
+#book-list-text {
+	display: none;
+}
+
+#icons-container {
+	display: flex;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	cursor: pointer;
+}
+
+#icons-container i:hover {
+	color: var(--color-peach);
+}

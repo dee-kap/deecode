@@ -8,19 +8,19 @@
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Amorphous Ponder">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
-	<!-- Google tag (gtag.js) -->
-	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZXDJX855JP"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		<!-- Google tag (gtag.js) -->
+		<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZXDJX855JP"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-	gtag('config', 'G-ZXDJX855JP');
-	
-	</script>
+		gtag('config', 'G-ZXDJX855JP');
+		</script>
 		
 		<style>/**
  * okaidia theme for JavaScript, CSS and HTML
@@ -600,22 +600,53 @@ nav[aria-label="breadcrumb"] li {
 .tag-cloud .tag {
 	text-decoration: none;
 	font-weight: bold;
+}
+
+#book-list-text {
+	display: none;
+}
+
+#icons-container {
+	display: flex;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	cursor: pointer;
+}
+
+#icons-container i:hover {
+	color: var(--color-peach);
 }</style>
 		<script>
 			document.addEventListener('DOMContentLoaded', function () {
-			const toggleButton = document.getElementById('theme-toggle');
-			const currentTheme = localStorage.getItem('theme') || 'dark';
+				const toggleButton = document.getElementById('theme-toggle');
+				const currentTheme = localStorage.getItem('theme') || 'dark';
 
-			if (currentTheme) {
-				document.documentElement.setAttribute('data-theme', currentTheme);
-			}
+				if (currentTheme) {
+					document.documentElement.setAttribute('data-theme', currentTheme);
+				}
 
-			toggleButton.addEventListener('click', () => {
-				const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-				document.documentElement.setAttribute('data-theme', newTheme);
-				localStorage.setItem('theme', newTheme);
+				toggleButton.addEventListener('click', () => {
+					const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+					document.documentElement.setAttribute('data-theme', newTheme);
+					localStorage.setItem('theme', newTheme);
+				});
+
+				const showBookListIcons = document.getElementById('show-book-list-icons');
+				const showBookListText = document.getElementById('show-book-list-text');
+
+				showBookListText.addEventListener('click', function() {
+					document.getElementById('book-list-icons').style.display = "none"
+					document.getElementById('book-list-text').style.display = "initial"
+				})
+
+				showBookListIcons.addEventListener('click', function() {
+					document.getElementById('book-list-icons').style.display = "flex"
+					document.getElementById('book-list-text').style.display = "none"
+				})
+			
 			});
-			});
+
+			
 
 			// used to shuffle books
 			function shuffleArray(array) {
@@ -825,7 +856,7 @@ nav[aria-label="breadcrumb"] li {
 			</div>
 		</footer>
 
-		<!-- This page `/blog/2024/10/22/beyond-code/` was built on 2024-11-20T06:11:31.852Z -->
+		<!-- This page `/blog/2024/10/22/beyond-code/` was built on 2024-11-20T07:36:28.919Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

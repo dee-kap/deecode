@@ -8,19 +8,19 @@
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="Amorphous Ponder">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
-	<!-- Google tag (gtag.js) -->
-	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZXDJX855JP"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		<!-- Google tag (gtag.js) -->
+		<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZXDJX855JP"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-	gtag('config', 'G-ZXDJX855JP');
-	
-	</script>
+		gtag('config', 'G-ZXDJX855JP');
+		</script>
 		
 		<style>/* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
@@ -432,22 +432,53 @@ nav[aria-label="breadcrumb"] li {
 .tag-cloud .tag {
 	text-decoration: none;
 	font-weight: bold;
+}
+
+#book-list-text {
+	display: none;
+}
+
+#icons-container {
+	display: flex;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	cursor: pointer;
+}
+
+#icons-container i:hover {
+	color: var(--color-peach);
 }</style>
 		<script>
 			document.addEventListener('DOMContentLoaded', function () {
-			const toggleButton = document.getElementById('theme-toggle');
-			const currentTheme = localStorage.getItem('theme') || 'dark';
+				const toggleButton = document.getElementById('theme-toggle');
+				const currentTheme = localStorage.getItem('theme') || 'dark';
 
-			if (currentTheme) {
-				document.documentElement.setAttribute('data-theme', currentTheme);
-			}
+				if (currentTheme) {
+					document.documentElement.setAttribute('data-theme', currentTheme);
+				}
 
-			toggleButton.addEventListener('click', () => {
-				const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-				document.documentElement.setAttribute('data-theme', newTheme);
-				localStorage.setItem('theme', newTheme);
+				toggleButton.addEventListener('click', () => {
+					const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+					document.documentElement.setAttribute('data-theme', newTheme);
+					localStorage.setItem('theme', newTheme);
+				});
+
+				const showBookListIcons = document.getElementById('show-book-list-icons');
+				const showBookListText = document.getElementById('show-book-list-text');
+
+				showBookListText.addEventListener('click', function() {
+					document.getElementById('book-list-icons').style.display = "none"
+					document.getElementById('book-list-text').style.display = "initial"
+				})
+
+				showBookListIcons.addEventListener('click', function() {
+					document.getElementById('book-list-icons').style.display = "flex"
+					document.getElementById('book-list-text').style.display = "none"
+				})
+			
 			});
-			});
+
+			
 
 			// used to shuffle books
 			function shuffleArray(array) {
@@ -500,12 +531,20 @@ I follow a 6 star rating system.
     Got me interested enough to read it all the way through.
   </div>
 </div>
-  <div class="books-list">
+<div id="icons-container">
+  <div id="show-book-list-icons">
+    <i class="las la-icons la-3x"></i>
+  </div>
+  <div id="show-book-list-text">
+    <i class="las la-list-ul la-3x"></i>
+  </div>
+</div>
+  <div id="book-list-icons" class="books-list"><a href="/books/the-lucky-country">
         <div class="book" style="background-image: url('/images/covers/the-lucky-country.jpg')">
 <p></p><div class="book-title"><p></p>
 <p></p><div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></div>
 </div>
-</div>
+</div></a>
 <div class="book" style="background-image: url('/images/covers/flash-crash.jpg')"><p></p>
 <p></p><div class="book-title"><p></p>
 <p></p><div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></div>
@@ -677,6 +716,10 @@ I follow a 6 star rating system.
 </div>
 </div></a><p></p>
   </div>
+  <div id="book-list-text">
+    <ol><li><a href="/books/The Lucky Country">The Lucky Country</a><span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>Flash Crash<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>The Secret of The Nagas<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>Immortals of Meluha<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li><a href="/books/Breath: The New Science of a Lost Art">Breath: The New Science of a Lost Art</a><span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>One Life<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>The Billionaire&#39;s Apprentice: The Rise of The Indian-American Elite and The Fall of The Galleon Hedge Fund by Anita Raghavan<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>The Art of War by Sun Tzu<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>The Rise and Rise of Kerry Packer Uncut by Paul Barry<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>Kingpin: How One Hacker Took Over the Billion-Dollar Cybercrime Underground by Kevin Poulsen<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>The Fugitive Game: Online with Kevin Mitnick by Jonathan Littman<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>Books I Have Loved by Osho<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>Life of Pi by Yann Martel<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>Train to Pakistan by Khushwant Singh<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>1984 by George Orwell<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>The Polyester Prince: The Rise of Dhirubhai Ambani by Hamish McDonald<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>The Dhandho Investor: The Low-Risk Value Method to High Returns by Mohnish Pabrai<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>Catch Me If You Can: The True Story of a Real Fake by Frank W. Abagnale<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>Barbarians at the Gate: The Fall of RJR Nabisco by Bryan Burrough<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>Midnight&#39;s Children by Salman Rushdie<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>Extraordinary Popular Delusions and the Madness of Crowds by Charles Mackay<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>Blink: The Power of Thinking Without Thinking by Malcolm Gladwell<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>Business Maharajas by Gita Piramal<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>The Road Ahead by Bill Gates<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>The Tao of Physics: An Exploration of the Parallels between Modern Physics and Eastern Mysticism by Fritjof Capra<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>Beyond The Last Blue Mountain: A Life Of J. R. D. Tata by R.M. Lala<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>The Tipping Point: How Little Things Can Make a Big Difference by Malcolm Gladwell<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>Shantaram by Gregory David Roberts<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>Edward Britton by Gary Crew<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>Angels &amp; Demons (Robert Langdon, #1) by Dan Brown<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>Outliers: The Story of Success by Malcolm Gladwell<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>Steve Jobs by Walter Isaacson<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>The Oath of the Vayuputras (Shiva Trilogy, #3) by Amish Tripathi<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li>The Art of Thinking Clearly by Rolf Dobelli<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li><li><a href="/books/One Life: The True Story of Sir Nicholas Winton">One Life: The True Story of Sir Nicholas Winton</a><span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span></li>
+    </ol>
+  </div>
 <p>All <a href="/books">647 books</a></p>
 
 			</heading-anchors>
@@ -834,7 +877,7 @@ I follow a 6 star rating system.
 			</div>
 		</footer>
 
-		<!-- This page `/books/4-star/` was built on 2024-11-20T06:11:31.813Z -->
+		<!-- This page `/books/4-star/` was built on 2024-11-20T07:36:28.897Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>
