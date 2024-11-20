@@ -10,7 +10,7 @@
 	{
 		"title": "Richer Wiser Happier",
 		"image": "richer-wiser-happier.jpg",
-		"rating": "",
+		"rating": "5",
 		"link": "",
 		"date_read": "2023-01-01",
 		"isbn": ""
@@ -18,7 +18,7 @@
 	{
 		"title": "Flash Crash",
 		"image": "flash-crash.jpg",
-		"rating": "",
+		"rating": "4",
 		"link": "",
 		"date_read": "2023-01-01",
 		"isbn": ""
@@ -102,12 +102,6 @@
 		"rating": "3"
 	},
 	{
-		"title": "Breath: The New Science of a Lost Art",
-		"displayTitle": "Breath",
-		"image": "breath.jpg",
-		"rating": "3"
-	},
-	{
 		"title": "TITAN: Inside India’s Most Successful Consumer Brand by Vinay Kamath",
 		"displayTitle": "TITAN",
 		"image": "titan.jpg",
@@ -130,12 +124,6 @@
 		"displayTitle": "The Rebel Allocator",
 		"image": "the-rebel-allocator.jpg",
 		"rating": "1"
-	},
-	{
-		"title": "Richer, Wiser, Happier: How the World’s Greatest Investors Win in Markets and Life by William Green",
-		"displayTitle": "Richer, Wiser, Happier",
-		"image": "richer-wiser-happier.jpg",
-		"rating": "5"
 	},
 	{
 		"title": "The Joys of Compounding: The Passionate Pursuit of Lifelong Learning by Gautam Baid",
@@ -1326,7 +1314,7 @@
 		"image": "breath.jpg",
 		"rating": "4",
 		"link": "breath",
-		"date_read": "2023-01-01",
+		"date_read": "2022-09-08",
 		"isbn": "9780241289129"
 	},
 	{
