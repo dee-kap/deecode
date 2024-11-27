@@ -18,6 +18,6 @@ I’m on a <mark>lifelong mission</mark> to refine my thinking, aiming to be a l
 
 This website has been around in various forms (on different domains) since 2003. Initially, it was primarily a technical blog focused on programming. In 2022, I decided to wipe the slate clean, removing old content that no longer reflected my interests or value to others.
 
-When I first started blogging, my goal was to promote myself professionally and gain recognition in tech circles. I achieved desired success in that.
+When I first started blogging, my goal was to promote myself professionally and gain recognition in tech circles and It worked out well for me.
 
-Now, while coding is still a core part of my identity, I’ve developed interests in other areas as well. This website is no longer just a technical blog, it’s a more authentic space that reflects who I am today.
+Now, while coding is still a core part of my identity, over the years I have also developed interests in other areas. This website is no longer just a technical blog, it’s a more authentic space that reflects who I am today.
