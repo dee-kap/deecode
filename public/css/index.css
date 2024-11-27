@@ -22,8 +22,9 @@
 }
 
 #theme-toggle {
+	cursor: pointer;
 	background-color: var(--background-color);
-	color: #000000;
+	color: #1e1e2e;
 	border: none;
 	font-size: 2em;
 }
