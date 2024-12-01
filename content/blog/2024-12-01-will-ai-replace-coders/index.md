@@ -1,5 +1,5 @@
 ---
-title: Will AI Replace Coders
+title: Will AI Replace Coders?
 description:
 date: "2024-12-01"
 tags: ["Tech", "AI", "ChatGPT"]
@@ -8,6 +8,8 @@ eleventyNavigation:
     key: "will-ai-replace-coders"
     parent: "Blog"
 ---
+
+# Will AI Replace Coders?
 
 I'm a programmer, a coder, a bit shifter and like many other, I have been thinking about what AI means for me as a computer programmer (the term I prefer). Will AI replace us programmers? Will the technology mature to a level where humans will not be required to write any code? What will happen to the jobs? What will be the jobs for the programmers in the future?
 
