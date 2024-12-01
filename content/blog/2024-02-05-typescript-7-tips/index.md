@@ -1,12 +1,13 @@
 ---
 title: 7 Essentials for Learning TypeScript
 date: 2024-02-05
-category: 
+category:
 tags: ["Tech", "TypeScript"]
-featured_image: 
-summary: 
+featured_image:
+summary:
 permalink: "/blog/2024/2/5/typescript-7-tips/"
 ---
+# 7 Essentials for Learning TypeScript
 
 TypeScript is my preferred langauge for writing front-end code or anything node.js. I have been saved by the Type System numerous time. It has helped me track down potential errors which would have only surfaced during runtime. I think there is value in learning TypeScript and I strongly recommend to anyone who writes front-end code.
 

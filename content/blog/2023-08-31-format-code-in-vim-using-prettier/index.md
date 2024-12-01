@@ -6,6 +6,8 @@ tags: ['Tech', 'VIM', 'Tools']
 permalink: "/blog/2023/8/30/format-code-in-vim-using-prettier/"
 ---
 
+# Format code before saving in vim with Prettier
+
 To format code before saving a buffer in Vim/Neovim, we can use some excellent plugins out there. But I prefer to do things without plugins wherever possible.
 
 Adding the code below to config will automatically format files of type `*.ts,*.js,*.jsx,*.tsx,*.css` before saving.

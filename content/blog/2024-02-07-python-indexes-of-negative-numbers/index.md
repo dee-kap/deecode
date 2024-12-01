@@ -2,9 +2,10 @@
 title: Get Indexes of Negative Numbers from a List in Python
 date: 2024-02-07
 tags: ["Tech", "Python"]
-summary: 
+summary:
 permalink: "/blog/2024/2/7/python-indexes-of-negative-numbers/"
 ---
+# Get Indexes of Negative Numbers from a List in Python
 
 Today I was working on some code in which I had to get indexes of items in a list based on a condition. I found it interesting and thought of writing a post about a similar problem.
 

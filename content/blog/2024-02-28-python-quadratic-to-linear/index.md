@@ -1,12 +1,13 @@
 ---
 title: From Quadratic to Linear
 date: 2024-02-28
-category: 
+category:
 tags: ["Tech", "Python", "Algorithms"]
-featured_image: 
-summary: 
+featured_image:
+summary:
 permalink: "/blog/2024/2/28/python-quadratic-to-linear/"
 ---
+# From Quadratic to Linear
 
 Lately, I've been immersing myself in basic coding exercises to refresh concepts that I learned years ago but haven't utilized much recently.
 

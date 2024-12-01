@@ -1,10 +1,12 @@
 ---
 title: Desk Cleanup 2024
-description: 
+description:
 date: "2024-10-02"
 tags: ["Tech", "Personal",  "Productivity"]
 permalink: "/blog/2024/10/2/desk-cleanup/"
 ---
+
+# Desk Cleanup
 
 Few days ago I bought a monitor stand which came in today. It is a Meatanty Dual Monitor Stand Riser with 2 Drawers, 4 Usb Ports and Charging Pad. Recently I made some ergonomic changes to my working environment like changing to a vertical mouse. Although I do not have RSI yet, but sometimes I feel a little bit of pain in my wrist. Before it gets any worse, I have started making some changes to my environment.
 

@@ -1,12 +1,13 @@
 ---
 title: Step One of a Thousand Miles Journey
 date: 2024-02-22
-category: 
+category:
 tags: ["Books", "GBWW"]
-featured_image: 
-summary: 
+featured_image:
+summary:
 permalink: "/blog/2024/2/22/gbww-first-step/"
 ---
+# Step One of a Thousand Miles Journey
 
 About two days ago, The Great Ideas Program which is a set of ten volumes arrived. Yesterday I took the first step on my thousand miles journey of reading The Great Books of Western World.
 

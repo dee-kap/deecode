@@ -1,10 +1,11 @@
 ---
 title: Handling Single Record Queries in Rails with Grace
 date: 2024-02-05
-category: 
+category:
 tags: ["Tech", "Ruby", "RoR"]
 permalink: "/blog/2024/2/5/rails-ensure-only-one-record/"
 ---
+# Handling Single Record Queries in Rails with Grace
 
 In Ruby on Rails, when dealing with database queries, there are instances where we anticipate a query to return a single record. This expectation arises in scenarios where the uniqueness of a record is integral to the application's logic. However, databases can sometimes contain duplicates or multiple records that meet the query criteria, leading to potential conflicts or unexpected behavior in our application. To ensure robust and error-free application behavior, it's essential to handle these cases effectively.
 

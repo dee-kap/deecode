@@ -5,6 +5,7 @@ tags: ["Tech", "Python"]
 permalink: "blog/2024/10/15/python-langtons-ant/"
 draft: false
 ---
+# Langton's Ant in Python
 
 I was looking for a fun little exercise I could write in Python and I came across Langton's Ant. According to Wikipedia:
 

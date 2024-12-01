@@ -2,10 +2,11 @@
 title: Few thoughts on Blogging
 date: 2022-05-01
 tags: ["Tech", "Blogging"]
-summary: 
+summary:
 permalink: "/blog/2022/5/1/few-thoughts-on-blogging/"
 ---
 
+# Few thoughts on Blogging
 
 According to the [History of Blogging](https://online.ndm.edu/news/communication/history-of-blogging/), the first blog was created in 1994. The term weblog which eventually became [blog](/) was coined in 1997.
 

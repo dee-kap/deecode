@@ -1,12 +1,14 @@
 ---
 title: "Codecamp OZ: A Nostalgic Dive Into The Archives of the Web"
 date: 2024-01-14
-category: 
+category:
 tags: ["Tech" ]
-featured_image: 
-summary: 
+featured_image:
+summary:
 permalink: "/blog/2024/1/14/nostalgic-turn/"
 ---
+
+# Codecamp OZ: A Nostalgic Dive Into The Archives of the Web
 
 I often think how fascinating it would be if the entire World Wide Web disappeared, leaving only the Wayback Machine behind. It's truly a remarkable tool and I could live with that.
 

@@ -6,6 +6,8 @@ tags: ["Personal", "Blogging"]
 permalink: "/blog/2024/10/22/beyond-code/"
 ---
 
+# Beyond Code
+
 One of the reasons I started this blog back in 2003 was to use it as a marketing tool for myself. Personal branding had started to become a thing and blogging scene was about to take off big time. I was fortunate enough to grab on to it and  it worked out well for me.
 
 Software is still my passion but there are also other interests I pursue. Reading, Cooking, Finance, photography are some of them.
