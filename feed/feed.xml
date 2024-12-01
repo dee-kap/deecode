@@ -15,7 +15,8 @@
     <link href="https://deecode.me/blog/2024/11/5/dinner-at-rsl/" />
     <updated>2024-11-05T00:00:00Z</updated>
     <id>https://deecode.me/blog/2024/11/5/dinner-at-rsl/</id>
-    <content type="html">&lt;p&gt;It was more than 20 years ago when I went to RSL for the first time. It was for dinner and I vividly remember when at 6pm everything stopped for silence which is a way of paying respect to the soldiers who fought for the country in many wars. It was a moving experience the first time and it remains profound every time I visit RSL.&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;dinner-at-rsl&quot;&gt;Dinner at RSL&lt;/h1&gt;
+&lt;p&gt;It was more than 20 years ago when I went to RSL for the first time. It was for dinner and I vividly remember when at 6pm everything stopped for silence which is a way of paying respect to the soldiers who fought for the country in many wars. It was a moving experience the first time and it remains profound every time I visit RSL.&lt;/p&gt;
 &lt;p&gt;RSL which is short for Returned and Services League of Australia are local clubs found in majority of surburbs across Australia. They are a desirable place to have a meal or drinks. Every now and then, we as a family like to visit our local RSL for a meal.&lt;/p&gt;
 &lt;p&gt;We went there today and as always, it was a great evening of an excellent meal enjoyed with a glass of sauv blanc.&lt;/p&gt;
 &lt;p&gt;These lines still move me.&lt;/p&gt;
@@ -37,7 +38,8 @@ Lest we forget&lt;/p&gt;
     <link href="https://deecode.me/blog/2024/10/22/beyond-code/" />
     <updated>2024-10-22T00:00:00Z</updated>
     <id>https://deecode.me/blog/2024/10/22/beyond-code/</id>
-    <content type="html">&lt;p&gt;One of the reasons I started this blog back in 2003 was to use it as a marketing tool for myself. Personal branding had started to become a thing and blogging scene was about to take off big time. I was fortunate enough to grab on to it and  it worked out well for me.&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;beyond-code&quot;&gt;Beyond Code&lt;/h1&gt;
+&lt;p&gt;One of the reasons I started this blog back in 2003 was to use it as a marketing tool for myself. Personal branding had started to become a thing and blogging scene was about to take off big time. I was fortunate enough to grab on to it and  it worked out well for me.&lt;/p&gt;
 &lt;p&gt;Software is still my passion but there are also other interests I pursue. Reading, Cooking, Finance, photography are some of them.&lt;/p&gt;
 &lt;p&gt;Lately I have been pondering the question of merging my tech and non-tech writings in one place. I am much more than a programmer and those aspects do not get any space online.&lt;/p&gt;
 &lt;p&gt;A question comes to mind: Why bother writing about them at all? Why not just enjoy non-tech adventures in obscurity? Does the world need to know about them?&lt;/p&gt;
@@ -52,7 +54,8 @@ Lest we forget&lt;/p&gt;
     <link href="https://deecode.me/blog/2024/10/15/python-langtons-ant/" />
     <updated>2024-10-15T00:00:00Z</updated>
     <id>https://deecode.me/blog/2024/10/15/python-langtons-ant/</id>
-    <content type="html">&lt;p&gt;I was looking for a fun little exercise I could write in Python and I came across Langton&#39;s Ant. According to Wikipedia:&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;langtons-ant-in-python&quot;&gt;Langton&#39;s Ant in Python&lt;/h1&gt;
+&lt;p&gt;I was looking for a fun little exercise I could write in Python and I came across Langton&#39;s Ant. According to Wikipedia:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Langton&#39;s ant is a two-dimensional Turing machine with a very simple set of rules but complex emergent behavior. It was invented by Chris Langton in 1986 and runs on a square lattice of black and white cells.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -192,7 +195,8 @@ pygame&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;init&lt;span
     <link href="https://deecode.me/blog/2024/10/2/desk-cleanup/" />
     <updated>2024-10-02T00:00:00Z</updated>
     <id>https://deecode.me/blog/2024/10/2/desk-cleanup/</id>
-    <content type="html">&lt;p&gt;Few days ago I bought a monitor stand which came in today. It is a Meatanty Dual Monitor Stand Riser with 2 Drawers, 4 Usb Ports and Charging Pad. Recently I made some ergonomic changes to my working environment like changing to a vertical mouse. Although I do not have RSI yet, but sometimes I feel a little bit of pain in my wrist. Before it gets any worse, I have started making some changes to my environment.&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;desk-cleanup&quot;&gt;Desk Cleanup&lt;/h1&gt;
+&lt;p&gt;Few days ago I bought a monitor stand which came in today. It is a Meatanty Dual Monitor Stand Riser with 2 Drawers, 4 Usb Ports and Charging Pad. Recently I made some ergonomic changes to my working environment like changing to a vertical mouse. Although I do not have RSI yet, but sometimes I feel a little bit of pain in my wrist. Before it gets any worse, I have started making some changes to my environment.&lt;/p&gt;
 &lt;p&gt;Getting a monitor stand is part of these ergonomic changes. I noticed that I bend my neck slightly to look at the screen. This may not be the best in long term and with the stand, I see the monitor at my natural eye level.&lt;/p&gt;
 &lt;p&gt;As I was setting up the stand, I decided to embark on the quest of cleaning my desk which was slowly turning into a museum of all sorts of useless things. Nothing too revolutionary, just removing the clutter which unnecessarily occupied space and added zero value. At the end I&#39;m proud of my achievement. Here is the obligatory photo of what it looks like as I&#39;m writing this post.&lt;/p&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://deecode.me/blog/2024/10/2/desk-cleanup/I6UCUSvtsj-4000.avif 4000w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://deecode.me/blog/2024/10/2/desk-cleanup/I6UCUSvtsj-4000.webp 4000w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://deecode.me/blog/2024/10/2/desk-cleanup/I6UCUSvtsj-4000.jpeg&quot; alt=&quot;Clean Desk&quot; width=&quot;4000&quot; height=&quot;1800&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
@@ -271,7 +275,8 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
     <link href="https://deecode.me/blog/2024/3/20/clear-timeout-javascript/" />
     <updated>2024-03-20T00:00:00Z</updated>
     <id>https://deecode.me/blog/2024/3/20/clear-timeout-javascript/</id>
-    <content type="html">&lt;p&gt;One of the things I always have to look up is how to cancel a setTimeout in JavaScript.&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;cancel-settimeout-in-javascript&quot;&gt;Cancel setTimeout in JavaScript&lt;/h1&gt;
+&lt;p&gt;One of the things I always have to look up is how to cancel a setTimeout in JavaScript.&lt;/p&gt;
 &lt;p&gt;This is a quick note for myself and anyone else who might need it.&lt;/p&gt;
 &lt;h2 id=&quot;creating-a-timer&quot;&gt;Creating a timer&lt;/h2&gt;
 &lt;p&gt;To create a timer in JavaScript, you can use the &lt;code&gt;setTimeout&lt;/code&gt; function. This function takes two arguments: a function to execute and a time in milliseconds to wait before executing the function.&lt;/p&gt;
@@ -294,7 +299,8 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
     <link href="https://deecode.me/blog/2024/2/28/python-quadratic-to-linear/" />
     <updated>2024-02-28T00:00:00Z</updated>
     <id>https://deecode.me/blog/2024/2/28/python-quadratic-to-linear/</id>
-    <content type="html">&lt;p&gt;Lately, I&#39;ve been immersing myself in basic coding exercises to refresh concepts that I learned years ago but haven&#39;t utilized much recently.&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;from-quadratic-to-linear&quot;&gt;From Quadratic to Linear&lt;/h1&gt;
+&lt;p&gt;Lately, I&#39;ve been immersing myself in basic coding exercises to refresh concepts that I learned years ago but haven&#39;t utilized much recently.&lt;/p&gt;
 &lt;p&gt;While going through my private repositories, I came across code from a tech test I completed for a job I applied for.&lt;/p&gt;
 &lt;p&gt;The task was a simple one. &lt;strong&gt;Given an array of numbers, find two elements whose sum equals a target value, then return the indices of these two elements.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Motivated by nostalgia, I decided to tackle this task again, this time using Python.&lt;/p&gt;
@@ -352,7 +358,8 @@ target &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span clas
     <link href="https://deecode.me/blog/2024/2/22/gbww-first-step/" />
     <updated>2024-02-22T00:00:00Z</updated>
     <id>https://deecode.me/blog/2024/2/22/gbww-first-step/</id>
-    <content type="html">&lt;p&gt;About two days ago, The Great Ideas Program which is a set of ten volumes arrived. Yesterday I took the first step on my thousand miles journey of reading The Great Books of Western World.&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;step-one-of-a-thousand-miles-journey&quot;&gt;Step One of a Thousand Miles Journey&lt;/h1&gt;
+&lt;p&gt;About two days ago, The Great Ideas Program which is a set of ten volumes arrived. Yesterday I took the first step on my thousand miles journey of reading The Great Books of Western World.&lt;/p&gt;
 &lt;p&gt;It could be the initial excitement of starting something new, but I was charged up. A bit ironic expression charged up when one is talking about reading classics, however that’s how I felt.&lt;/p&gt;
 &lt;p&gt;There is plenty of information out there on reading plans for GBWW and I have looked at many. Most of them seem practical and worth following but I will start with the reading lists mentioned in The Great Ideas Program. After reading the preface and foreword of volume 1, I figured that the authors have clearly thought about &lt;strong&gt;how the books should be read&lt;/strong&gt; and I am comfortable following their plan.&lt;/p&gt;
 &lt;p&gt;When I’m cooking, I watch a recipe or two and then improvise. I am able to do this because of the skills and expertise I have developed in cooking.&lt;/p&gt;
@@ -400,7 +407,8 @@ target &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span clas
     <link href="https://deecode.me/blog/2024/2/7/python-indexes-of-negative-numbers/" />
     <updated>2024-02-07T00:00:00Z</updated>
     <id>https://deecode.me/blog/2024/2/7/python-indexes-of-negative-numbers/</id>
-    <content type="html">&lt;p&gt;Today I was working on some code in which I had to get indexes of items in a list based on a condition. I found it interesting and thought of writing a post about a similar problem.&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;get-indexes-of-negative-numbers-from-a-list-in-python&quot;&gt;Get Indexes of Negative Numbers from a List in Python&lt;/h1&gt;
+&lt;p&gt;Today I was working on some code in which I had to get indexes of items in a list based on a condition. I found it interesting and thought of writing a post about a similar problem.&lt;/p&gt;
 &lt;p&gt;Here it is.&lt;/p&gt;
 &lt;p&gt;Given a list containing both positive and negative numbers, the goal is to find indexes of all negative numbers.&lt;/p&gt;
 &lt;pre class=&quot;language-python&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;numbers &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
