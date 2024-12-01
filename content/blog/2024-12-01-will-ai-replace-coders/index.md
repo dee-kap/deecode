@@ -11,7 +11,7 @@ eleventyNavigation:
 
 # Will AI Replace Coders?
 
-I'm a programmer, a coder, a bit shifter and like many other, I have been thinking about what AI means for me as a computer programmer (the term I prefer). Will AI replace us programmers? Will the technology mature to a level where humans will not be required to write any code? What will happen to the jobs? What will be the jobs for the programmers in the future?
+I'm a programmer, a coder, a bit wrangler and like many other, I have been thinking about what AI means for me as a computer programmer (the term I prefer). Will AI replace us programmers? Will the technology mature to a level where humans will not be required to write any code? What will happen to the jobs? What will be the jobs for the programmers in the future?
 
 For an answer to all such questions, I turned to ChatGPT. This is what I asked.
 

@@ -21,11 +21,11 @@ MacOS on Macbook air with M2 chip.
 ## Terminal
 
 - [Kitty](https://sw.kovidgoyal.net/kitty/) Fast and furious
-- [iTerm2](https://iterm2.com/) Scrolling is better
+- [iTerm2](https://iterm2.com/) In case Kitty runs away
 
 ## Multiplexer
 
-- [Zellij](https://zellij.dev/) I thought I'll be hooked on Tmux like forever
+- [Zellij](https://zellij.dev/) I had a good run with Tmux. It is time to move on
 
 ## Colorscheme
 
