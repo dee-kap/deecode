@@ -61,19 +61,22 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addFilter("shuffle", (array) => {
 		let shuffledArray = array.slice(); // Copy the array
 		for (let i = shuffledArray.length - 1; i > 0; i--) {
-		  const j = Math.floor(Math.random() * (i + 1));
-		  [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+			const j = Math.floor(Math.random() * (i + 1));
+			[shuffledArray[i], shuffledArray[j]] = [
+				shuffledArray[j],
+				shuffledArray[i],
+			];
 		}
 		return shuffledArray;
-	  });
+	});
 
-	  eleventyConfig.addFilter("sortBooksByDateReadDesc", (books) => {
+	eleventyConfig.addFilter("sortBooksByDateReadDesc", (books) => {
 		return books.sort((a, b) => {
-		  const dateA = DateTime.fromISO(a.date_read || "1970-01-01");
-		  const dateB = DateTime.fromISO(b.date_read || "1970-01-01");
-		  return dateB - dateA; // Descending order
+			const dateA = DateTime.fromISO(a.date_read || "1970-01-01");
+			const dateB = DateTime.fromISO(b.date_read || "1970-01-01");
+			return dateB - dateA; // Descending order
 		});
-	  });
+	});
 
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
@@ -123,9 +126,9 @@ export default async function (eleventyConfig) {
 		},
 		metadata: {
 			language: "en",
-			title: "Amorphous Ponder",
+			title: "DeeCode",
 			subtitle: "Personal websie of Deepak.",
-			base: "https://amorphousponder.com/",
+			base: "https://deecode.me/",
 			author: {
 				name: "Deepak",
 			},

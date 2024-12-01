@@ -1,11 +1,11 @@
 export default {
-	title: "Amorphous Ponder",
-	url: "https://amorphousponder.com/",
+	title: "Dee Code",
+	url: "https://deecode.me/",
 	language: "en",
 	description: "Personal website of Deepak.",
 	author: {
 		name: "Deepak",
 		email: "",
-		url: "https://amorphousponder.com/about/"
-	}
-}
+		url: "https://deecode.me/about/",
+	},
+};
