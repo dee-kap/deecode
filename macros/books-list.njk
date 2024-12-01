@@ -5,12 +5,12 @@
   <div style="display:flex;width:100%;">
   {%- if(displayStars !== NaN)-%}
     <div style="flex-grow:1;">
-    <strong>{{ filteredBooks | length }}</strong> books {{ headingText }} 
+    <strong>{{ filteredBooks | length }}</strong> books {{ headingText }}
     </div>
     <div>
      {%- for i in range(0, displayStars) -%}
           <span class="star filled {% if i == 5 %} six{% endif %}">★</span>
-    {%- endfor %} 
+    {%- endfor %}
     </div>
   {%- else -%}
     {{ filteredBooks | length }} books {{ headingText }}
@@ -31,7 +31,7 @@
   </div>
 </div>
   <div id="book-list-icons" class="books-list">
-    {%- for book in filteredBooks -%}
+    {%- for book in sortedBooks -%}
       {%- set rating = book.rating | int -%}
       {%- if book.link -%}
       <a href="/books/{{ book.link }}">
@@ -64,7 +64,7 @@
 
   <div id="book-list-text">
     <ol>
-      {%- for book in filteredBooks -%}
+      {%- for book in sortedBooks -%}
         {%- set rating = book.rating | int -%}
         <li>
           {%- if book.link -%}
@@ -72,7 +72,7 @@
           {%- endif -%}
           {{ book.title | trim }}
           {%- if book.link -%}
-          </a> 
+          </a>
           {%- endif -%}
           <span>  </span>
           {%- if rating == 6 -%}

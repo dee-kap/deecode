@@ -30,7 +30,8 @@ const eleventyNavigation = {
 
 <h2>Books</h2>
   <div class="books-list" style="justify-content: start!important;gap:15px;">
-    {%- for book in books -%}
+		{%- set sortedBooks = books | sortBooksByDateReadDesc -%}
+    {%- for book in sortedBooks -%}
       {%- if loop.index <= 12 -%}
       {%- set rating = book.rating | int -%}
       {%- if book.link -%}
