@@ -136,15 +136,15 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;h2 id=&quot;creating-a-timer&quot;&gt;Creating a timer&lt;/h2&gt;
 &lt;p&gt;To create a timer in JavaScript, you can use the &lt;code&gt;setTimeout&lt;/code&gt; function. This function takes two arguments: a function to execute and a time in milliseconds to wait before executing the function.&lt;/p&gt;
 &lt;p&gt;Here&#39;s an example:&lt;/p&gt;
-&lt;pre class=&quot;language-JavaScript&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-JavaScript&quot;&gt;const timer = setTimeout(() =&gt; {
-  console.log(&#39;Hello, world!&#39;);
-}, 1000);&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; timer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;In this code, the &lt;code&gt;setTimeout&lt;/code&gt; function will execute the function after 1000 milliseconds (1 second).&lt;/p&gt;
 &lt;p&gt;If we console.log the &lt;code&gt;timer&lt;/code&gt; variable, we will see that it is a number. This number is the ID of the timer.&lt;/p&gt;
 &lt;h2 id=&quot;cancelling-a-timer&quot;&gt;Cancelling a timer&lt;/h2&gt;
 &lt;p&gt;To cancel a timer, you can use the &lt;code&gt;clearTimeout&lt;/code&gt; function. This function takes the ID of the timer as an argument.&lt;/p&gt;
 &lt;p&gt;Here&#39;s an example:&lt;/p&gt;
-&lt;pre class=&quot;language-JavaScript&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-JavaScript&quot;&gt;clearTimeout(timer);&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token function&quot;&gt;clearTimeout&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;timer&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;In this code, the &lt;code&gt;clearTimeout&lt;/code&gt; function will cancel the timer with the ID stored in the &lt;code&gt;timer&lt;/code&gt; variable.&lt;/p&gt;
 &lt;p&gt;That&#39;s it! Now we know how to cancel a timeout in JavaScript.&lt;/p&gt;
 </content>
