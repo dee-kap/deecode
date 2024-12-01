@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Cache npm
         uses: actions/cache@v3
@@ -40,7 +40,7 @@ jobs:
       - run: npm run build-ghpages
 
       - name: Add CNAME file
-        run: echo 'amorphousponder.com' > ./dist/CNAME
+        run: echo 'deekcode.me' > ./dist/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
