@@ -1,10 +1,10 @@
 ---
 title: Cancel setTimeout in JavaScript
 date: 2024-03-20
-category: 
+category:
 tags: ["Tech", "JavaScript"]
-featured_image: 
-summary: 
+featured_image:
+summary:
 permalink: "/blog/2024/3/20/clear-timeout-javascript/"
 ---
 
@@ -18,9 +18,9 @@ To create a timer in JavaScript, you can use the `setTimeout` function. This fun
 
 Here's an example:
 
-```JavaScript
+```js
 const timer = setTimeout(() => {
-  console.log('Hello, world!');
+	console.log("Hello, world!");
 }, 1000);
 ```
 
@@ -34,7 +34,7 @@ To cancel a timer, you can use the `clearTimeout` function. This function takes 
 
 Here's an example:
 
-```JavaScript
+```js
 clearTimeout(timer);
 ```
 
