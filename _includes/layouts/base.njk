@@ -53,58 +53,31 @@
 
 		{#- Add the heading-anchors web component to the JavaScript bundle #}
 		{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
-		<script>
-			document.addEventListener('DOMContentLoaded', function () {
-				const toggleButton = document.getElementById('theme-toggle');
-				const currentTheme = localStorage.getItem('theme') || 'dark';
 
-				if (currentTheme) {
-					document.documentElement.setAttribute('data-theme', currentTheme);
-				}
-
-				toggleButton.addEventListener('click', () => {
-					const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-					document.documentElement.setAttribute('data-theme', newTheme);
-					localStorage.setItem('theme', newTheme);
-				});
-
-				const showBookListIcons = document.getElementById('show-book-list-icons');
-				const showBookListText = document.getElementById('show-book-list-text');
-
-				showBookListText.addEventListener('click', function() {
-					document.getElementById('book-list-icons').style.display = "none"
-					document.getElementById('book-list-text').style.display = "initial"
-				})
-
-				showBookListIcons.addEventListener('click', function() {
-					document.getElementById('book-list-icons').style.display = "flex"
-					document.getElementById('book-list-text').style.display = "none"
-				})
-
-			});
-
-
-
-			// used to shuffle books
-			function shuffleArray(array) {
-				for (let i = array.length - 1; i > 0; i--) {
-				const j = Math.floor(Math.random() * (i + 1));
-				[array[i], array[j]] = [array[j], array[i]];
-				}
-			}
-
-		</script>
 	</head>
 	    <link href="//prismjs.catppuccin.com/mocha.css" rel="stylesheet" />
 	<body>
 		<header>
+				<button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="las la-bars la-lg"></i>
+				</button>
 			<a href="/" class="home-link">{{ metadata.title }}</a>
 
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav>
 				<ul class="nav">
+					<li class="nav-item" id="nav-close">
+						<i class="las la-window-close la-2x"></i>
+					</li>
+					<li class="nav-item" id="mobile-home-link" >
+						<a href="/">Home</a>
+					</li>
+
 				{%- for entry in navigation-%}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+				<li class="nav-item">
+					<a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>
+						{{ entry.title }}
+					</a>
+				</li>
 				{%- endfor %}
 				{# {%- for entry in collections.all | eleventyNavigation %}
 					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
@@ -158,6 +131,68 @@
 				<a href="/blog">Blog</a> |<a href="/books">Books</a> | <a href="/projects">Projects</a> | <a href="/pages">Pages</a>
 			</div>
 		</footer>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const navToggle = document.querySelector('.nav-toggle');
+				const nav = document.querySelector('.nav');
+				const navClose = document.getElementById('nav-close')
+
+				navToggle.addEventListener('click', () => {
+					const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+					navToggle.setAttribute('aria-expanded', !expanded);
+					nav.classList.toggle('active');
+				});
+
+				if(navClose ) {
+					navClose.addEventListener('click', () => {
+						const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+						navToggle.setAttribute('aria-expanded', !expanded);
+						nav.classList.toggle('active');
+					});
+
+				}
+
+				const toggleButton = document.getElementById('theme-toggle');
+				const currentTheme = localStorage.getItem('theme') || 'dark';
+
+				if (currentTheme) {
+					document.documentElement.setAttribute('data-theme', currentTheme);
+				}
+
+				toggleButton.addEventListener('click', () => {
+					const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+					document.documentElement.setAttribute('data-theme', newTheme);
+					localStorage.setItem('theme', newTheme);
+				});
+
+				const showBookListIcons = document.getElementById('show-book-list-icons');
+				const showBookListText = document.getElementById('show-book-list-text');
+
+				if(showBookListIcons && showBookListText) {
+					showBookListText.addEventListener('click', function() {
+						document.getElementById('book-list-icons').style.display = "none"
+						document.getElementById('book-list-text').style.display = "initial"
+					})
+
+					showBookListIcons.addEventListener('click', function() {
+						document.getElementById('book-list-icons').style.display = "flex"
+						document.getElementById('book-list-text').style.display = "none"
+					})
+				}
+
+			});
+
+
+			// used to shuffle books
+			function shuffleArray(array) {
+				for (let i = array.length - 1; i > 0; i--) {
+				const j = Math.floor(Math.random() * (i + 1));
+				[array[i], array[j]] = [array[j], array[i]];
+				}
+			}
+
+		</script>
 
 		<!-- This page `{{ page.url | htmlBaseUrl }}` was built on {% currentBuildDate %} -->
 		<script type="module" src="{% getBundleFileUrl "js" %}"></script>

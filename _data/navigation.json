@@ -1,22 +1,22 @@
 [
-    {
-        "key": "blog",
-        "title": "Blg",
-        "url": "/blog"
-    },
-    {
-        "key": "books",
-        "title": "Bks",
-        "url": "/books"
-    },
-    {
-        "key": "projects",
-        "title": "Prj",
-        "url": "/projects"
-    },
-    {
-        "key": "pages",
-        "title": "Pjs",
-        "url": "/pages"
-    }
+	{
+		"key": "blog",
+		"title": "Blog",
+		"url": "/blog"
+	},
+	{
+		"key": "books",
+		"title": "Books",
+		"url": "/books"
+	},
+	{
+		"key": "pages",
+		"title": "Pages",
+		"url": "/pages"
+	},
+	{
+		"key": "projects",
+		"title": "Projects",
+		"url": "/projects"
+	}
 ]
