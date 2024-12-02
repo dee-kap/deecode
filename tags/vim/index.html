@@ -73,6 +73,10 @@
 		background-color: var(--background-color);
 		color: #ffffff;
 	}
+
+	.nav-toggle {
+		color: var(--text-color);
+	}
 }
 
 * {
@@ -164,9 +168,15 @@ nav {
 
 .nav {
 	display: flex;
-	/* padding: 0; */
-	/* margin: 0; */
 	list-style: none;
+}
+
+.nav-toggle {
+	display: none;
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
 }
 
 .nav-item {
@@ -176,6 +186,57 @@ nav {
 
 .nav a[href][aria-current="page"] {
 	text-decoration: underline;
+}
+
+#nav-close {
+	display: none;
+	cursor: pointer;
+}
+
+#mobile-home-link {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	header {
+		align-items: self-end;
+	}
+
+	#mobile-home-link {
+		display: inherit;
+	}
+
+	.nav {
+		z-index: 1;
+		margin-top: 0;
+		display: none;
+		flex-direction: column;
+		background-color: var(--background-color);
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	}
+
+	.nav.active {
+		display: flex;
+		border: 1px solid var(--color-surface1);
+	}
+
+	.nav-item {
+		margin-right: 0;
+		/* text-align: left; */
+		padding: 0.5rem 0;
+	}
+
+	.nav-toggle {
+		display: inline-block;
+	}
+
+	#nav-close {
+		display: inline-block;
+	}
 }
 
 .home-intro {
@@ -450,54 +511,40 @@ nav[aria-label="breadcrumb"] li {
 #icons-container i:hover {
 	color: var(--color-peach);
 }</style>
-		<script>
-			document.addEventListener('DOMContentLoaded', function () {
-				const toggleButton = document.getElementById('theme-toggle');
-				const currentTheme = localStorage.getItem('theme') || 'dark';
 
-				if (currentTheme) {
-					document.documentElement.setAttribute('data-theme', currentTheme);
-				}
-
-				toggleButton.addEventListener('click', () => {
-					const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-					document.documentElement.setAttribute('data-theme', newTheme);
-					localStorage.setItem('theme', newTheme);
-				});
-
-				const showBookListIcons = document.getElementById('show-book-list-icons');
-				const showBookListText = document.getElementById('show-book-list-text');
-
-				showBookListText.addEventListener('click', function() {
-					document.getElementById('book-list-icons').style.display = "none"
-					document.getElementById('book-list-text').style.display = "initial"
-				})
-
-				showBookListIcons.addEventListener('click', function() {
-					document.getElementById('book-list-icons').style.display = "flex"
-					document.getElementById('book-list-text').style.display = "none"
-				})
-
-			});
-
-
-
-			// used to shuffle books
-			function shuffleArray(array) {
-				for (let i = array.length - 1; i > 0; i--) {
-				const j = Math.floor(Math.random() * (i + 1));
-				[array[i], array[j]] = [array[j], array[i]];
-				}
-			}
-
-		</script>
 	</head>
 	    <link href="//prismjs.catppuccin.com/mocha.css" rel="stylesheet">
 	<body>
 		<header>
+				<button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="las la-bars la-lg"></i>
+				</button>
 			<a href="/" class="home-link">Dee Code</a>
+
 			<nav>
-				<ul class="nav"><li class="nav-item"><a href="/blog">Blg</a></li><li class="nav-item"><a href="/books">Bks</a></li><li class="nav-item"><a href="/projects">Prj</a></li><li class="nav-item"><a href="/pages">Pjs</a></li>
+				<ul class="nav">
+					<li class="nav-item" id="nav-close">
+						<i class="las la-window-close la-2x"></i>
+					</li>
+					<li class="nav-item" id="mobile-home-link">
+						<a href="/">Home</a>
+					</li><li class="nav-item">
+					<a href="/blog">
+						Blog
+					</a>
+				</li><li class="nav-item">
+					<a href="/books">
+						Books
+					</a>
+				</li><li class="nav-item">
+					<a href="/pages">
+						Pages
+					</a>
+				</li><li class="nav-item">
+					<a href="/projects">
+						Projects
+					</a>
+				</li>
 				
 				</ul>
 			</nav>
@@ -695,7 +742,69 @@ nav[aria-label="breadcrumb"] li {
 			</div>
 		</footer>
 
-		<!-- This page `/tags/vim/` was built on 2024-12-01T22:23:20.882Z -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const navToggle = document.querySelector('.nav-toggle');
+				const nav = document.querySelector('.nav');
+				const navClose = document.getElementById('nav-close')
+
+				navToggle.addEventListener('click', () => {
+					const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+					navToggle.setAttribute('aria-expanded', !expanded);
+					nav.classList.toggle('active');
+				});
+
+				if(navClose ) {
+					navClose.addEventListener('click', () => {
+						const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+						navToggle.setAttribute('aria-expanded', !expanded);
+						nav.classList.toggle('active');
+					});
+
+				}
+
+				const toggleButton = document.getElementById('theme-toggle');
+				const currentTheme = localStorage.getItem('theme') || 'dark';
+
+				if (currentTheme) {
+					document.documentElement.setAttribute('data-theme', currentTheme);
+				}
+
+				toggleButton.addEventListener('click', () => {
+					const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+					document.documentElement.setAttribute('data-theme', newTheme);
+					localStorage.setItem('theme', newTheme);
+				});
+
+				const showBookListIcons = document.getElementById('show-book-list-icons');
+				const showBookListText = document.getElementById('show-book-list-text');
+
+				if(showBookListIcons && showBookListText) {
+					showBookListText.addEventListener('click', function() {
+						document.getElementById('book-list-icons').style.display = "none"
+						document.getElementById('book-list-text').style.display = "initial"
+					})
+
+					showBookListIcons.addEventListener('click', function() {
+						document.getElementById('book-list-icons').style.display = "flex"
+						document.getElementById('book-list-text').style.display = "none"
+					})
+				}
+
+			});
+
+
+			// used to shuffle books
+			function shuffleArray(array) {
+				for (let i = array.length - 1; i > 0; i--) {
+				const j = Math.floor(Math.random() * (i + 1));
+				[array[i], array[j]] = [array[j], array[i]];
+				}
+			}
+
+		</script>
+
+		<!-- This page `/tags/vim/` was built on 2024-12-02T02:38:51.157Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>
