@@ -1,13 +1,11 @@
 ---
-title: Cancel setTimeout in JavaScript
+title: Clear setTimeout in JavaScript
 date: 2024-03-20
-category:
 tags: ["Tech", "JavaScript"]
-featured_image:
-summary:
-permalink: "/blog/2024/3/20/cancel-timeout-javascript/"
+permalink: "/blog/2024/3/20/clear-timeout-javascript/"
 ---
-# Cancel setTimeout in JavaScript
+
+# Clear setTimeout in JavaScript
 
 One of the things I always have to look up is how to cancel a setTimeout in JavaScript.
 
