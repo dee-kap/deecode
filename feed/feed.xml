@@ -301,11 +301,11 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 </content>
   </entry>
   <entry>
-    <title>Cancel setTimeout in JavaScript</title>
+    <title>Clear setTimeout in JavaScript</title>
     <link href="https://deecode.me/blog/2024/3/20/clear-timeout-javascript/" />
     <updated>2024-03-20T00:00:00Z</updated>
     <id>https://deecode.me/blog/2024/3/20/clear-timeout-javascript/</id>
-    <content type="html">&lt;h1 id=&quot;cancel-settimeout-in-javascript&quot;&gt;Cancel setTimeout in JavaScript&lt;/h1&gt;
+    <content type="html">&lt;h1 id=&quot;clear-settimeout-in-javascript&quot;&gt;Clear setTimeout in JavaScript&lt;/h1&gt;
 &lt;p&gt;One of the things I always have to look up is how to cancel a setTimeout in JavaScript.&lt;/p&gt;
 &lt;p&gt;This is a quick note for myself and anyone else who might need it.&lt;/p&gt;
 &lt;h2 id=&quot;creating-a-timer&quot;&gt;Creating a timer&lt;/h2&gt;
