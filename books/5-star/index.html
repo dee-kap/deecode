@@ -373,7 +373,7 @@ li {
 	flex-wrap: wrap;
 	gap: 15px;
 	padding-top: 24px;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .books-list-heading {
@@ -498,7 +498,7 @@ nav[aria-label="breadcrumb"] li {
 	font-weight: bold;
 }
 
-#book-list-text {
+.book-list-text {
 	display: none;
 }
 
@@ -568,7 +568,7 @@ I follow a 6 star rating system.
 </p>
 <ol reversed="">
     <li><span class="star filled">★★★★★</span><span class="star filled six">★</span> Had a huge <mark>impact</mark> on me, made a dent in my universe (<a href="/books/6-star">6 books)</a></li>
-    <li><span class="star filled">★★★★★</span> Learned plenty, maybe I will read it again (<a href="/books/5-star">29 books)</a></li>
+    <li><span class="star filled">★★★★★</span> Learned plenty, maybe I will read it again (<a href="/books/5-star">30 books)</a></li>
     <li><span class="star filled">★★★★</span> Got me interested enough to read it all the way through (<a href="/books/4-star">35 books)</a></li>
     <li><span class="star filled">★★★</span> Neither good nor bad (<a href="/books/3-star">15 books</a>)</li>
     <li><span class="star filled">★★</span> Not so bad that it deserved 1 star but not good either (<a href="/books/2-star">5 books</a>)</li>
@@ -576,7 +576,7 @@ I follow a 6 star rating system.
 </ol>
 <div class="books-list-heading">
   <div style="display:flex;width:100%;"><div style="flex-grow:1;">
-    <strong>29</strong> books rated 5 stars
+    <strong>30</strong> books rated 5 stars
     </div>
     <div><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span><span class="star filled ">★</span>
     </div></div><div style="margin-top:5px;color:var(--color-lavender)">
@@ -590,8 +590,13 @@ I follow a 6 star rating system.
     <i class="las la-list-ul la-3x"></i>
   </div>
 </div>
-  <div id="book-list-icons" class="books-list">
-        <div class="book" style="background-image: url('/images/covers/richer-wiser-happier.jpg')">
+  <div id="book-list-icons" class="books-list"><a href="/books/the-golden-road">
+        <div class="book" style="background-image: url('/images/covers/the-golden-road.jpg')">
+<p></p><div class="book-title"><p></p>
+<p></p><div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></div>
+</div>
+</div></a>
+<div class="book" style="background-image: url('/images/covers/richer-wiser-happier.jpg')"><p></p>
 <p></p><div class="book-title"><p></p>
 <p></p><div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></div>
 </div>
@@ -738,10 +743,10 @@ I follow a 6 star rating system.
 </div><p></p>
   </div>
   <div id="book-list-text">
-    <ol><li>Richer Wiser Happier<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li><a href="/books/Of Permanent Value 1998 Edition">Of Permanent Value 1998 Edition</a><span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li><a href="/books/First Raj of the Sikhs The Life &amp; Times of Banda Singh Bahadur">First Raj of the Sikhs The Life &amp; Times of Banda Singh Bahadur</a><span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>TITAN: Inside India’s Most Successful Consumer Brand by Vinay Kamath<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>The Joys of Compounding: The Passionate Pursuit of Lifelong Learning by Gautam Baid<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>The Simpsons and Their Mathematical Secrets by Simon Singh<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Religion and Science by Bertrand Russell<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Big Bang: The Origin of the Universe by Simon Singh<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Indian Summer: The Secret History of the End of an Empire by Alex von Tunzelmann<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>The Sixteenth Round: From Number 1 Contender to Number 45472 by Rubin Carter<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Beyond the Giant Personal Insight into the life of JRD Tata by D.R. Pendse<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Just for Fun: The Story of an Accidental Revolutionary by Linus Torvalds<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>The Autobiography of Martin Luther King, Jr. by Martin Luther King Jr.<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>The Guide by R.K. Narayan<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>The Godfather by Mario Puzo<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>For the Term of His Natural Life by Marcus Clarke<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Ignited Minds: Unleashing the Power Within India by A.P.J. Abdul Kalam<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Fathers and Sons by Ivan Turgenev<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>The Sikhs by Patwant Singh<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>A Commonwealth of Thieves: The Improbable Birth of Australia by Thomas Keneally<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Guns, Germs, and Steel: The Fates of Human Societies by Jared Diamond<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>A Brief History of Time by Stephen Hawking<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Animal Farm by George Orwell<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>The Da Vinci Code (Robert Langdon, #2) by Dan Brown<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>The God Delusion by Richard Dawkins<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Crime and Punishment by Fyodor Dostoevsky<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Mahabharata in Polyester: The Making of the World&#39;s Richest Brothers and Their Feud by Hamish McDonald<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Behind the Beautiful Forevers: Life, Death, and Hope in a Mumbai Undercity by Katherine Boo<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Tap Dancing to Work: Warren Buffett on Practically Everything, 1966-2012 by Carol J. Loomis<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li>
+    <ol><li><a href="/books/The Golden Road: How Ancient India Transformed the World">The Golden Road: How Ancient India Transformed the World</a><span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Richer Wiser Happier<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li><a href="/books/Of Permanent Value 1998 Edition">Of Permanent Value 1998 Edition</a><span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li><a href="/books/First Raj of the Sikhs The Life &amp; Times of Banda Singh Bahadur">First Raj of the Sikhs The Life &amp; Times of Banda Singh Bahadur</a><span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>TITAN: Inside India’s Most Successful Consumer Brand by Vinay Kamath<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>The Joys of Compounding: The Passionate Pursuit of Lifelong Learning by Gautam Baid<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>The Simpsons and Their Mathematical Secrets by Simon Singh<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Religion and Science by Bertrand Russell<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Big Bang: The Origin of the Universe by Simon Singh<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Indian Summer: The Secret History of the End of an Empire by Alex von Tunzelmann<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>The Sixteenth Round: From Number 1 Contender to Number 45472 by Rubin Carter<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Beyond the Giant Personal Insight into the life of JRD Tata by D.R. Pendse<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Just for Fun: The Story of an Accidental Revolutionary by Linus Torvalds<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>The Autobiography of Martin Luther King, Jr. by Martin Luther King Jr.<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>The Guide by R.K. Narayan<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>The Godfather by Mario Puzo<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>For the Term of His Natural Life by Marcus Clarke<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Ignited Minds: Unleashing the Power Within India by A.P.J. Abdul Kalam<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Fathers and Sons by Ivan Turgenev<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>The Sikhs by Patwant Singh<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>A Commonwealth of Thieves: The Improbable Birth of Australia by Thomas Keneally<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Guns, Germs, and Steel: The Fates of Human Societies by Jared Diamond<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>A Brief History of Time by Stephen Hawking<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Animal Farm by George Orwell<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>The Da Vinci Code (Robert Langdon, #2) by Dan Brown<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>The God Delusion by Richard Dawkins<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Crime and Punishment by Fyodor Dostoevsky<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Mahabharata in Polyester: The Making of the World&#39;s Richest Brothers and Their Feud by Hamish McDonald<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Behind the Beautiful Forevers: Life, Death, and Hope in a Mumbai Undercity by Katherine Boo<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li><li>Tap Dancing to Work: Warren Buffett on Practically Everything, 1966-2012 by Carol J. Loomis<span>  </span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></li>
     </ol>
   </div>
-<p>All <a href="/books">646 books</a></p>
+<p>All <a href="/books">647 books</a></p>
 
 			</heading-anchors>
 		</main>
@@ -945,13 +950,30 @@ I follow a 6 star rating system.
 
 				if(showBookListIcons && showBookListText) {
 					showBookListText.addEventListener('click', function() {
-						document.getElementById('book-list-icons').style.display = "none"
-						document.getElementById('book-list-text').style.display = "initial"
+						console.log('showBookListText.click')
+						const iconElements = document.getElementsByClassName('book-list-icons')
+						for (let element of iconElements) {
+							element.style.display = "none";
+						}
+
+						const textElements = document.getElementsByClassName('book-list-text')
+						for (let element of textElements) {
+							element.style.display = "initial";
+						}
 					})
 
 					showBookListIcons.addEventListener('click', function() {
-						document.getElementById('book-list-icons').style.display = "flex"
-						document.getElementById('book-list-text').style.display = "none"
+						console.log('showBookListIcons.click')
+						const iconElements = document.getElementsByClassName('book-list-icons')
+						for (let element of iconElements) {
+							element.style.display = "flex";
+						}
+
+						const textElements = document.getElementsByClassName('book-list-text')
+						for (let element of textElements) {
+							element.style.display = "none";
+						}
+						
 					})
 				}
 
@@ -968,7 +990,7 @@ I follow a 6 star rating system.
 
 		</script>
 
-		<!-- This page `/books/5-star/` was built on 2024-12-07T01:21:10.589Z -->
+		<!-- This page `/books/5-star/` was built on 2025-01-01T11:07:40.402Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

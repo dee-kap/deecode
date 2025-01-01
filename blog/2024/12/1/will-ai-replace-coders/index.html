@@ -541,7 +541,7 @@ li {
 	flex-wrap: wrap;
 	gap: 15px;
 	padding-top: 24px;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .books-list-heading {
@@ -666,7 +666,7 @@ nav[aria-label="breadcrumb"] li {
 	font-weight: bold;
 }
 
-#book-list-text {
+.book-list-text {
 	display: none;
 }
 
@@ -776,7 +776,7 @@ It's unlikely that AI will completely replace coding jobs in the near future, bu
 	<li><a href="/tags/ai/" class="post-tag">AI</a>, </li>
 	<li><a href="/tags/chatgpt/" class="post-tag">ChatGPT</a></li>
 </ul>
-<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/2024/11/5/dinner-at-rsl/">Dinner at RSL</a></li>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/2024/11/5/dinner-at-rsl/">Dinner at RSL</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/2024/12/19/home-improvement-bug/">Home Improvement Bug</a></li>
 </ul>
 
 
@@ -984,13 +984,30 @@ It's unlikely that AI will completely replace coding jobs in the near future, bu
 
 				if(showBookListIcons && showBookListText) {
 					showBookListText.addEventListener('click', function() {
-						document.getElementById('book-list-icons').style.display = "none"
-						document.getElementById('book-list-text').style.display = "initial"
+						console.log('showBookListText.click')
+						const iconElements = document.getElementsByClassName('book-list-icons')
+						for (let element of iconElements) {
+							element.style.display = "none";
+						}
+
+						const textElements = document.getElementsByClassName('book-list-text')
+						for (let element of textElements) {
+							element.style.display = "initial";
+						}
 					})
 
 					showBookListIcons.addEventListener('click', function() {
-						document.getElementById('book-list-icons').style.display = "flex"
-						document.getElementById('book-list-text').style.display = "none"
+						console.log('showBookListIcons.click')
+						const iconElements = document.getElementsByClassName('book-list-icons')
+						for (let element of iconElements) {
+							element.style.display = "flex";
+						}
+
+						const textElements = document.getElementsByClassName('book-list-text')
+						for (let element of textElements) {
+							element.style.display = "none";
+						}
+						
 					})
 				}
 
@@ -1007,7 +1024,7 @@ It's unlikely that AI will completely replace coding jobs in the near future, bu
 
 		</script>
 
-		<!-- This page `/blog/2024/12/1/will-ai-replace-coders/` was built on 2024-12-07T01:21:10.615Z -->
+		<!-- This page `/blog/2024/12/1/will-ai-replace-coders/` was built on 2025-01-01T11:07:40.439Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

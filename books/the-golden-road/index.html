@@ -541,7 +541,7 @@ li {
 	flex-wrap: wrap;
 	gap: 15px;
 	padding-top: 24px;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .books-list-heading {
@@ -666,7 +666,7 @@ nav[aria-label="breadcrumb"] li {
 	font-weight: bold;
 }
 
-#book-list-text {
+.book-list-text {
 	display: none;
 }
 
@@ -734,6 +734,12 @@ nav[aria-label="breadcrumb"] li {
 
 
 <h1 id="the-golden-road-how-ancient-india-transformed-the-world-by-william-dalrymple">The Golden Road: How Ancient India Transformed the World by William Dalrymple</h1>
+<p>The Golden Road is a history book about India and the influence it had over many years across South East Asia, Middle East and Europe.</p>
+<p>William Dalrymple takes the reader on a journey which covers a vast time frame. The bulk of the book is about the influence Buddhism had over India and China.</p>
+<p>These are some of the things I learned and found interesting.</p>
+<p>There was a significant amount of trade between Rome and India which led to cultural exchanges between the two great civilizations. There are more ancient Roman coins found in India than anywhere else in the world.</p>
+<p>How did a movement which originated in India by a prince who achieved nirvana, became so influential across lands such as China, Cambodia, Vietnam, Malaysia, Afghanistan, Tibet etc? The author ties it brilliantly with trading</p>
+<p>Is it all because of a powerful emperor named Ashoka</p>
 <p>There are certain books that change the way to look at history. This is one of those books.</p>
 <p>I have few other books written by William Dalrymple and after reading The Golden Road, I'm keen on reading them soon.</p>
 
@@ -953,13 +959,30 @@ nav[aria-label="breadcrumb"] li {
 
 				if(showBookListIcons && showBookListText) {
 					showBookListText.addEventListener('click', function() {
-						document.getElementById('book-list-icons').style.display = "none"
-						document.getElementById('book-list-text').style.display = "initial"
+						console.log('showBookListText.click')
+						const iconElements = document.getElementsByClassName('book-list-icons')
+						for (let element of iconElements) {
+							element.style.display = "none";
+						}
+
+						const textElements = document.getElementsByClassName('book-list-text')
+						for (let element of textElements) {
+							element.style.display = "initial";
+						}
 					})
 
 					showBookListIcons.addEventListener('click', function() {
-						document.getElementById('book-list-icons').style.display = "flex"
-						document.getElementById('book-list-text').style.display = "none"
+						console.log('showBookListIcons.click')
+						const iconElements = document.getElementsByClassName('book-list-icons')
+						for (let element of iconElements) {
+							element.style.display = "flex";
+						}
+
+						const textElements = document.getElementsByClassName('book-list-text')
+						for (let element of textElements) {
+							element.style.display = "none";
+						}
+						
 					})
 				}
 
@@ -976,7 +999,7 @@ nav[aria-label="breadcrumb"] li {
 
 		</script>
 
-		<!-- This page `/books/the-golden-road/` was built on 2024-12-07T01:21:10.616Z -->
+		<!-- This page `/books/the-golden-road/` was built on 2025-01-01T11:07:40.440Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

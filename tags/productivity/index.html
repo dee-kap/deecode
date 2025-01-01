@@ -374,7 +374,7 @@ li {
 	flex-wrap: wrap;
 	gap: 15px;
 	padding-top: 24px;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .books-list-heading {
@@ -499,7 +499,7 @@ nav[aria-label="breadcrumb"] li {
 	font-weight: bold;
 }
 
-#book-list-text {
+.book-list-text {
 	display: none;
 }
 
@@ -786,13 +786,30 @@ nav[aria-label="breadcrumb"] li {
 
 				if(showBookListIcons && showBookListText) {
 					showBookListText.addEventListener('click', function() {
-						document.getElementById('book-list-icons').style.display = "none"
-						document.getElementById('book-list-text').style.display = "initial"
+						console.log('showBookListText.click')
+						const iconElements = document.getElementsByClassName('book-list-icons')
+						for (let element of iconElements) {
+							element.style.display = "none";
+						}
+
+						const textElements = document.getElementsByClassName('book-list-text')
+						for (let element of textElements) {
+							element.style.display = "initial";
+						}
 					})
 
 					showBookListIcons.addEventListener('click', function() {
-						document.getElementById('book-list-icons').style.display = "flex"
-						document.getElementById('book-list-text').style.display = "none"
+						console.log('showBookListIcons.click')
+						const iconElements = document.getElementsByClassName('book-list-icons')
+						for (let element of iconElements) {
+							element.style.display = "flex";
+						}
+
+						const textElements = document.getElementsByClassName('book-list-text')
+						for (let element of textElements) {
+							element.style.display = "none";
+						}
+						
 					})
 				}
 
@@ -809,7 +826,7 @@ nav[aria-label="breadcrumb"] li {
 
 		</script>
 
-		<!-- This page `/tags/productivity/` was built on 2024-12-07T01:21:11.309Z -->
+		<!-- This page `/tags/productivity/` was built on 2025-01-01T11:07:41.188Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

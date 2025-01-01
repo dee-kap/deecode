@@ -373,7 +373,7 @@ li {
 	flex-wrap: wrap;
 	gap: 15px;
 	padding-top: 24px;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .books-list-heading {
@@ -498,7 +498,7 @@ nav[aria-label="breadcrumb"] li {
 	font-weight: bold;
 }
 
-#book-list-text {
+.book-list-text {
 	display: none;
 }
 
@@ -577,6 +577,11 @@ nav[aria-label="breadcrumb"] li {
 				
 <h1 id="current-affairs">Current Affairs</h1>
 <p>This is a log of my fleeting thoughts. In this form they are as useless as news.</p>
+<h2 id="24-december-2024">24 December 2024</h2>
+<ul>
+<li>Christmas Eve today. I always enjoy listening to Christmas songs about snow and reindeers in the peak Australian summer.</li>
+<li>Been doing a bit of C programming lately. <a href="https://beej.us/guide/bgc/">Beej's guide</a> is an excellent resource for learning C. I finally get pointers after 25 years.</li>
+</ul>
 <h2 id="4-december-2024">4 December 2024</h2>
 <ul>
 <li>I had a look at <a href="https://github.com/pmndrs/zustand">Zustland</a> today and I liked the approach. Redux has been and is still good but that boilerplate is sometimes too much noise. I'm thinking of using Zustland in the next React project.</li>
@@ -793,13 +798,30 @@ nav[aria-label="breadcrumb"] li {
 
 				if(showBookListIcons && showBookListText) {
 					showBookListText.addEventListener('click', function() {
-						document.getElementById('book-list-icons').style.display = "none"
-						document.getElementById('book-list-text').style.display = "initial"
+						console.log('showBookListText.click')
+						const iconElements = document.getElementsByClassName('book-list-icons')
+						for (let element of iconElements) {
+							element.style.display = "none";
+						}
+
+						const textElements = document.getElementsByClassName('book-list-text')
+						for (let element of textElements) {
+							element.style.display = "initial";
+						}
 					})
 
 					showBookListIcons.addEventListener('click', function() {
-						document.getElementById('book-list-icons').style.display = "flex"
-						document.getElementById('book-list-text').style.display = "none"
+						console.log('showBookListIcons.click')
+						const iconElements = document.getElementsByClassName('book-list-icons')
+						for (let element of iconElements) {
+							element.style.display = "flex";
+						}
+
+						const textElements = document.getElementsByClassName('book-list-text')
+						for (let element of textElements) {
+							element.style.display = "none";
+						}
+						
 					})
 				}
 
@@ -816,7 +838,7 @@ nav[aria-label="breadcrumb"] li {
 
 		</script>
 
-		<!-- This page `/current-affairs/` was built on 2024-12-07T01:21:10.606Z -->
+		<!-- This page `/current-affairs/` was built on 2025-01-01T11:07:40.426Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>

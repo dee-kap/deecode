@@ -23,7 +23,7 @@
 			gtag('config', 'G-GV5QD4KRG8');
 		</script>
 		
-		<style>.postlist { counter-reset: start-from 25 }
+		<style>.postlist { counter-reset: start-from 26 }
 /* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
 :root {
@@ -374,7 +374,7 @@ li {
 	flex-wrap: wrap;
 	gap: 15px;
 	padding-top: 24px;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .books-list-heading {
@@ -499,7 +499,7 @@ nav[aria-label="breadcrumb"] li {
 	font-weight: bold;
 }
 
-#book-list-text {
+.book-list-text {
 	display: none;
 }
 
@@ -587,6 +587,13 @@ nav[aria-label="breadcrumb"] li {
 <ol reversed="" class="postlist">
 
 	<li class="postlist-item">
+		<a href="/blog/2024/12/19/home-improvement-bug/" class="postlist-link">Home Improvement Bug</a>
+		<div>
+		
+		</div>
+	</li>
+
+	<li class="postlist-item">
 		<a href="/blog/2024/12/1/will-ai-replace-coders/" class="postlist-link">Will AI Replace Coders?</a>
 		<div>
 		
@@ -628,29 +635,29 @@ nav[aria-label="breadcrumb"] li {
 		</div>
 	</li>
 
-	<li class="postlist-item">
-		<a href="/blog/2024/3/20/clear-timeout-javascript/" class="postlist-link">Clear setTimeout in JavaScript</a>
-		<div>
-		
-		</div>
-	</li>
-
 </ol>
 
 
     
     
-    <p>17 more posts can be found in <a href="/blog/">the archives</a>.</p>
+    <p>18 more posts can be found in <a href="/blog/">the archives</a>.</p>
     
 </div>
 
 <h2 id="books">Books</h2>
-  <div class="books-list" style="justify-content: start!important;gap:15px;"><a href="books/the-golden-road">
-        <div class="book" style="background-image: url('/images/covers/the-golden-road.jpg')">
+  <div class="books-list" style="justify-content: start!important;gap:15px;">
+        <div class="book" style="background-image: url('/images/covers/the-coming-wave.jpg')">
       
         <div class="book-title">
           
           <div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span></div>
+        </div>
+      </div><a href="books/the-golden-road">
+        <div class="book" style="background-image: url('/images/covers/the-golden-road.jpg')">
+      
+        <div class="book-title">
+          
+          <div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></div>
         </div>
       </div></a>
         <div class="book" style="background-image: url('/images/covers/the-chairmans-lounge.jpg')">
@@ -721,13 +728,6 @@ nav[aria-label="breadcrumb"] li {
         <div class="book-title">
           
           <div class="book-rating"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star ">★</span><span class="star ">★</span></div>
-        </div>
-      </div></a><a href="books/wolf-of-the-plains">
-        <div class="book" style="background-image: url('/images/covers/wolf-of-the-plains.jpg')">
-      
-        <div class="book-title">
-          
-          <div class="book-rating"><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span><span class="star ">★</span></div>
         </div>
       </div></a>
   </div>
@@ -943,13 +943,30 @@ My complete <a href="/books/">bookshelf</a>
 
 				if(showBookListIcons && showBookListText) {
 					showBookListText.addEventListener('click', function() {
-						document.getElementById('book-list-icons').style.display = "none"
-						document.getElementById('book-list-text').style.display = "initial"
+						console.log('showBookListText.click')
+						const iconElements = document.getElementsByClassName('book-list-icons')
+						for (let element of iconElements) {
+							element.style.display = "none";
+						}
+
+						const textElements = document.getElementsByClassName('book-list-text')
+						for (let element of textElements) {
+							element.style.display = "initial";
+						}
 					})
 
 					showBookListIcons.addEventListener('click', function() {
-						document.getElementById('book-list-icons').style.display = "flex"
-						document.getElementById('book-list-text').style.display = "none"
+						console.log('showBookListIcons.click')
+						const iconElements = document.getElementsByClassName('book-list-icons')
+						for (let element of iconElements) {
+							element.style.display = "flex";
+						}
+
+						const textElements = document.getElementsByClassName('book-list-text')
+						for (let element of textElements) {
+							element.style.display = "none";
+						}
+						
 					})
 				}
 
@@ -966,7 +983,7 @@ My complete <a href="/books/">bookshelf</a>
 
 		</script>
 
-		<!-- This page `/` was built on 2024-12-07T01:21:10.603Z -->
+		<!-- This page `/` was built on 2025-01-01T11:07:40.423Z -->
 		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
 	</body>
 </html>
