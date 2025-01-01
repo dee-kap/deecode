@@ -1,5 +1,14 @@
 [
 	{
+		"title": "The Coming Wave",
+		"author": "Suleyman Mustafa",
+		"image": "the-coming-wave.jpg",
+		"rating": "",
+		"link": "",
+		"date_start": "2025-01-01",
+		"isbn": ""
+	},
+	{
 		"title": "The Chairman's Lounge",
 		"image": "the-chairmans-lounge.jpg",
 		"rating": "",
@@ -3754,9 +3763,9 @@
 	{
 		"title": "The Golden Road: How Ancient India Transformed the World",
 		"image": "the-golden-road.jpg",
-		"rating": "",
+		"rating": "5",
 		"link": "the-golden-road",
-		"date_read": "2024-11-19",
+		"date_read": "2024-12-30",
 		"isbn": "9781408864425"
 	},
 	{

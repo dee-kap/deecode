@@ -1,0 +1,28 @@
+{% macro renderBooksListText(sortedBooks) %}
+<div class="book-list-text">
+    <ol>
+      {%- for book in sortedBooks -%}
+        {%- set rating = book.rating | int -%}
+        <li>
+          {%- if book.link -%}
+          <a href="/books/{{ book.title }}">
+          {%- endif -%}
+          {{ book.title | trim }}
+          {%- if book.link -%}
+          </a>
+          {%- endif -%}
+          <span>  </span>
+          {%- if rating == 6 -%}
+            {%- for i in range(1, 7) -%}
+              <span class="star {% if i <= rating %}filled{% endif %} {% if i == 6 %} six{% endif %}">★</span>
+            {%- endfor %}
+          {%- else -%}
+            {%- for i in range(1, 6) -%}
+              <span class="star {% if i <= rating %}filled{% endif %}">★</span>
+            {%- endfor %}
+          {%- endif -%}
+        </li>
+      {%- endfor %}
+    </ol>
+  </div>
+{% endmacro %}

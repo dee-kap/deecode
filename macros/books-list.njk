@@ -1,5 +1,6 @@
 {% macro renderBooksList(filteredBooks, headingText, displayStars, subText) %}
-{%- set sortedBooks = filteredBooks | sortBooksByDateReadDesc -%}
+{%- set sortedBooks = filteredBooks | sortBooksByReadorStartDate -%}
+
 
 <div class="books-list-heading">
   <div style="display:flex;width:100%;">

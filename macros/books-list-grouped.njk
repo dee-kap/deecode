@@ -1,0 +1,46 @@
+{% import "macros/books-list-icons.njk" as booksIconsMacros %}
+{% import "macros/books-list-text.njk" as booksTextMacros %}
+
+{% macro renderBooksList(filteredBooks, headingText, displayStars, subText) %}
+
+	{%- set sortedBooks = filteredBooks | sortBooksByReadorStartDate -%}
+	{% set groupedBooks = sortedBooks | groupBooksByYear %}
+
+	<div class="books-list-heading">
+		<div style="display:flex;width:100%;">
+		{%- if(displayStars !== NaN)-%}
+			<div style="flex-grow:1;">
+			<strong>{{ filteredBooks | length }}</strong> books {{ headingText }}
+			</div>
+			<div>
+			{%- for i in range(0, displayStars) -%}
+						<span class="star filled {% if i == 5 %} six{% endif %}">★</span>
+			{%- endfor %}
+			</div>
+		{%- else -%}
+			{{ filteredBooks | length }} books {{ headingText }}
+		{%- endif -%}
+		</div>
+		{%- if subText != "" -%}
+		<div style="margin-top:5px;color:var(--color-lavender)">
+			{{ subText }}
+		</div>
+		{%- endif -%}
+	</div>
+
+	<div id="icons-container">
+		<div id="show-book-list-icons">
+			<i class="las la-icons la-3x" ></i>
+		</div>
+		<div id="show-book-list-text">
+			<i class="las la-list-ul la-3x"></i>
+		</div>
+	</div>
+
+	{% for year, yearBooks in groupedBooks %}
+		<h2>{{ year }}</h2>
+		{{ booksIconsMacros.renderBooksListIcons(yearBooks) }}
+		{{ booksTextMacros.renderBooksListText(yearBooks) }}
+	{% endfor %}
+
+{% endmacro %}

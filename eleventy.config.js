@@ -78,6 +78,17 @@ export default async function (eleventyConfig) {
 		});
 	});
 
+	eleventyConfig.addFilter("sortBooksByReadorStartDate", (books) => {
+		return books.sort((a, b) => {
+			const aDateField = a.date_read || a.date_start || "1970-01-01"
+			const bDateField = b.date_read || b.date_start || "1970-01-01"
+
+			const dateA = DateTime.fromISO(aDateField || "1970-01-01");
+			const dateB = DateTime.fromISO(bDateField || "1970-01-01");
+			return dateB - dateA; // Descending order
+		});
+	});
+
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig
