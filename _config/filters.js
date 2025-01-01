@@ -60,6 +60,13 @@ export default function(eleventyConfig) {
 			return groups;
 		}, {});
 
+
+		// Rename the key "1970" to "Long Time Ago"
+		if (groups["1970"]) {
+			groups["Long Time Ago"] = groups["1970"];
+			delete groups["1970"];
+		}
+
 		// Convert groups into a sorted array of key-value pairs
 		const sortedArray = Object.entries(groups)
 			.sort(([yearA], [yearB]) => yearB - yearA); // Sort keys numerically in descending order
