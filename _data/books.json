@@ -114,7 +114,8 @@
 		"title": "TITAN: Inside India’s Most Successful Consumer Brand by Vinay Kamath",
 		"displayTitle": "TITAN",
 		"image": "titan.jpg",
-		"rating": "5"
+		"rating": "5",
+		"date_read": "2022-10-01"
 	},
 	{
 		"title": "Viral: The Search for the Origin of Covid19 by Alina Chan & Matt Ridley",
@@ -210,7 +211,8 @@
 		"title": "The Snowball: Warren Buffett and the Business of Life by Alice Schroeder",
 		"displayTitle": "The Snowball",
 		"image": "the-snowball.jpg",
-		"rating": "6"
+		"rating": "6",
+		"date_read": "2013-10-25"
 	},
 	{
 		"title": "The Sixteenth Round: From Number 1 Contender to Number 45472 by Rubin Carter",
@@ -774,7 +776,8 @@
 		"title": "Tap Dancing to Work: Warren Buffett on Practically Everything, 1966-2012 by Carol J. Loomis",
 		"displayTitle": "Tap Dancing to Work",
 		"image": "tap-dancing-to-work.jpg",
-		"rating": "5"
+		"rating": "5",
+		"date_read": "2013-11-05"
 	},
 	{
 		"title": "All I Want to Know is where I'm Going to Die So I'll Never Go There",
