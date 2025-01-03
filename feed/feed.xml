@@ -5,21 +5,11 @@
   <subtitle>Personal websie of Deepak.</subtitle>
   <link href="https://deecode.me/feed/feed.xml" rel="self" />
   <link href="https://deecode.me/" />
-  <updated>2024-12-19T00:00:00Z</updated>
+  <updated>2024-12-01T00:00:00Z</updated>
   <id>https://deecode.me/</id>
   <author>
     <name>Deepak</name>
   </author>
-  <entry>
-    <title>Home Improvement Bug</title>
-    <link href="https://deecode.me/blog/2024/12/19/home-improvement-bug/" />
-    <updated>2024-12-19T00:00:00Z</updated>
-    <id>https://deecode.me/blog/2024/12/19/home-improvement-bug/</id>
-    <content type="html">&lt;p&gt;For a change this is not the kind of bug I mostly deal with.&lt;/p&gt;
-&lt;p&gt;I was browsing Amazon during Black Friday sale and saw a Bosch electric screwdriver for a decent price. I bought it thinking that it will be a good tool to have around for screwing needs. The first thing I used it for was to change door hinges on a kitchen cabinet to soft close hinges. It was not at all hard and the tool made the job quick easy. This gave me confidence that I could do such things around the house. It also kicked off an interest in doing things around the house.&lt;/p&gt;
-&lt;p&gt;Next project I took on was painting of the backyard fence. Jumping from inserting a couple of screws to paint a fence is a big leap but I was ready for the challenge.&lt;/p&gt;
-</content>
-  </entry>
   <entry>
     <title>Will AI Replace Coders?</title>
     <link href="https://deecode.me/blog/2024/12/1/will-ai-replace-coders/" />
@@ -409,6 +399,37 @@ target &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span clas
 &lt;p&gt;I have read some of Plato’s works in the past. It was a long time ago and I had no skills in reading for understanding. Because of this, I do not remember anything from the works I read. Regardless, Plato is still somewhat familiar and I’m happy that it is the first reading.&lt;/p&gt;
 &lt;p&gt;On another but connected topic, I have been thinking about how to organize this website. I do want a blog where I can write posts which are about activity at a given time, I also want this website to be a tool which helps me form connections between different works and topics. I develop my understanding about something by &lt;strong&gt;making connections&lt;/strong&gt; to what I already know and this method has worked well for me. I visualize knowledge as a tree in which everything is connected to everything else in some way or form. And I would like a similar structure for this website. Let’s see how it goes.&lt;/p&gt;
 &lt;p&gt;For now, I’m off to read Apology.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>How Working From Home Changed My Life</title>
+    <link href="https://deecode.me/blog/2024/2/16/working-from-home/" />
+    <updated>2024-02-16T00:00:00Z</updated>
+    <id>https://deecode.me/blog/2024/2/16/working-from-home/</id>
+    <content type="html">&lt;h1 id=&quot;how-working-from-home-changed-my-life&quot;&gt;How Working From Home Changed My Life&lt;/h1&gt;
+&lt;p&gt;In the profession of software development, the transition to remote work has been a significant shift for many, including myself. My journey into the world of working from home began well before COVID-19.&lt;/p&gt;
+&lt;p&gt;It started as an experiment with flexibility, gradually transforming from a couple of days a week to a full-time remote work setup. This change of course was because of my managers who showed a level of trust in me.&lt;/p&gt;
+&lt;p&gt;Also, the change wasn&#39;t just a shift in where I worked but a profound change in how I lived and worked.&lt;/p&gt;
+&lt;p&gt;These are my reflections on this transformative experience, emphasizing the multitude of benefits it brought to my life and how it has also benefited my employer.&lt;/p&gt;
+&lt;h2 id=&quot;the-genesis-of-remote-work&quot;&gt;The Genesis of Remote Work&lt;/h2&gt;
+&lt;p&gt;My professional career as a software developer kicked off in the late &#39;90s. For nearly two decades, the office was my second home, a place where I spent the majority of my waking hours. The concept of working from anywhere but a corporate office was foreign, if not entirely unthinkable, at that time.&lt;/p&gt;
+&lt;p&gt;However, around 2018, a shift began. What initially started as a concession for more flexibility slowly morphed into a full-time remote work arrangement. This gradual transition allowed me to adapt my life around this newfound flexibility, venturing into a mode of work I had never thought possible.&lt;/p&gt;
+&lt;h2 id=&quot;personal-benefits-of-working-from-home&quot;&gt;Personal Benefits of Working from Home&lt;/h2&gt;
+&lt;p&gt;One of the most significant changes I realized was that I had more time. Daily commute which took close to three hours both ways disappeared and I had these three hours available to me to pursue activities I could not.&lt;/p&gt;
+&lt;h3 id=&quot;reading-more&quot;&gt;Reading More&lt;/h3&gt;
+&lt;p&gt;I noticed an increase in my reading. Without the need to commute, I found pockets of time that could be dedicated to reading. This not only expanded my knowledge but also became a source of relaxation and inspiration.&lt;/p&gt;
+&lt;h3 id=&quot;quality-time-with-family&quot;&gt;Quality Time with Family&lt;/h3&gt;
+&lt;p&gt;Working from home allowed me to spend precious time with my family that would otherwise be lost in transit. This has strengthened my bond with my family. Spending more time with kids and spouse are priceless and it can do wonders for mental health. There is a spiritual dimension to this which can only be understood by experiencing it first-hand.&lt;/p&gt;
+&lt;h3 id=&quot;enhanced-health-and-exercise&quot;&gt;Enhanced Health and Exercise&lt;/h3&gt;
+&lt;p&gt;The flexibility of working from home made it easier to incorporate exercise into my daily routine. I&#39;ve been able to take better care of my health, both mentally and physically, which has had a profound impact on my overall well-being.&lt;/p&gt;
+&lt;h3 id=&quot;appreciating-office-hangouts&quot;&gt;Appreciating Office Hangouts&lt;/h3&gt;
+&lt;p&gt;On the rare occasions when I do visit the office or engage in work-related gatherings, I find myself enjoying these interactions more than ever. The change of scene and the physical presence of colleagues offer a refreshing break from the norm, making these moments more memorable and enjoyable.&lt;/p&gt;
+&lt;h2 id=&quot;benefits-for-my-employer&quot;&gt;Benefits for My Employer&lt;/h2&gt;
+&lt;p&gt;The transition to remote work has not only been beneficial for me but also for my employer.&lt;/p&gt;
+&lt;p&gt;I&#39;ve been able to deliver consistent, high-quality work without the distractions and interruptions common in an office environment. This has led to greater efficiency and innovation, benefiting my employer through improved project outcomes and a more engaged, motivated employee.&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The journey to becoming a full-time remote worker has been a revelation. It has not only changed my approach to work but has also enriched my personal life in numerous ways. The benefits extend beyond the individual to the employer, challenging traditional notions of the workplace.&lt;/p&gt;
+&lt;p&gt;As we move forward, it&#39;s clear that remote work can offer a sustainable, productive, and fulfilling way of working for many, proving that with the right mindset and discipline, work is not a place you go, but something you do—regardless of location.&lt;/p&gt;
 </content>
   </entry>
 </feed>
