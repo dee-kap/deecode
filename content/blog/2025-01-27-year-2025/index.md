@@ -10,9 +10,9 @@ eleventyNavigation:
 draft: false
 ---
 
-I’ve been a programmer for as long as I can remember, which is a polite way of saying “a solid 25 years.” It’s been a fulfilling journey, but lately, I’ve felt a slight disturbance in the force. I haven’t entirely left the industry yet because bills don’t pay themselves, but I’m steadily moving toward the day when I shut my laptop for the last time as a professional coder.
+I’ve been a programmer for as long as I can remember, which is a solid 25 years. It’s been a fulfilling journey, but lately, I’ve felt a slight disturbance in the force. I haven’t entirely left the industry yet because bills don’t pay themselves, but I’m steadily moving toward the day when I shut my laptop for the last time as a professional coder.
 
-Like many other industries, programming is evolving. The job of “programmer” as we know it is inching toward its twilight. I don’t see this as the apocalypse though. It’s more like the natural ebb and flow of things, inevitable, unstoppable, and probably overdue. The role of a programmer in the future will be different, demanding new skills and perspectives. It might even be wildly exciting. But for me, the fire isn’t out; it’s just burning differently now. The thought of yet another cycle of re-skilling to stay relevant feels less like an adventure and more like a chore.
+Like many other industries, programming is evolving. The job of “programmer” as we know it is inching toward its twilight. I don’t see this as the apocalypse though. It’s more like the natural ebb and flow of things, inevitable, unstoppable, and probably overdue. The role of a programmer in the future will be different, demanding new skills and perspectives. It might even be wildly exciting. But for me, although the fire isn’t out, it’s just burning differently now. The thought of yet another cycle of re-skilling to stay relevant feels less like an adventure and more like a chore.
 
 Sure, I could keep doing what I’m doing and stick around as long as COBOL programmers have (and they’ve had a heck of a run). But maybe this shift in the industry is the nudge I need for a bigger personal change.
 

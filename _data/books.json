@@ -1,7 +1,16 @@
 [
 	{
+		"title": "Queen of Our Times",
+		"author": "Robert Hardman",
+		"image": "queen-of-our-times.jpg",
+		"rating": "",
+		"link": "",
+		"date_start": "2025-01-16",
+		"isbn": ""
+	},
+	{
 		"title": "The Coming Wave",
-		"author": "Suleyman Mustafa",
+		"author": "Mustafa Suleyman",
 		"image": "the-coming-wave.jpg",
 		"rating": "",
 		"link": "",
@@ -13,7 +22,7 @@
 		"image": "the-chairmans-lounge.jpg",
 		"rating": "",
 		"link": "",
-		"date_read": "2024-01-01",
+		"date_start": "2025-01-14",
 		"isbn": ""
 	},
 	{
