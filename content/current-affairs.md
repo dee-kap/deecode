@@ -7,7 +7,16 @@ eleventyNavigation:
 
 # Current Affairs
 
-This is a log of my fleeting thoughts. In this form they are as useless as news.
+This is a log of my fleeting thoughts. This type of thing is also known as a micro blog.
+
+# 2025
+
+## 6 January 2025
+
+- First working day (kinda) of 2025. I want to start the year on a positive note, so here it is to an awesome 2025. Cheers!
+- I don't hear much about Typescript these days. Has the world figured out a better way to add type safety to JavaScript?
+
+# 2024
 
 ## 24 December 2024
 
