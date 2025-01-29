@@ -11,6 +11,10 @@ This is a log of my fleeting thoughts. This type of thing is also known as a mic
 
 # 2025
 
+## 29 January 2025
+
+- It has often come to my mind that I should specialize in one dependable ecosystem for developing browser based applications. Ruby on Rails is on top of my list.
+
 ## 6 January 2025
 
 - First working day (kinda) of 2025. I want to start the year on a positive note, so here it is to an awesome 2025. Cheers!
