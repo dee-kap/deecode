@@ -213,6 +213,7 @@ pre[class*="language-diff-"] {
 	--color-surface0: #ccd0da;
 	--color-surface1: #bcc0cc;
 	--color-peach: #fe640b;
+	--color-yellow: #df8e1d;
 }
 
 #theme-toggle {
@@ -235,6 +236,7 @@ pre[class*="language-diff-"] {
 	--color-surface0: #313244;
 	--color-surface1: #45475a;
 	--color-peach: #fab387;
+	--color-yellow: #f9e2af;
 
 	#theme-toggle {
 		background-color: var(--background-color);
@@ -257,7 +259,7 @@ body {
 	font-family: var(--font-family);
 	background-color: var(--background-color);
 	color: var(--text-color);
-	font-size: 107%;
+	font-size: 115%;
 }
 
 a {
@@ -492,7 +494,7 @@ li {
 	font-style: italic;
 }
 
-.postlist-item>.post-tag {
+.postlist-item > .post-tag {
 	align-self: center;
 }
 
@@ -519,7 +521,7 @@ li {
 	margin-top: 3em;
 }
 
-.links-nextprev>* {
+.links-nextprev > * {
 	flex-grow: 1;
 }
 
@@ -615,7 +617,7 @@ li {
 }
 
 .star.filled {
-	color: #ffd700;
+	color: var(--color-yellow);
 	opacity: 1;
 	text-shadow: none;
 }
@@ -623,7 +625,7 @@ li {
 .star.filled.six {
 	color: #dc143c;
 	font-size: 1.25em;
-	-webkit-text-stroke: 1px #ffd700;
+	-webkit-text-stroke: 1px var(--color-yellow);
 }
 
 .other-links {
@@ -1070,7 +1072,7 @@ pygame<span class="token punctuation">.</span>init<span class="token punctuation
 				}
 
 				const toggleButton = document.getElementById('theme-toggle');
-				const currentTheme = localStorage.getItem('theme') || 'dark';
+				const currentTheme = localStorage.getItem('theme') || 'light';
 
 				if (currentTheme) {
 					document.documentElement.setAttribute('data-theme', currentTheme);
@@ -1127,7 +1129,7 @@ pygame<span class="token punctuation">.</span>init<span class="token punctuation
 
 		</script>
 
-		<!-- This page `/blog/2024/10/15/python-langtons-ant/` was built on 2025-01-17T12:06:32.967Z -->
-		<script type="module" src="/dist/rJ3_G-2ArF.js"></script>
+		<!-- This page `/blog/2024/10/15/python-langtons-ant/` was built on 2025-01-29T10:40:18.232Z -->
+		<script type="module" src="/dist/PQuipxb2GV.js"></script>
 	</body>
 </html>
