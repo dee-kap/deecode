@@ -1,1 +1,0 @@
-# Lucretius, Epictetus, Marcus Aurelius

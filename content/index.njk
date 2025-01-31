@@ -8,7 +8,6 @@ const eleventyNavigation = {
 <div class="h-card home-intro">
     <p>👋 Hi! I'm Deepak.</p>
 		<p>🙏 Welcome to my online home</p>
-		<p>I write <a href="/tags/tech">Code</a> and I read <a href="/books">Books</a></p>
     <p>You can find more about me in the <a href="/about">about page</a></p>
 </div>
 
@@ -27,47 +26,6 @@ const eleventyNavigation = {
     <p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="blog.njk">the archives</a>.</p>
     {% endif %}
 </div>
-
-<h2>Books</h2>
-  <div class="books-list" style="justify-content: start!important;gap:15px;">
-		{%- set sortedBooks = books | sortBooksByReadorStartDate -%}
-    {%- for book in sortedBooks -%}
-      {%- if loop.index <= 12 -%}
-      {%- set rating = book.rating | int -%}
-      {%- if book.link -%}
-      <a href="books/{{ book.link }}">
-      {%- endif -%}
-      {% if rating == 6 %}
-        <div class="book six-star-book" style="background-image: url('/images/covers/{{ book.image }}')">
-      {% else %}
-        <div class="book" style="background-image: url('/images/covers/{{ book.image }}')">
-      {% endif %}
-        <div class="book-title">
-          {# {{ book.displayTitle or book.title }} #}
-          <div class="book-rating">
-            {%- if rating == 6 -%}
-              {%- for i in range(1, 7) -%}
-                <span class="star {% if i <= rating %}filled{% endif %} {% if i == 6 %} six{% endif %}">★</span>
-              {%- endfor %}
-            {%- else -%}
-              {%- for i in range(1, 6) -%}
-                <span class="star {% if i <= rating %}filled{% endif %}">★</span>
-              {%- endfor %}
-            {%- endif -%}
-          </div>
-        </div>
-      </div>
-      {%- if book.link -%}
-      </a>
-      {%- endif -%}
-      {%- endif -%}
-    {%- endfor %}
-  </div>
-
-<p>
-My complete <a href="/books/">bookshelf</a>
-</p>
-
 
 {# List every content page in the project #}
 {#

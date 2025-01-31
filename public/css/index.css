@@ -59,7 +59,7 @@
 }
 
 body {
-	max-width: 720px;
+	max-width: 1024px;
 	margin: 0 auto;
 	padding: 5px;
 	font-family: var(--font-family);
@@ -121,7 +121,7 @@ header {
 	/* padding-right: 10px; */
 	padding-top: 10px;
 	padding-bottom: 15px;
-	border-bottom: 1px dashed var(--color-border-header);
+	border-bottom: 1px solid var(--color-blue);
 }
 
 header a {

@@ -5,18 +5,9 @@
 		"url": "/blog"
 	},
 	{
-		"key": "books",
-		"title": "Books",
-		"url": "/books"
-	},
-	{
 		"key": "pages",
 		"title": "Pages",
 		"url": "/pages"
-	},
-	{
-		"key": "projects",
-		"title": "Projects",
-		"url": "/projects"
 	}
 ]
+
